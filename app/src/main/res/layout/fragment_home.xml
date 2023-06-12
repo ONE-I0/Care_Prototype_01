@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="care_fragments.HomeFragment" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/codey_image"
+        android:src="@drawable/sample_codey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="8dp"
+        android:text="Hi! I'm Codey, and I'm your personal virtual assistant. I'll be guiding you throughout the lessons. Please choose what programming languages you wish to learn."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.526"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:text="Programming Languages"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnJava"
+        android:layout_width="318dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/smooth_image_button"
+        android:contentDescription="@string/java_button"
+        android:cropToPadding="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/java_icon" />
+
+    <ImageButton
+        android:id="@+id/btnC"
+        android:layout_width="318dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/smooth_image_button"
+        android:contentDescription="@string/c_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/btnJava"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnJava"
+        app:layout_constraintTop_toBottomOf="@+id/btnPython"
+        app:srcCompat="@drawable/csharp_icon" />
+
+    <ImageButton
+        android:id="@+id/btnPython"
+        android:layout_width="318dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/smooth_image_button"
+        android:contentDescription="@string/python_button"
+        android:paddingTop="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/btnJava"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnJava"
+        app:layout_constraintTop_toBottomOf="@+id/btnJava"
+        app:srcCompat="@drawable/python_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
