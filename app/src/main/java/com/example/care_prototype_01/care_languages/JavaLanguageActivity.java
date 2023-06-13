@@ -27,15 +27,15 @@ public class JavaLanguageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_java_language);
 
         Button btnJavaIntroduction =findViewById(R.id.btnIntroduction);
-        Button btnJavaSyntax = (Button) findViewById(R.id.btnSyntax);
-        Button btnJavaComments = (Button) findViewById(R.id.btnComments);
-        Button btnJavaVariables = (Button) findViewById(R.id.btnVariables);
-        Button btnJavaInputs = (Button) findViewById(R.id.btnInputs);
-        Button btnJavaDataTypes = (Button) findViewById(R.id.btnDataTypes);
-        Button btnJavaOperators = (Button) findViewById(R.id.btnOperators);
-        Button btnJavaConditionalStatements = (Button) findViewById(R.id.btnConditionalStatements);
-        Button btnJavaLoopingStatements = (Button) findViewById(R.id.btnLoopingStatements);
-        Button btnJavaArrays = (Button) findViewById(R.id.btnArrays);
+        Button btnJavaSyntax =  findViewById(R.id.btnSyntax);
+        Button btnJavaComments =  findViewById(R.id.btnComments);
+        Button btnJavaVariables =  findViewById(R.id.btnVariables);
+        Button btnJavaInputs =  findViewById(R.id.btnInputs);
+        Button btnJavaDataTypes =  findViewById(R.id.btnDataTypes);
+        Button btnJavaOperators = findViewById(R.id.btnOperators);
+        Button btnJavaConditionalStatements =  findViewById(R.id.btnConditionalStatements);
+        Button btnJavaLoopingStatements =  findViewById(R.id.btnLoopingStatements);
+        Button btnJavaArrays =  findViewById(R.id.btnArrays);
 
         btnJavaIntroduction.setOnClickListener(view -> {
             Intent OpenJavaIntroduction = new Intent(JavaLanguageActivity.this, JavaIntroduction.class);

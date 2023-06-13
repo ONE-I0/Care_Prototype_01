@@ -1,21 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".JavaLessonsActivity.JavaIntroduction">
+    android:layout_width="409dp"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck,TextSizeCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/introduction"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".JavaLessonsActivity.JavaIntroduction">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/font"
+            android:text="@string/introductions"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/sample_codey" />
+
+        <Button
+            android:id="@+id/btnTrivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="96dp"
+            android:fontFamily="@font/lionel"
+            android:shadowColor="#575757"
+            android:text="@string/codey_s_trivia_sentence"
+            android:backgroundTint="@color/light_gray"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.538"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/sample_codey" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:fontFamily="@font/lionel"
+            android:text="@string/let_s_start_the_introduction_of_java_lesson_feel_free_to_ask_questions_or_request_clarification_at_the_end_of_the_discussion"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/lionel"
+            android:text="@string/java"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="304dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lionel"
+            android:text="@string/is_a_popular_programming_language_that_was_first_released_by_sun_microsystems_in_1995_it_s_known_for_its_simplicity_platform_independence_and_wide_range_of_applications_it_s_widely_used_for_developing_various_types_of_software_including_web_applications_mobile_apps_desktop_applications_and_enterprise_systems"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/lionel"
+            android:text="@string/here_s_a_quick_overview_of_some_key_concepts_in_java"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/introduction_bullet"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lionel"
+            android:text='@string/platform_independence_java_is_a_write_once_run_anywhere_language_this_means_that_once_you_write_a_java_program_you_can_run_it_on_any_platform_that_has_a_java_virtual_machine_jvm_the_jvm_acts_as_an_interpreter_allowing_the_java_code_to_be_executed_on_different_operating_systems'
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/introduction_bullet2"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/lionel"
+            android:text='@string/object_oriented_programming_java_is_an_object_oriented_programming_oop_language_this_means_that_it_revolves_around_the_concept_of_objects_which_are_instances_of_classes_objects_have_attributes_variables_and_behavior_methods_and_they_interact_with_each_other_through_method_calls'
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/introduction_bullet3"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/lionel"
+            android:text='@string/syntax_java_has_a_syntax_similar_to_other_programming_languages_like_c_and_c_it_uses_semicolons_to_end_statements_and_curly_braces_to_define_code_blocks_the_code_is_organized_into_classes_and_each_class_can_have_methods_and_variables'
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet2"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/introduction_bullet4"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/lionel"
+            android:text="@string/garbage_collection_java_has_automatic_memory_management_through_a_process_called_garbage_collection_it_takes_care_of_allocating_and_deallocating_memory_for_objects_so_developers_don_t_have_to_explicitly_manage_memory_resources_this_helps_in_preventing_memory_leaks_and_makes_java_programs_more_robust"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet3"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/introduction_bullet5"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/lionel"
+            android:text="@string/standard_library_java_provides_a_rich_set_of_libraries_and_apis_application_programming_interfaces_that_simplify_common_programming_tasks_these_libraries_cover_areas_such_as_input_output_networking_data_structures_graphics_and_more_they_save_developers_time_and_effort_by_providing_pre_built_functionality"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet4"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/introduction_bullet6"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/lionel"
+            android:text="@string/exception_handling_java_has_a_built_in_exception_handling_mechanism_that_allows_you_to_catch_and_handle_errors_and_exceptional_situations_in_your_code_this_helps_in_writing_more_reliable_and_robust_programs_by_gracefully_handling_unexpected_situations"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet5"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="345dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet6"
+            app:layout_constraintVertical_bias="0.066"
+            app:srcCompat="@drawable/sample_codey"
+            android:contentDescription="@string/codey_image" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lionel"
+            android:text="@string/questions_you_might_asked"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <Button
+            android:id="@+id/btnquestion1"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/light_gray"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:text="@string/is_java_a_programming_or_scripting_language"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <Button
+            android:id="@+id/btnquestion2"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:text="@string/what_makes_java_different_to_other_languages"
+            android:backgroundTint="@color/light_gray"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/btnquestion1" />
+
+        <Button
+            android:id="@+id/btnquestion3"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:text="@string/what_makes_java_so_unique"
+            android:backgroundTint="@color/light_gray"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/btnquestion2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

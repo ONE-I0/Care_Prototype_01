@@ -9,47 +9,8 @@
     <string name="python_button">python_button</string>
     <string name="title_activity_java">JavaActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+
     <string name="_1_introduction">1.Introduction</string>
     <string name="_2_syntax">2.Syntax</string>
     <string name="_3_comments">3.Comments</string>
@@ -62,4 +23,22 @@
     <string name="_10_arrays">10.Arrays</string>
     <string name="hi_welcome_to_java_language_you_may_choose_what_lesson_you_want_to_learn">Hi! Welcome to Java Language. You may choose what lesson you want to learn.</string>
     <string name="introduction">INTRODUCTION</string>
+    <string name="introductions">Introduction</string>
+    <string name="codey_s_trivia_sentence">Codey\'s Trivia Sentence</string>
+    <string name="let_s_start_the_introduction_of_java_lesson_feel_free_to_ask_questions_or_request_clarification_at_the_end_of_the_discussion">Let’s start the Introduction of Java lesson. Feel free to ask questions or request clarification at the end of the discussion!</string>
+    <string name="java">JAVA</string>
+    <string name="is_a_popular_programming_language_that_was_first_released_by_sun_microsystems_in_1995_it_s_known_for_its_simplicity_platform_independence_and_wide_range_of_applications_it_s_widely_used_for_developing_various_types_of_software_including_web_applications_mobile_apps_desktop_applications_and_enterprise_systems">is a popular programming language that was first released by Sun Microsystems in 1995. It\'s known for its simplicity, platform independence, and wide range of applications. It\'s widely used for developing various types of software, including web applications, mobile apps, desktop applications, and enterprise systems.</string>
+    <string name="here_s_a_quick_overview_of_some_key_concepts_in_java">Here\'s a quick overview of some key concepts in Java:</string>
+    <string name="platform_independence_java_is_a_write_once_run_anywhere_language_this_means_that_once_you_write_a_java_program_you_can_run_it_on_any_platform_that_has_a_java_virtual_machine_jvm_the_jvm_acts_as_an_interpreter_allowing_the_java_code_to_be_executed_on_different_operating_systems">• Platform Independence: Java is a write once, run anywherelanguage. This means that once you write a Java program, you can run it on any platform that has a Java Virtual Machine (JVM). The JVM acts as an interpreter, allowing the Java code to be executed on different operating systems.</string>
+    <string name="object_oriented_programming_java_is_an_object_oriented_programming_oop_language_this_means_that_it_revolves_around_the_concept_of_objects_which_are_instances_of_classes_objects_have_attributes_variables_and_behavior_methods_and_they_interact_with_each_other_through_method_calls">•\tObject-Oriented Programming: Java is an object-oriented programming (OOP) language. This means that it revolves around the concept of objects, which are instances of classes. Objects have attributes (variables) and behavior (methods), and they interact with each other through method calls.</string>
+    <string name="syntax_java_has_a_syntax_similar_to_other_programming_languages_like_c_and_c_it_uses_semicolons_to_end_statements_and_curly_braces_to_define_code_blocks_the_code_is_organized_into_classes_and_each_class_can_have_methods_and_variables">•\tSyntax: Java has a syntax similar to other programming languages like C and C++. It uses semicolons to end statements and curly braces to define code blocks. The code is organized into classes, and each class can have methods and variables.</string>
+    <string name="garbage_collection_java_has_automatic_memory_management_through_a_process_called_garbage_collection_it_takes_care_of_allocating_and_deallocating_memory_for_objects_so_developers_don_t_have_to_explicitly_manage_memory_resources_this_helps_in_preventing_memory_leaks_and_makes_java_programs_more_robust">•\tGarbage Collection: Java has automatic memory management through a process called garbage collection. It takes care of allocating and deallocating memory for objects, so developers don\'t have to explicitly manage memory resources. This helps in preventing memory leaks and makes Java programs more robust.</string>
+    <string name="standard_library_java_provides_a_rich_set_of_libraries_and_apis_application_programming_interfaces_that_simplify_common_programming_tasks_these_libraries_cover_areas_such_as_input_output_networking_data_structures_graphics_and_more_they_save_developers_time_and_effort_by_providing_pre_built_functionality">•\tStandard Library: Java provides a rich set of libraries and APIs (Application Programming Interfaces) that simplify common programming tasks. These libraries cover areas such as input/output, networking, data structures, graphics, and more. They save developers time and effort by providing pre-built functionality.</string>
+    <string name="exception_handling_java_has_a_built_in_exception_handling_mechanism_that_allows_you_to_catch_and_handle_errors_and_exceptional_situations_in_your_code_this_helps_in_writing_more_reliable_and_robust_programs_by_gracefully_handling_unexpected_situations">•\tException Handling: Java has a built-in exception handling mechanism that allows you to catch and handle errors and exceptional situations in your code. This helps in writing more reliable and robust programs by gracefully handling unexpected situations.</string>
+    <string name="questions_you_might_asked">Questions you might asked.</string>
+    <string name="is_java_a_programming_or_scripting_language">Is Java a programming or scripting language?</string>
+    <string name="what_is_the_difference_of_java_compare_to_other_programming_languages">What is the difference of Java compare to other programming languages?</string>
+    <string name="what_makes_java_so_unique">What makes Java so unique?</string>
+    <string name="what_makes_java_different_to_other_languages">What makes JAVA different to other languages?</string>
+
 </resources>
