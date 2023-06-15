@@ -29,7 +29,7 @@
     <string name="java">JAVA</string>
     <string name="is_a_popular_programming_language_that_was_first_released_by_sun_microsystems_in_1995_it_s_known_for_its_simplicity_platform_independence_and_wide_range_of_applications_it_s_widely_used_for_developing_various_types_of_software_including_web_applications_mobile_apps_desktop_applications_and_enterprise_systems">is a popular programming language that was first released by Sun Microsystems in 1995. It\'s known for its simplicity, platform independence, and wide range of applications. It\'s widely used for developing various types of software, including web applications, mobile apps, desktop applications, and enterprise systems.</string>
     <string name="here_s_a_quick_overview_of_some_key_concepts_in_java">Here\'s a quick overview of some key concepts in Java:</string>
-    <string name="platform_independence_java_is_a_write_once_run_anywhere_language_this_means_that_once_you_write_a_java_program_you_can_run_it_on_any_platform_that_has_a_java_virtual_machine_jvm_the_jvm_acts_as_an_interpreter_allowing_the_java_code_to_be_executed_on_different_operating_systems">• Platform Independence: Java is a write once, run anywherelanguage. This means that once you write a Java program, you can run it on any platform that has a Java Virtual Machine (JVM). The JVM acts as an interpreter, allowing the Java code to be executed on different operating systems.</string>
+    <string name="platform_independence_java_is_a_write_once_run_anywhere_language_this_means_that_once_you_write_a_java_program_you_can_run_it_on_any_platform_that_has_a_java_virtual_machine_jvm_the_jvm_acts_as_an_interpreter_allowing_the_java_code_to_be_executed_on_different_operating_systems">• Platform Independence: Java is a write once, run anywhere language. This means that once you write a Java program, you can run it on any platform that has a Java Virtual Machine (JVM). The JVM acts as an interpreter, allowing the Java code to be executed on different operating systems.</string>
     <string name="object_oriented_programming_java_is_an_object_oriented_programming_oop_language_this_means_that_it_revolves_around_the_concept_of_objects_which_are_instances_of_classes_objects_have_attributes_variables_and_behavior_methods_and_they_interact_with_each_other_through_method_calls">•\tObject-Oriented Programming: Java is an object-oriented programming (OOP) language. This means that it revolves around the concept of objects, which are instances of classes. Objects have attributes (variables) and behavior (methods), and they interact with each other through method calls.</string>
     <string name="syntax_java_has_a_syntax_similar_to_other_programming_languages_like_c_and_c_it_uses_semicolons_to_end_statements_and_curly_braces_to_define_code_blocks_the_code_is_organized_into_classes_and_each_class_can_have_methods_and_variables">•\tSyntax: Java has a syntax similar to other programming languages like C and C++. It uses semicolons to end statements and curly braces to define code blocks. The code is organized into classes, and each class can have methods and variables.</string>
     <string name="garbage_collection_java_has_automatic_memory_management_through_a_process_called_garbage_collection_it_takes_care_of_allocating_and_deallocating_memory_for_objects_so_developers_don_t_have_to_explicitly_manage_memory_resources_this_helps_in_preventing_memory_leaks_and_makes_java_programs_more_robust">•\tGarbage Collection: Java has automatic memory management through a process called garbage collection. It takes care of allocating and deallocating memory for objects, so developers don\'t have to explicitly manage memory resources. This helps in preventing memory leaks and makes Java programs more robust.</string>
@@ -41,4 +41,81 @@
     <string name="what_makes_java_so_unique">What makes Java so unique?</string>
     <string name="what_makes_java_different_to_other_languages">What makes JAVA different to other languages?</string>
 
+
+    <string name="Variables"><b>String</b> - stores text, such as "HelloWorld". Double quotes are used to enclose string values.\n<b>Ex. String myText = "Hello";\n\n</b><b>int</b> - stores integers or whole numbers, without decimals, such as 246 or -246.\n<b>Ex.<b>int</b> myNum = 5;\n</b>\n<b>float</b> - stores floating point numbers, with decimals, such as 3.99 or -3.99.\n<b>Ex. float myFloatNum = 5.99f;\n\n</b><b>char</b> - stores single characters, such as \'a\' or \'B\'. Single quotes are used to enclose char values.\n<b>Ex char myLetter = \'D\';\n\n</b><b>boolean</b> - stores values with two states: true or false.\n<b>Ex. boolean myBoolean = true;</b></string>
+    <string name="variables">Variables</string>
+    <string name="variables_1">Variables</string>
+    <string name="variable_types">Variable Types:</string>
+    <string name="a_variable_is_a_named_storage_location_that_holds_a_value_of_a_particular_type_it_allows_you_to_store_and_manipulate_data_within_a_program_before_using_a_variable_you_need_to_declare_it_specifying_its_type_and_name">A variable is a named storage location that holds a value of a particular type. It allows you to store and manipulate data within a program. Before using a variable, you need to declare it, specifying its type and name.</string>
+    <string name="codey_sentence_insert_here">[Codey sentence insert here]</string>
+    <string name="refers_to_the_process_of_accepting_data_or_information_from_a_user_during_the_execution_of_a_java_program_it_allows_users_to_interact_with_a_program">refers to the process of accepting data or information from a user during the execution of a Java program. It allows users to interact with a program.</string>
+    <string name="the_java_util_package_contains_the_scanner_class_which_is_used_to_gather_user_input">The java.util package contains the Scanner class, which is used to gather user input.</string>
+    <string name="you_can_utilize_any_of_the_various_methods_listed_in_the_scanner_class_documentation_by_creating_an_object_of_the_class_and_using_it_the_nextline_method_which_is_used_to_read_strings_will_be_utilized_in_our_example">You can utilize any of the various methods listed in the Scanner class documentation by creating an object of the class and using it. The nextLine() method, which is used to read strings, will be utilized in our example:</string>
+    <string name="java_user_input">Java User Input</string>
+    <string name="let_s_start_the_inputs_of_java_lesson">Let\'s start the Inputs of Java lesson.</string>
+    <string name="inputs">Inputs</string>
+    <string name="welcome_to_care_i_m_codey_your_virtual_assistant_app_guide">Welcome to CARE! I\'m Codey, your virtual assistant app guide!</string>
+    <string name="to_continue_kindly_choose_your_desired_programming_language_that_you_want_to_learn_and_let_s_get_started">To continue, kindly choose your desired programming language that you want to learn and let\'s get started!</string>
+
+    <string name="Scanner">import java.util.Scanner; // import the Scanner class\n\n
+                            class Main {\n
+                              \tpublic static void main(String[] args) {\n
+                                \t\tScanner myObj = new Scanner(System.in);\n
+                                \t\tString userName;\n\n
+
+                                \t\t// Enter username and press Enter\n
+                                \t\tSystem.out.println("Enter username");\n
+                                \t\tuserName = myObj.nextLine();\n\n
+
+                                \t\tSystem.out.println("Username is: " + userName);\n
+                              }\n
+                            }
+</string>
+    <string name="input_methods">
+        Method				\t\t\t\t\t\t\tDescription\n\n
+
+        nextBoolean()	    \tReads a boolean value from the user\n
+        nextByte()	        \t\t\t\tReads a byte value from the user\n
+        nextDouble()	    \t\t\tReads a double value from the user\n
+        nextFloat()	        \t\t\tReads a float value from the user\n
+        nextInt()	        \t\t\tReads a int value from the user\n
+        nextLine()	        \t\t\tReads a String value from the user\n
+        nextLong()	        \t\t\tReads a long value from the user\n
+        nextShort()	        \t\t\tReads a short value from the user\n
+
+    </string>
+    <string name="the_nextline_method_which_is_used_to_read_strings_was_utilized_in_the_example_above_look_at_the_table_below_these_are_other_types_of_inputs_to_read">The nextLine() method, which is used to read strings, was utilized in the example above. Look at the table below; these are other types of inputs to read.</string>
+    <string name="SetGuideline">Let’s now start studying the different syntax inside Java!</string>
+    <string name="syntaxtIntro">The set of guidelines governing the creation and interpretation of a Java program is known as the Java syntax. When creating a Java program, take into consideration that every code has its own identifier and no one can make its own syntax code.</string>
+    <string name="identifier">Identifier</string>
+    <string name="identifierDefinition">An identifier is the name of an element in the code. There are certain standard naming conventions to follow when selecting names for elements.</string>
+    <string name="dyk">Did you know?</string>
+    <string name="TypesOfIdentifier">These are some of the identifiers in Java:</string>
+    <string name="TypesOFIdentifier"><b>Class Identifiers:\n</b>
+                                        class Car {\n \t// class body\n}\n\n<b>Constant Identifiers (Final Variables):</b>\nfinal int MAX_VALUE = 100;\nfinal double PI = 3.14159;\n\n<b>Object Identifiers:</b>
+                                        \nCar myCar = new Car();\n\n<b>Parameter Identifiers:</b>
+                                        \npublic void printName(String name) {\n \t// method body\n}\n\n<b>Package Identifiers:</b>
+                                        \npackage com.example.mypackage;\n\n<b>Enum Identifiers:</b>
+                                        \nenum DayOfWeek {\n MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY \n}
+    </string>
+    <string name="firstjavaprogram">public class Main {\n
+                                  \tpublic static void main(String[] args) {\n
+                                    \t\tSystem.out.println("Hello World");\n
+                                  \t}\n
+                                }
+</string>
+    <string name="SynExplainMethods"><b>class method</b> - A class is a blueprint for creating objects. It defines the properties and behaviors that an object of that class will possess. Each program must have a class name and should always start with an uppercase first letter and must match the file name of the program.
+        \n<b>main method</b> - Each program processing starts from the main() method which is a mandatory part of every Java program. All method names should start with a lowercase letter. If several words are used to form the name of the method, then each inner word’s first letter should be in uppercase.
+        \n<b>System.out.println</b> - It is use to print and display an output to the user.
+</string>
+    <string name="now_why_don_t_we_create_our_first_java_program_shall_we_i_ll_explain_further_the_meaning_of_each_code">Now, why don’t we create our first Java program, shall we? I’ll explain further the meaning of each code.</string>
+    <string name="now_let_s_print_the_output_of_the_program_i_m_very_excited_to_see_the_result_did_you_guessed_it_right">Now let’s print the output of the program! I’m very excited to see the result, did you guessed it right?</string>
+    <string name="guess_right">Now let’s print the output of the program! I’m very excited to see the result, did you guessed it right?</string>
+    <string name="answer">Answer</string>
+    <string name="SyntaxSystem"><b>System</b> is a built-in Java class that contains useful members, such as out, which is short for \"output\". The println() method, short for \"print line\", is used to print a value to the screen (or a file).\nLastly, each code statement must end with a semicolon (;).</string>
+    <string name="great_you_guessed_it_right_the_output_to_the_code_is_hello_world_it_s_fun_learning_java_isn_t_it_let_s_keep_learning">Great! You guessed it right! The output to the code is “Hello World”. It’s fun learning Java, isn’t it? Let’s keep learning!</string>
+    <string name="always_remember_that_the_curly_braces_marks_the_beginning_and_the_end_of_a_block_of_code">Always remember that the curly braces {} marks the beginning and the end of a block of code.</string>
+    <string name="what_will_happen_if_i_declare_two_variables_with_same_spelling_but_different_values">What will happen if I declare two variables with same spelling but different values?</string>
+    <string name="can_i_make_a_program_without_using_an_identifier">Can I make a program without using an identifier?</string>
+    <string name="what_is_the_difference_of_identifier_to_keyword">What is the difference of identifier to keyword?</string>
 </resources>
