@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/lionel"
-            android:text="@string/is_a_popular_programming_language_that_was_first_released_by_sun_microsystems_in_1995_it_s_known_for_its_simplicity_platform_independence_and_wide_range_of_applications_it_s_widely_used_for_developing_various_types_of_software_including_web_applications_mobile_apps_desktop_applications_and_enterprise_systems"
+            android:text="Java is an object-oriented, class-based high-level tool with a focus on minimizing the need for various implementation dependencies. Its intention is for programmers to be able to write once and run anywhere (WORA), thus the compiled Java code can run on any platform that supports Java without the requirement of recompiling. Java bytecode, which is the end product of compiling Java applications, can run on any Java virtual machine (JVM), regardless of the underlying computer architecture. While the syntax of Java does have similarities to C and C++, it has fewer low-level features than either of them. Dynamic capabilities, like runtime code modification and reflection, are provided by the Java runtime - something that sets it apart from traditional compiled languages. Originally, Sun Microsystems developed this language and it was available for use in May 1995. "
             android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -124,19 +124,60 @@
             tools:ignore="TextSizeCheck" />
 
         <TextView
+            android:id="@+id/textView27"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lionel"
+            android:text="@string/javaintrodullets"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:fontFamily="@font/lionel"
+            android:text="Why use Java over other programming language?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/codey_java" />
+
+        <TextView
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="@font/lionel"
             android:text="@string/here_s_a_quick_overview_of_some_key_concepts_in_java"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
         <TextView
             android:id="@+id/introduction_bullet"

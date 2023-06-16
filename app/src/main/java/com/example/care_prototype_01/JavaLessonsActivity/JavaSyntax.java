@@ -66,8 +66,6 @@ public class JavaSyntax extends AppCompatActivity {
 
 
     private void openDYK1() {
-
-
         AlertDialog.Builder builder = new AlertDialog.Builder(JavaSyntax.this);
         builder.setTitle("Did you know?")
                 .setIcon(R.drawable.codey_java_dyk)
@@ -77,8 +75,6 @@ public class JavaSyntax extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
         question_sounds.start();
-
-
 
     }
     private void openANS_1() {
