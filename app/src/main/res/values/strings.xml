@@ -3,11 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="codey_image">codey_image</string>
-    <string name="hi">Hi</string>
     <string name="java_button">java_button</string>
     <string name="c_button">c_button</string>
     <string name="python_button">python_button</string>
-    <string name="title_activity_java">JavaActivity</string>
     <!-- Strings used for fragments for navigation -->
 
 
@@ -21,13 +19,10 @@
     <string name="_8_conditional_statements">8.Conditional Statements</string>
     <string name="_9_looping_statements">9.Looping Statements</string>
     <string name="_10_arrays">10.Arrays</string>
-    <string name="hi_welcome_to_java_language_you_may_choose_what_lesson_you_want_to_learn">Hi! Welcome to Java Language. You may choose what lesson you want to learn.</string>
-    <string name="introduction">INTRODUCTION</string>
     <string name="introductions">Introduction</string>
     <string name="codey_s_trivia_sentence">Codey\'s Trivia Sentence</string>
     <string name="let_s_start_the_introduction_of_java_lesson_feel_free_to_ask_questions_or_request_clarification_at_the_end_of_the_discussion">Let’s start the Introduction of Java lesson. Feel free to ask questions or request clarification at the end of the discussion!</string>
     <string name="java">JAVA</string>
-    <string name="is_a_popular_programming_language_that_was_first_released_by_sun_microsystems_in_1995_it_s_known_for_its_simplicity_platform_independence_and_wide_range_of_applications_it_s_widely_used_for_developing_various_types_of_software_including_web_applications_mobile_apps_desktop_applications_and_enterprise_systems">is a popular programming language that was first released by Sun Microsystems in 1995. It\'s known for its simplicity, platform independence, and wide range of applications. It\'s widely used for developing various types of software, including web applications, mobile apps, desktop applications, and enterprise systems.</string>
     <string name="here_s_a_quick_overview_of_some_key_concepts_in_java">Here\'s a quick overview of some key concepts in Java:</string>
     <string name="platform_independence_java_is_a_write_once_run_anywhere_language_this_means_that_once_you_write_a_java_program_you_can_run_it_on_any_platform_that_has_a_java_virtual_machine_jvm_the_jvm_acts_as_an_interpreter_allowing_the_java_code_to_be_executed_on_different_operating_systems">• Platform Independence: Java is a write once, run anywhere language. This means that once you write a Java program, you can run it on any platform that has a Java Virtual Machine (JVM). The JVM acts as an interpreter, allowing the Java code to be executed on different operating systems.</string>
     <string name="object_oriented_programming_java_is_an_object_oriented_programming_oop_language_this_means_that_it_revolves_around_the_concept_of_objects_which_are_instances_of_classes_objects_have_attributes_variables_and_behavior_methods_and_they_interact_with_each_other_through_method_calls">•\tObject-Oriented Programming: Java is an object-oriented programming (OOP) language. This means that it revolves around the concept of objects, which are instances of classes. Objects have attributes (variables) and behavior (methods), and they interact with each other through method calls.</string>
@@ -37,7 +32,6 @@
     <string name="exception_handling_java_has_a_built_in_exception_handling_mechanism_that_allows_you_to_catch_and_handle_errors_and_exceptional_situations_in_your_code_this_helps_in_writing_more_reliable_and_robust_programs_by_gracefully_handling_unexpected_situations">•\tException Handling: Java has a built-in exception handling mechanism that allows you to catch and handle errors and exceptional situations in your code. This helps in writing more reliable and robust programs by gracefully handling unexpected situations.</string>
     <string name="questions_you_might_asked">Questions you might asked.</string>
     <string name="is_java_a_programming_or_scripting_language">Is Java a programming or scripting language?</string>
-    <string name="what_is_the_difference_of_java_compare_to_other_programming_languages">What is the difference of Java compare to other programming languages?</string>
     <string name="what_makes_java_so_unique">What makes Java so unique?</string>
     <string name="what_makes_java_different_to_other_languages">What makes JAVA different to other languages?</string>
 
@@ -109,7 +103,6 @@
         \n<b>System.out.println</b> - It is use to print and display an output to the user.
 </string>
     <string name="now_why_don_t_we_create_our_first_java_program_shall_we_i_ll_explain_further_the_meaning_of_each_code">Now, why don’t we create our first Java program, shall we? I’ll explain further the meaning of each code.</string>
-    <string name="now_let_s_print_the_output_of_the_program_i_m_very_excited_to_see_the_result_did_you_guessed_it_right">Now let’s print the output of the program! I’m very excited to see the result, did you guessed it right?</string>
     <string name="guess_right">Now let’s print the output of the program! I’m very excited to see the result, did you guessed it right?</string>
     <string name="answer">Answer</string>
     <string name="SyntaxSystem"><b>System</b> is a built-in Java class that contains useful members, such as out, which is short for \"output\". The println() method, short for \"print line\", is used to print a value to the screen (or a file).\nLastly, each code statement must end with a semicolon (;).</string>
@@ -138,4 +131,209 @@
     <string name="what_is_the_purpose_of_comments_in_java">What is the purpose of comments in Java?</string>
     <string name="what_is_the_difference_of_a_single_line_vs_multi_line_comment">What is the difference of a single-line vs multi-line comment?</string>
     <string name="can_comments_slow_down_a_program_s_execution">Can comments slow down a program’s execution?</string>
+    <string name="operators"><b>Comparison operators:</b>\n
+•	Less than:   \u003c \n
+•	Less than or equal to:   \u003c= \n
+•	Greater than: > \n
+•	Greater than or equal to: >= \n
+•	Equal to:  == \n
+•	Not Equal to:  != \n
+\n
+<b>Logical operators:</b>\n
+•	logical AND: &amp;&amp;\n
+•	logical OR: ||\n
+•	logical NOT: !\n
+</string>
+    <string name="followingcondition">•	Use <b>if</b> to specify a block of code to be executed, if a specified condition is true\n
+•	Use <b>else</b> to specify a block of code to be executed, if the same condition is false\n
+•	Use <b>else if</b> to specify a new condition to test, if the first condition is false\n
+•	Use <b>Nested if</b> statements to specify multiple conditions and control the flow of your program.\n
+</string>
+    <string name="if_simple"> <b>Here\'s the basic syntax:</b>\n
+
+if (condition) {\n
+  \t// block of code to be executed if the condition is true\n
+}
+        </string>
+    <string name="ifexample1"><b><i>Here\'s and example for if statements:</i></b>\nif (20 > 18) {\n\tSystem.out.println("20 is greater than 18");\n}\n\n<b>Output:</b>\n20 is greater than 18\n\n<b>Example explained</b>\nIn the example above, we test two values to find out if 20 is greater than 18. If the condition is true, print some text.\n\n<b>We can also test variables:</b>\n<b>Example:</b>\nint x = 20;\nint y = 18;\nif (x > y) {\n\tSystem.out.println("x is greater than y");\n}\n\n<b>Output:</b>\nx is greater than y\n\n<b>Example explained</b>\nIn the example above we use two variables, x and y, to test whether x is greater than y (using the > operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".
+</string>
+    <string name="elseExample"><b>Here\&#39;s the basic syntax:</b>
+        \nif (condition) { \n
+        \t// block of code to be executed if the condition is true \n
+        } else { \n
+        \t// block of code to be executed if the condition is false \n
+        } \n\n
+        <i>it is a construct that enables you to specify what should happen when the condition of the if statement is false.</i> \n\n
+        <b>Example:</b> \n
+        int x = 5; \n
+        if (x &gt; 0) {\n
+        \tSystem.out.println(\&quot;x is positive\&quot;); \n
+        } else { \n
+        \tSystem.out.println(\&quot;x is not positive\&quot;); \n} \n\n
+        <b>Output:</b> \n
+        x is positive \n\n
+        <b>Example explained:</b> \n
+        In this example, if the condition x &gt; 0 is true, \&quot;x is positive\&quot; is printed. Otherwise, \&quot;x is not positive\&quot; is printed.</string>
+    <string name="elseif"><b>Here\&#39;s the basic syntax:</b> \nif (condition1) { \n
+        \t// block of code to be executed if condition1 is true \n
+        } else if (condition2) { \n
+        \t// block of code to be executed if the condition1 is false and condition2 is true \n
+        } else { \n
+        \t// block of code to be executed if the condition1 is false and condition2 is false \n
+        } \n\n
+        <i>You can have multiple else if statements to check additional conditions in a sequential manner.</i> \n\n
+        <b>Example:</b> \n
+        int x = 5; \n
+        if (x &gt; 0) { \n
+        \tSystem.out.println(\&quot;x is positive\&quot;); \n
+        } else if (x &lt; 0) { \n
+        \tSystem.out.println(\&quot;x is negative\&quot;); \n
+        } else { \n
+        \tSystem.out.println(\&quot;x is zero\&quot;); \n
+        } \n\n
+        <b>Output:</b> \n
+        x is positive \n\n
+        <b>Example explained:</b> \n
+        In this example, if x is greater than 0, \&quot;x is positive\&quot; is printed. If x is less than 0, \&quot;x is negative\&quot; is printed. Otherwise, \&quot;x is zero\&quot; is printed.</string>
+    <string name="nestedif"><b>Here\&#39;s the basic syntax:</b> \n
+        if (condition1) { \n
+        \t// code to execute if condition1 is true \n
+        \tif (condition2) { \n
+        \t// code to execute if both condition1 and condition2 are true \n
+        } else { \n
+        \t// code to execute if condition1 is true but condition2 is false } \n
+        } else { \n
+        \t// code to execute if condition1 is false \n
+        } \n\n<i>It allows you to create more complex conditional structures by checking multiple conditions and executing different blocks of code based on those conditions.</i> \n\n
+        <b>Example:</b> \n
+        int age = 20; \n
+        boolean hasLicense = true; \n
+        if (age &gt;= 18) { \n
+        \tSystem.out.println(\&quot;You are eligible to apply for a driving license.\&quot;); \n
+        \t\tif (hasLicense) { \n
+        \t\t\tSystem.out.println(\&quot;You already have a driving license.\&quot;); \n
+        \t\t} else { \n
+        \t\t\tSystem.out.println(\&quot;You don\&#39;t have a driving license yet.\&quot;); \n
+        \t}\n
+        } else { \n
+        \tSystem.out.println(\&quot;You are not eligible to apply for a driving license.\&quot;); \n
+        } \n\n<b>Output:</b> \nYou are eligible to apply for a driving license. \nYou already have a driving license. \n\n<b>Example explained:</b>\nIn this example, we have a nested if statement. The outer if statement checks if the age is greater than or equal to 18. If the condition is true, it prints the message \&quot;You are eligible to apply for a driving license.\&quot; Then, it enters the inner if statement. The inner if statement checks if the boolean variable hasLicense is true or false. If hasLicense is true, it prints the message \&quot;You already have a driving license.\&quot; If hasLicense is false, it prints the message \&quot;You don\&#39;t have a driving license yet.\&quot; If the age condition in the outer if statement is false, it skips the inner if statement and executes the code in the else block of the outer if statement, printing the message \&quot;You are not eligible to apply for a driving license.\&quot;</string>
+    <string name="three_primary_loop">• The <b>for</b> loop is commonly used when you know the number of iterations in advance. \n
+        • The <b>while</b> loop is suitable when the number of iterations is not known in advance, and the loop continues until a specified condition becomes false. \n
+        • The <b>do-while</b> loop is similar to the while loop, but it guarantees that the loop body is executed at least once. \n
+        • The <b>foreach</b> loop is specifically designed for iterating over elements of an array or a collection.</string>
+    <string name="forloop"><b>Here\'s the basic syntax:</b> \n
+        for (initialization; condition; iteration) {\n
+        \t// code to be executed in each iteration \n
+        }</string>
+    <string name="iterate"><b>Example:</b> \n
+        for (int i = 1; i &lt;= 5; i++) { \n
+        \tSystem.out.println(\&quot;Iteration: \&quot; + i);\n
+        }\n
+        \n
+        <b>Output:</b> \n
+        Iteration: 1 \n
+        Iteration: 2 \n
+        Iteration: 3 \n
+        Iteration: 4 \n
+        Iteration: 5 \n\n
+        <b>Example explained:</b>
+        In this example, the for loop iterates from i = 1 to i \u003c= 5, incrementing i by 1 after each iteration. The loop body consists of a single statement that prints the iteration number.</string>
+    <string name="while_loop"><b>Here\'s the basic syntax:</b> \n(condition) {\n
+        \t// code to be executed in each iteration \n
+        }</string>
+    <string name="whileloopex"><b>Example:</b> \n
+        int count = 1; \n
+        while (count &lt;= 5) { \n
+        \tSystem.out.println(\&quot;Count: \&quot; + count);\n
+        \tcount++; \n
+        }\n
+        \n
+        <b>Output:</b> \n
+        Count: 1 \n
+        Count: 2 \n
+        Count: 3 \n
+        Count: 4 \n
+        Count: 5 \n
+        \n
+        <b>Example explained:</b> \n
+        the while loop starts with the condition count &lt;= 5. The loop body will execute as long as the condition is true. Inside the loop, the current value of count is printed using System.out.println(), and then count is incremented by 1 (count++). This ensures that the loop will eventually terminate when count becomes greater than 5.</string>
+    <string name="do_while"><b>Here\'s the basic syntax:</b> \n
+        do { \n
+        \t// code to be executed in each iteration \n
+        }while (condition</string>
+    <string name="do_while_ex"><b>Example:</b> \n
+        import java.util.Scanner; \n\n
+        public class DoWhileLoopExample { \n
+        \tpublic static void main(String[] args) { \n
+        \t\tScanner scanner = new Scanner(System.in); \n
+        \t\tint number; \n\n
+        \t\tdo { \n
+        \t\t\tSystem.out.print(\&quot;Enter a positive number (0 to exit): \&quot;); \n
+        \t\t\tnumber = scanner.nextInt(); \n\n
+        \t\t\tif (number &gt; 0) { \n
+        \t\t\t\tSystem.out.println(\&quot;You entered: \&quot; + number); \n
+        \t\t\t} else { \n
+        \t\t\t\tSystem.out.println(\&quot;Invalid number!\&quot;); \n
+        \t\t} \n
+        \t} while (number != 0); \n\n
+        \t\tSystem.out.println(\&quot;Loop exited. Goodbye!\&quot;); \n
+        \t\tscanner.close(); \n
+        \t} \n
+        } \n\n
+        <b>Output:</b> \n
+        Enter a positive number (0 to exit): 5 \n
+        You entered: 5 \n
+        Enter a positive number (0 to exit): -2 \n
+        Invalid number! \n
+        Enter a positive number (0 to exit): 10 \n
+        You entered: 10 \n
+        Enter a positive number (0 to exit): 0 \n
+        Loop exited. Goodbye! \n\n
+        <b>Example explained:</b> \n
+        We use a do-while loop to repeatedly prompt the user to enter a positive number. The loop continues until the user enters 0 to exit the program.</string>
+    <string name="foreach"><b>Here\'s the basic syntax: </b>\n
+        for (elementDataType element : collection) { \n
+        \t// code to be executed in each iteration \n
+        }</string>
+    <string name="foreach_example"><b>Example:</b> \n
+        int[] numbers = {1, 2, 3, 4, 5}; \n
+        for (int number : numbers) { \n
+        \tSystem.out.println(number); \n
+        } \n\n
+        <b>Output:</b> \n
+        1 \n
+        2 \n
+        3 \n
+        4 \n
+        5 \n
+        \n
+        <b>Example explained:</b> \n
+        We have an array called numbers containing integers. The foreach loop iterates over each element in the array, assigning it to the variable number. The loop body then executes, which in this case simply prints the value of number using System.out.println().</string>
+    <string name="TwoTypesOfDataTypes"><b><i>Primitive data types include the following:</i></b> \n
+        byte, short, int, long, float, double, boolean, and char. \n
+        <b><i>Non-Primitive data types include the following:</i></b> \n
+        Strings, Arrays, and Classes.</string>
+    <string name="DataTypesTwoCategories"><b>Primitive Data Types:</b>\n
+        <i>int: Used to store whole numbers.</i> \n
+        int myNumber = 42; \n\n
+        <i>double: Used to store decimal numbers.</i> \n
+        double myDecimalNumber = 3.14159; \n\n
+        <i>boolean: Used to store true/false values.</i> \n
+        boolean isTrue = true; \n\n
+        <i>char: Used to store a single character.</i>\n
+        char myChar = \&#39;A\&#39;; \n\n
+        <b>Reference Data Types:</b>\n
+        <i>String: Used to store sequences of characters. </i>\n
+        String myName = \&quot;John Doe\&quot;; \n\n
+        <i>Array: Used to store a collection of elements of the same type. </i>\n
+        int[] numbers = {1, 2, 3, 4, 5}; \n\n
+        <i>Object: Used to store instances of user-defined classes.</i> \n
+        Date today = new Date(); \n\n
+        <i>Class: Used to store the definition of a class. </i>\n
+        Class&lt;?&gt; myClass = MyClass.class; \n\n
+        <i>Interface: Used to store the definition of an interface. </i>\n
+        interface MyInterface { \n
+        \tvoid myMethod(); \n
+        }</string>
 </resources>

@@ -14,8 +14,8 @@ import care_fragments.QuizFragment;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
-    HomeFragment homeFragment = new HomeFragment();
-    QuizFragment quizFragment = new QuizFragment();
+    final HomeFragment homeFragment = new HomeFragment();
+    final QuizFragment quizFragment = new QuizFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -23,16 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
-                if (item.getItemId() == R.id.Home) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
-                } else if (item.getItemId()==R.id.Quiz) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container,quizFragment).commit();
-                }
-                return true;
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.Home) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+            } else if (item.getItemId()==R.id.Quiz) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,quizFragment).commit();
             }
+            return true;
         });
     }
 }
