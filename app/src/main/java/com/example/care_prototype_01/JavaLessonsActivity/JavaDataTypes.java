@@ -25,6 +25,18 @@ public class JavaDataTypes extends AppCompatActivity {
         btn_DYK_1.setOnClickListener(view ->
                 openDYK1()
         );
+        btn_question1 = findViewById(R.id.btnquestion1);
+        btn_question1.setOnClickListener(view ->
+                OpenQuestion1()
+        );
+        btn_question2 = findViewById(R.id.btnquestion2);
+        btn_question2.setOnClickListener(view ->
+                OpenQuestion2()
+        );
+        btn_question3 = findViewById(R.id.btnquestion3);
+        btn_question3.setOnClickListener(view ->
+                OpenQuestion3()
+        );
     }
 
     private void openDYK1() {
@@ -32,6 +44,39 @@ public class JavaDataTypes extends AppCompatActivity {
         builder.setTitle("Did you know?")
                 .setIcon(R.drawable.codey_java_dyk)
                 .setMessage("Did you know that in Java, there are several built-in data types that you can use to store different kinds of values. ")
+                .setPositiveButton("Okay", (dialogInterface, i) -> {
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        question_sounds.start();
+    }
+    private void OpenQuestion1() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
+        builder.setTitle("What is the data type used to store whole numbers in Java?\n")
+                .setIcon(R.drawable.codey_java_dyk)
+                .setMessage("The data type used to store whole numbers in Java is the \"int\" data type.\n")
+                .setPositiveButton("Okay", (dialogInterface, i) -> {
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        question_sounds.start();
+    }
+    private void OpenQuestion2() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
+        builder.setTitle("What is the data type used to store decimal numbers with single precision in Java?\n")
+                .setIcon(R.drawable.codey_java_dyk)
+                .setMessage("The data type used to store decimal numbers with single precision in Java is the \"float\" data type.\n")
+                .setPositiveButton("Okay", (dialogInterface, i) -> {
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        question_sounds.start();
+    }
+    private void OpenQuestion3() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
+        builder.setTitle("What is the data type used to store a single character in Java?\n")
+                .setIcon(R.drawable.codey_java_dyk)
+                .setMessage("The data type used to store a single character in Java is the \"char\" data type.\n")
                 .setPositiveButton("Okay", (dialogInterface, i) -> {
                 });
         AlertDialog alertDialog = builder.create();

@@ -83,19 +83,33 @@
             android:fontFamily="@font/lionel"
             android:text="Data types are classified into two categories:"
             android:textColor="#000000"
-            android:textSize="16sp"
 
+            android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lionel"
+            android:text="A data type is a collection of values and the operations that can be performed on those values. In Java, the primitive data types you've been using are augmented by substantial libraries of reference types designed for a wide range of applications."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/callout_background"
             android:fontFamily="@font/lionel"
@@ -103,11 +117,10 @@
             android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
             app:layout_constraintTop_toBottomOf="@+id/textView10"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
-
 
         <Button
             android:id="@+id/btndyk1"
@@ -151,38 +164,11 @@
             android:fontFamily="@font/lionel"
             android:text="Data types are classified into two categories:"
             android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView15"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/lionel"
-            android:text="@string/javadoc_comments"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView36" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lionel"
-            android:text="A data type is a collection of values and the operations that can be performed on those values. In Java, the primitive data types you've been using are augmented by substantial libraries of reference types designed for a wide range of applications."
-            android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <androidx.constraintlayout.widget.Guideline
@@ -213,144 +199,19 @@
             app:layout_constraintTop_toBottomOf="@+id/textView8"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/lionel"
-            android:text="@string/here_is_an_example_of_a_multi_line_comment"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView30"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/lionel"
-            android:text="@string/javadoc_comments_usually_begin_with_and_end_with_and_can_include_various_tags_and_annotations_that_provides_detailed_information_about_the_documented_elements"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView33"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/callout_background"
-            android:fontFamily="@font/lionel"
-            android:text="@string/this_comment_consists_of_several_lines_it_may_vary_according_to_the_preference_of_the_developer"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView35"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lionel"
-            android:text="@string/a_javadoc_comments_are_special_type_of_comments_that_is_used_in_java_to_generate_automatic_documentation_it_is_usually_written_in_a_specific_format_that_can_be_used_to_document_program_elements_such_as_classes_interfaces_methods_fields_etc_this_is_then_processed_by_the_javadoc_tool_which_later_on_creates_html_based_documentation_files"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView37"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/lionel"
-            android:text="@string/here_is_an_example_of_a_javadoc_comment"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView38"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView40"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/callout_background"
-            android:fontFamily="@font/lionel"
-            android:text="@string/javadoc"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView39"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView41"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/callout_background"
-            android:fontFamily="@font/lionel"
-            android:text="@string/always_remember_that_it_is_a_good_practice_to_include_comments_in_the_code_to_improve_its_readability_and_maintainability_as_well_as_easily_identify_the_errors_when_the_program_stops_producing_output_and_needs_to_be_debug_by_the_developer"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView8"
-            app:layout_constraintTop_toTopOf="@+id/imageView8"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="50dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView40"
-            app:srcCompat="@drawable/codey_java" />
-
         <ImageView
             android:id="@+id/imageView13"
             android:layout_width="54dp"
             android:layout_height="74dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/codey_image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.003"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView41"
-            app:layout_constraintVertical_bias="0.07"
+            app:layout_constraintTop_toBottomOf="@+id/textView30"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/codey_java_dyk" />
 
         <TextView
@@ -376,7 +237,7 @@
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/light_gray"
             android:fontFamily="@font/lionel"
-            android:text="@string/what_is_the_purpose_of_comments_in_java"
+            android:text="What is the data type used to store whole numbers in Java? "
             android:textAllCaps="false"
             android:textColor="#000000"
             android:textStyle="bold"
@@ -392,7 +253,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_gray"
             android:fontFamily="@font/lionel"
-            android:text="@string/what_is_the_difference_of_a_single_line_vs_multi_line_comment"
+            android:text="What is the data type used to store decimal numbers with single precision in Java? "
             android:textAllCaps="false"
             android:textColor="#000000"
             android:textStyle="bold"
@@ -409,7 +270,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_gray"
             android:fontFamily="@font/lionel"
-            android:text="@string/can_comments_slow_down_a_program_s_execution"
+            android:text="What is the data type used to store a single character in Java? "
             android:textAllCaps="false"
             android:textColor="#000000"
             android:textStyle="bold"

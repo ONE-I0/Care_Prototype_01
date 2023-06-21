@@ -313,7 +313,7 @@ if (condition) {\n
     <string name="TwoTypesOfDataTypes"><b><i>Primitive data types include the following:</i></b> \n
         byte, short, int, long, float, double, boolean, and char. \n
         <b><i>Non-Primitive data types include the following:</i></b> \n
-        Strings, Arrays, and Classes.</string>
+        Strings, Arrays, Object, Interface, and Classes.</string>
     <string name="DataTypesTwoCategories"><b>Primitive Data Types:</b>\n
         <i>int: Used to store whole numbers.</i> \n
         int myNumber = 42; \n\n
