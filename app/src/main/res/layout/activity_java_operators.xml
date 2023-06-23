@@ -1,21 +1,298 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JavaLessonsActivity.JavaOperators">
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Operators"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".JavaLessonsActivity.JavaDataTypes">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="operators"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/codey_java" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Hi it's Codey again, we'll talk about the operators of java."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Operators"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Java provides a variety of operators that are divided into distinct groups according to how they function:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Operators in Java are special symbols or characters that carry out predefined operations on one or more operands (variables, constants, or expressions) to produce a result. You may manipulate and calculate on data, compare values, assign values, and do many other things with operators. "
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/operatorstypes"
+            android:background="@drawable/callout_background"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="In Java, operators are essential for carrying out numerous calculations, comparisons, and logical operations within the code. In expressing complex calculations and regulating the program's flow, they are essential."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView59"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <Button
+            android:id="@+id/btndyk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/lionelButton"
+            android:shadowColor="#575757"
+            android:text="@string/dyk"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView60"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/Alloperators"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+	        android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="I'm glad im happy to provide you some examples."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/imageView27"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27"
+            app:layout_constraintVertical_bias="0.046"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions_you_might_asked"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="@+id/imageView31"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <Button
+            android:id="@+id/btnquestion1"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:theme="@style/lionelButton"
+            android:text="What is the arithmetic operator used for addition in Java?"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+        <Button
+            android:id="@+id/btnquestion2"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/lionelButton"
+            android:text="What is the assignment operator used to assign a value to a variable in Java?"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/btnquestion1"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btnquestion3"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/lionelButton"
+            android:text="What is the comparison operator used to check if two values are equal in Java?"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/btnquestion2" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView62"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

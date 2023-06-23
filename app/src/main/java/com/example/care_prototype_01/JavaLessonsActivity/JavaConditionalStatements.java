@@ -27,7 +27,7 @@ public class JavaConditionalStatements extends AppCompatActivity {
         );
         btn_DYK_2 = findViewById(R.id.btndyk2);
         btn_DYK_2.setOnClickListener(view ->
-                openDYK1()
+                openDYK2()
         );
         btn_question1 = findViewById(R.id.btnquestion1);
         btn_question1.setOnClickListener(view ->

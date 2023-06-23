@@ -2,5 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Care_Prototype_01" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:forceDarkAllowed" tools:targetApi="q" >false</item>
+        <item name="android:textViewStyle">@style/lionelTextView</item>
+    </style>
+
+    <style name="lionelTextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/font</item>
     </style>
 </resources>

@@ -1,21 +1,839 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JavaLessonsActivity.JavaArray">
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Arrays"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".JavaLessonsActivity.JavaArray">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/font"
+            android:text="Array"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/codey_java" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:fontFamily="@font/lionel"
+            android:text="Did you find the different lessons of Java programming language engaging and interesting to study? Now, let’s move on to the last discussion and learn the basics of Java Arrays!"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/codey_java" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:fontFamily="@font/lionel"
+            android:text="What comes to your mind when you mentioned the word “Array”?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            app:layout_constraintTop_toTopOf="@+id/imageView32"
+            app:layout_constraintVertical_bias="0.441"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/intro_array"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <Button
+            android:id="@+id/btndyk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/lionelButton"
+            android:text="@string/dyk"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/stringvariables"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/imageView27"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="46dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/stringvariable1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView33"
+            app:layout_constraintTop_toTopOf="@+id/imageView33"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView33"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/intvariable"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView34"
+            app:layout_constraintTop_toTopOf="@+id/imageView34"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView34"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/numberarray"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView35"
+            app:layout_constraintTop_toTopOf="@+id/imageView35"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView35"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/intnumbers"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView36"
+            app:layout_constraintTop_toTopOf="@+id/imageView36"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Now let’s try printing out our initiated array with its index value and elements:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView37"
+            app:layout_constraintTop_toTopOf="@+id/imageView37"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView36"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/stringvariable4"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView37"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textview1"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Let’s try changing a value of a specific element by referring to the index number:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toTopOf="@+id/imageView38"
+            app:layout_constraintVertical_bias="0.558"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/stringvariable5"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView38"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/twotypesofarray"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Single Dimensional Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/singleArrayJava"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView95"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Multidimensional Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView96" />
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/multiArrayJava"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView97"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView98"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Why don’t we differentiate the two, shall we? Be right back, I will generate some codes:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
+            app:layout_constraintTop_toTopOf="@+id/imageView39"
+            app:layout_constraintVertical_bias="0.558"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/Arraydifference"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView101"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="For-each Loop on Java Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView102" />
+
+        <TextView
+            android:id="@+id/textView104"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Did you know that you can use a loop statement in an array? We can actually use for-each loop to print out Java array elements one by one. It holds an array element in a variable, then executes the body of the loop."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView103"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+        <TextView
+            android:id="@+id/textView105"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/forArray"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView104"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+        <TextView
+            android:id="@+id/textView106"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/foreachlooparray"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView105"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <TextView
+            android:id="@+id/textView107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Passing Array to a Method in Java"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView106" />
+
+        <TextView
+            android:id="@+id/textView108"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Passing array to a method in Java is a method to reuse the same logic on any array."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView107"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView109"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/callout_background"
+            android:text="@string/passingarray"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView108"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Anonymous Array in Java"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView109" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Java supports a feature called “Anonymous Array” and it doesn’t need to declare an array while passing an array to method."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView110"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/light_gray"
+            android:fontFamily="@font/lionel"
+            android:text="@string/anonymousarray"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView111"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Returning Array from the Method"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView112" />
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="We can return an array from the method in Java."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView113"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView115"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/callout_background"
+            android:text="@string/returnarray"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView114"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ArrayIndexOutOfBoundsException"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView115" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is a function that lets the Java Virtual Machine (JVM) throws an ArrayIndexOutOfBoundsException if any length of the array is negative, equal to the array size or greater than the array size while traversing the array."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView116"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView118"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/arrayexception"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView117"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Jagged Array in Java"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/textView118" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jagged Array is an array of arrays with different numbers of columns in a 2D array."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView119"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/callout_background"
+            android:text="@string/jaggedarray"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView120"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/codey_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView121"
+            app:layout_constraintVertical_bias="0.07"
+            app:srcCompat="@drawable/codey_java_dyk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions_you_might_asked"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView40"
+            app:layout_constraintTop_toTopOf="@+id/imageView40"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <Button
+            android:id="@+id/btnquestion1"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:theme="@style/lionelButton"
+            android:text="What is the class name of Java array?"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView40" />
+
+        <Button
+            android:id="@+id/btnquestion2"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/lionelButton"
+            android:text="Can we copy a Java Array?"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/btnquestion1"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btnquestion3"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/lionelButton"
+            android:text="Can we clone an Array in Java?"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/btnquestion2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

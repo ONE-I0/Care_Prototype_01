@@ -318,8 +318,7 @@
         android:contentDescription="@string/codey_image" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="183dp"
+	    android:layout_width="183dp"
         android:layout_height="116dp"
         android:fontFamily="@font/lionel"
         android:textColor="#000000"
