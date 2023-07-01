@@ -2,12 +2,15 @@ package com.example.care_prototype_01.JavaLessonsActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.care_prototype_01.R;
+
 
 public class JavaArray extends AppCompatActivity {
     Button btn_DYK_1,btn_DYK_2,btn_question1, btn_question2, btn_question3;;
@@ -16,6 +19,48 @@ public class JavaArray extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_array);
+
+        // Apply desired text size to the HTML content
+        int textSizeInSp = 50; // Adjust the text size as needed
+
+        //jagged array
+        WebView codeWebViewJagged = findViewById(R.id.java_jagged_text);
+        String formattedCodeJagged = getString(R.string.jagged_array_code);
+        //Exception array
+        WebView codeWebViewArrayException = findViewById(R.id.java_array_exception_text);
+        String formattedCodeArrayException = getString(R.string.java_array_exception_code);
+
+
+        String htmlContentJagged = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", textSizeInSp, formattedCodeJagged, formattedCodeArrayException);
+        String htmlContentException = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", textSizeInSp, formattedCodeArrayException);
+
+        // Load the HTML content into the WebView
+        codeWebViewJagged.loadDataWithBaseURL(null, htmlContentJagged, "text/html", "UTF-8", null);
+        codeWebViewArrayException.loadDataWithBaseURL(null, htmlContentException, "text/html", "UTF-8", null);
+
+        // Set the background color of the WebView
+        codeWebViewJagged.setBackgroundColor(0xd3d3d3); // Black color
+        codeWebViewArrayException.setBackgroundColor(0xd3d3d3); // Black color
+
+        // Set rounded corners to the WebView button
+        codeWebViewJagged.setBackgroundResource(R.drawable.callout_background);
+        codeWebViewArrayException.setBackgroundResource(R.drawable.callout_background);
+
+        // Enable horizontal scrolling for the WebView
+        WebSettings webSettings = codeWebViewJagged.getSettings();
+        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+
+        //websettings for array execption
+        WebSettings webSettingsExecption = codeWebViewArrayException.getSettings();
+        webSettingsExecption.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+        webSettingsExecption.setLoadWithOverviewMode(true);
+        webSettingsExecption.setUseWideViewPort(true);
+
+
+
+
 
 
         //declare for the sounds

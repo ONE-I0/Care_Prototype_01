@@ -688,21 +688,20 @@
             app:layout_constraintTop_toBottomOf="@+id/textView116"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
-        <TextView
-            android:id="@+id/textView118"
+        <HorizontalScrollView
+            android:id="@+id/hv1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/arrayexception"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView117"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
+            app:layout_constraintTop_toBottomOf="@+id/textView117">
+            <WebView
+                android:id="@+id/java_array_exception_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
 
         <TextView
             android:id="@+id/textView119"
@@ -714,7 +713,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@id/textView118" />
+            app:layout_constraintTop_toBottomOf="@id/hv1" />
 
         <TextView
             android:id="@+id/textView120"
@@ -730,21 +729,24 @@
             app:layout_constraintTop_toBottomOf="@+id/textView119"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
-        <TextView
-            android:id="@+id/textView121"
+        <HorizontalScrollView
+            android:id="@+id/hv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/jaggedarray"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView120"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
+            app:layout_constraintTop_toBottomOf="@+id/textView120">
+
+            <WebView
+                android:id="@+id/java_jagged_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                tools:ignore="WebViewLayout"
+                />
+        </HorizontalScrollView>
 
         <ImageView
             android:id="@+id/imageView40"
@@ -756,7 +758,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView121"
+            app:layout_constraintTop_toBottomOf="@+id/hv"
             app:layout_constraintVertical_bias="0.07"
             app:srcCompat="@drawable/codey_java_dyk" />
 

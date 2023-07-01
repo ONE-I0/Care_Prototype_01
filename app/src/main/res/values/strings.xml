@@ -375,9 +375,9 @@ if (condition) {\n
         boolean isLessThanOrEqual = (4 &lt;= 6); // isLessThanOrEqual = true</string>
     <string name="intro_array"><i>Normally, an array is a group of similar-type elements with a contiguous memory location.</i> \n\nJava Array is a data structure that is used to store multiple and fixed-size of sequence values of elements in a single variable of the same type, instead of declaring separate variables for each value. In short, it is a container object that holds a definite number of values of any Java elements and data types. \n\n
         <i>Arrays have these following distinct characteristics:</i> \n
-        \t\t<b>•Fixed Size:</b> When an array is created, the allocation of size is fixed and cannot be changed so before declaring, specify the size that needs to be created before declaring the array. \n
-        \t\t<b>•Indexed Elements:</b> All elements that is declared in array has a unique index starting from 0, and these indicates its position within the array. It can be accessible through their index. \n
-        \t\t<b>•Contiguous Memory Allocation:</b> All elements of array are stored in contiguous memory locations which allows for a more efficient access when calling out the index of element values. \n
+        <b>•Fixed Size:</b> When an array is created, the allocation of size is fixed and cannot be changed so before declaring, specify the size that needs to be created before declaring the array. \n
+        <b>•Indexed Elements:</b> All elements that is declared in array has a unique index starting from 0, and these indicates its position within the array. It can be accessible through their index. \n
+        <b>•Contiguous Memory Allocation:</b> All elements of array are stored in contiguous memory locations which allows for a more efficient access when calling out the index of element values. \n
         In Java, array is an object of a dynamically generated class. Java array inherits the Object class, and implements the Serializable as well as Cloneable interfaces. We can also store primitive values or objects. Moreover, Java provides the feature of anonymous arrays. \n\n
         </string>
     <string name="stringvariables">When you declare an array, always define the variable type with square brackets, like this: \n
@@ -404,7 +404,7 @@ if (condition) {\n
     <string name="singleArrayJava">It is also known as one-dimensional array, these are the simplest form of arrays that anyone can easily understand. It consists of a linear sequence of elements, all of the same type, and arranged in a single row. Commonly used to store and manipulate collection of values or objects, Single Dimensional Array is done using a single index. The declaration syntax is as follows:\n
         <b>dataType[] arrayName;</b></string>
     <string name="multiArrayJava">Multidimensional arrays are arrays inside of arrays, where elements can be an array itself. It is frequently used to represent multidimensional tabular or matrix-like data structures. Rows and columns in a 2D array and rows, columns, and layers in a 3D array are examples of this. To access elements, positions must be specified in multiple indices in each dimension. The declaration syntax is as follows:\n<b>dataType[][] arrayName;</b></string>
-    <string name="twotypesofarray"><big><b>2 types of Array in Java:</b></big> \n •Single Dimensional Array \n •Multidimensional Array</string>
+    <string name="twotypesofarray"><b>2 types of Array in Java:</b>\n • Single Dimensional Array \n • Multidimensional Array</string>
     <string name="Arraydifference">// Single-dimensional array\nint[] numbers = { 1, 2, 3, 4, 5 };\n\n
     // Accessing a single-dimensional array element\nint value = numbers[2];  // Retrieves the value 3\n\n
     // Multidimensional array (2D)\nint[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 } };\n\n
@@ -501,57 +501,66 @@ if (condition) {\n
     60\n
 </string>
 
-    <string name="arrayexception">
-    <b>Example:</b>\n
-    //Java Program to demonstrate the case of\n
-    //ArrayIndexOutOfBoundsException in a Java Array.\n
-    public class TestArrayException{\n
-    \tpublic static void main(String args[]){\n
-    \t\tint arr[]={50,60,70,80};\n
-    \t\tfor(int i=0;i&#60;=arr.length;i++){\n
-    \t\t\tSystem.out.println(arr[i]);\n
-    \t\t}\n
-    \t}\n
-    }\n\n
-    <b>Output:</b>\n
-    Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4\n
-    \tat TestArrayException.main(TestArrayException.java:5)\n
-    50\n
-    60\n
-    70\n
-    80\n
+    <string name="java_array_exception_code">
+    <![CDATA[
+        <pre>
+<font color="#000000"><tt><b>Example:</b></tt></font>
+<font color="#000000"><tt>//Java Program to demonstrate the case of\n</tt></font>
+<font color="#000000"><tt>//ArrayIndexOutOfBoundsException in a Java Array.\n</tt></font>
+<font color="#0000FF"><tt>public class</tt></font> TestArrayException{\n
+<font color="#008000"><tt>\tpublic static void</tt></font> main(String args[]){\n
+<font color="#0000FF"><tt>\t\tint</tt></font> arr[]={50,60,70,80};\n
+<font color="#0000FF"><tt>\t\tfor</tt></font>(<font color="#0000FF"><tt>int</tt></font> i=0;i&#60;=arr.length;i++){<font color="#808080"><tt>\t// Note: it should be i &#60; arr.length instead of i &#60;= arr.length</tt></font>\n
+<font color="#0000FF"><tt>\t\t\tSystem.out.println</tt></font>(arr[i]);\n
+<font color="#0000FF"><tt>\t\t}</tt></font>\n
+<font color="#0000FF"><tt>\t}</tt></font>\n
+<font color="#0000FF"><tt>}</tt></font>\n
+        </pre>
+<font color="#000000"><tt>\t<b>Output:</b></tt></font>
+<font color="#0000FF"><tt>\tException in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4\n</tt></font>
+<font color="#808080"><tt>\t\tat TestArrayException.main(TestArrayException.java:5)</tt></font>\n
+<font color="#0000FF"><tt>\t50\n</tt></font>
+<font color="#0000FF"><tt>\t60\n</tt></font>
+<font color="#0000FF"><tt>\t70\n</tt></font>
+<font color="#0000FF"><tt>\t80\n</tt></font>
+    ]]>
 </string>
-
-    <string name="jaggedarray">
-    <b>Example</b>\n
-    //Java Program to illustrate the jagged array\n
-    class TestJaggedArray{\n
-        public static void main(String[] args){\n
-            //declaring a 2D array with odd columns\n
-            int arr[][] = new int[3][];\n
-            arr[0] = new int[3];\n
-            arr[1] = new int[4];\n
-            arr[2] = new int[2];\n
-            //initializing a jagged array\n
-            int count = 0;\n
-            for (int i=0; i&#60;arr.length; i++)\n
-                for(int j=0; j&#60;arr[i].length; j++)\n
-                    arr[i][j] = count++;\n
-
-            //printing the data of a jagged array\n
-            for (int i=0; i&#60;arr.length; i++){\n
-                for (int j=0; j&#60;arr[i].length; j++){\n
-                    System.out.print(arr[i][j]+" ");\n
-                }\n
-                System.out.println(); //new line\n
-            }\n
-        }\n
-    }\n\n
-    <b>Output:</b>\n
-    0 1 2\n
-    3 4 5 6\n
-    7 8\n
-</string>
+    <string name="jagged_array_code">
+        <![CDATA[
+            <pre>
+        <font color="#000000"><tt><b>Example:</b></tt></font>
+        <font color="#000000"><tt>//Java Program to illustrate the jagged array\n</tt></font>
+        <font color="#0000FF"><tt>class</tt></font> TestJaggedArray {\n
+        \t<font color="#008000"><tt>public static void</tt></font> main(String[] args) {\n
+        \t\t<font color="#808080"><tt>//declaring a 2D array with odd columns\n</tt></font>
+        \t\t<font color="#0000FF"><tt>int</tt></font> arr[][] = <font color="#000000"><tt>new</tt></font> <font color="#0000FF"><tt>int</tt></font>[3][];\n
+        \t\t<font color="#0000FF"><tt>arr[0] =</tt></font> <font color="#000000"><tt>new</tt></font> <font color="#0000FF"><tt>int</tt></font>[3];\n
+        \t\t<font color="#0000FF"><tt>arr[1] =</tt></font> <font color="#000000"><tt>new</tt></font> <font color="#0000FF"><tt>int</tt></font>[4];\n
+        \t\t<font color="#0000FF"><tt>arr[2] =</tt></font> <font color="#000000"><tt>new</tt></font> <font color="#0000FF"><tt>int</tt></font>[2];\n
+        \t\t<font color="#808080"><tt>//initializing a jagged array\n</tt></font>
+        \t\t<font color="#0000FF"><tt>int</tt></font> count = 0;\n
+        \t\t<font color="#0000FF"><tt>for</tt></font> (<font color="#0000FF"><tt>int</tt></font> i = 0; i &lt; arr.length; i++) {\n
+        \t\t\t<font color="#0000FF"><tt>for</tt></font> (<font color="#0000FF"><tt>int</tt></font> j = 0; j &lt; arr[i].length; j++) {\n
+        \t\t\t\t<font color="#0000FF"><tt>arr[i][j] = count++;</tt></font>\n
+        \t\t\t}\n
+        \t\t}\n\n
+        \t\t<font color="#808080"><tt>//printing the data of a jagged array\n</tt></font>
+        \t\t<font color="#0000FF"><tt>for</tt></font> (<font color="#0000FF"><tt>int</tt></font> i = 0; i &lt; arr.length; i++) {\n
+        \t\t\t<font color="#0000FF"><tt>for</tt></font> (<font color="#0000FF"><tt>int</tt></font> j = 0; j &lt; arr[i].length; j++) {\n
+        \t\t\t\t<font color="#0000FF"><tt>System.out.print(arr[i][j] + " ");</tt></font>\n
+        \t\t\t}\n
+        \t\t\t<font color="#0000FF"><tt>System.out.println();</tt></font> <font color="#808080"><tt>//new line</tt></font>\n
+        \t\t}\n
+        \t<font color="#0000FF"><tt>}</tt></font>\n
+        <font color="#0000FF"><tt>}</tt></font>
+                </pre>
+                <br />
+                <font color="#008000"><tt>Output:</tt></font>\n
+                <font color="#008000"><tt>0 1 2 </tt></font>\n
+                <font color="#008000"><tt>3 4 5 6 </tt></font>\n
+                <font color="#008000"><tt>7 8 </tt></font>
+            ]]>
+    </string>
 
 
 </resources>
