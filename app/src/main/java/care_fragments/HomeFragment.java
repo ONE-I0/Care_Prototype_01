@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.care_prototype_01.MainActivity;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.CSharpLanguageActivity;
 import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
 import com.example.care_prototype_01.care_languages.PythonLanguageActivity;
 
@@ -28,6 +29,15 @@ public class HomeFragment extends Fragment {
         ImageButton btnPython = view.findViewById(R.id.btnPython);
         MainActivity mainActivity2 = (MainActivity) getActivity();
 
+        ImageButton btnC = view.findViewById(R.id.btnC);
+        MainActivity mainActivity3 = (MainActivity) getActivity();
+        btnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent OpenPythonLessons = new Intent(getActivity(), CSharpLanguageActivity.class);
+                startActivity(OpenPythonLessons);
+            }
+        });
         btnPython.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

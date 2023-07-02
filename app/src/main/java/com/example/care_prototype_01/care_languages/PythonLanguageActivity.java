@@ -6,6 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.care_prototype_01.PythonLessons.PythonComments;
 import com.example.care_prototype_01.PythonLessons.PythonIntroduction;
 import com.example.care_prototype_01.R;
 
@@ -17,10 +18,15 @@ public class PythonLanguageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_python_language);
 
         Button btnPythonIntroduction =findViewById(R.id.btnIntroduction);
+        Button btnPythonComments =findViewById(R.id.btnComments);
 
         btnPythonIntroduction.setOnClickListener(view -> {
-            Intent OpenJavaIntroduction = new Intent(PythonLanguageActivity.this, PythonIntroduction.class);
-            startActivity(OpenJavaIntroduction);
+            Intent OpenPythonIntroduction = new Intent(PythonLanguageActivity.this, PythonIntroduction.class);
+            startActivity(OpenPythonIntroduction);
+        });
+        btnPythonComments.setOnClickListener(view -> {
+            Intent OpenPythonComments = new Intent(PythonLanguageActivity.this, PythonComments.class);
+            startActivity(OpenPythonComments);
         });
     }
 }

@@ -81,6 +81,7 @@
         app:srcCompat="@drawable/java_icon" />
 
     <ImageButton
+        android:id="@+id/btnC"
 	    android:layout_width="318dp"
         android:layout_height="110dp"
         android:layout_marginTop="8dp"

@@ -41,7 +41,7 @@ public class JavaSyntax extends AppCompatActivity {
                 openANS_1()
         );
         //this will open the did you know in syntax
-        btn_DYK_1 = findViewById(R.id.btdyk1);
+        btn_DYK_1 = findViewById(R.id.python_introduction_DYK1);
         btn_DYK_1.setOnClickListener(view ->
                 openDYK1()
         );

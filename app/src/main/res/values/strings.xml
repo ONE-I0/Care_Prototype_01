@@ -563,4 +563,41 @@ if (condition) {\n
     </string>
 
 
+    <!--__________________________PYTHON STRINGS____________________________________-->
+    <string name="codey_python_cut">codey_python_cut</string>
+    <string name="let_s_begin_the_introduction_of_python_i_m_so_excited_to_learn_this_come_and_join_with_me">Let’s begin the introduction of Python. I’m so excited to learn this, come and join with me!</string>
+
+    <!--______________________INTRODUCTIONS STRINGS______________________-->>
+    <string name="python_introduction">Python is a popular high-level programming language with clean syntax that is easy to learn. It was created by Guido van Rossum and first released in 1991. Python is known for its simplicity and readability, and ability to run on all desktop computers and even mobile devices! It is a versatile language that can be used on a wide range of applications, including web and software development, data analysis, artificial intelligence, scientific computing, automation, and more! Thus, it is dubbed as the “easiest programming language in the world!”</string>
+    <string name="python_feature_simple_syntax"><b>Simple and clear syntax:</b> Python places a strong emphasis on the readability of its code. Instead of utilizing braces or keywords to separate pieces of code, it employs indentation.
+    </string>
+    <string name="python_feature_dynamic_typing"><b>Dynamic typing:</b> Python is dynamically typed, which implies that variable types are decided upon automatically while the program is running. The code is more versatile because variable types don\'t have to be declared explicitly.
+    </string>
+    <string name="python_feature_strong_standard_library"><b>Strong standard library:</b> Python has a sizable standard library that includes modules for a variety of needs, including file I/O, networking, regular expressions, and more. This enables developers to complete typical activities without depending on third-party libraries.
+    </string>
+    <string name="python_feature_versatile_libraries"><b>Versatile libraries:</b> Python has a robust ecosystem of third-party modules and frameworks that increase its functionality. Popular libraries include Pandas for data analysis, Django for web development, and TensorFlow for machine learning computing.
+    </string>
+    <string name="python">Python</string>
+    <string name="python_features">Python Features:</string>
+    <string name="python_features_1"><b><i>Web applications</i></b> can be developed on a server using Python.
+        \n\n<b><i>Workflows</i></b> can be made withPython and other technologies.
+        \n\n<b><i>Database systems</i></b> are connectable with Python. Files can also be read and changed by it.
+        \n\n<b><i>Big data management</i></b> and <b><i>advanced mathematical operations</i></b> can both be done with Python.
+        \n\n<b><i>Python</i></b> can be used to produce software that is ready for production or for rapid prototyping.
+</string>
+
+    <string name="python_compatibility"><b>• Python is compatible</b> with a number of operating systems, including Raspberry Pi, Mac, and Linux.
+    \n\n<b>• Python has a straightforward syntax</b> that resembles that of English language.
+    \n\n<b>• Python features a syntax</b> that makes it possible for programmers to write programs with less lines of code than with some other programming languages.
+    \n\n<b>• Python runs on an interpreter system</b>, allowing code to be executed immediately after it has been written. Thus, prototyping can be completed extremely quickly.
+    \n\n<b>• Python can be used in procedural, object-oriented, or functional programming environments.</b>
+</string>
+
+    <string name="python_compared_to_other_languages">• With influences from mathematics and a focus on readability, Python shares several characteristics with the English language.
+    \n\n• In contrast to other programming languages, which frequently employ semicolons or parentheses, Python uses new lines to finish a command.
+    \n\n• Indentation, which utilizes whitespace, is how Python defines scope, including the scope of loops, functions, and classes. Curly brackets are frequently used in other computer languages for this reason.
+</string>
+
+
+
 </resources>
