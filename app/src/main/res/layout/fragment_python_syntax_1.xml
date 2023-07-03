@@ -25,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="@string/comments_python_codey_introduction"
+            android:text="@string/syntax_intro_codey"
             app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView1"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
@@ -34,55 +34,24 @@
             app:layout_constraintVertical_bias="0.04"
             tools:ignore="TextSizeCheck" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_python_cut"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView1"
-            app:srcCompat="@drawable/codey_python_cut" />
-
-        <Button
-            android:id="@+id/python_comments_DYK1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:text="@string/dyk"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:theme="@style/lionelButton"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="1.0"
-            app:strokeColor="#AAAAAA"
-            app:strokeWidth="0.1dp"
-            tools:ignore="UnknownIdInLayout,TextContrastCheck" />
-
         <TextView
             android:id="@+id/P_Syntax_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="@string/comments"
+            android:layout_marginTop="16dp"
+            android:text="@string/syntax"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView1" />
 
         <TextView
             android:id="@+id/P_Syntax_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/p_comments"
+            android:text="@string/python_syntax"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -93,45 +62,19 @@
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <TextView
-            android:id="@+id/P_Comments_Text3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/p_types_of_comments"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text2" />
-
-        <TextView
-            android:id="@+id/P_Syntax_Text3"
+            android:id="@+id/P_Syntax_Text03"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/p_the_types_of_comments"
+            android:layout_marginTop="8dp"
+            android:text="@string/python_identifier_description"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Comments_Text3"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/P_Comments_Text5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/p_single_line_comments"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text3"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text2"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <TextView
@@ -139,14 +82,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/python_single_line_comments"
+            android:text="@string/Identifiers"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Comments_Text5"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text03"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <ImageView
@@ -160,11 +103,11 @@
             app:srcCompat="@drawable/codey_python_cut" />
 
         <TextView
-            android:id="@+id/P_Comments_fix"
+            android:id="@+id/P_Syntax_Text3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="@string/P_comments_textview9"
+            android:text="@string/P_Syntax_Text5"
             app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
@@ -173,44 +116,28 @@
             app:layout_constraintVertical_bias="0.04"
             tools:ignore="TextSizeCheck" />
 
-        <HorizontalScrollView
-            android:id="@+id/hv1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Comments_fix">
-
-            <WebView
-                android:id="@+id/P_single_comment_1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
-        </HorizontalScrollView>
-
         <TextView
             android:id="@+id/P_Syntax_Text6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/p_multi_line_comments"
+            android:text="@string/python_identifiers_1"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <TextView
             android:id="@+id/P_Syntax_Text7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/p_multiline_comment"
+            android:layout_marginStart="16dp"
+            android:text="@string/python_identifiers"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -219,71 +146,6 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text6"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <HorizontalScrollView
-            android:id="@+id/hv2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text7">
-
-            <WebView
-                android:id="@+id/P_multi_line_comment"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/P_Comments_Text9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/docstring_in_python"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv2"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/P_Comments_Text10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/P_docstring_in_python"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Comments_Text9"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <HorizontalScrollView
-            android:id="@+id/hv3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Comments_Text10">
-
-            <WebView
-                android:id="@+id/P_Docstring_comment"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
-        </HorizontalScrollView>
 
 
         <androidx.constraintlayout.widget.Guideline

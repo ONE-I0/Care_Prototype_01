@@ -15,27 +15,27 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.care_prototype_01.PythonLessons.PythonCommentsFragments.PythonCommentsFragment_1;
-import com.example.care_prototype_01.PythonLessons.PythonCommentsFragments.PythonCommentsFragment_2;
-import com.example.care_prototype_01.PythonLessons.PythonCommentsFragments.ViewPagerAdapter;
-import com.example.care_prototype_01.PythonLessons.PythonCommentsFragments.ViewPagerUtil;
+import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.PythonSyntaxFragment_1;
+import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.PythonSyntaxFragment_2;
+import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.ViewPagerAdapter;
+import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
 import com.example.care_prototype_01.care_languages.PythonLanguageActivity;
 
 import java.util.ArrayList;
 
-public class PythonComments extends AppCompatActivity {
+public class PythonSyntax extends AppCompatActivity {
+
     private ViewPager2 viewPager;
     private TextView swipeMessage;
     private LinearLayout pager_dots;
     private FragmentStateAdapter pagerAdapter;
     private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
-
     private Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_python_comments);
+        setContentView(R.layout.activity_python_syntax);
 
         swipeMessage = findViewById(R.id.swipe_message);
 
@@ -46,20 +46,24 @@ public class PythonComments extends AppCompatActivity {
         //this is the back button
         Button btn_back =findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            Intent OpenPythonIntroduction = new Intent(this, PythonLanguageActivity.class);
-            startActivity(OpenPythonIntroduction);
+            Intent OpenPythonSyntax = new Intent(this, PythonLanguageActivity.class);
+            startActivity(OpenPythonSyntax);
         });
 
+        //for view pager and dots
         viewPager = findViewById(R.id.viewpager);
         pager_dots = findViewById(R.id.pager_dots);
 
-        fragmentArrayList.add(new PythonCommentsFragment_1());
-        fragmentArrayList.add(new PythonCommentsFragment_2());
+        fragmentArrayList.add(new PythonSyntaxFragment_1());
+        fragmentArrayList.add(new PythonSyntaxFragment_2());
 
-        pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
+        pagerAdapter = new ViewPagerAdapter(this    ,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);
         ViewPagerUtil.getInstance().setupIndicator(this,viewPager,pager_dots, fragmentArrayList.size());
+        ViewPagerUtil.getInstance().onBackPressed(viewPager,getSupportFragmentManager());
+
     }
+
     private void showSwipeMessage() {
         swipeMessage.setVisibility(View.VISIBLE);
 
@@ -101,5 +105,4 @@ public class PythonComments extends AppCompatActivity {
             handler.removeCallbacksAndMessages(null);
         }
     }
-
 }

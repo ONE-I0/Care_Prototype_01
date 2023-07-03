@@ -567,7 +567,7 @@ if (condition) {\n
     <string name="codey_python_cut">codey_python_cut</string>
     <string name="let_s_begin_the_introduction_of_python_i_m_so_excited_to_learn_this_come_and_join_with_me">Let’s begin the introduction of Python. I’m so excited to learn this, come and join with me!</string>
 
-    <!--______________________INTRODUCTIONS STRINGS______________________-->>
+    <!--______________________INTRODUCTIONS STRINGS PYTHON______________________-->>
     <string name="python_introduction">Python is a popular high-level programming language with clean syntax that is easy to learn. It was created by Guido van Rossum and first released in 1991. Python is known for its simplicity and readability, and ability to run on all desktop computers and even mobile devices! It is a versatile language that can be used on a wide range of applications, including web and software development, data analysis, artificial intelligence, scientific computing, automation, and more! Thus, it is dubbed as the “easiest programming language in the world!”</string>
     <string name="python_feature_simple_syntax"><b>Simple and clear syntax:</b> Python places a strong emphasis on the readability of its code. Instead of utilizing braces or keywords to separate pieces of code, it employs indentation.
     </string>
@@ -597,7 +597,95 @@ if (condition) {\n
     \n\n• In contrast to other programming languages, which frequently employ semicolons or parentheses, Python uses new lines to finish a command.
     \n\n• Indentation, which utilizes whitespace, is how Python defines scope, including the scope of loops, functions, and classes. Curly brackets are frequently used in other computer languages for this reason.
 </string>
+    <string name="P_Intro_btnQ1">What is Python known for?</string>
+    <string name="P_Intro_btnQ2">What is the edge of Python compared to other programming languages?</string>
+    <string name="P_Intro_btnQ3">What type of language does Python belong?</string>
 
+
+    <!--______________________COMMENTS STRINGS PYTHON______________________-->>
+    <string name="comments_python_codey_introduction">Let’s begin the Comments of Python. I’m so excited to learn this, come and join with me!</string>
+    <string name="comments">Comments</string>
+    <string name="p_comments">Comments in Python are the lines in the code that are ignored by the interpreter during the execution of the program. Comments enhance the readability of the code and help the programmers to understand the code very carefully.</string>
+    <string name="p_types_of_comments">There are three types of comments in Python:</string>
+    <string name="p_the_types_of_comments">• Single line Comments
+        \n• Multiline Comments
+        \n• Docstring Comments</string>
+    <string name="p_single_line_comments"><b>Single-Line Comments in Python</b></string>
+    <string name="python_single_line_comments">Python single-line comment starts with the hashtag symbol (#) with no white spaces and lasts till the end of the line. If the comment exceeds one line then put a hashtag on the next line and continue the Python Comments. Python’s single-line comments are proved useful for supplying short explanations for variables, function declarations, and expressions. See the following code snippet demonstrating single line comment:</string>
+    <string name="P_comments_textview9">In the example, it can be seen that Python Comments are ignored by the interpreter during the execution of the program.</string>
+
+    <string name="P_single_comment_1">
+        <![CDATA[
+        <pre><tt><font color="#007F00"># Print “Hello World” to console\n</font>
+        <font color="#BA2121">print(<font color="#1A1AA6">"Hello World"</font>)\n</font></tt></pre>
+        <pre><font color="#795E26">Output:\n<font color="#1A1AA6">Hello World</font></font></pre>
+        ]]>
+    </string>
+
+    <string name="p_multi_line_comments"><b>Multi-Line Comments in Python</b></string>
+    <string name="p_multiline_comment">Python does not provide the option for multiline comments. However, there are different ways through which we can write multiline comments. Multiline comments using multiple hashtags (#), We can multiple hashtags (#) to write multiline comments in Python. Each and every line will be considered as a single-line comment.
+</string>
+    <string name="P_multi_line_comment">
+        <![CDATA[
+        <pre><tt><font color="#007F00"># Python program to demonstrate\n# multiline comments\n</font>
+        <font color="#BA2121">print(<font color="#1A1AA6">"Hello World"</font>)\n</font></tt></pre>
+        <pre><font color="#795E26">Output:\n<font color="#1A1AA6">Hello World</font></font></pre>
+        ]]>
+    </string>
+    <string name="P_docstring_in_python">Python docstring is the string literals with triple quotes that are appeared right after the function. It is used to associate documentation that has been written with Python modules, functions, classes, and methods. It is added right below the functions, modules, or classes to describe what they do. In Python, the docstring is then made available via the __doc__ attribute.</string>
+    <string name="docstring_in_python">Docstring in Python</string>
+    <string name="P_Docstring_comment">
+        <![CDATA[
+        <pre><tt><font color="#007F00">def multiply(a, b):\n    """Multiplies the value of a and b"""\n    return a*b\n</font>
+        <font color="#BA2121"># Print the docstring of multiply function\n</font>
+        <font color="#1A1AA6">print(multiply.__doc__)\n</font></tt></pre>
+        <pre><font color="#795E26">Output:\n<font color="#1A1AA6">Multiplies the value of a and b</font></font></pre>
+        ]]>
+    </string>
+    <string name="string_literals_in_python">String Literals In Python</string>
+    <string name="string_literals">
+        <![CDATA[
+        <pre><tt><font color="#007F00">&quot;&quot;&quot; Python program to demonstrate\n multiline comments&quot;&quot;&quot;\n</font>
+        <font color="#BA2121">print(<font color="#1A1AA6">&quot;Multiline comments&quot;</font>)\n</font></tt></pre>
+        <pre><font color="#795E26">Output:\n<font color="#1A1AA6">Multiline comments</font></font></pre>
+        ]]>
+    </string>
+
+    <!--______________________SYNTAX STRINGS PYTHON______________________-->>
+    <string name="syntax_intro_codey">Let’s begin the Syntax of Python. I’m so excited to learn this, come and join with me!</string>
+    <string name="python_identifier_description"><b>A Python identifier is a name used to identify a variable, function, class, module, or other object.</b> An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0 to 9).
+</string>
+    <string name="syntax">Syntax</string>
+    <string name="python_syntax">The Python syntax defines a set of rules that are used to create Python statements while writing a Python Program. The Python Programming Language Syntax has many similarities to Perl, C, and Java Programming Languages. However, there are some definite differences between the languages.</string>
+    <string name="Identifiers"><i>Python does not allow punctuation characters such as @, $, and % within identifiers.</i></string>
+    <string name="P_Syntax_Text5">Here are naming conventions for Python identifiers</string>
+    <string name="python_identifiers">• Python Class names start with an uppercase letter.
+    \n\n• All other identifiers start with a lowercase letter.
+    \n\n• Starting an identifier with a single leading underscore indicates that the identifier is private.
+    \n\n• Starting an identifier with two leading underscores indicates a strongly private identifier.
+    \n\n• If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.
+</string>
+    <string name="python_identifiers_1">Python identifiers</string>
+    <string name="P_lines_Indention">Python programming provides no braces to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.</string>
+    <string name="python_lines_and_indentation">Python Lines and Indentation</string>
+    <string name="if_else_example"><![CDATA[<pre><tt><font color="#007F00">if True:\n</font><font color="#BA2121">\tprint(<font color="#1A1AA6">"True"</font>)\n</font><font color="#007F00">else:\n</font><font color="#BA2121">\tprint(<font color="#1A1AA6">"False"</font>)</font></tt></pre>]]>
+    </string>
+    <string name="line_continuation_example">
+        <![CDATA[
+        <pre><tt><font color="#007F00">Total = item_one + \\\n\tItem_two + \\\n\tItem_three</font></tt></pre>
+        ]]>
+    </string>
+    <string name="string_literals_example">
+        <![CDATA[
+        <pre><tt><font color="#007F00">word = \'word\'\n\nsentence = "This is a sentence."\n\nparagraph = """This is a paragraph. It is\n\tmade up of multiple lines and sentences."""</font></tt></pre>
+        ]]>
+    </string>
+    <string name="P_syntax_quotations">Statements in Python typically end with a new line. Python does, however, allow the use of the line continuation character () to denote that the line should continue. For example –</string>
+    <string name="P_syntax_quotations1">Python accepts single (\'), double (\") and triple (\'\'\' or \"\"\") quotes to denote string literals, as long as the same type of quote starts and ends the string. The triple quotes are used to span the string across multiple lines.
+        \n<i>For example, all the following are legal</i></string>
+    <string name="P_Syntax_text1">The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example</string>
+    <string name="python_multi_line_statements">Python Multi-Line Statements</string>
+    <string name="quotations_in_python">Quotations in Python</string>
 
 
 </resources>

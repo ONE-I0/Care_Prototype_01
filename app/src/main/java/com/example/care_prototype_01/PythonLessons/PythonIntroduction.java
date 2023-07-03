@@ -45,8 +45,6 @@ public class   PythonIntroduction extends AppCompatActivity {
         showSwipeMessage();
         startTimer();
 
-
-
         //this is the back button
         Button btn_back =findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
@@ -65,7 +63,6 @@ public class   PythonIntroduction extends AppCompatActivity {
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);
         ViewPagerUtil.getInstance().setupIndicator(this,viewPager,pager_dots, fragmentArrayList.size());
-        ViewPagerUtil.getInstance().onBackPressed(viewPager,getSupportFragmentManager());
 
     }
 
@@ -110,18 +107,4 @@ public class   PythonIntroduction extends AppCompatActivity {
             handler.removeCallbacksAndMessages(null);
         }
     }
-
-    //the back on pressed of the code
-    @Override
-    public void onBackPressed(){
-        setViewPagerBackPress();
-    }
-    private void setViewPagerBackPress(){
-        if(viewPager.getCurrentItem()==0){
-            super.onBackPressed();
-        }else {
-            viewPager.setCurrentItem(viewPager.getCurrentItem()-1);
-        }
-    }
-
 }

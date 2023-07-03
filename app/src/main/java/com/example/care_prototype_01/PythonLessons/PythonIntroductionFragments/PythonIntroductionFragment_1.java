@@ -11,7 +11,6 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.care_prototype_01.JavaLessonsActivity.JavaArray;
 import com.example.care_prototype_01.R;
 
 public class  PythonIntroductionFragment_1 extends Fragment {
@@ -41,7 +40,7 @@ public class  PythonIntroductionFragment_1 extends Fragment {
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("Alert");
+        alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that Python is not originally named after a snake? In fact, Guido van Rossum, the creator, was fan of a comedy group “Monty Python” and he chose the name to bring a sense of fun while using the programming language\n");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override

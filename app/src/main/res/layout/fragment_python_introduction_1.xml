@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/P_Syntax_imageView1"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:contentDescription="@string/codey_python_cut"
@@ -26,11 +26,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
             android:text="@string/let_s_begin_the_introduction_of_python_i_m_so_excited_to_learn_this_come_and_join_with_me"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+            app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView1"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView1"
-            app:layout_constraintTop_toTopOf="@+id/imageView1"
+            app:layout_constraintStart_toEndOf="@+id/P_Syntax_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_Syntax_imageView1"
             app:layout_constraintVertical_bias="0.04"
             tools:ignore="TextSizeCheck" />
 
@@ -41,7 +41,7 @@
             android:layout_marginTop="16dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView1"
             app:srcCompat="@drawable/codey_python_cut" />
 
         <Button
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
             android:text="@string/dyk"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
             android:theme="@style/lionelButton"

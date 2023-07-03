@@ -18,7 +18,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView41"
+                android:id="@+id/P.Intro.ImageView1"
                 android:layout_width="54dp"
                 android:layout_height="74dp"
                 android:layout_marginTop="48dp"
@@ -35,15 +35,15 @@
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView41"
-                app:layout_constraintStart_toEndOf="@+id/imageView41"
-                app:layout_constraintTop_toTopOf="@+id/imageView41" />
+                app:layout_constraintBottom_toBottomOf="@+id/P.Intro.ImageView1"
+                app:layout_constraintStart_toEndOf="@+id/P.Intro.ImageView1"
+                app:layout_constraintTop_toTopOf="@+id/P.Intro.ImageView1" />
 
             <Button
                 android:id="@+id/P_Intro_btnQ1"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="What is Python known for? "
+                android:text="@string/P_Intro_btnQ1"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -51,13 +51,14 @@
                 app:cornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView41" />
+                app:layout_constraintTop_toBottomOf="@+id/P.Intro.ImageView1"
+                tools:ignore="TextContrastCheck" />
 
             <Button
                 android:id="@+id/P_Intro_btnQ2"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="What is the edge of Python compared to other programming languages? "
+                android:text="@string/P_Intro_btnQ2"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -67,14 +68,14 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ1"
                 app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ1"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
 
             <Button
                 android:id="@+id/P_Intro_btnQ3"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="68dp"
-                android:text="What type of language does Python belong? "
+                android:text="@string/P_Intro_btnQ3"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -86,7 +87,7 @@
                 app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ2"
                 app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ2"
                 app:layout_constraintVertical_bias="0.0"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline_vertical1"
