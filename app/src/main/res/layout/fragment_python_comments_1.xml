@@ -12,9 +12,10 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/P_Syntax_imageView1"
+            android:id="@+id/P_Operators_imageView1"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_marginTop="28dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
@@ -26,22 +27,22 @@
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
             android:text="@string/comments_python_codey_introduction"
-            app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView1"
+            app:layout_constraintBottom_toBottomOf="@+id/P_Operators_imageView1"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/P_Syntax_imageView1"
-            app:layout_constraintTop_toTopOf="@+id/P_Syntax_imageView1"
-            app:layout_constraintVertical_bias="0.04"
+            app:layout_constraintStart_toEndOf="@+id/P_Operators_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_Operators_imageView1"
+            app:layout_constraintVertical_bias="0.457"
             tools:ignore="TextSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="40dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_imageView1"
             app:srcCompat="@drawable/codey_python_cut" />
 
         <Button
@@ -66,7 +67,7 @@
             tools:ignore="UnknownIdInLayout,TextContrastCheck" />
 
         <TextView
-            android:id="@+id/P_Syntax_Text1"
+            android:id="@+id/P_Operators_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
@@ -78,7 +79,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <TextView
-            android:id="@+id/P_Syntax_Text2"
+            android:id="@+id/P_Operators_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -89,7 +90,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <TextView
@@ -102,7 +103,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text2" />
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text2" />
 
         <TextView
             android:id="@+id/P_Syntax_Text3"

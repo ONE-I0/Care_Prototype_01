@@ -17,7 +17,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/P_Syntax_Text1"
+                android:id="@+id/P_Operators_Text1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/string_literals_in_python"
@@ -32,7 +32,7 @@
                 tools:ignore="TextSizeCheck,VisualLintLongText" />
 
             <TextView
-                android:id="@+id/P_Syntax_Text2"
+                android:id="@+id/P_Operators_Text2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -43,7 +43,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-                app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text1"
+                app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
                 tools:ignore="TextSizeCheck,VisualLintLongText" />
 
             <TextView
@@ -59,7 +59,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-                app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text2"
+                app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text2"
                 tools:ignore="TextSizeCheck,VisualLintLongText" />
 
             <TextView

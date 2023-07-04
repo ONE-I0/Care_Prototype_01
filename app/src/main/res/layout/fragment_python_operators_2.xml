@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/P_Operators_Text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Here are a few examples of Python operators that are frequently used:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+        <TextView
+            android:id="@+id/P_Operators_Text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/operators_description1"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

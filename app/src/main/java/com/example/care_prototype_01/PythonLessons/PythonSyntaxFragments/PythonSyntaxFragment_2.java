@@ -62,7 +62,7 @@ public class PythonSyntaxFragment_2 extends Fragment {
         btnP_Syntax_Q2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                P_Syntax_btnQ3();
+                P_Syntax_btnQ2();
             }
         });
         btnP_Syntax_Q3.setOnClickListener(new View.OnClickListener() {
@@ -92,8 +92,8 @@ public class PythonSyntaxFragment_2 extends Fragment {
     private void P_Syntax_btnQ1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("What is Python known for?\n");
-        alertDialogBuilder.setMessage("Python is known as the easiest programming language. Because of its syntax that is very close to the language of human, everyone can easily understand the flow of sequence in its codes!\n");
+        alertDialogBuilder.setTitle("How do Python recognize the code and execute it?");
+        alertDialogBuilder.setMessage("Python uses indentations to recognize where does a specific line of code will be executed. Without using it, the compiler may be confused and interpret a wrong line of code.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -107,8 +107,8 @@ public class PythonSyntaxFragment_2 extends Fragment {
     private void P_Syntax_btnQ2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("What is the edge of Python compared to other programming languages?\n");
-        alertDialogBuilder.setMessage("Python is vert well known that emphasizes code readability and simplicity. Compared to other languages, Python has a clean and intuitive syntax that allows, not only developers but also beginners, to express any concepts in a more concise and natural way that makes it easier to learn, understand, and maintain codes.\n");
+        alertDialogBuilder.setTitle("What will happen if you use a single line of quote in multiple lines?");
+        alertDialogBuilder.setMessage("It will generate an error as the quotation only applies to a single word only.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -122,8 +122,8 @@ public class PythonSyntaxFragment_2 extends Fragment {
     private void P_Syntax_btnQ3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("What type of language does Python belong?\n");
-        alertDialogBuilder.setMessage("Python is considered an interpreted language. When writing a Python code, it is executed by the interpreter line by line without the need for explicit compilation. The interpreter reads the code then interprets it, and executes it directly, translating the code into machine instructions and prints it out into human-readable output.\n");
+        alertDialogBuilder.setTitle("When does an invalid identifier usually occur?");
+        alertDialogBuilder.setMessage("There are three ways to identify a wrong identifier: it starts with a digit word; a reserved keyword used for functions; or usually when a word contains a hyphen.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -13,7 +13,7 @@
 
 
         <TextView
-            android:id="@+id/P_Syntax_Text1"
+            android:id="@+id/P_Operators_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/python_lines_and_indentation"
@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
 
         <TextView
-            android:id="@+id/P_Syntax_Text2"
+            android:id="@+id/P_Operators_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -35,7 +35,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <ImageView
@@ -45,7 +45,7 @@
             android:layout_marginTop="16dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text2"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text2"
             app:srcCompat="@drawable/codey_python_cut" />
 
         <TextView
@@ -135,7 +135,7 @@
             app:layout_constraintTop_toBottomOf="@+id/hv2" />
 
         <TextView
-            android:id="@+id/P_Syntax_Text8"
+            android:id="@+id/P_Operators_Text8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/P_syntax_quotations1"
@@ -154,7 +154,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text8">
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text8">
 
             <WebView
                 android:id="@+id/string_literals_example"
@@ -173,7 +173,7 @@
             android:contentDescription="@string/codey_image"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/hv3"
-            app:srcCompat="@drawable/codey_java_dyk" />
+            app:srcCompat="@drawable/codey_python_cut" />
 
         <TextView
             android:id="@+id/textView5"
@@ -191,7 +191,7 @@
             android:id="@+id/P_Syntax_btnQ1"
             android:layout_width="271dp"
             android:layout_height="wrap_content"
-            android:text="@string/P_Intro_btnQ1"
+            android:text="How do Python recognize the code and execute it?"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -206,7 +206,7 @@
             android:id="@+id/P_Syntax_btnQ2"
             android:layout_width="271dp"
             android:layout_height="wrap_content"
-            android:text="@string/P_Intro_btnQ2"
+            android:text="What will happen if you use a single line of quote in multiple lines?"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -223,7 +223,7 @@
             android:layout_width="271dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="68dp"
-            android:text="@string/P_Intro_btnQ3"
+            android:text="When does an invalid identifier usually occur?"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textStyle="bold"

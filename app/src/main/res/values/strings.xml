@@ -603,7 +603,7 @@ if (condition) {\n
 
 
     <!--______________________COMMENTS STRINGS PYTHON______________________-->>
-    <string name="comments_python_codey_introduction">Let’s begin the Comments of Python. I’m so excited to learn this, come and join with me!</string>
+    <string name="comments_python_codey_introduction">Have you ever wonder if you can put a text in Python that looks like a note to identify what kind of code is it without being interpreted by the compiler? Worry no more because I introduce to you the Python Comments! Let’s see what we’ve got here!</string>
     <string name="comments">Comments</string>
     <string name="p_comments">Comments in Python are the lines in the code that are ignored by the interpreter during the execution of the program. Comments enhance the readability of the code and help the programmers to understand the code very carefully.</string>
     <string name="p_types_of_comments">There are three types of comments in Python:</string>
@@ -653,7 +653,7 @@ if (condition) {\n
 
     <!--______________________SYNTAX STRINGS PYTHON______________________-->>
     <string name="syntax_intro_codey">Let’s begin the Syntax of Python. I’m so excited to learn this, come and join with me!</string>
-    <string name="python_identifier_description"><b>A Python identifier is a name used to identify a variable, function, class, module, or other object.</b> An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0 to 9).
+    <string name="python_identifier_description">A Python identifier is a name used to identify a variable, function, class, module, or other object. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0 to 9).
 </string>
     <string name="syntax">Syntax</string>
     <string name="python_syntax">The Python syntax defines a set of rules that are used to create Python statements while writing a Python Program. The Python Programming Language Syntax has many similarities to Perl, C, and Java Programming Languages. However, there are some definite differences between the languages.</string>
@@ -686,6 +686,106 @@ if (condition) {\n
     <string name="P_Syntax_text1">The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example</string>
     <string name="python_multi_line_statements">Python Multi-Line Statements</string>
     <string name="quotations_in_python">Quotations in Python</string>
+    <string name="identifier_1">Identifier</string>
+    <string name="syntax_add">Python syntax can be executed by writing directly in the Command Line.A basic and simple way to execute code in Python goes like this:</string>
+    <string name="print_hello_world">
+        <![CDATA[
+        <pre><tt><font color="#BA2121">print(<font color="#1A1AA6">"Hello World!"</font>)</font></tt></pre>
+        <pre><font color="#795E26">Output:</font><tt><font color="#1A1AA6">\nHello World!</font></tt></pre>
+        ]]>
+    </string>
 
+    <!--______________________OPERATORS STRINGS PYTHON______________________-->>
+    <string name="P_Operator_syntax">Let’s start another lesson in Python which are Operators!</string>
+    <string name="operators_1">Operators</string>
+    <string name="Operator_meaning">Symbols or special characters known as “operators” in Python programming language carry out specified operations on operands (variables, constants, or expressions) to create results. You may manipulate and calculate on data, compare values, assign values, and do many other things with operators.</string>
+    <string name="P_Operators_codey1">Python has a broad variety of operators, which can be divided into various classes according to how they operate.</string>
+    <string name="P_types_of_operator">These are the different types of operators:</string>
+
+    <string name="operators_description"><b>Arithmetic Operators:</b> execute operations including addition (+), subtraction (-), multiplication (*), division (/), modulus (%), and exponentiation (**) in elementary mathematics.
+        \n\n<b>Relational Operators:</b> A boolean result of true or false is returned when a relational operator compares two values. The operators greater than (&gt;), less than (&lt;), greater than or equal to (>=), and less than or equal to (&lt;=) are among those mentioned. They are frequently employed in comparisons and circumstances.
+    </string>
+    <string name="logical_operators_description">
+    In order to execute logical operations on boolean values and produce a boolean result, <b>logical operators</b> are used. The logical AND (<b>and</b>), logical OR (<b>or</b>), and logical NOT (<b>not</b>) operators are among the logical operators. They are frequently applied in boolean expressions and conditional statements.
+    </string>
+
+    <string name="operators_description_2"><b>Assignment Operators:</b> When assigning values to variables, assignment operators are utilized. The equals operator (=) is the most used assignment operator. Additionally, there are compound assignment operators that combine an assignment operation with another operation, such as +=, -=, *=, /=, and %=.
+        \n\n<b>Bitwise Operators:</b> Bitwise operators change the values of each bit in a numeric operand. They consist of left shift (&lt;&lt;), right shift (&gt;&gt;), bitwise complement (~), bitwise XOR (^), bitwise AND (&amp;), and bitwise OR (|). Working with binary representations and low-level operations are two things they are utilized for.
+</string>
+    <string name="p_membership_operators">Using membership operators, you may determine whether a value is a part of a sequence or collection. The membership operators take into and out of account.</string>
+    <string name="identity_operators_description"><b>Identity Operators:</b> When comparing the identities of two objects, identity operators are utilized. There are two identity operators: <b>is</b> and <b>is not</b>.
+</string>
+    <string name="codey_text">You may use a variety of operators in Python to carry out different actions on variables and values.</string>
+
+    <string name="operators_description1">1. <b>Arithmetic Operators</b>\n
+    \t\t+: Addition Operator\n
+    \t\t\t\t\t\t\tsum = 5 + 3\n
+    \t\t\t\t\t\t\tsum = 8\n\n
+
+    \t\t-: Subtraction Operator\n
+    \t\t\t\t\t\t\tdifference = 7 - 2\n
+    \t\t\t\t\t\t\tdifference = 5\n\n
+
+    \t\t*: Multiplication Operator\n
+    \t\t\t\t\t\t\tproduct = 4 * 6\n
+    \t\t\t\t\t\t\tproduct = 24\n\n
+
+    \t\t/: Division Operator (returns a float)\n
+    \t\t\t\t\t\t\tquotient = 10 / 2\n
+    \t\t\t\t\t\t\tquotient = 5.0\n\n
+
+    \t\t//: Floor Division Operator (returns an integer)\n
+    \t\t\t\t\t\t\tquotient = 10 // 3\n
+    \t\t\t\t\t\t\tquotient = 3\n\n
+
+    \t\t%: Modulus Operator (remainder of division)\n
+    \t\t\t\t\t\t\tremainder = 15 % 4\n
+    \t\t\t\t\t\t\tremainder = 3\n\n2. <b>Assignment Operators</b>\n
+    \t\t=: Simple Assignment Operator\n
+    \t\t\t\t\t\t\tnumber = 10\n\n
+
+    \t\t+=: Add and Assign Operator\n
+    \t\t\t\t\t\t\tvalue = 5\n
+    \t\t\t\t\t\t\tvalue += 3\n
+    \t\t\t\t\t\t\tvalue = 8\n\n
+
+    \t\t-=: Subtract and Assign Operator\n
+    \t\t\t\t\t\t\tvalue = 7\n
+    \t\t\t\t\t\t\tvalue -= 2\n
+    \t\t\t\t\t\t\tvalue = 5\n\n
+
+    \t\t*=: Multiply and assign Operator\n
+    \t\t\t\t\t\t\tvalue = 4\n
+    \t\t\t\t\t\t\tvalue *= 6\n
+    \t\t\t\t\t\t\tvalue = 24\n\n
+
+    \t\t/=: Divide and Assign Operator\n
+    \t\t\t\t\t\t\tvalue = 10\n
+    \t\t\t\t\t\t\tvalue /= 2\n
+    \t\t\t\t\t\t\tvalue = 5.0\n\n3. <b>Comparison Operators</b>\n
+    \t\t==: Equal to Operator\n
+    \t\t\t\t\t\t\tisEqual = (5 == 3)\n
+    \t\t\t\t\t\t\tisEqual = False\n\n
+
+    \t\t!=: Not equal to Operator\n
+    \t\t\t\t\t\t\tisNotEqual = (7 != 2)\n
+    \t\t\t\t\t\t\tisNotEqual = True\n\n
+
+    \t\t&gt;: Greater than Operator\n
+    \t\t\t\t\t\t\tisGreaterThan = (10 &gt; 5)\n
+    \t\t\t\t\t\t\tisGreaterThan = True\n\n
+
+    \t\t&lt;: Less than Operator\n
+    \t\t\t\t\t\t\tisLessThan = (4 &lt; 6)\n
+    \t\t\t\t\t\t\tisLessThan = True\n\n
+
+    \t\t&gt;=: Greater than or equal to Operator\n
+    \t\t\t\t\t\t\tisGreaterThanOrEqual = (7 &gt;= 5)\n
+    \t\t\t\t\t\t\tisGreaterThanOrEqual = True\n\n
+
+    \t\t&lt;=: Less than or equal to Operator\n
+    \t\t\t\t\t\t\tisLessThanOrEqual = (4 &lt;= 6)\n
+    \t\t\t\t\t\t\tisLessThanOrEqual = True\n
+</string>
 
 </resources>
