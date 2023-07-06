@@ -15,7 +15,7 @@
             android:id="@+id/P_Operators_Text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Here are a few examples of Python operators that are frequently used:"
+            android:text="@string/P_operator_frequently_used"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -37,6 +37,29 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/P_Operators_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="And that's the operators of python. hope you learned the lesson."
+            app:layout_constraintBottom_toBottomOf="@+id/P_Operators_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_Operators_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_Operators_imageView1"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_vertical1"

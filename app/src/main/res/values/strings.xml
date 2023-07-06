@@ -787,5 +787,54 @@ if (condition) {\n
     \t\t\t\t\t\t\tisLessThanOrEqual = (4 &lt;= 6)\n
     \t\t\t\t\t\t\tisLessThanOrEqual = True\n
 </string>
+    <string name="P_operator_frequently_used">Here are a few examples of Python operators that are frequently used:</string>
+
+    <!--______________________DATA TYPES STRINGS PYTHON______________________-->>
+    <string name="data_types">Data Types</string>
+    <string name="p_datatypes_meaning">The numerous classes or kinds of values that variables can contain are referred to as \"data types\" in Python. Every data type specifies the types of data that may be stored, the operations that can be carried out on the data, and the amount of memory needed to store the data.</string>
+    <string name="codey_introindatatypes">Let’s start learning the different Data Types that is being used in Python! Let’s start, shall we?</string>
+    <string name="data_types_description">
+    1. <b>Numeric Data Types</b>\n
+    \t\t\t\tInt: Used to store integers (whole numbers).\n
+    \t\t\t\t\t\tage = 25\n\n
+
+    \t\t\t\tFloat: Used to store floating-point numbers (decimal numbers).\n
+    \t\t\t\t\t\tweight = 65.5\n\n
+
+    \t\t\t\tComplex: Used to store complex numbers.\n
+    \t\t\t\t\t\tz = 3 + 4j\n\n
+
+    2. <b>Boolean Data Type</b>\n
+    \t\t\t\tBool: Used to store boolean values (True or False).\n
+    \t\t\t\t\t\tis_valid = True\n\n
+
+    3. <b>String Data Type</b>\n
+    \t\t\t\tStr: Used to store sequences of characters (text).\n
+    \t\t\t\t\t\tname = "John Doe"\n\n
+
+    4. <b>List Data Type</b>\n
+    \t\t\t\tList: Used to store an ordered collection of items.\n
+    \t\t\t\t\t\tnumbers = [1, 2, 3, 4, 5]\n\n
+
+    5. <b>Tuple Data Type</b>\n
+    \t\t\t\tTuple: Used to store an ordered collection of items (immutable).\n
+    \t\t\t\t\t\tcoordinates = (10, 20)\n\n
+
+    6. <b>Set Data Type</b>\n
+    \t\t\t\tSet: Used to store an unordered collection of unique items.\n
+    \t\t\t\t\t\tfruits = {"apple", "banana", "orange"}\n\n
+
+    7. <b>Dictionary Data Type</b>\n
+    \t\t\t\tDict: Used to store key-value pairs.\n
+    \t\t\t\t\t\tperson = {"name": "John", "age": 30, "city": "New York"}\n
+</string>
+    <string name="here_are_a_few_instances_of_frequently_used_python_data_types">Here are a few instances of frequently used Python data types:</string>
+    <string name="ending">And that is all the data types of python. swipe right to see the questions you might asked.</string>
+
+
+
+    <string name="codey_examples">Examples of declaring variables:\n\nRepresents integer values, such as 1, -5, or 1000.\nage = 25\n\nRepresents a sequence of characters enclosed in single quotes (\'\') or double quotes (").\nname = "John Doe"\n\nRepresents floating-point numbers, which include decimal points, such as 3.14 or -2.5\npi = 3.14159\n\nRepresents boolean values, either True or False\nis_student = True</string>
+    <string name="codey_dialogue">Python cannot function without the use of variables so let’s read the different classifications and rules of Python variables!\n\nVariables\n\nVariables are used to store data values that can be accessed and manipulated throughout the code. They act as placeholders or containers for storing different types of information such as numbers, strings, lists, or objects.\n\nCodey: Python has no command for declaring a variable, it is only created the moment that you first assign a value to it!\n\nExamples of declaring variables include:\n\nRepresents integer values, such as 1, -5, or 1000.\nage = 25\n\nRepresents a sequence of characters enclosed in single quotes (\'\') or double quotes (").\nname = "John Doe"\n\nRepresents floating-point numbers, which include decimal points, such as 3.14 or -2.5\npi = 3.14159\n\nRepresents boolean values, either True or False\nis_student = True</string>
+
 
 </resources>

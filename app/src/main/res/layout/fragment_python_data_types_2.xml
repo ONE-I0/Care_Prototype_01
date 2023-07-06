@@ -40,10 +40,10 @@
                 app:layout_constraintTop_toTopOf="@+id/P.Intro.ImageView1" />
 
             <Button
-                android:id="@+id/P_Operator_btnQ1"
+                android:id="@+id/P_DataTypes_btnQ1"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="What is the arithmetic operator used for exponentiation in Python?"
+                android:text="What data type is used to store whole numbers in Python?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -55,37 +55,37 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_Operator_btnQ2"
+                android:id="@+id/P_DataTypes_btnQ2"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="What is the logical operator used to perform a logical AND operation in Python?"
+                android:text="What data type is used to store text or alphanumeric characters in Python?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/P_Operator_btnQ1"
+                app:layout_constraintEnd_toEndOf="@+id/P_DataTypes_btnQ1"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_Operator_btnQ1"
-                app:layout_constraintTop_toBottomOf="@+id/P_Operator_btnQ1"
+                app:layout_constraintStart_toStartOf="@+id/P_DataTypes_btnQ1"
+                app:layout_constraintTop_toBottomOf="@+id/P_DataTypes_btnQ1"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_Operator_btnQ3"
+                android:id="@+id/P_DataTypes_btnQ3"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="68dp"
-                android:text="What is the comparison operator used to check if two values are equal in Python?"
+                android:text="What data type is used to store true/false values in Python?3"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/P_Operator_btnQ2"
+                app:layout_constraintEnd_toEndOf="@+id/P_DataTypes_btnQ2"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_Operator_btnQ2"
-                app:layout_constraintTop_toBottomOf="@+id/P_Operator_btnQ2"
+                app:layout_constraintStart_toStartOf="@+id/P_DataTypes_btnQ2"
+                app:layout_constraintTop_toBottomOf="@+id/P_DataTypes_btnQ2"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
