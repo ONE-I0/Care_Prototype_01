@@ -1,7 +1,6 @@
 package com.example.care_prototype_01.PythonLessons.PythonCommentsFragments;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 

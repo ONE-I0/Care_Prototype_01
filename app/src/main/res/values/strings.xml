@@ -835,5 +835,223 @@ if (condition) {\n
     <string name="codey_examples">Examples of declaring variables:\n\nRepresents integer values, such as 1, -5, or 1000.\nage = 25\n\nRepresents a sequence of characters enclosed in single quotes (\'\') or double quotes (").\nname = "John Doe"\n\nRepresents floating-point numbers, which include decimal points, such as 3.14 or -2.5\npi = 3.14159\n\nRepresents boolean values, either True or False\nis_student = True</string>
     <string name="codey_dialogue">Python cannot function without the use of variables so let’s read the different classifications and rules of Python variables!\n\nVariables\n\nVariables are used to store data values that can be accessed and manipulated throughout the code. They act as placeholders or containers for storing different types of information such as numbers, strings, lists, or objects.\n\nCodey: Python has no command for declaring a variable, it is only created the moment that you first assign a value to it!\n\nExamples of declaring variables include:\n\nRepresents integer values, such as 1, -5, or 1000.\nage = 25\n\nRepresents a sequence of characters enclosed in single quotes (\'\') or double quotes (").\nname = "John Doe"\n\nRepresents floating-point numbers, which include decimal points, such as 3.14 or -2.5\npi = 3.14159\n\nRepresents boolean values, either True or False\nis_student = True</string>
 
+    <!--______________________Variables STRINGS PYTHON______________________-->>
+    <string name="Variables_intro_codey">Let’s begin the Variables of Python. I’m so excited to learn this, come and join with me!</string>
+    <string name="conversion_example">
+    <![CDATA[
+    <pre><tt><font color="#007F00">x = str(3)    # x will be \'3\'</font>
+            \n<font color="#007F00">y = int(3)    # y will be 3</font>
+            \n<font color="#007F00">z = float(3)  # z will be 3.0</font></tt>
+    </pre>
+    ]]>
+</string>
+    <string name="variable_names_description">• A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
+    \n\n• A variable name must start with a letter or the underscore character.
+    \n\n• A variable name cannot start with a number.
+    \n\n• A variable name can only contain alphanumeric characters and underscores (A-z, 0-9, and _).
+    \n\n• Variable names are case-sensitive (age, Age, and AGE are three different variables).
+    \n\n• A variable name cannot be any of the Python keywords.
+</string>
+
+    <string name="p_Variables_code">
+    <![CDATA[
+    <pre><tt><font color="#BA2121">x</font> = <font color="#1A1AA6">5</font>\n<font color="#BA2121">y</font> = <font color="#1A1AA6">"John"</font>\n<font color="#BA2121">print</font>(<font color="#1A1AA6">x</font>)\n<font color="#BA2121">print</font>(<font color="#1A1AA6">y</font>)</tt>\n<font color="#795E26">\nOutput: <font color="#1A1AA6">\n5\nJohn</font></font>
+    </pre>
+    ]]>
+</string>
+
+    <string name="p_variable_naming">
+    <![CDATA[
+<pre><tt><font color="#007F00">#Example\n</font>
+\n<font color="#BA2121">myvar</font> = <font color="#1A1AA6">"John"</font>
+\n<font color="#BA2121">my_var</font> = <font color="#1A1AA6">"John"</font>
+\n<font color="#BA2121">_my_var</font> = <font color="#1A1AA6">"John"</font>
+\n<font color="#BA2121">myVar</font> = <font color="#1A1AA6">"John"</font>
+\n<font color="#BA2121">MYVAR</font> = <font color="#1A1AA6">"John"</font>
+\n<font color="#BA2121">myvar2</font> = <font color="#1A1AA6">"John"</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="camelCase_naming">
+    <![CDATA[
+<pre><tt><font color="#BA2121">myVariableName</font> = <font color="#1A1AA6">"John"</font></tt></pre>
+    ]]>
+</string>
+    <string name="pascalCase_naming">
+    <![CDATA[
+<pre><tt><font color="#007F00">MyVariableName</font> = <font color="#1A1AA6">"John"</font></tt></pre>
+    ]]>
+</string>
+    <string name="snake_case_naming">
+    <![CDATA[
+<pre><tt><font color="#007F00">my_variable_name</font> = <font color="#1A1AA6">"John"</font></tt></pre>
+    ]]>
+</string>
+
+    <!--______________________Inputs STRINGS PYTHON______________________-->>
+    <string name="inputs_intro_codey">Let’s begin the Inputs of Python. I’m so excited to learn this, come and join with me!</string>
+
+
+    <!--______________________CONDITIONAL STATEMENT STRINGS PYTHON______________________-->>
+    <string name="comparison_operators_description">• Equals: a == b
+    \n• <b>Not Equals:</b> a != b
+    \n• <b>Less than:</b> a &lt; b
+    \n• <b>Less than or equal to:</b> a &lt;= b
+    \n• <b>Greater than:</b> a &gt; b
+    \n• <b>Greater than or equal to:</b> a &gt;= b
+</string>
+
+    <string name="logical_operators_description_python">• <b>logical AND:</b> The "AND" operator is represented by "AND". It returns "True" if both the operands on its left and right evaluate to "True", otherwise, it returns "False".
+    \n\n• <b>logical OR</b>: The "OR" operator is represented by "OR". It returns "True" if at least one of the operands on its left or right evaluates to "True". If both operands are "False", it returns "False".
+    \n\n• <b>logical NOT:</b> The "NOT" operator is represented by "NOT". It returns the opposite boolean value of the operand. If the operand is "True", it returns "False", and if the operand is "False", it returns "True".
+</string>
+    <string name="conditional_statements_description">• <b>if statement:</b> It is used to execute a block of code if a condition is true.
+    \n\n• <b>if-else statement:</b> It allows you to execute one block of code if a condition is true and another block of code if the condition is false.
+    \n\n• <b>if-elif-else statement:</b> It allows you to test multiple conditions and execute different blocks of code based on the first condition that evaluates to true. The elif stands for "else if".
+    \n\n• <b>nested if statement:</b> You can nest if statements within other if statements to create more complex conditions.
+    \n\n• <b>ternary operator:</b> It is a compact way to write a simple if-else statement in a single line.
+</string>
+
+    <string name="p_if_condition">
+    <![CDATA[
+<pre><tt><font color="#007F00">if</font> condition:\n\t<font color="#BA2121"># code to execute if condition is true</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_if_condition1">
+    <![CDATA[
+<pre><font color="#000000">Example:\n</font><tt><font color="#1A1AA6">x = 5</font>\n<font color="#007F00">if</font> <font color="#1A1AA6">x > 0</font>:</tt>\n<tt>\t<font color="#BA2121">print(<font color="#1A1AA6">"x is positive"</font>)</font></tt><pre><font color="#795E26">Output:</font></pre><tt><font color="#1A1AA6">x is positive</font></tt></pre>
+    ]]>
+</string>
+    <string name="p_condition_example1"><![CDATA[We assign the value 5 to the variable x. Then, we have an if statement with the condition x > 0, which checks if x is greater than 0. Since the value of x is 5, which is indeed greater than 0, the condition evaluates to True. As a result, the code block indented under the if statement is executed. The line print(\"x is positive\") is within the code block. Therefore, when the condition is true, it prints the string \"x is positive\" as output.]]></string>
+
+    <string name="p_if_else_condition">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nif</font> condition:</tt>
+<tt>    <font color="#BA2121">\n\t# code to execute if condition is true</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt>    <font color="#BA2121">\n\t# code to execute if condition is false</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_if_else_condition1">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#1A1AA6">\nx = -3</font></tt>
+<tt><font color="#007F00">\nif</font> <font color="#1A1AA6">x > 0</font>:</tt>
+<tt>    <font color="#BA2121">\n\tprint(<font color="#1A1AA6">"x is positive"</font>)</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(<font color="#1A1AA6">"x is non-positive"</font>)</font></tt>
+<pre><font color="#795E26">Output:</font></pre>
+<tt><font color="#1A1AA6">x is non-positive</font></tt></pre>
+    ]]>
+</string>
+    <string name="conditionexample1"><![CDATA[We assign the value -3 to the variable x. Then, we have an if statement with the condition x > 0, which checks if x is greater than 0. Since the value of x is -3, which is not greater than 0, the condition evaluates to False. As a result, the code block indented under the else statement is executed. The line print(\"x is non-positive\") is within the code block associated with the else statement. Therefore, when the condition is false, it prints the string \"x is non-positive\" as output.]]></string>
+
+    <string name="p_if_elif_else_condition">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nif</font> condition1:</tt>
+<tt>    <font color="#BA2121">\n\t# code to execute if condition1 is true</font></tt>
+<tt><font color="#007F00">\nelif</font> condition2:</tt>
+<tt>    <font color="#BA2121">\n\t# code to execute if condition1 is false and condition2 is true</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt>    <font color="#BA2121">\n\t# code to execute if both condition1 and condition2 are false</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_if_elif_else_condition1">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>\nx = 0</tt>
+<tt><font color="#007F00">\nif</font> x > 0:</tt>
+<tt>    <font color="#BA2121">\n\tprint(<font color="#1A1AA6">"x is positive"</font>)</font></tt>
+<tt><font color="#007F00">\nelif</font> x < 0:</tt>
+<tt>    <font color="#BA2121">\n\tprint(<font color="#1A1AA6">"x is negative"</font>)</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(<font color="#1A1AA6">"x is zero"</font>)</font></tt>
+<pre><font color="#795E26">Output:</font></pre>
+<tt>x is zero</tt></pre>
+    ]]>
+</string>
+    <string name="code_snippet_description">
+    In this code snippet, we initialize a variable x with the value of 0. Then we use an <b>if-elif-else statement</b> to check the value of x and print a corresponding message based on its value.
+
+    Since x is equal to 0, the condition <b>x > 0</b> evaluates to false. Therefore, the code inside the if block is not executed.
+
+    Next, we move to the <b>elif (else if) statement</b> which checks if x is less than 0 (<b>x &lt; 0</b>). Again, this condition evaluates to false since x is equal to 0. Hence, the code inside the elif block is also not executed.
+
+    Since both the if and elif conditions are false, the program moves to the <b>else statement</b>. Here, we print the message "x is zero" since this block is executed when none of the previous conditions were true.
+</string>
+
+    <string name="p_nested_if_else_condition">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nif</font> condition1:</tt>
+<tt>    <font color="#BA2121">\n# code to execute if condition1 is true</font></tt>
+<tt>    <font color="#007F00">\n\tif</font> condition2:</tt>
+<tt>        <font color="#BA2121">\n\t\t# code to execute if both condition1 and condition2 are true</font></tt>
+<tt>    <font color="#007F00">\n\telse:</font></tt>
+<tt>        <font color="#BA2121">\n\t\t# code to execute if condition1 is true but condition2 is false</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt>    <font color="#BA2121">\n\t# code to execute if condition1 is false</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_nested_if_else_condition1">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#000000">\nx = 10</font></tt>
+<tt><font color="#007F00">\nif <font color="#000000">x > 0</font>:</font></tt>
+<tt><font color="#007F00">    \n\tif <font color="#000000">x % 2 == 0</font>:</font></tt>
+<tt><font color="#BA2121">        \n\t\tprint(<font color="#1A1AA6">"x is a positive even number"</font>)</font></tt>
+<tt><font color="#007F00">    \n\telse:</font></tt>
+<tt><font color="#BA2121">        \n\t\tprint(<font color="#1A1AA6">"x is a positive odd number"</font>)</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt><font color="#BA2121">    \n\tprint(<font color="#1A1AA6">"x is non-positive"</font>)</font></tt>
+<pre><font color="#795E26">\nOutput:</font></pre>
+<tt><font color="#1A1AA6">\nx is a positive even number</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="code_execution_description">
+    We assign the value 10 to the variable x.
+
+    The outer if statement checks if x is greater than 0. Since x is 10 (which is greater than 0), the condition evaluates to True, and we enter the block of code associated with it.
+
+    Inside the outer if statement, we have another if statement. It checks if x modulo 2 is equal to 0, which means x is divisible by 2 and is even. Since 10 is divisible by 2, the condition evaluates to True, and we execute the code block associated with it.
+
+    Inside the nested if statement, we print the message "x is a positive even number".
+
+    After executing the code inside the nested if statement, we exit the inner if statement.
+
+    Finally, we exit the outer if statement and continue with the rest of the code.
+</string>
+    <string name="p_conditional_expression">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#BA2121">\nvalue = true_value if condition else false_value</font></tt></pre>
+    ]]>
+</string>
+    <string name="p_conditional_expression1">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nx = 7</font></tt>
+<tt><font color="#BA2121">\nresult = <font color="#1A1AA6">"Even"</font> if x % 2 == 0 else <font color="#1A1AA6">"Odd"</font></font></tt>
+<tt><font color="#BA2121">\nprint(<font color="#1A1AA6">f"The number is {result}"</font>)</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="ternary_operator_description">
+    We have a variable x assigned the value of 7. The goal is to determine whether x is an even or odd number.
+
+    The line <b>result = "Even" if x % 2 == 0 else "Odd"</b> uses a ternary operator to assign the value to the variable result.
+
+    The expression <b>x % 2 == 0</b> checks if x is divisible by 2 without a remainder, which indicates an even number. If this condition is true, the value assigned to result is "Even". Otherwise, if the condition is false, the value assigned to result is "Odd".
+
+    Finally, the line <b>print(f"The number is {result}")</b> prints the result using an f-string, where the value of result is inserted within the curly braces. In this case, since x is 7, which is an odd number.
+</string>
+
 
 </resources>

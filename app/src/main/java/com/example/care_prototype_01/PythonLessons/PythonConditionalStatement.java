@@ -18,6 +18,10 @@ import android.widget.TextView;
 import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_1;
 import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_2;
 import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_3;
+import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_4;
+import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_5;
+import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_6;
+import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.PythonConditionalStatementFragment_7;
 import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.PythonLessons.PythonConditionalStatementsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -55,6 +59,10 @@ public class PythonConditionalStatement extends AppCompatActivity {
         fragmentArrayList.add(new PythonConditionalStatementFragment_1());
         fragmentArrayList.add(new PythonConditionalStatementFragment_2());
         fragmentArrayList.add(new PythonConditionalStatementFragment_3());
+        fragmentArrayList.add(new PythonConditionalStatementFragment_4());
+        fragmentArrayList.add(new PythonConditionalStatementFragment_5());
+        fragmentArrayList.add(new PythonConditionalStatementFragment_6());
+        fragmentArrayList.add(new PythonConditionalStatementFragment_7());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

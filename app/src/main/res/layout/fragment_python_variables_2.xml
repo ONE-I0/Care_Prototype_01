@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/P_Variables_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi Words Variable Names"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+        <TextView
+            android:id="@+id/P_Variables_Text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Variable names with more than one word can be difficult to read."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/P_Operators_Text03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:text="There are several techniques you can use to make them more readable:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text2"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <TextView
+            android:id="@+id/P_Syntax_Text6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Camel Case"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/P_Syntax_Text7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Each word, except the first, starts with a capital letter:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text6"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/hv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text7">
+
+            <WebView
+                android:id="@+id/camelCase_naming"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/P_variables_pascal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pascal Case"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/pascalCase_naming1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Each word starts with a capital letter:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_variables_pascal"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/hv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/pascalCase_naming1">
+
+            <WebView
+                android:id="@+id/pascalCase_naming"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/P_variables_snake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Snake Case"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv2"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/snake_naming"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Each word is separated by an underscore character:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_variables_snake"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/hv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/snake_naming">
+
+            <WebView
+                android:id="@+id/snake_case_naming"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

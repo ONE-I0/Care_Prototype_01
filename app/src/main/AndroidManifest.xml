@@ -13,6 +13,39 @@
         android:theme="@style/Theme.Care_Prototype_01"
         tools:targetApi="31">
         <activity
+            android:name=".CSharpLessons.CSharpVariables"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpSyntax"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpOperator"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpOop"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpLoopingStatements"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpIntroduction"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpInputs"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpDataTypes"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpConditionalStatements"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpComments"
+            android:exported="false" />
+        <activity
+            android:name=".CSharpLessons.CSharpArrays"
+            android:exported="false" />
+        <activity
             android:name=".PythonLessons.PythonOOP"
             android:exported="false" />
         <activity

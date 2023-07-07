@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.PythonVariablesFragment_1;
+import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.PythonVariablesFragment_2;
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -51,6 +52,7 @@ public class PythonVariables extends AppCompatActivity {
         pager_dots = findViewById(R.id.pager_dots);
 
         fragmentArrayList.add(new PythonVariablesFragment_1());
+        fragmentArrayList.add(new PythonVariablesFragment_2());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

@@ -365,7 +365,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="16dp"
                 android:contentDescription="@string/codey_image"
-                android:src="@drawable/codey_python"
+                android:src="@drawable/codey_java"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toTopOf="@+id/guideline5"

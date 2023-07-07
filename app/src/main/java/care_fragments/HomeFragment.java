@@ -1,6 +1,7 @@
 package care_fragments;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,11 +18,16 @@ import com.example.care_prototype_01.care_languages.PythonLanguageActivity;
 
 public class HomeFragment extends Fragment {
 
-
+    private MediaPlayer codeymainintro;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Declare for the sounds
+        codeymainintro = MediaPlayer.create(requireActivity(), R.raw.codeymainintro);
+        codeymainintro.start();
 
         ImageButton btnJava = view.findViewById(R.id.btnJava);
         MainActivity mainActivity1 = (MainActivity) getActivity();
@@ -55,6 +61,15 @@ public class HomeFragment extends Fragment {
         });
         return view;
     }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
 
+        // Release the MediaPlayer resources when the activity is destroyed
+        if (codeymainintro != null) {
+            codeymainintro.release();
+            codeymainintro = null;
+        }
+    }
 
 }

@@ -1,14 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PythonLessons.PythonInputsFragments.PythonInputsFragment_1">
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/P_Variables_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="@string/inputs_intro_codey"
+            app:layout_constraintBottom_toBottomOf="@+id/P_Variables_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_Variables_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_Variables_imageView1"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/P_Variables_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Variables"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_imageView1" />
+
+        <TextView
+            android:id="@+id/p_Operators_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Creating Variables"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text2" />
+
+        <TextView
+            android:id="@+id/P_Variables_Text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Variables are containers for storing data values."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/P_Operators_Text03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Python has no command for declaring a variable.A variable is created the moment you first assign a value to it."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv1"
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView">
+
+            <WebView
+                android:id="@+id/p_Variables_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/P_Syntax_imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/P_Syntax_Text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="For example."
+            app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_Syntax_imageView"
+            app:layout_constraintTop_toTopOf="@+id/P_Syntax_imageView"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/P_Syntax_Text6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Casting"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <TextView
+            android:id="@+id/P_Syntax_Text7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="If you want to specify the data type of a variable, this can be done with casting."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text6"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text7">
+
+            <WebView
+                android:id="@+id/conversion_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/P_variables_Text6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Variable Names"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv2"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/P_variables_Text7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/variable_names_description"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_variables_Text6"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_variables_Text7">
+
+            <WebView
+                android:id="@+id/p_variable_naming"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
