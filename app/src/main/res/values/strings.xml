@@ -832,7 +832,6 @@ if (condition) {\n
     <string name="ending">And that is all the data types of python. swipe right to see the questions you might asked.</string>
 
 
-
     <string name="codey_examples">Examples of declaring variables:\n\nRepresents integer values, such as 1, -5, or 1000.\nage = 25\n\nRepresents a sequence of characters enclosed in single quotes (\'\') or double quotes (").\nname = "John Doe"\n\nRepresents floating-point numbers, which include decimal points, such as 3.14 or -2.5\npi = 3.14159\n\nRepresents boolean values, either True or False\nis_student = True</string>
     <string name="codey_dialogue">Python cannot function without the use of variables so let’s read the different classifications and rules of Python variables!\n\nVariables\n\nVariables are used to store data values that can be accessed and manipulated throughout the code. They act as placeholders or containers for storing different types of information such as numbers, strings, lists, or objects.\n\nCodey: Python has no command for declaring a variable, it is only created the moment that you first assign a value to it!\n\nExamples of declaring variables include:\n\nRepresents integer values, such as 1, -5, or 1000.\nage = 25\n\nRepresents a sequence of characters enclosed in single quotes (\'\') or double quotes (").\nname = "John Doe"\n\nRepresents floating-point numbers, which include decimal points, such as 3.14 or -2.5\npi = 3.14159\n\nRepresents boolean values, either True or False\nis_student = True</string>
 

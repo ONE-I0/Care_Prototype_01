@@ -30,7 +30,6 @@ public class PythonComments extends AppCompatActivity {
     private LinearLayout pager_dots;
     private FragmentStateAdapter pagerAdapter;
     private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
-
     private Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
