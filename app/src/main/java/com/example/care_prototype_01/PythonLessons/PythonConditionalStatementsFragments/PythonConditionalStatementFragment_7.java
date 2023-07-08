@@ -54,8 +54,8 @@ public class PythonConditionalStatementFragment_7 extends Fragment {
     private void btnP_conditional_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle(" Can an \"if\" statement have multiple conditions in Python?");
+        alertDialogBuilder.setMessage("Yes, you can have multiple conditions in an \"if\" statement using logical operators such as \"and\" and \"or.\"");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

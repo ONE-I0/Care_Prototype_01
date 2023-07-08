@@ -52,7 +52,7 @@
             android:id="@+id/P_condition_btnQ1"
             android:layout_width="271dp"
             android:layout_height="wrap_content"
-            android:text="[add new]"
+            android:text="Yes, you can have multiple conditions in an &quot;if&quot; statement using logical operators such as &quot;and&quot; and &quot;or.&quot;"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
