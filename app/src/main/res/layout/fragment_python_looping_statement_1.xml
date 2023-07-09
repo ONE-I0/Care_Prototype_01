@@ -155,7 +155,7 @@
             app:srcCompat="@drawable/codey_python_cut" />
 
         <Button
-            android:id="@+id/python_conditional_DYK"
+            android:id="@+id/python_looping_DYK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
@@ -221,7 +221,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="@string/conditional_statements_description"
+            android:text="@string/loop_description"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -231,6 +231,29 @@
             app:layout_constraintTop_toBottomOf="@+id/conditiontextView3"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
+        <ImageView
+            android:id="@+id/P_looping_imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="17dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/conditiontextView4"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/loopingtextView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="These looping statements provide you with powerful tools to iterate over sequences, execute code repeatedly, and control the flow of your program."
+            app:layout_constraintBottom_toBottomOf="@+id/P_looping_imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_looping_imageView3"
+            app:layout_constraintTop_toTopOf="@+id/P_looping_imageView3"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_vertical1"
             android:layout_width="wrap_content"

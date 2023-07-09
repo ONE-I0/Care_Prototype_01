@@ -1,14 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PythonLessons.PythonArraysFragments.PythonArraysFragment_1">
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/P_Variables_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Did you find the different lessons of Python programming language engaging and interesting to study? Now, let’s move on to the last discussion and learn the basics of Python Arrays!"
+            app:layout_constraintBottom_toBottomOf="@+id/P_Variables_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_Variables_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_Variables_imageView1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/P_Variables_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/P_array_Text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="An array in Python is a data structure that contains a group of elements of the same type. Unlike lists, arrays are made to hold only one sort of element, such as characters, floating-point numbers, or integers. Data that is homogeneous can be stored and processed effectively using arrays. It is a unique type of variable that has the capacity to store several values at once."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="There are two primary types of arrays: arrays from the built-in array module, and arrays from the popular NumPy library."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView1"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/p_Operators_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Array Module"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_imageView1" />
+
+        <TextView
+            android:id="@+id/P_array_Text03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Python's array module offers a method for creating and utilizing arrays. It provides a type named array that enables the creation of arrays of a particular type and the execution of actions on them.:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text03"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Here is an illustration of how to use the array module to create an array of integers:"
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView2"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView2"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_imageView2">
+
+            <WebView
+                android:id="@+id/p_array_import_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/arraytextView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="In this instance, 'i' symbolizes the type code for signed integers. You possess the ability to select diverse type codes to create arrays of alternative types such as floating-point numbers ('f'), characters ('c'), and beyond. The array module presents a various of techniques for manipulating arrays, including but not limited to appending or eradicating elements, retrieving elements by index, as well as conducting actions like sorting and searching."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/p_Operators_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="NumPy library"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/arraytextView5" />
+
+        <TextView
+            android:id="@+id/P_array_Text031"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NumPy is a potent Python package for numerical computation. It presents the highly optimized ndarray (n-dimensional array) data structure, which is used to store and manipulate huge, homogeneous data arrays. The capability offered by NumPy arrays for mathematical operations, including slicing, indexing, reshaping, and more, is extensive."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView21"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text031"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text=" Here is an illustration of how to make a NumPy array."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView21"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView21"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_imageView21">
+
+            <WebView
+                android:id="@+id/p_numpy_import_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/arraytextView51"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NumPy arrays have permeated the realms of scientific computing, data analysis, and machine learning, wielding their efficient storage, expansive functionality, and effortless assimilation with other scientific computing libraries."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv2"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView22"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/arraytextView51"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="The array module and NumPy arrays unleash an array of advantages over lists when grappling with homogeneous data, as they bestow enhanced performance, frugal memory usage, and bespoke functionality for numerical computations."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView22"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView22"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView22"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

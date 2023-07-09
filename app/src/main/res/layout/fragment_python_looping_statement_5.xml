@@ -16,7 +16,7 @@
             android:id="@+id/P_Variables_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="for loop"
+            android:text="continue statement"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +27,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="The for loop is used to iterate over a sequence (such as a list, tuple, string, or range) or any iterable object."
+            android:text="The continue statement is used to skip the current iteration of a loop and move to the next iteration."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text">
 
             <WebView
-                android:id="@+id/p_for_loop"
+                android:id="@+id/p_for_loop_with_continue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -77,7 +77,7 @@
             app:srcCompat="@drawable/codey_python_cut" />
 
         <Button
-            android:id="@+id/python_conditional_DYK"
+            android:id="@+id/python_looping_DYK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
@@ -109,7 +109,7 @@
             app:layout_constraintTop_toBottomOf="@+id/condition_btn">
 
             <WebView
-                android:id="@+id/p_for_loop_example"
+                android:id="@+id/p_for_loop_with_continue_example"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -121,7 +121,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:text="A for loop in Python is used to iterate over a sequence or any other iterable object. It allows you to perform a set of actions for each item in the sequence or iterable. The loop variable (in this case, fruit) takes the value of each item in the sequence one by one, and the code block inside the loop is executed for each iteration. The for loop provides a convenient way to iterate over elements in a collection, such as lists, tuples, strings, dictionaries, etc. It allows you to perform repetitive operations efficiently without having to write redundant code. "
+            android:text="In this example, we have a for loop that iterates over the numbers 1 to 5. Inside the loop, there is an if condition checking if the current number is equal to 3. If it is, the continue statement is encountered, and it skips the rest of the code for that iteration. The control then moves directly to the next iteration.  As a result, when num is 3, the continue statement is executed, and the print(num) statement is skipped for that iteration. The loop proceeds to the next iteration, and the numbers 1, 2, 4, and 5 are printed. "
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -160,12 +160,67 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="I'd be happy to provide you with some examples of for loop to help you understand how they work."
+            android:text="I'd be happy to provide you with some examples of while loop to help you understand how they work."
             app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
             app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/condition_btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Comments_fix2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <Button
+            android:id="@+id/python_looping_DYK2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:text="@string/dyk"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/lionelButton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/condition_btn2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/condition_btn2"
+            app:layout_constraintTop_toTopOf="@+id/condition_btn2"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp"
+            tools:ignore="UnknownIdInLayout" />
+
+        <ImageView
+            android:id="@+id/p_condition_imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/condition_btn2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/p_Comments_fix4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="I'd be happy to provide you with some examples of continue statements to help you understand how they work."
+            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView4"
+            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView4"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="TextSizeCheck" />
 

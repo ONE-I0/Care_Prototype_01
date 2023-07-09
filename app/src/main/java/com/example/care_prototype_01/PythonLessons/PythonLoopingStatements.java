@@ -18,6 +18,9 @@ import android.widget.TextView;
 import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.PythonLoopingStatementFragment_1;
 import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.PythonLoopingStatementFragment_2;
 import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.PythonLoopingStatementFragment_3;
+import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.PythonLoopingStatementFragment_4;
+import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.PythonLoopingStatementFragment_5;
+import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.PythonLoopingStatementFragment_6;
 import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.PythonLessons.PythonLoopingStatementsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -55,6 +58,9 @@ public class PythonLoopingStatements extends AppCompatActivity {
         fragmentArrayList.add(new PythonLoopingStatementFragment_1());
         fragmentArrayList.add(new PythonLoopingStatementFragment_2());
         fragmentArrayList.add(new PythonLoopingStatementFragment_3());
+        fragmentArrayList.add(new PythonLoopingStatementFragment_4());
+        fragmentArrayList.add(new PythonLoopingStatementFragment_5());
+        fragmentArrayList.add(new PythonLoopingStatementFragment_6());
 
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

@@ -16,7 +16,7 @@
             android:id="@+id/P_Variables_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="for loop"
+            android:text="break statement"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +27,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="The for loop is used to iterate over a sequence (such as a list, tuple, string, or range) or any iterable object."
+            android:text="The break statement is used to exit the current loop prematurely, regardless of the loop condition."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text">
 
             <WebView
-                android:id="@+id/p_for_loop"
+                android:id="@+id/p_for_loop_with_condition"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -77,7 +77,7 @@
             app:srcCompat="@drawable/codey_python_cut" />
 
         <Button
-            android:id="@+id/python_conditional_DYK"
+            android:id="@+id/python_looping_DYK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
@@ -109,7 +109,7 @@
             app:layout_constraintTop_toBottomOf="@+id/condition_btn">
 
             <WebView
-                android:id="@+id/p_for_loop_example"
+                android:id="@+id/p_for_loop_with_break_example"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -121,7 +121,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:text="A for loop in Python is used to iterate over a sequence or any other iterable object. It allows you to perform a set of actions for each item in the sequence or iterable. The loop variable (in this case, fruit) takes the value of each item in the sequence one by one, and the code block inside the loop is executed for each iteration. The for loop provides a convenient way to iterate over elements in a collection, such as lists, tuples, strings, dictionaries, etc. It allows you to perform repetitive operations efficiently without having to write redundant code. "
+            android:text="we have a for loop that iterates over a list of numbers. When the value of num becomes 3, the break statement is encountered, and the loop is terminated immediately. As a result, only the numbers 1 and 2 are printed before the loop ends. The line print(&quot;Loop ended&quot;) is outside the loop and is executed after the loop terminates."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -160,12 +160,67 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="I'd be happy to provide you with some examples of for loop to help you understand how they work."
+            android:text="It's important to note that the break statement only exits the innermost loop it is contained within. If there are nested loops, the break statement will only terminate the loop in which it is encountered, not any outer loops."
             app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
             app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/condition_btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Comments_fix2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <Button
+            android:id="@+id/python_looping_DYK2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:text="@string/dyk"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/lionelButton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/condition_btn2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/condition_btn2"
+            app:layout_constraintTop_toTopOf="@+id/condition_btn2"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp"
+            tools:ignore="UnknownIdInLayout" />
+
+        <ImageView
+            android:id="@+id/p_condition_imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/condition_btn2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/p_Comments_fix4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="I'd be happy to provide you with some examples of break statements to help you understand how they work."
+            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView4"
+            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView4"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="TextSizeCheck" />
 

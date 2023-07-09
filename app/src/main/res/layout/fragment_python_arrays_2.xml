@@ -1,14 +1,374 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PythonLessons.PythonArraysFragments.PythonArraysFragment_2">
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/P_array_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access the Elements of an Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text1"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="To access any array element, one should be looking to the index number where the specific element is located."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView1"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/arrayView1">
+
+            <WebView
+                android:id="@+id/p_array_indexing_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/P_array_Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="The Length of an Array"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv1" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="To get the length of an array, use the len() method to return the length of an array or simply, the number of elements in an array."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView2"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView2"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/arrayView2">
+
+            <WebView
+                android:id="@+id/p_array_length_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/P_array_imageView22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <Button
+            android:id="@+id/python_array_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:text="Note"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/lionelButton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView22"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView22"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView22"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp"
+            tools:ignore="UnknownIdInLayout" />
+
+        <TextView
+            android:id="@+id/P_array_Text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Looping Array Elements"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_imageView22" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text4"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Did you know that you can use loops to loop through all the elements of an array? For in loop can be used to access array elements."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView4"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView4"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/arrayView4">
+
+            <WebView
+                android:id="@+id/p_for_loop_iteration_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/P_array_Text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Adding Array Elements"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv3" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text5"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="If you think array is fixed once declared, well there is a way to add more elements in an array, just use the append() method and voila!"
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView5"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView5"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/arrayView5">
+
+            <WebView
+                android:id="@+id/p_array_append_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/P_array_Text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Removing Array Elements"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv4" />
+
+        <ImageView
+            android:id="@+id/P_array_imageView6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_Text6"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/arrayView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="There are two ways to remove an element from the array. It can be pop() or remove() method."
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView6"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView6"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_array_imageView6">
+
+            <WebView
+                android:id="@+id/p_array_pop_remove_example"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/P_array_imageView23"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv5"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <Button
+            android:id="@+id/python_array_note1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:text="Note"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/lionelButton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/P_array_imageView23"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_array_imageView23"
+            app:layout_constraintTop_toTopOf="@+id/P_array_imageView23"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp"
+            tools:ignore="UnknownIdInLayout" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

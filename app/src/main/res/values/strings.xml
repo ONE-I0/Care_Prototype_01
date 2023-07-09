@@ -1052,6 +1052,285 @@ if (condition) {\n
 
     Finally, the line <b>print(f"The number is {result}")</b> prints the result using an f-string, where the value of result is inserted within the curly braces. In this case, since x is 7, which is an odd number.
 </string>
+    <!--_________________________LOOPING PYTHON____________________________-->
+    <string name="loop_description">• <b>for loop:</b> The for loop is used to iterate over a sequence (such as a list, tuple, string, or range) or any iterable object.
+    \n• <b>while loop:</b> The while loop is used to repeatedly execute a block of code as long as a condition is true.
+    \n• <b>break statement:</b> The break statement is used to exit the current loop prematurely, regardless of the loop condition.
+    \n• <b>continue statement:</b> The continue statement is used to skip the current iteration of a loop and move to the next iteration.
+    \n• <b>else statement in loops:</b> Python allows an else block to be associated with a loop. The code inside the else block is executed when the loop completes normally, without any break statements.
+</string>
 
+    <string name="p_for_loop">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nfor item in iterable:</font></tt>
+<tt>    <font color="#BA2121">\n\t# Code block to be executed</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_for_loop_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>\nfruits = [<font color="#1A1AA6">"apple"</font>, <font color="#1A1AA6">"banana"</font>, <font color="#1A1AA6">"cherry"</font>, <font color="#1A1AA6">"date"</font>]</tt>
+<tt><font color="#007F00">\nfor fruit in fruits:</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(fruit)</font></tt>
+<pre><font color="#795E26">Output:</font></pre><tt><font color="#1A1AA6">apple</font></tt>
+<tt><font color="#1A1AA6">\nbanana</font></tt>
+<tt><font color="#1A1AA6">\ncherry</font></tt>
+<tt><font color="#1A1AA6">\ndate</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_while_loop">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nwhile condition:</font></tt>
+<tt>    <font color="#BA2121">\n\t# Code block to be executed</font></tt></pre>
+    ]]>
+</string>
+    <string name="p_while_loop_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>count = 0</tt>
+<tt><font color="#007F00">\nwhile count < 5:</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(<font color="#1A1AA6">"Count:"</font>, count)</font></tt>
+<tt>    \n\tcount += 1</tt>
+<pre><font color="#795E26">Output:</font></pre><tt><font color="#1A1AA6">Count: 0</font></tt>
+<tt><font color="#1A1AA6">\nCount: 1</font></tt>
+<tt><font color="#1A1AA6">\nCount: 2</font></tt>
+<tt><font color="#1A1AA6">\nCount: 3</font></tt>
+<tt><font color="#1A1AA6">\nCount: 4</font></tt></pre>
+    ]]>
+</string>
+    <string name="example_explained_p"><![CDATA[The variable count is initialized to 0. The while loop continues as long as the condition count < 5 is true. Inside the loop, the current value of count is printed using the print() function. After each iteration, the value of count is incremented by 1 using the count += 1 shorthand for count = count + 1.]]></string>
+
+    <string name="p_for_loop_with_condition">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nfor item in iterable:</font></tt>
+<tt>    <font color="#007F00">\n\tif condition:</font></tt>
+<tt>        <font color="#BA2121">\n\t\t# Code to execute when condition is true</font></tt>
+<tt>        <font color="#BA2121">\n\t\tBreak</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_for_loop_with_break_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>\nnumbers = [<font color="#1A1AA6">1</font>, <font color="#1A1AA6">2</font>, <font color="#1A1AA6">3</font>, <font color="#1A1AA6">4</font>, <font color="#1A1AA6">5</font>]</tt>
+<tt><font color="#007F00">\nfor num in numbers:</font></tt>
+<tt>    <font color="#007F00">\n\tif num == 3:</font></tt>
+<tt>        <font color="#BA2121">\n\t\tbreak</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(num)</font></tt>
+<tt><font color="#BA2121">\nprint(<font color="#1A1AA6">"Loop ended"</font>)</font></tt>
+<pre><font color="#795E26">Output:</font></pre>
+<tt><font color="#1A1AA6">\n1</font></tt>
+<tt><font color="#1A1AA6">\n2</font></tt>
+<tt><font color="#BA2121">\nLoop ended</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_for_loop_with_continue">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nfor item in iterable:</font></tt>
+<tt>    <font color="#007F00">\n\tif condition:</font></tt>
+<tt>        <font color="#BA2121">\n\t\t# Code to execute when condition is true</font></tt>
+<tt>        <font color="#BA2121">\n\t\tcontinue</font></tt>
+<tt>    <font color="#BA2121">\n\t# Code to execute for other iterations</font></tt></pre>
+    ]]>
+</string>
+    <string name="p_for_loop_with_continue_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nfor num in range(1, 6):</font></tt>
+<tt>    <font color="#007F00">\n\tif num == 3:</font></tt>
+<tt>        <font color="#BA2121">\n\t\tcontinue</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(num)</font></tt>
+<pre><font color="#795E26">Output:</font></pre>
+<tt><font color="#1A1AA6">\n1</font></tt>
+<tt><font color="#1A1AA6">\n2</font></tt>
+<tt><font color="#1A1AA6">\n4</font></tt>
+<tt><font color="#1A1AA6">\n5</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_if_else_statement">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nif condition:</font></tt>
+<tt>    <font color="#BA2121">\n\t# Code to execute when the condition is true</font></tt>
+<tt><font color="#007F00">\nelse:</font></tt>
+<tt>    <font color="#BA2121">\t# Code to execute when the condition is false</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_if_else_statement_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>x = 5</tt>
+<tt><font color="#007F00">if x > 10:</font></tt>
+<tt>    <font color="#BA2121">print(<font color="#1A1AA6">"x is greater than 10"</font>)</font></tt>
+<tt><font color="#007F00">else:</font></tt>
+<tt>    <font color="#BA2121">print(<font color="#1A1AA6">"x is less than or equal to 10"</font>)</font></tt>
+<pre><font color="#795E26">Output:</font></pre>
+<tt><font color="#1A1AA6">x is less than or equal to 10</font></tt></pre>
+    ]]>
+</string>
+    <!--____________________ARRAY PYTHON___________________-->
+    <string name="p_array_import_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nimport array</font></tt>
+<tt><font color="#BA2121">\nmy_array = array.array(\'i\', [1, 2, 3, 4, 5])</font></tt></pre>
+    ]]>
+</string>
+    <string name="p_numpy_import_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nimport numpy as np</font></tt>
+<tt><font color="#BA2121">\nmy_array = np.array([1, 2, 3, 4, 5])</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_array_indexing_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>\nx = <font color="#1A1AA6">flowers[0]</font></tt>
+<tt><font color="#007F00">\n#To modify, place a value to the first array item:</font></tt>
+<tt><font color="#1A1AA6">\nflowers[0] = "Roses"</font></tt></pre>
+    ]]>
+</string>
+
+
+    <string name="p_array_length_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt>\nx = <font color="#1A1AA6">len(flowers)</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_for_loop_iteration_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nfor x in flowers:</font></tt>
+<tt>    <font color="#BA2121">\n\tprint(x)</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_array_append_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nflowers.append(<font color="#1A1AA6">"Sampaguita"</font>)</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="p_array_pop_remove_example">
+    <![CDATA[
+<pre><font color="#000000">Example:</font>
+<tt><font color="#007F00">\nflowers.pop(<font color="#1A1AA6">1</font>)</font></tt>
+<tt><font color="#007F00">\nflowers.remove(<font color="#1A1AA6">"Roses"</font>)</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="python_list_methods_example1"><![CDATA[
+<font color="#007F00">Example:</font>\n
+<pre><tt><font color="#1A1AA6">fruits = ["apple", "banana", "cherry"]</font></tt>
+<tt><font color="#BA2121">\nfruits.append("orange")</font></tt>
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>\n
+<pre><tt><font color="#1A1AA6">[\'apple\', \'banana\', \'cherry\', \'orange\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example2"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = ["apple", "banana", "cherry"]</font></tt>
+<tt><font color="#BA2121">\nfruits.clear()</font></tt>
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[]</font></tt></pre>
+]]></string>
+    <string name="python_list_methods_example3"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = ["apple", "banana", "cherry"]</font></tt>
+<tt><font color="#BA2121">\nx = fruits.copy()</font></tt>
+<tt><font color="#BA2121">\nprint(x)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'apple\', \'banana\', \'cherry\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example4"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = ["apple", "banana", "cherry"]</font></tt>
+<tt><font color="#BA2121">\nx = fruits.count("cherry")</font></tt>
+<tt><font color="#BA2121">\nprint(x)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">1</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example5"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = [\'apple\', \'banana\', \'cherry\']</font></tt>
+<tt><font color="#1A1AA6">\ncars = [\'Ford\', \'BMW\', \'Volvo\']</font></tt>
+<tt><font color="#BA2121">\nfruits.extend(cars)</font></tt>
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'apple\', \'banana\', \'cherry\', \'Ford\', \'BMW\', \'Volvo\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example6"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = [\'apple\', \'banana\', \'cherry\']</font></tt>
+<tt><font color="#BA2121">\nx = fruits.index("cherry")</font></tt>
+<tt><font color="#BA2121">\nprint(x)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">2</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example7"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = [\'apple\', \'banana\', \'cherry\']</font></tt>
+<tt><font color="#BA2121">\nfruits.insert(1, "orange")</font></tt>
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'apple\', \'orange\', \'banana\', \'cherry\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example8"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = [\'apple\', \'banana\', \'cherry\']</font></tt>
+<tt><font color="#BA2121">\nfruits.pop(1)</font></tt>
+
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'apple\', \'cherry\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example9"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = [\'apple\', \'banana\', \'cherry\']</font></tt>
+<tt><font color="#BA2121">\nfruits.remove("banana")</font></tt>
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'apple\', \'cherry\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example10"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\nfruits = [\'apple\', \'banana\', \'cherry\']</font></tt>
+<tt><font color="#BA2121">\nfruits.reverse()</font></tt>
+<tt><font color="#BA2121">\nprint(fruits)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'cherry\', \'banana\', \'apple\']</font></tt></pre>
+]]></string>
+
+    <string name="python_list_methods_example11"><![CDATA[
+<font color="#007F00">Example:</font>
+<pre><tt><font color="#1A1AA6">\ncars = [\'Ford\', \'BMW\', \'Volvo\']</font></tt>
+<tt><font color="#BA2121">\ncars.sort()</font></tt>
+<tt><font color="#BA2121">\nprint(cars)</font></tt></pre>
+<font color="#795E26">Output:</font>
+<pre><tt><font color="#1A1AA6">[\'BMW\', \'Ford\', \'Volvo\']</font></tt></pre>
+]]></string>
 
 </resources>
