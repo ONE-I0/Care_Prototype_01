@@ -1333,4 +1333,10 @@ if (condition) {\n
 <pre><tt><font color="#1A1AA6">[\'BMW\', \'Ford\', \'Volvo\']</font></tt></pre>
 ]]></string>
 
+
+    <!--___________________________OOP PYTHON_____________________________-->
+	<string name="note">Note!</string>
+    <string name="tip">Tip!</string>
+    <string name="Encap_p"><b><i>Classes</i></b> and <b><i>Objects</i></b> play an important role in encapsulation, which is one of the core ideas of object-oriented programming (OOP). Encapsulation is the practice of grouping data and methods into a class and controlling access to them from outside the class.</string>
+
 </resources>
