@@ -56,8 +56,8 @@ public class PythonLoopingStatementFragment_6 extends Fragment {
     private void btnP_loop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle("Can I loop through a range of numbers in Python?");
+        alertDialogBuilder.setMessage("Yes, you can use the range() function to generate a sequence of numbers and loop through them.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -71,8 +71,8 @@ public class PythonLoopingStatementFragment_6 extends Fragment {
     private void btnP_loop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle("What is the purpose of the \"range()\" function in a \"for\" loop?");
+        alertDialogBuilder.setMessage("The \"range()\" function generates a sequence of numbers. It is commonly used with a \"for\" loop to specify the number of iterations.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -86,8 +86,8 @@ public class PythonLoopingStatementFragment_6 extends Fragment {
     private void btnP_loop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle("How do I stop or exit a loop prematurely?");
+        alertDialogBuilder.setMessage("You can use the \"break\" statement to exit a loop prematurely. It immediately terminates the loop and continues with the next statement outside the loop.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

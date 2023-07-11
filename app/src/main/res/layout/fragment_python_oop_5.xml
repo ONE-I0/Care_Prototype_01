@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true"
+	tools:ignore="SpeakableTextPresentCheck">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+
+		<TextView
+			android:id="@+id/p_Operators_Text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Example"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+		<HorizontalScrollView
+			android:id="@+id/hv1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text">
+
+			<WebView
+				android:id="@+id/python_car_class_example"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:fontFamily="@font/font"
+				tools:ignore="WebViewLayout" />
+		</HorizontalScrollView>
+
+
+		<TextView
+			android:id="@+id/p_condition_Text"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="60dp"
+			android:text="The Car class represents a blueprint for creating car objects.The constructor method __init__ is called when creating a new Car object and initializes its attributes (brand, model, year) based on the provided arguments.The accelerate and brake methods define behaviors of the Car class. They print out the corresponding action along with the car's brand and model."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			android:textStyle="italic"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text3"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/p_Operators_Text3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="60dp"
+			android:text="Example explained:"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:textStyle="italic"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Comments_fix2" />
+
+		<ImageView
+			android:id="@+id/p_condition_imageView2"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="16dp"
+			android:contentDescription="@string/codey_python_cut"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/hv1"
+			app:srcCompat="@drawable/codey_python_cut" />
+
+		<TextView
+			android:id="@+id/p_Comments_fix2"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/callout_background"
+			android:text="In this example, we have a class representing a Car object with attributes (properties) like brand, model, and year, as well as methods (behaviors) like accelerate and brake."
+			app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
+			app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
+			app:layout_constraintVertical_bias="0.0"
+			tools:ignore="TextSizeCheck" />
+
+		<ImageView
+			android:id="@+id/p_condition_imageView4"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="8dp"
+			android:contentDescription="@string/codey_python_cut"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_condition_Text"
+			app:srcCompat="@drawable/codey_python_cut" />
+
+		<TextView
+			android:id="@+id/p_Comments_fix4"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/callout_background"
+			android:text="In this example, demonstrate how encapsulation is achieved by encapsulating data within the class, how constructors are used to initialize object states, and how methods are defined to perform specific actions. "
+			app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView4"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toEndOf="@+id/p_condition_imageView4"
+			app:layout_constraintTop_toTopOf="@+id/p_condition_imageView4"
+			app:layout_constraintVertical_bias="0.0"
+			tools:ignore="TextSizeCheck" />
+
+		<ImageView
+			android:id="@+id/p_condition_imageView3"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="16dp"
+			android:contentDescription="@string/codey_python_cut"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Comments_fix4"
+			app:srcCompat="@drawable/codey_python_cut" />
+
+		<TextView
+			android:id="@+id/p_Comments_fix3"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/callout_background"
+			android:text="Additionally, the example showcase the syntax and conventions specific to each programming language while adhering to the core principles of OOP."
+			app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView3"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toEndOf="@+id/p_condition_imageView3"
+			app:layout_constraintTop_toTopOf="@+id/p_condition_imageView3"
+			app:layout_constraintVertical_bias="0.0"
+			tools:ignore="TextSizeCheck" />
+
+		<ImageView
+			android:id="@+id/P.Intro.ImageView1"
+			android:layout_width="54dp"
+			android:layout_height="74dp"
+			android:layout_marginTop="24dp"
+			android:contentDescription="@string/codey_image"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Comments_fix3"
+			app:srcCompat="@drawable/codey_python" />
+
+		<TextView
+			android:id="@+id/textView5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/questions_you_might_asked"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="@+id/P.Intro.ImageView1"
+			app:layout_constraintStart_toEndOf="@+id/P.Intro.ImageView1"
+			app:layout_constraintTop_toTopOf="@+id/P.Intro.ImageView1" />
+
+		<Button
+			android:id="@+id/P_Oop_btnQ1"
+			android:layout_width="271dp"
+			android:layout_height="wrap_content"
+			android:text="Does Python support multiple inheritance?"
+			android:textAllCaps="false"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:theme="@style/lionelButton"
+			app:cornerRadius="10dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/P.Intro.ImageView1"
+			tools:ignore="TextContrastCheck" />
+
+		<Button
+			android:id="@+id/P_Oop_btnQ2"
+			android:layout_width="271dp"
+			android:layout_height="wrap_content"
+			android:text="Can you achieve method overloading in Python?"
+			android:textAllCaps="false"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:theme="@style/lionelButton"
+			app:cornerRadius="10dp"
+			app:layout_constraintEnd_toEndOf="@+id/P_Oop_btnQ1"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/P_Oop_btnQ1"
+			app:layout_constraintTop_toBottomOf="@+id/P_Oop_btnQ1"
+			tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+		<Button
+			android:id="@+id/P_Oop_btnQ3"
+			android:layout_width="271dp"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="68dp"
+			android:text="Why is abstraction achieved using abstract classes in Python?"
+			android:textAllCaps="false"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:theme="@style/lionelButton"
+			app:cornerRadius="10dp"
+			app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
+			app:layout_constraintEnd_toEndOf="@+id/P_Oop_btnQ2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/P_Oop_btnQ2"
+			app:layout_constraintTop_toBottomOf="@+id/P_Oop_btnQ2"
+			app:layout_constraintVertical_bias="0.0"
+			tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

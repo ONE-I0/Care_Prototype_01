@@ -1342,4 +1342,18 @@ if (condition) {\n
     <string name="Polymorphism_Python">The implementation of polymorphism, one of the core concepts of object-oriented programming (OOP), depends heavily on <b><i>classes</i></b> and <b><i>objects</i></b>. When something is polymorphic, it can change its appearance or behave in a different way depending on the situation.</string>
     <string name="poly_python"><b><i>Classes</i></b>  and <b><i>Objects</i></b> play a role in implementing abstraction, which is one of the fundamental principles of object-oriented programming (OOP). Abstraction involves representing essential features of an object while hiding unnecessary details. It allows you to create abstract classes or interfaces that define a common set of methods without providing their implementation. Subclasses can then inherit from these abstract classes or implement these interfaces to provide their own specific implementation.</string>
 
+    <string name="python_car_class_example"><![CDATA[
+<font color="#007F00">class Car:</font>
+<pre><tt><font color="#BA2121">\tdef __init__(self, brand, model, year):</font></tt>
+<tt><font color="#BA2121">\n\t\tself.brand = brand</font></tt>
+<tt><font color="#BA2121">\n\t\tself.model = model</font></tt>
+<tt><font color="#BA2121">\n\t\tself.year = year</font></tt>
+
+<tt><font color="#BA2121">\n\tdef accelerate(self):</font></tt>
+<tt><font color="#BA2121">\n\t\tprint(f"The {self.brand} {self.model} is accelerating.")</font></tt>
+
+<tt><font color="#BA2121">\n\tdef brake(self):</font></tt>
+<tt><font color="#BA2121">\n\t\tprint(f"The {self.brand} {self.model} is braking.")</font></tt></pre>
+]]></string>
+
 </resources>
