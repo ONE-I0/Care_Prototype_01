@@ -17,6 +17,8 @@ import android.widget.TextView;
 
 import com.example.care_prototype_01.PythonLessons.PythonOopFragments.PythonOopFragment_1;
 import com.example.care_prototype_01.PythonLessons.PythonOopFragments.PythonOopFragment_2;
+import com.example.care_prototype_01.PythonLessons.PythonOopFragments.PythonOopFragment_3;
+import com.example.care_prototype_01.PythonLessons.PythonOopFragments.PythonOopFragment_4;
 import com.example.care_prototype_01.PythonLessons.PythonOopFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.PythonLessons.PythonOopFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -53,6 +55,8 @@ public class PythonOOP extends AppCompatActivity {
 
         fragmentArrayList.add(new PythonOopFragment_1());
         fragmentArrayList.add(new PythonOopFragment_2());
+        fragmentArrayList.add(new PythonOopFragment_3());
+        fragmentArrayList.add(new PythonOopFragment_4());
 
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

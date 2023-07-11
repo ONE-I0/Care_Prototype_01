@@ -291,6 +291,37 @@
             app:layout_constraintTop_toBottomOf="@+id/conditiontextView"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
+
+        <TextView
+            android:id="@+id/conditiontextView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Constructors-Encapsulation"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/conditiontextView5"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/conditiontextView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Constructors are unique methods used to initialize objects of a class. The __init__() method can be used to achieve the same functionality even though Python lacks explicit constructor methods like some other programming languages. Encapsulation, one of the core concepts of object-oriented programming (OOP), is one of the functions played by constructors."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/conditiontextView10"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
         <TextView
             android:id="@+id/conditiontextView6"
             android:layout_width="0dp"
@@ -304,7 +335,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/conditiontextView5"
+            app:layout_constraintTop_toBottomOf="@+id/conditiontextView9"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <TextView

@@ -1335,8 +1335,11 @@ if (condition) {\n
 
 
     <!--___________________________OOP PYTHON_____________________________-->
-	<string name="note">Note!</string>
+    <string name="note">Note!</string>
     <string name="tip">Tip!</string>
     <string name="Encap_p"><b><i>Classes</i></b> and <b><i>Objects</i></b> play an important role in encapsulation, which is one of the core ideas of object-oriented programming (OOP). Encapsulation is the practice of grouping data and methods into a class and controlling access to them from outside the class.</string>
+    <string name="Inheritance_python">One of the core ideas of object-oriented programming (OOP), inheritance, is implemented in large part via <b><i>classes</i></b> and <b><i>objects</i></b>. A class can take on traits and behaviors from another class, known as the superclass or base class, through inheritance. The term \"subclass\" or \"derived class\" refers to the class that derives from the superclass.</string>
+    <string name="Polymorphism_Python">The implementation of polymorphism, one of the core concepts of object-oriented programming (OOP), depends heavily on <b><i>classes</i></b> and <b><i>objects</i></b>. When something is polymorphic, it can change its appearance or behave in a different way depending on the situation.</string>
+    <string name="poly_python"><b><i>Classes</i></b>  and <b><i>Objects</i></b> play a role in implementing abstraction, which is one of the fundamental principles of object-oriented programming (OOP). Abstraction involves representing essential features of an object while hiding unnecessary details. It allows you to create abstract classes or interfaces that define a common set of methods without providing their implementation. Subclasses can then inherit from these abstract classes or implement these interfaces to provide their own specific implementation.</string>
 
 </resources>
