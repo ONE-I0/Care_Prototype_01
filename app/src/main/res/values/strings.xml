@@ -1355,5 +1355,6 @@ if (condition) {\n
 <tt><font color="#BA2121">\n\tdef brake(self):</font></tt>
 <tt><font color="#BA2121">\n\t\tprint(f"The {self.brand} {self.model} is braking.")</font></tt></pre>
 ]]></string>
+    <string name="c_oop1">A <b>Class</b> is a blueprint or template that defines the properties (attributes) and behaviors (methods) that objects of that class will have. It serves as a blueprint for creating objects. On the other hand, an <b>Object</b> is an instance of a class, representing a specific entity in memory.</string>
 
 </resources>
