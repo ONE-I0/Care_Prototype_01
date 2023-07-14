@@ -1,14 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".JavaLessonsActivity.JavaOopFragments.JavaOopFragment_4">
+	android:fillViewport="true"
+	tools:ignore="SpeakableTextPresentCheck">
 
-	<!-- TODO: Update blank fragment layout -->
-	<TextView
+	<androidx.constraintlayout.widget.ConstraintLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:text="@string/hello_blank_fragment" />
+		android:layout_height="wrap_content">
 
-</FrameLayout>
+
+		<TextView
+			android:id="@+id/p_Operators_Text"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="ABSTRACTION"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+		<TextView
+			android:id="@+id/conditiontextView13"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Classes and Objects - Abstraction"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/P_Operators_Text03"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Classes and objects are key notions in object-oriented programming (OOP). They are connected to the abstraction principle, which focuses on portraying complicated real-world entities as simplified models."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView13"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+		<TextView
+			android:id="@+id/conditiontextView3"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Class Attributes -  Abstraction"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView4"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Class attributes (also known as class variables or fields) are variables specified within a class that reflect the data or state associated with that class's objects. Class attributes play a part in determining the common traits or characteristics shared by objects of a class when it comes to abstraction."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView3"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Class Methods - Abstraction"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView4"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView5"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Class methods can help achieve abstraction, which is one of the main ideas of Object-Oriented Programming (OOP). Abstraction is the process of portraying complicated real-world phenomena as simplified models, with the emphasis on what an entity does rather than how it does it. Class methods, often known as static methods, are linked with the class as a whole rather than with individual class objects."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+		<TextView
+			android:id="@+id/conditiontextView10"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Constructors -  Abstraction"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView5"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Constructors are unique methods that are used to initialize class objects. Constructors play a role in the definition and instantiation of abstract classes and interfaces."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView10"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView19"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="Java Modifiers - Abstraction"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView9"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView20"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Access modifiers are used to regulate the visibility and accessibility of classes, methods, and variables. Access modifiers play a role in setting the visibility of abstract classes, abstract methods, and interface methods when it comes to abstraction."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView19"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

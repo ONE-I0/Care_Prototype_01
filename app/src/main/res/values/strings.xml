@@ -1355,6 +1355,66 @@ if (condition) {\n
 <tt><font color="#BA2121">\n\tdef brake(self):</font></tt>
 <tt><font color="#BA2121">\n\t\tprint(f"The {self.brand} {self.model} is braking.")</font></tt></pre>
 ]]></string>
-    <string name="c_oop1">A <b>Class</b> is a blueprint or template that defines the properties (attributes) and behaviors (methods) that objects of that class will have. It serves as a blueprint for creating objects. On the other hand, an <b>Object</b> is an instance of a class, representing a specific entity in memory.</string>
+	<string name="c_1"><b>Classes</b> and <b>Objects</b> are fundamental components of encapsulation, which is one of the core principles of object-oriented programming (OOP). Encapsulation involves bundling data and methods together within a class and controlling their access from outside the class.</string>
+    <string name="c_2">Inheritance is one of the core ideas of object-oriented programming (OOP), and it is strongly related to <b>Classes</b> and <b>Objects.</b> The ability to inherit from another class enables for code reuse and the development of specialized classes based on preexisting ones.</string>
+
+    <string name="car_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">public class</font> <font color="#FF00FF">Car</font>
+{
+    <font color="#008000">\n\tpublic string</font> Brand { <font color="#0000FF">get;</font> <font color="#0000FF">set;</font> }
+    <font color="#008000">\n\tpublic string</font> Model { <font color="#0000FF">get;</font> <font color="#0000FF">set;</font> }
+    <font color="#008000">\n\tpublic int</font> Year { <font color="#0000FF">get;</font> <font color="#0000FF">set;</font> }
+
+    <font color="#0000FF">\n\n\tpublic Car</font>(<font color="#008000">string</font> brand, <font color="#008000">string</font> model, <font color="#008000">int</font> year)
+    {
+        \n\t\tBrand = brand;
+        \n\t\tModel = model;
+        \n\t\tYear = year;
+    \n\t}
+
+    <font color="#0000FF">\n\n\tpublic void</font> Accelerate()
+    {
+        <font color="#800000">\n\t\tConsole.WriteLine</font>(<font color="#FF0000">$"The {Brand} {Model} is accelerating."</font>);
+    \n\t}
+
+    <font color="#0000FF">\n\n\tpublic void</font> Brake()
+    {
+        <font color="#800000">\n\t\tConsole.WriteLine</font>(<font color="#FF0000">$"The {Brand} {Model} is braking."</font>);
+   \n\t}
+\n}
+</pre>
+]]>
+</string>
+
+<!--___________________________________JAVA OOP______________________________-->
+    <string name="Java_oop1">A <b>Class</b> is a blueprint or template that defines the properties (attributes) and behaviors (methods) that objects of that class will have. It serves as a blueprint for creating objects. On the other hand, an <b>Object</b> is an instance of a class, representing a specific entity in memory.</string>
+
+    <string name="car_code_java">
+<![CDATA[
+<pre>
+<font color="#0000FF">public class</font> <font color="#FF00FF">Car</font> {
+    <font color="#008000">\n\tprivate String</font> brand;
+    <font color="#008000">\n\tprivate String</font> model;
+    <font color="#008000">\n\tprivate int</font> year;
+
+    <font color="#0000FF">\n\n\tpublic Car</font>(<font color="#008000">String</font> brand, <font color="#008000">String</font> model, <font color="#008000">int</font> year) {
+        <font color="#800000">\n\tthis</font>.brand = brand;
+        <font color="#800000">\n\tthis</font>.model = model;
+        <font color="#800000">\n\tthis</font>.year = year;
+   \n\t}
+
+    <font color="#0000FF">\n\n\tpublic void</font> accelerate() {
+        <font color="#800000">\n\tSystem.out.println</font>(<font color="#FF0000">"The " + brand + " " + model + " is accelerating."</font>);
+    \n\t}
+
+    <font color="#0000FF">\n\n\tpublic void</font> brake() {
+        <font color="#800000">\n\t\tSystem.out.println</font>(<font color="#FF0000">"The " + brand + " " + model + " is braking."</font>);
+    \n\t}
+\n}
+</pre>
+]]>
+</string>
 
 </resources>

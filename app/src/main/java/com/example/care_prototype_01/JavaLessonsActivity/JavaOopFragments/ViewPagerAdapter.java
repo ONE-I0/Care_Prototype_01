@@ -1,18 +1,17 @@
-package com.example.care_prototype_01.CSharpLessons.CSharpArraysFragments;
+package com.example.care_prototype_01.JavaLessonsActivity.JavaOopFragments;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.care_prototype_01.CSharpLessons.CSharpArrays;
-import com.example.care_prototype_01.PythonLessons.PythonArrays;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOop;
 
 import java.util.ArrayList;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     private ArrayList<Fragment> fragmentArrayList;
-    public ViewPagerAdapter(CSharpArrays cSharpArrays, ArrayList<Fragment> fragmentArrayList){
-        super(cSharpArrays);
+    public ViewPagerAdapter(JavaOop javaOop, ArrayList<Fragment> fragmentArrayList){
+        super(javaOop);
         this.fragmentArrayList = fragmentArrayList;
     }
 

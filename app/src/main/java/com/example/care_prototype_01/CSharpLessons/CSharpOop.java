@@ -17,6 +17,9 @@ import android.widget.TextView;
 
 import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.CSharpOopFragment_1;
 import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.CSharpOopFragment_2;
+import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.CSharpOopFragment_3;
+import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.CSharpOopFragment_4;
+import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.CSharpOopFragment_5;
 import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpOopFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -54,6 +57,9 @@ public class CSharpOop extends AppCompatActivity {
 
         fragmentArrayList.add(new CSharpOopFragment_1());
         fragmentArrayList.add(new CSharpOopFragment_2());
+        fragmentArrayList.add(new CSharpOopFragment_3());
+        fragmentArrayList.add(new CSharpOopFragment_4());
+        fragmentArrayList.add(new CSharpOopFragment_5());
 
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

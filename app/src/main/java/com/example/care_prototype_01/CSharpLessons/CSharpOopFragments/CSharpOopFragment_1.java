@@ -64,10 +64,12 @@ public class CSharpOopFragment_1 extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
         alertDialogBuilder.setTitle("Did you know!");
-        alertDialogBuilder.setMessage("did you know that Object-oriented programming has several advantages over procedural programming:\n" +
-                "• OOP is faster and easier to execute.\n" +
-                "• OOP provides a clear structure for the programs.\n" +
-                "• OOP helps to keep the Java code DRY \"Don't Repeat Yourself\", and makes the code easier to maintain, modify and debug.");
+        alertDialogBuilder.setMessage("did you know that Object-oriented programming has several advantages over procedural programming: \n" +
+                "• C# has a clean and expressive syntax that is easy to read and understand. And it was designed to resemble natural language constructs, making it accessible to beginners and comfortable for experienced developers.\n" +
+                "• C# is considered a user-friendly programming language\n" +
+                "• OOP provides a clear structure for the programs. \n" +
+                "• OOP helps to keep the c# code DRY \"Don't Repeat Yourself\", and makes the code easier to maintain, modify and debug. \n" +
+                "• OOP makes it possible to create full reusable applications with less code and shorter development time. \n");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -83,7 +85,7 @@ public class CSharpOopFragment_1 extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
         alertDialogBuilder.setTitle("Take Note!");
-        alertDialogBuilder.setMessage("Take note OOP makes it possible to create full reusable applications with less code and shorter development time.");
+        alertDialogBuilder.setMessage("The performance of object-oriented programming (OOP) in c# may not always be faster");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

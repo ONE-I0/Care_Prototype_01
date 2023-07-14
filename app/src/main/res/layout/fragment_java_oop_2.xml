@@ -1,14 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".JavaLessonsActivity.JavaOopFragments.JavaOopFragment_2">
+	android:fillViewport="true"
+	tools:ignore="SpeakableTextPresentCheck">
 
-	<!-- TODO: Update blank fragment layout -->
-	<TextView
+	<androidx.constraintlayout.widget.ConstraintLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:text="@string/hello_blank_fragment" />
+		android:layout_height="wrap_content">
 
-</FrameLayout>
+
+		<TextView
+			android:id="@+id/p_Operators_Text"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="INHERITANCE"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+		<TextView
+			android:id="@+id/conditiontextView8"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Classes and Objects - Inheritance"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/P_Operators_Text03"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Classes and objects play an important part in object-oriented programming and are closely related to inheritance."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView8"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+		<TextView
+			android:id="@+id/conditiontextView3"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Class Attributes - Inheritance"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView4"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Class attributes are the properties that define an object's state or characteristics. Class attributes act differently in inheritance depending on their visibility and accessibility modifiers."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView3"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+		<TextView
+			android:id="@+id/conditiontextView15"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Class Methods - Inheritance"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView4"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView16"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Class methods (also known as static methods) act differently in inheritance than instance methods."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView15"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView10"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Constructors - Inheritance"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView16"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Constructors are special methods used to initialize class objects. Constructors are crucial in the construction and initialization of objects in both the superclass and the subclass in the context of inheritance."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView10"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView6"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Modifiers - Inheritance"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView9"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView7"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Access modifiers are used to regulate the visibility and accessibility of classes, methods, and variables. Access modifiers are vital in determining how members of a superclass are inherited and accessed by the subclass when it comes to inheritance."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView6"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

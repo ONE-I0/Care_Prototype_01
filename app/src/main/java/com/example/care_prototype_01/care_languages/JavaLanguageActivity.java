@@ -13,6 +13,7 @@ import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypes;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaInputs;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaIntroduction;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatements;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOop;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaOperators;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaSyntax;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaVariables;
@@ -36,6 +37,7 @@ public class JavaLanguageActivity extends AppCompatActivity {
         Button btnJavaConditionalStatements =  findViewById(R.id.btnConditionalStatements);
         Button btnJavaLoopingStatements =  findViewById(R.id.btnLoopingStatements);
         Button btnJavaArrays =  findViewById(R.id.btnArrays);
+        Button btnJavaOop =  findViewById(R.id.btnOop);
 
         btnJavaIntroduction.setOnClickListener(view -> {
             Intent OpenJavaIntroduction = new Intent(JavaLanguageActivity.this, JavaIntroduction.class);
@@ -85,6 +87,10 @@ public class JavaLanguageActivity extends AppCompatActivity {
         btnJavaArrays.setOnClickListener(view -> {
             Intent OpenJavaArrays = new Intent(JavaLanguageActivity.this, JavaArray.class);
             startActivity(OpenJavaArrays);
+        });
+        btnJavaOop.setOnClickListener(view -> {
+            Intent OpenJavaOop = new Intent(JavaLanguageActivity.this, JavaOop.class);
+            startActivity(OpenJavaOop);
         });
     }
 }

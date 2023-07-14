@@ -1,5 +1,8 @@
 package com.example.care_prototype_01.JavaLessonsActivity.JavaOopFragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,60 +10,121 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.care_prototype_01.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link JavaOopFragment_1#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class JavaOopFragment_1 extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public JavaOopFragment_1() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment JavaOopFragment_1.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static JavaOopFragment_1 newInstance(String param1, String param2) {
-        JavaOopFragment_1 fragment = new JavaOopFragment_1();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private MediaPlayer question_sounds;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_java_oop_1, container, false);
+        View view = inflater.inflate(R.layout.fragment_java_oop_1, container, false);
+
+        //declare for the sounds
+        question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
+
+        Button btnShowAlertDialog = view.findViewById(R.id.python_Oop_DYK);
+        btnShowAlertDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDYK1();
+            }
+        });
+
+        Button btnShowAlertDialog1 = view.findViewById(R.id.python_Oop_NOTE);
+        btnShowAlertDialog1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showNOTE1();
+            }
+        });
+
+        Button btnShowAlertDialog2 = view.findViewById(R.id.python_Oop_TIP);
+        btnShowAlertDialog2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTIP1();
+            }
+        });
+
+        Button btnShowAlertDialog3 = view.findViewById(R.id.python_Oop_NOTE2);
+        btnShowAlertDialog3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showNote2();
+            }
+        });
+
+        return view;
+    }
+
+    private void showDYK1() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("Did you know!");
+        alertDialogBuilder.setMessage("did you know that Object-oriented programming has several advantages over procedural programming: \n" +
+                "• OOP is faster and easier to execute.\n" +
+                "• OOP provides a clear structure for the programs.\n" +
+                "• OOP helps to keep the Java code DRY \"Don't Repeat Yourself\", and makes the code easier to maintain, modify and debug.\n");
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can add some action here when the user clicks "OK"
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        question_sounds.start();
+    }
+
+    private void showNOTE1() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("Take Note!");
+        alertDialogBuilder.setMessage("Take note OOP makes it possible to create full reusable applications with less code and shorter development time.");
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can add some action here when the user clicks "OK"
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        question_sounds.start();
+    }
+
+    private void showTIP1() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("Tip!");
+        alertDialogBuilder.setMessage("The \"Don't Repeat Yourself\" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.");
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can add some action here when the user clicks "OK"
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        question_sounds.start();
+    }
+
+    private void showNote2() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("Take Note!");
+        alertDialogBuilder.setMessage("Take note: To create a class, use the keyword class.");
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can add some action here when the user clicks "OK"
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        question_sounds.start();
     }
 }

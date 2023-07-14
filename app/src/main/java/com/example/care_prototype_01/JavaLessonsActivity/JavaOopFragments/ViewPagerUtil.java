@@ -1,4 +1,4 @@
-package com.example.care_prototype_01.CSharpLessons.CSharpArraysFragments;
+package com.example.care_prototype_01.JavaLessonsActivity.JavaOopFragments;
 
 import android.app.Activity;
 import android.view.KeyEvent;

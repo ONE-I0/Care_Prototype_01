@@ -1,14 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".JavaLessonsActivity.JavaOopFragments.JavaOopFragment_3">
+	android:fillViewport="true"
+	tools:ignore="SpeakableTextPresentCheck">
 
-	<!-- TODO: Update blank fragment layout -->
-	<TextView
+	<androidx.constraintlayout.widget.ConstraintLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:text="@string/hello_blank_fragment" />
+		android:layout_height="wrap_content">
 
-</FrameLayout>
+
+		<TextView
+			android:id="@+id/p_Operators_Text"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="POLYMORPHISM"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+		<TextView
+			android:id="@+id/conditiontextView12"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Classes and Objects - Polymorphism"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView11"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Class Attributes - Polymorphism"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+		<TextView
+			android:id="@+id/P_Operators_Text03"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Polymorphism, one of the main ideas of object-oriented programming, is implemented through classes and objects."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView12"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView4"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Class attributes are variables declared within a class that represent an object's status or data. When it comes to polymorphism, class attributes can behave differently depending on the type of object through which they are accessed."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView11"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Class Methods - Polymorphism"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView4"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView5"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Through method overriding, class methods play a part in polymorphism. Objects of distinct classes can be considered as objects of a single superclass or interface thanks to polymorphism. Polymorphism in class methods allows a subclass to create its own implementation of a method provided in the superclass."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+		<TextView
+			android:id="@+id/conditiontextView10"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Constructors - Polymorphism"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView5"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Constructors are essential for creating objects and initializing their state. Constructors are called during object formation in polymorphism, and their behavior might change depending on the kind of object being created."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView10"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView17"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:text="Java Modifiers - Polymorphism"
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView9"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<TextView
+			android:id="@+id/conditiontextView18"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="When dealing with polymorphism, access modifiers also play a role in setting the visibility and accessibility of methods and variables. The ability of objects of distinct classes to be handled as objects of a similar superclass or interface is referred to as polymorphism."
+			android:textColor="#000000"
+			android:textIsSelectable="false"
+			android:textSize="18sp"
+			app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
+			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+			app:layout_constraintTop_toBottomOf="@+id/conditiontextView17"
+			app:layout_constraintVertical_bias="0.0"
+			tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_vertical2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_begin="15dp" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline_horizontal2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_end="15dp" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
