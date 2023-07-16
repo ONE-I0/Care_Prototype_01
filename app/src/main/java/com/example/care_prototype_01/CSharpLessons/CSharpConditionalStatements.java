@@ -18,6 +18,9 @@ import android.widget.TextView;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_1;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_2;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_3;
+import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_4;
+import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_5;
+import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_6;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -55,6 +58,9 @@ public class CSharpConditionalStatements extends AppCompatActivity {
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_1());
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_2());
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_3());
+        fragmentArrayList.add(new CSharpConditionalStatementsFragment_4());
+        fragmentArrayList.add(new CSharpConditionalStatementsFragment_5());
+        fragmentArrayList.add(new CSharpConditionalStatementsFragment_6());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

@@ -15,8 +15,8 @@
         <TextView
             android:id="@+id/P_Variables_Text1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="If statement"
+            android:layout_height="28dp"
+            android:text="ternary operator:"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +27,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Use the if statement to specify a block of C# code to be executed if a condition is True."
+            android:text="The ternary operator provides a concise way to express conditional statements."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text">
 
             <WebView
-                android:id="@+id/c_if_code"
+                android:id="@+id/c_ter_example_code"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -108,49 +108,19 @@
             app:layout_constraintTop_toBottomOf="@+id/condition_btn">
 
             <WebView
-                android:id="@+id/c_if_code1"
+                android:id="@+id/c_ter_example_code1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
 
-        <ImageView
-            android:id="@+id/condition_btn1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_python_cut"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_condition_imageView2"
-            app:srcCompat="@drawable/codey_python_cut" />
-
-        <Button
-            android:id="@+id/C_conditional_DYK1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:text="@string/dyk"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:theme="@style/lionelButton"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/condition_btn1"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/condition_btn1"
-            app:layout_constraintTop_toTopOf="@+id/condition_btn1"
-            app:layout_constraintVertical_bias="0.615"
-            app:strokeColor="#AAAAAA"
-            app:strokeWidth="0.1dp"
-            tools:ignore="UnknownIdInLayout" />
         <TextView
             android:id="@+id/c_condition_Text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:text="@string/c_condition1"
+            android:text="the condition (num > 5) is evaluated. If the condition is true (which it is in this case), the value &quot;Number is greater than 5&quot; is assigned to the result variable. If the condition is false, the value &quot;Number is less than or equal to 5&quot; is assigned. The output of this code will be &quot;Number is greater than 5&quot;."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -175,6 +145,30 @@
             app:layout_constraintTop_toBottomOf="@+id/hv2" />
 
         <ImageView
+            android:id="@+id/p_condition_imageView6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_condition_imageView2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/p_Comments_fix6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="The ternary operator simplifies conditional expressions, but requires judicious use for code readability and avoids complexity."
+            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
+            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
             android:id="@+id/p_condition_imageView2"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -189,12 +183,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="I'd be happy to provide you with some examples of for loop to help you understand how they work."
-            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
+            android:text="I'd be happy to provide you with some examples of else-if statement to help you understand how they work."
+            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
-            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
+            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView6"
+            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView6"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="TextSizeCheck" />
 

@@ -13,37 +13,34 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 
-import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.CSharpLoopingStatementsFragment_2;
 import com.example.care_prototype_01.R;
 
-public class CSharpConditionalStatementsFragment_2 extends Fragment {
+
+public class CSharpConditionalStatementsFragment_4 extends Fragment {
 
     private static final int TEXT_SIZE_IN_DP = 20;
     private MediaPlayer question_sounds;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_c_sharp_conditional_statements_2, container, false);
+        View view = inflater.inflate(R.layout.fragment_c_sharp_conditional_statements_4, container, false);
 
         // Example sing line comment
-        WebView codeWebView_P_looping1 = view.findViewById(R.id.c_if_code);
-        String formattedCode_P_looping1  = getString(R.string.c_if_code);
+        WebView codeWebView_P_looping1 = view.findViewById(R.id.c_else_if_code);
+        String formattedCode_P_looping1  = getString(R.string.c_else_if_code);
         String htmlContent_P_loopingl1  = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", dpToPx(), formattedCode_P_looping1);
         configureWebView(codeWebView_P_looping1, htmlContent_P_loopingl1);
 
 
         // Example sing line comment
-        WebView codeWebView_P_looping2 = view.findViewById(R.id.c_if_code1);
-        String formattedCode_P_looping2  = getString(R.string.c_if_code1);
+        WebView codeWebView_P_looping2 = view.findViewById(R.id.c_else_if_example_code);
+        String formattedCode_P_looping2  = getString(R.string.c_else_if_example_code);
         String htmlContent_P_loopingl2  = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", dpToPx(), formattedCode_P_looping2);
         configureWebView(codeWebView_P_looping2, htmlContent_P_loopingl2);
 
         question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
         Button btnShowAlertDialog = view.findViewById(R.id.C_conditional_DYK);
 
-        btnShowAlertDialog.setOnClickListener(v -> showDYK1());
-        Button btnShowAlertDialog1 = view.findViewById(R.id.C_conditional_DYK1);
-        btnShowAlertDialog1.setOnClickListener(v -> showDYK2());
 
         return view;
     }
@@ -60,7 +57,7 @@ public class CSharpConditionalStatementsFragment_2 extends Fragment {
 
     private int dpToPx() {
         float density = getResources().getDisplayMetrics().density;
-        return Math.round(CSharpConditionalStatementsFragment_2.TEXT_SIZE_IN_DP * density);
+        return Math.round(CSharpConditionalStatementsFragment_4.TEXT_SIZE_IN_DP * density);
     }
 
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
@@ -68,19 +65,7 @@ public class CSharpConditionalStatementsFragment_2 extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
         alertDialogBuilder.setTitle("Did you know!");
-        alertDialogBuilder.setMessage("Did you know that the condition is an expression that evaluates to a Boolean value (true or false). It determines whether the code block inside the if statement should be executed. The code block enclosed within the curly braces { } is the body of the if statement. It contains the code to be executed if the condition is true.");
-        alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
-            // You can add some action here when the user clicks "OK"
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void showDYK2() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("Did you know!");
-        alertDialogBuilder.setMessage("Did you know that “if statement” allows you to make decisions and execute specific code based on the outcome of a condition. It is a powerful construct for implementing branching logic in C# programs.");
+        alertDialogBuilder.setMessage("Did you know that \"if\" statement starts with an \"if\" statement with a condition enclosed in parentheses. If the condition is true, the code block is executed, and the program moves to the next \"else if\" statement. If the condition is false, the code block is executed. The \"else\" block is optional.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
             // You can add some action here when the user clicks "OK"
         });

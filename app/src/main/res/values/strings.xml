@@ -1511,4 +1511,135 @@ if (condition) {\n
 </string>
     <string name="c_do_example"><![CDATA[The \"do-while\" loop first executes the code block, which prints the value of count. Then, it evaluates the condition count < 5. If the condition is true, the loop continues to execute, and the value of count is incremented. This process repeats until the condition becomes false. Since count starts at 0 and increments up to 4, the loop executes five times.]]></string>
 
+
+    <!--__________________CONDITIONAL STATEMENT___________________________-->
+
+    <string name="c_comparison_operators_description">
+    • \<b>Less than:</b> &lt; \n
+    • \<b>Less than or equal to:</b> &lt;= \n
+    • \<b>Greater than:</b> &gt; \n
+    • \<b>Greater than or equal to:</b> &gt;= \n
+    • \<b>Equal to:</b> == \n
+    • \<b>Not Equal to:</b> != \n
+</string>
+
+    <string name="c_conditional_statements_description">
+    • \<b>Use if:</b> to specify a block of code to be executed, if a specified condition is true \n
+    • \<b>Use else:</b> to specify a block of code to be executed, if the same condition is false \n
+    • \<b>Use else if:</b> to specify a new condition to test, if the first condition is false \n
+    • \<b>The ternary operator:</b> provides a concise way to express conditional statements. \n
+</string>
+
+
+    <string name="c_if_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">if</font> (condition){
+    <font color="#008000">\n\t// Code to be executed while the condition is true</font>
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_if_code1">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> number = 10;
+<font color="#0000FF">\nif</font> (number > 0){
+    <font color="#800000">\n\tConsole.WriteLine</font>("The number is positive.");
+\n}
+\nOutput:
+\nThe number is positive.
+</pre>
+]]>
+</string>
+    <string name="c_condition1"><![CDATA[If the value of the number variable is greater than 0, the message \"The number is positive.\" will be displayed. If the condition is false (number <= 0), the code block inside the if statement is not executed, and the program continues to the next statement.]]></string>
+
+    <string name="c_else_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">if</font> (condition){
+    <font color="#008000">\n\t// Code to be executed if the condition is true</font>
+\n}
+<font color="#0000FF">\nelse</font>{
+    <font color="#008000">\n\t// Code to be executed if the condition is false</font>
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_else_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> num = 10;
+<font color="#0000FF">\nif</font> (num > 5){
+    <font color="#800000">\n\tConsole.WriteLine</font>("The number is greater than 5.");
+\n}
+<font color="#0000FF">\nelse</font>{
+    <font color="#800000">\n\tConsole.WriteLine</font>("The number is less than or equal to 5.");
+\n}
+\nOutput:
+\nThe number is greater than 5.
+</pre>
+]]>
+</string>
+
+    <string name="c_else_if_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">if</font> (condition1){
+    <font color="#008000">\n\t// Code to be executed if condition1 is true</font>
+\n}
+<font color="#0000FF">\nelse if</font> (condition2){
+    <font color="#008000">\n\t// Code to be executed if condition2 is true and condition1 is false</font>
+\n}
+<font color="#0000FF">\nelse if</font> (condition3){
+    <font color="#008000">\n\t// Code to be executed if condition3 is true and both condition1 and condition2 are false</font>
+\n}
+<font color="#0000FF">\nelse</font>{
+    <font color="#008000">\n\t// Code to be executed if all previous conditions are false</font>
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_else_if_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> time = 22;
+<font color="#0000FF">\nif</font> (time < 10) {
+  <font color="#800000">\n\tConsole.WriteLine</font>("Good morning.");
+\n}
+<font color="#0000FF">\nelse if</font> (time < 20) {
+  <font color="#800000">\n\tConsole.WriteLine</font>("Good day.");
+\n}
+<font color="#0000FF">\nelse</font> {
+  <font color="#800000">\n\tConsole.WriteLine</font>("Good evening.");
+\n}
+\nOutput:
+\nGood evening.
+</pre>
+]]>
+</string>
+
+    <string name="c_ter_example_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">condition</font> ? <font color="#FF0000">value1</font> : <font color="#FF0000">value2</font>
+</pre>
+]]>
+</string>
+    <string name="c_ter_example_code1">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> num = 7;
+<font color="#008000">\nstring</font> result = (num > 5) ? <font color="#FF0000">"Number is greater than 5"</font> : <font color="#FF0000">"Number is less than or equal to 5"</font>;
+<font color="#800000"\nConsole.WriteLine</font>(result);
+\nOutput:
+\nNumber is greater than 5
+</pre>
+]]>
+</string>
+
+
 </resources>

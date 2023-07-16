@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/P_Variables_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Hello, Im Codey! I'd be happy to help you understand conditional statements in programming.Let's explore how conditions and if statements work in C#."
+            app:layout_constraintBottom_toBottomOf="@+id/P_Variables_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_Variables_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_Variables_imageView1"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/P_Variables_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Conditional Statements"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/P_Variables_Text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In C#, a conditional statement is used to direct the program to react to a specific situation depending on whether a given condition or expression holds true. This statement is a key component for decision-making in programs and forms the backbone for branching logic and the control flow of the program. Without such conditions and expressions, the program would be unable to ascertain the correctness of the condition and thus, unable to decide the subsequent block of code to be executed."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <ImageView
+            android:id="@+id/P_condition_imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/conditiontextView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="You already know that C# supports the usual logical conditions from mathematics:"
+            app:layout_constraintBottom_toBottomOf="@+id/P_condition_imageView1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_condition_imageView1"
+            app:layout_constraintTop_toTopOf="@+id/P_condition_imageView1"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/p_Variables_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Conditions:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_condition_imageView1" />
+
+        <TextView
+            android:id="@+id/p_Variables_Text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C# can involve various elements, such as variables, literals, comparison operators, logical operators, and function calls.Common operators used in conditions include:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Variables_Text"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/p_Operators_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Comparison Operators:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Variables_Text2" />
+
+        <TextView
+            android:id="@+id/P_Operators_Text03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/c_comparison_operators_description"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <TextView
+            android:id="@+id/P_Syntax_Text6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Logical Operators:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/P_Syntax_Text7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/logical_operators_description_python"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text6"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <ImageView
+            android:id="@+id/condition_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text7"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <Button
+            android:id="@+id/C_conditional_DYK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:text="@string/dyk"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/lionelButton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/condition_btn"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/condition_btn"
+            app:layout_constraintTop_toTopOf="@+id/condition_btn"
+            app:layout_constraintVertical_bias="0.615"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp"
+            tools:ignore="UnknownIdInLayout" />
+
+
+        <TextView
+            android:id="@+id/conditiontextView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="C# has the following conditional statements:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/condition_btn"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/conditiontextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/c_conditional_statements_description"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/conditiontextView3"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
