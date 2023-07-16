@@ -18,6 +18,8 @@ import android.widget.TextView;
 import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.CSharpLoopingStatementsFragment_1;
 import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.CSharpLoopingStatementsFragment_2;
 import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.CSharpLoopingStatementsFragment_3;
+import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.CSharpLoopingStatementsFragment_4;
+import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.CSharpLoopingStatementsFragment_5;
 import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpLoopingStatementsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -55,6 +57,9 @@ public class CSharpLoopingStatements extends AppCompatActivity {
         fragmentArrayList.add(new CSharpLoopingStatementsFragment_1());
         fragmentArrayList.add(new CSharpLoopingStatementsFragment_2());
         fragmentArrayList.add(new CSharpLoopingStatementsFragment_3());
+        fragmentArrayList.add(new CSharpLoopingStatementsFragment_4());
+        fragmentArrayList.add(new CSharpLoopingStatementsFragment_5());
+
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

@@ -83,7 +83,7 @@
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
 			android:background="@drawable/callout_background"
-			android:text="in this example, we have a class representing a Car object with attributes (properties) like brand, model, and year, as well as methods (behaviors) like accelerate and brake. "
+			android:text="In this example, we have a class representing a Car object with attributes (properties) like brand, model, and year, as well as methods (behaviors) like accelerate and brake. "
 			app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
 			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
 			app:layout_constraintHorizontal_bias="0.0"
@@ -134,10 +134,10 @@
 			android:text="Additionally, the example showcase the syntax and conventions specific to each programming language while adhering to the core principles of OOP."
 			app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView3"
 			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintHorizontal_bias="0.842"
 			app:layout_constraintStart_toEndOf="@+id/p_condition_imageView3"
 			app:layout_constraintTop_toTopOf="@+id/p_condition_imageView3"
-			app:layout_constraintVertical_bias="0.0"
+			app:layout_constraintVertical_bias="1.0"
 			tools:ignore="TextSizeCheck" />
 
 		<ImageView

@@ -16,7 +16,7 @@
             android:id="@+id/P_Variables_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="for loop"
+            android:text="do-while loop"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +27,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="A &quot;for&quot; loop is used to iterate over a sequence of values for a specified number of times. It consists of three parts: initialization, condition, and iteration."
+            android:text="A &quot;do-while&quot; loop is similar to a &quot;while&quot; loop, but the condition is checked after each iteration. This means that the code block is executed at least once, even if the condition is initially false."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -42,6 +42,7 @@
             android:id="@+id/p_Operators_Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="Here’s the basic syntax:"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -58,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text">
 
             <WebView
-                android:id="@+id/c_for_loop_code"
+                android:id="@+id/c_do_while_loop_code"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -76,11 +77,11 @@
             app:srcCompat="@drawable/codey_python_cut" />
 
         <Button
-            android:id="@+id/python_conditional_DYK"
+            android:id="@+id/C_looping_DYK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
-            android:text="Instructions!"
+            android:text="@string/dyk"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -108,19 +109,18 @@
             app:layout_constraintTop_toBottomOf="@+id/condition_btn">
 
             <WebView
-                android:id="@+id/example_code"
+                android:id="@+id/c_do_example_code"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
-
         <TextView
-            android:id="@+id/p_condition_Text"
+            android:id="@+id/c_condition_Text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:text="The loop initializes the variable i to 0. It then checks if the condition i \u003c 5 is true. If it is, the code block inside the loop is executed, and the variable i is incremented by 1 (i++). The loop continues until the condition becomes false."
+            android:text="@string/c_do_example"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -151,7 +151,7 @@
             android:layout_marginTop="16dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_condition_Text"
+            app:layout_constraintTop_toBottomOf="@+id/c_condition_Text"
             app:srcCompat="@drawable/codey_python_cut" />
 
         <TextView
@@ -159,7 +159,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="I'd be happy to provide you with some examples of for loop to help you understand how they work."
+            android:text="I'd be happy to provide you with some examples of do while loop to help you understand how they work."
             app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"

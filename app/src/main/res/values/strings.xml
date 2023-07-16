@@ -1355,7 +1355,7 @@ if (condition) {\n
 <tt><font color="#BA2121">\n\tdef brake(self):</font></tt>
 <tt><font color="#BA2121">\n\t\tprint(f"The {self.brand} {self.model} is braking.")</font></tt></pre>
 ]]></string>
-	<string name="c_1"><b>Classes</b> and <b>Objects</b> are fundamental components of encapsulation, which is one of the core principles of object-oriented programming (OOP). Encapsulation involves bundling data and methods together within a class and controlling their access from outside the class.</string>
+    <string name="c_1"><b>Classes</b> and <b>Objects</b> are fundamental components of encapsulation, which is one of the core principles of object-oriented programming (OOP). Encapsulation involves bundling data and methods together within a class and controlling their access from outside the class.</string>
     <string name="c_2">Inheritance is one of the core ideas of object-oriented programming (OOP), and it is strongly related to <b>Classes</b> and <b>Objects.</b> The ability to inherit from another class enables for code reuse and the development of specialized classes based on preexisting ones.</string>
 
     <string name="car_code">
@@ -1388,7 +1388,7 @@ if (condition) {\n
 ]]>
 </string>
 
-<!--___________________________________JAVA OOP______________________________-->
+    <!--___________________________________JAVA OOP______________________________-->
     <string name="Java_oop1">A <b>Class</b> is a blueprint or template that defines the properties (attributes) and behaviors (methods) that objects of that class will have. It serves as a blueprint for creating objects. On the other hand, an <b>Object</b> is an instance of a class, representing a specific entity in memory.</string>
 
     <string name="car_code_java">
@@ -1416,5 +1416,99 @@ if (condition) {\n
 </pre>
 ]]>
 </string>
+
+    <!--________________________C Sharp LOOPING STATEMENT______________________-->
+    <string name="c_logical_operators_description">
+    • \<b>Logical AND (&amp;&amp;):</b> The logical AND operator returns true if both the left and right operands are true.\n
+    • \<b>Logical OR (||):</b> The logical OR operator returns true if at least one of the left or right operands is true.\n
+    • \<b>Logical NOT (!):</b> The logical NOT operator is a unary operator that reverses the logical state of its operand. If the operand is true, it returns false, and if the operand is false, it returns true.
+</string>
+
+    <string name="loop_types_description">
+    • \<b>"for"</b> loop: A "for" loop is used to iterate over a sequence of values for a specified number of times. It consists of three parts: initialization, condition, and iteration.\n
+    • \<b>"while"</b> loop: A "while" loop is used to repeatedly execute a block of code as long as a given condition remains true. The condition is checked before each iteration.\n
+    • \<b>"do-while"</b> loop: A "do-while" loop is similar to a "while" loop, but the condition is checked after each iteration. This means that the code block is executed at least once, even if the condition is initially false.
+</string>
+
+    <string name="c_for_loop_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">for</font> (<font color="#008000">int</font> i = 0; i < 5; i++) {
+    <font color="#008000">\n\t// Code to be executed in each iteration</font>
+\n}
+</pre>]]>
+</string>
+
+    <string name="example_code">
+        <![CDATA[
+        <pre>Example:
+        <font color="#0000FF">\nfor</font> (<font color="#008000">int</font> i = 0; i < 5; i++) {
+            <font color="#008000">\n\tSystem.out.println</font>(i);
+        \n}
+        <font color="#008000">\nOutput:</font>
+        <font color="#FF0000">\n0</font>
+        <font color="#FF0000">\n1</font>
+        <font color="#FF0000">\n2</font>
+        <font color="#FF0000">\n3</font>
+        <font color="#FF0000">\n4</font>
+        </pre>
+        ]]>
+</string>
+    <string name="c_while_loop_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">while</font> (condition){
+    <font color="#008000">\n\t// Code to be executed while the condition is true</font>
+\n}
+</pre>
+]]>
+</string>
+    <string name="c_while_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> count = 0;
+<font color="#0000FF">\nwhile</font> (count < 5){
+    \n\t<font color="#800000">Console.WriteLine</font>(count);
+    \n\tcount++;
+\n}
+\nOutput:
+<font color="#FF0000">\n0</font>
+<font color="#FF0000">\n1</font>
+<font color="#FF0000">\n2</font>
+<font color="#FF0000">\n3</font>
+<font color="#FF0000">\n4</font>
+</pre>
+]]>
+</string>
+    <string name="c_while"><![CDATA[The loop starts with the initial value of count as 0. The condition count < 5 is checked at the beginning of each iteration. If the condition is true, the code block inside the loop is executed, which prints the value of count and increments it by 1. This process continues until count becomes 5, at which point the condition becomes false, and the loop terminates.]]></string>
+
+    <string name="c_do_while_loop_code">
+<![CDATA[
+<pre><font color="#0000FF">do</font>{
+    <font color="#008000">\n\t// Code to be executed</font>
+\n}
+<font color="#0000FF">\nwhile</font> (condition);
+</pre>
+]]>
+</string>
+
+    <string name="c_do_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> i = 0;
+<font color="#0000FF">\nwhile</font> (i < 5){
+    <font color="#800000">\n\tConsole.WriteLine</font>(i);
+    \n\ti++;
+\n}
+\nOutput:
+<font color="#FF0000">\n0</font>
+<font color="#FF0000">\n1</font>
+<font color="#FF0000">\n2</font>
+<font color="#FF0000">\n3</font>
+<font color="#FF0000">\n4</font>
+</pre>
+]]>
+</string>
+    <string name="c_do_example"><![CDATA[The \"do-while\" loop first executes the code block, which prints the value of count. Then, it evaluates the condition count < 5. If the condition is true, the loop continues to execute, and the value of count is incremented. This process repeats until the condition becomes false. Since count starts at 0 and increments up to 4, the loop executes five times.]]></string>
 
 </resources>
