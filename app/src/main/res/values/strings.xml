@@ -1528,6 +1528,7 @@ if (condition) {\n
     • \<b>Use else:</b> to specify a block of code to be executed, if the same condition is false \n
     • \<b>Use else if:</b> to specify a new condition to test, if the first condition is false \n
     • \<b>The ternary operator:</b> provides a concise way to express conditional statements. \n
+    • \<b>Switch statement:</b> Choose one of the many code blocks to run. \n
 </string>
 
 
@@ -1549,7 +1550,7 @@ if (condition) {\n
     <font color="#800000">\n\tConsole.WriteLine</font>("The number is positive.");
 \n}
 \nOutput:
-\nThe number is positive.
+<font color="#800000">\nThe number is positive.</font
 </pre>
 ]]>
 </string>
@@ -1579,7 +1580,7 @@ if (condition) {\n
     <font color="#800000">\n\tConsole.WriteLine</font>("The number is less than or equal to 5.");
 \n}
 \nOutput:
-\nThe number is greater than 5.
+<font color="#800000">\nThe number is greater than 5.</font>
 </pre>
 ]]>
 </string>
@@ -1617,7 +1618,7 @@ if (condition) {\n
   <font color="#800000">\n\tConsole.WriteLine</font>("Good evening.");
 \n}
 \nOutput:
-\nGood evening.
+<font color="#800000">\nGood evening.</font>
 </pre>
 ]]>
 </string>
@@ -1629,14 +1630,92 @@ if (condition) {\n
 </pre>
 ]]>
 </string>
+
     <string name="c_ter_example_code1">
 <![CDATA[
 <pre>Example:
 <font color="#008000">\nint</font> num = 7;
 <font color="#008000">\nstring</font> result = (num > 5) ? <font color="#FF0000">"Number is greater than 5"</font> : <font color="#FF0000">"Number is less than or equal to 5"</font>;
-<font color="#800000"\nConsole.WriteLine</font>(result);
+<font color="#800000">\nConsole.WriteLine</font>(result);
 \nOutput:
-\nNumber is greater than 5
+<font color="#800000">\nNumber is greater than 5</font>
+</pre>
+]]>
+</string>
+
+
+    <string name="switch_statement_description">
+        • The <b>switch</b> expression is only ever evaluated once.\n
+        • The value of the expression is contrasted with the values in each <b>case</b>.\n
+        • If a match is found, the corresponding piece of code is gonna run.\n
+</string>
+
+    <string name="c_switch_example_code">
+<![CDATA[
+<pre>
+<font color="#0000FF">switch</font> (expression) {
+  <font color="#0000FF">\n\tcase</font> x:
+    <font color="#008000">\n\t\t// code here</font>
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> y:
+    <font color="#008000">\n\t\t// code here</font>
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tdefault:</font>
+    <font color="#008000">\n\t\t// code here</font>
+    <font color="#0000FF">\n\t\tbreak;</font>
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_switch_break_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> day = 4;
+<font color="#0000FF">\nswitch</font> (day) {
+  <font color="#0000FF">\n\tcase</font> 1:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Monday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 2:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Tuesday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 3:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Wednesday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 4:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Thursday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 5:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Friday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 6:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Saturday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 7:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Sunday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+\n}\nOutput:
+<font color="#800000">\nThursday</font>
+</pre>
+]]>
+</string>
+
+    <string name="c_default_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> world = 4;
+<font color="#0000FF">\nswitch</font> (world) {
+  <font color="#0000FF">\n\tcase</font> 6:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Hello World");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 7:
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Hi! World");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tdefault:</font>
+    <font color="#800000">\n\t\tConsole.WriteLine</font>("Welcome to Hello World");
+    <font color="#0000FF">\n\t\tbreak;</font>
+\n}\nOutput:
+<font color="#800000">\nWelcome to Hello World</font>
 </pre>
 ]]>
 </string>

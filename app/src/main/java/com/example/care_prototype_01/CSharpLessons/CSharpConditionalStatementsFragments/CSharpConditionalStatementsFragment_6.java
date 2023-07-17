@@ -54,8 +54,8 @@ public class CSharpConditionalStatementsFragment_6 extends Fragment {
     private void btnP_loop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle("Can I use conditional statements to control loop execution?");
+        alertDialogBuilder.setMessage("Yes, you can use conditional statements such as if or while within loops to control the flow of execution and determine when to continue or exit the loop.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -69,8 +69,8 @@ public class CSharpConditionalStatementsFragment_6 extends Fragment {
     private void btnP_loop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle("Can I have multiple conditions in an if statement in C#?");
+        alertDialogBuilder.setMessage("Yes, you can have multiple conditions in an if statement by using logical operators such as && (AND) and || (OR).");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -84,8 +84,8 @@ public class CSharpConditionalStatementsFragment_6 extends Fragment {
     private void btnP_loop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("[add here]");
-        alertDialogBuilder.setMessage("[add here]");
+        alertDialogBuilder.setTitle("How do I write nested conditional statements in C#?");
+        alertDialogBuilder.setMessage("Nested conditional statements involve placing one conditional statement inside another. You can nest \"if\" statements or \"if-else\" statements to create complex conditions and code execution flows.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -21,6 +21,7 @@ import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFr
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_4;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_5;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_6;
+import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.CSharpConditionalStatementsFragment_7;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpConditionalStatementsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -60,6 +61,7 @@ public class CSharpConditionalStatements extends AppCompatActivity {
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_3());
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_4());
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_5());
+        fragmentArrayList.add(new CSharpConditionalStatementsFragment_7());
         fragmentArrayList.add(new CSharpConditionalStatementsFragment_6());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);

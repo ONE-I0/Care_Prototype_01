@@ -16,7 +16,7 @@
             android:id="@+id/P_Variables_Text1"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:text="ternary operator"
+            android:text="Switch statement"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +27,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="The ternary operator provides a concise way to express conditional statements."
+            android:text="@string/switch_statement_description"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text">
 
             <WebView
-                android:id="@+id/c_ter_example_code"
+                android:id="@+id/c_switch_example_code"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -108,7 +108,7 @@
             app:layout_constraintTop_toBottomOf="@+id/condition_btn">
 
             <WebView
-                android:id="@+id/c_ter_example_code1"
+                android:id="@+id/c_switch_break_example_code"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
@@ -120,7 +120,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:text="the condition (num > 5) is evaluated. If the condition is true (which it is in this case), the value &quot;Number is greater than 5&quot; is assigned to the result variable. If the condition is false, the value &quot;Number is less than or equal to 5&quot; is assigned. The output of this code will be &quot;Number is greater than 5&quot;."
+            android:text="The provided code demonstrates the usage of a switch statement in C#. It initializes a variable day with the value 4 and evaluates it against different cases. When day is 4, it matches the case 4 statement, causing the code within that case to execute, which outputs &quot;Thursday&quot;. The switch statement simplifies the process of comparing a single value against multiple cases and executing the appropriate code block based on the match."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -151,31 +151,7 @@
             android:layout_marginTop="16dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_condition_imageView2"
-            app:srcCompat="@drawable/codey_python_cut" />
-
-        <TextView
-            android:id="@+id/p_Comments_fix6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="The ternary operator simplifies conditional expressions, but requires judicious use for code readability and avoids complexity."
-            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
-            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="TextSizeCheck" />
-
-        <ImageView
-            android:id="@+id/p_condition_imageView2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_python_cut"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/c_condition_Text"
+            app:layout_constraintTop_toBottomOf="@+id/c_condition_Text10"
             app:srcCompat="@drawable/codey_python_cut" />
 
         <TextView
@@ -183,14 +159,118 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="I'd be happy to provide you with some examples of ternary operator to help you understand how they work."
+            android:text="I'd be happy to provide you with some examples of switch statement to help you understand how they work."
             app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/p_condition_imageView6"
             app:layout_constraintTop_toTopOf="@+id/p_condition_imageView6"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.05"
             tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/p_condition_imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/c_condition_Text"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <Button
+            android:id="@+id/c_conditional_DYK2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:text="@string/note"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/lionelButton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/p_condition_imageView2"
+            app:layout_constraintTop_toTopOf="@+id/p_condition_imageView2"
+            app:layout_constraintVertical_bias="1.0"
+            app:strokeColor="#AAAAAA"
+            app:strokeWidth="0.1dp"
+            tools:ignore="UnknownIdInLayout" />
+
+        <TextView
+            android:id="@+id/p_Variables_Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="Default"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_condition_imageView2" />
+
+        <TextView
+            android:id="@+id/p_Variables_Text4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="if there's no case match, the default will then proceed to execute."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Variables_Text3"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Variables_Text4">
+
+            <WebView
+                android:id="@+id/c_default_example_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/c_condition_Text10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="This code used a switch statement to compare the value of the variable &quot;world&quot; if all cases are not equal to the value the default keyword will then proceed to execute the code "
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text30"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/p_Operators_Text30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Example explained:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/hv3" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_vertical1"

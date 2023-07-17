@@ -40,7 +40,7 @@ public class CSharpConditionalStatementsFragment_5 extends Fragment {
 
         question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
         Button btnShowAlertDialog = view.findViewById(R.id.C_conditional_DYK);
-
+        btnShowAlertDialog.setOnClickListener(v -> showDYK1());
 
         return view;
     }
@@ -65,7 +65,7 @@ public class CSharpConditionalStatementsFragment_5 extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
         alertDialogBuilder.setTitle("Did you know!");
-        alertDialogBuilder.setMessage("Did you know that \"if\" statement starts with an \"if\" statement with a condition enclosed in parentheses. If the condition is true, the code block is executed, and the program moves to the next \"else if\" statement. If the condition is false, the code block is executed. The \"else\" block is optional.");
+        alertDialogBuilder.setMessage("did you know, The evaluated expression returns value1 if condition is true, and value2 if condition is false.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
             // You can add some action here when the user clicks "OK"
         });

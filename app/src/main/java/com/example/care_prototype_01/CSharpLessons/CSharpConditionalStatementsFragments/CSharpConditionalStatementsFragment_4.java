@@ -40,7 +40,7 @@ public class CSharpConditionalStatementsFragment_4 extends Fragment {
 
         question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
         Button btnShowAlertDialog = view.findViewById(R.id.C_conditional_DYK);
-
+        btnShowAlertDialog.setOnClickListener(v -> showDYK1());
 
         return view;
     }
