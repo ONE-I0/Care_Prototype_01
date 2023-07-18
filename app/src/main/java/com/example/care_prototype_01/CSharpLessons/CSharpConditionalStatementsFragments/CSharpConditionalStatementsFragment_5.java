@@ -63,7 +63,7 @@ public class CSharpConditionalStatementsFragment_5 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("did you know, The evaluated expression returns value1 if condition is true, and value2 if condition is false.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {

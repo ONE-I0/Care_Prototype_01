@@ -53,7 +53,7 @@ public class CSharpLoopingStatementsFragment_5 extends Fragment {
     }
     private void btnP_loop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("What is the concept of nested loops in C#?");
         alertDialogBuilder.setMessage("In C#, the use of one loop inside another is referred to as the concept of nested loops. This indicates that there are two loops—an outer loop and an inner loop—each of which is entirely enclosed within the outer loop's body. For each time the outer loop iterates, the inside loop will also repeats repeatedly.\n" +
                 "As an example of nested loops in C#, consider the following:\n" +
@@ -88,7 +88,7 @@ public class CSharpLoopingStatementsFragment_5 extends Fragment {
     }
     private void btnP_loop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("In C#, how do I utilize a \"foreach\" loop to iterate over a collection and apply a conditional statement to perform specific actions?");
         alertDialogBuilder.setMessage("The steps below describe how to use a \"foreach\" loop in C# to iterate over a collection and apply a conditional statement:\n" +
                 "•\tMake sure you have a collection that you intend to iterate over before declaring the collection. This can be an IEnumerable interface-implemented type such as an array, list, or other type.\n" +
@@ -133,7 +133,7 @@ public class CSharpLoopingStatementsFragment_5 extends Fragment {
     }
     private void btnP_loop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("How can I use the \"if-else\" statement in C# to conditionally execute different sets of code based on a particular condition within a loop?");
         alertDialogBuilder.setMessage("You can use the \"if-else\" statement in C# to conditionally run various sets of code based on a specific circumstance inside a loop by doing the following:\n" +
                 "1)\tSet up the loop: To start, decide whether you want to use a \"for\" loop, \"while\" loop, or \"do-while\" loop. This will control the loop's iteration and the timing of the conditional evaluation.\n" +

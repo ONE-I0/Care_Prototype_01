@@ -73,7 +73,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/hv1"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
         <Button
             android:id="@+id/C_conditional_DYK"
@@ -152,7 +152,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/p_condition_imageView2"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
         <TextView
             android:id="@+id/p_Comments_fix6"
@@ -176,7 +176,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/c_condition_Text"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
         <TextView
             android:id="@+id/p_Comments_fix2"

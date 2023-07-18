@@ -63,7 +63,7 @@ public class CSharpLoopingStatementsFragment_2 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Instruction");
         alertDialogBuilder.setMessage("Initialize a loop control variable i with 0 and set i < 5 for execution. Iterate by 1 incrementing i.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {

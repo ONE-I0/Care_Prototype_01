@@ -62,7 +62,7 @@ public class CSharpLoopingStatementsFragment_4 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know");
         alertDialogBuilder.setMessage("did you know, the \"do\" keyword starts the loop, while the code block contains the code to be executed. A condition in parentheses determines if the loop should continue, and a semicolon is required at the end.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {

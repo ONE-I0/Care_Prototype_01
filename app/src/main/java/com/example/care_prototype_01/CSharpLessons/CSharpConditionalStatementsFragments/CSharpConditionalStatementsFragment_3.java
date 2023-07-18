@@ -67,7 +67,7 @@ public class CSharpConditionalStatementsFragment_3 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that the \"if\" keyword initiates a conditional statement, evaluating to true or false in C#. If true, the code block is executed, and if false, the code block is executed.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
@@ -79,7 +79,7 @@ public class CSharpConditionalStatementsFragment_3 extends Fragment {
     }
     private void showDYK2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that an 'if-else' statement can act as a catalyst for alternate behaviors in a program? This statement enables a program to leverage branching logic and effectively determine the best possible outcome following a specific scenario. With an 'if-else' statement in place, code can take on multiple forms depending on the given conditions. Such a powerful construct allows for efficient decision-making and can prove to be an invaluable tool for developers.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {

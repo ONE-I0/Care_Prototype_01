@@ -21,10 +21,10 @@
                 android:id="@+id/P.Intro.ImageView1"
                 android:layout_width="54dp"
                 android:layout_height="74dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="48dp"
                 android:contentDescription="@string/codey_image"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
                 app:srcCompat="@drawable/codey_c_cut" />
 
             <TextView
@@ -40,10 +40,10 @@
                 app:layout_constraintTop_toTopOf="@+id/P.Intro.ImageView1" />
 
             <Button
-                android:id="@+id/P_loop_btnQ1"
+                android:id="@+id/P_Intro_btnQ1"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="Can I use conditional statements to control loop execution?"
+                android:text="What is the data type used to store whole numbers in C#?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -55,37 +55,37 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_loop_btnQ2"
+                android:id="@+id/P_Intro_btnQ2"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="Can I have multiple conditions in an if statement in C#?"
+                android:text="What is the data type used to store decimal numbers with double precision in C#?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/P_loop_btnQ1"
+                app:layout_constraintEnd_toEndOf="@+id/P_Intro_btnQ1"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_loop_btnQ1"
-                app:layout_constraintTop_toBottomOf="@+id/P_loop_btnQ1"
+                app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ1"
+                app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ1"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_loop_btnQ3"
+                android:id="@+id/P_Intro_btnQ3"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="68dp"
-                android:text="How do I write nested conditional statements in C#?"
+                android:text="What is the data type used to store a single character in C#?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/P_loop_btnQ2"
+                app:layout_constraintEnd_toEndOf="@+id/P_Intro_btnQ2"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_loop_btnQ2"
-                app:layout_constraintTop_toBottomOf="@+id/P_loop_btnQ2"
+                app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ2"
+                app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ2"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
@@ -122,15 +122,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="When developing software in C#, conditions and if statements provide the necessary control over the flow of the code execution. These conditions and if statements can be leveraged to introduce complex logic and decision-making capabilities, allowing a software program to dynamically respond and adapt to changing situations. To ensure that these statements are properly implemented, one must be mindful of both the perplexity and the burstiness of the code. By creating a balance between long and short sentences, as well as complex and simple sentences, the code can achieve the desired logical coherence and flow. Such a balance helps create a highly responsive and adaptive software program."
-                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-                app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>

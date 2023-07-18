@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.care_prototype_01.CSharpLessons.CSharpDataTypesFragments.CSharpDataTypesFragment_1;
 import com.example.care_prototype_01.CSharpLessons.CSharpDataTypesFragments.CSharpDataTypesFragment_2;
+import com.example.care_prototype_01.CSharpLessons.CSharpDataTypesFragments.CSharpDataTypesFragment_3;
 import com.example.care_prototype_01.CSharpLessons.CSharpDataTypesFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpDataTypesFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -53,6 +54,7 @@ public class CSharpDataTypes extends AppCompatActivity {
 
         fragmentArrayList.add(new CSharpDataTypesFragment_1());
         fragmentArrayList.add(new CSharpDataTypesFragment_2());
+        fragmentArrayList.add(new CSharpDataTypesFragment_3());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

@@ -41,7 +41,7 @@ public class CSharpIntroductionFragment_1 extends Fragment {
 
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Codey's Trivia Sentence!");
         alertDialogBuilder.setMessage("C# is known as \"C sharp.\" The name \"C sharp\" was chosen to indicate that C# is a higher-level programming language compared to the C programming language. The musical symbol \"#\" (sharp) is used to denote a note that is higher in pitch, and similarly, C# was named to signify its higher level of abstraction and additional features compared to C.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

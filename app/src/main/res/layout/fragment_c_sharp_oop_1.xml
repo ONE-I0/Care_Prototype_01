@@ -18,7 +18,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
         <TextView
             android:id="@+id/textView"
@@ -69,7 +69,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text2"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
 
         <Button
@@ -152,7 +152,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/python_Oop_DYK"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
         <TextView
             android:id="@+id/p_Operators_Text"
@@ -207,7 +207,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text4"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_c_cut" />
 
         <Button
             android:id="@+id/python_Oop_NOTE2"

@@ -63,7 +63,7 @@ public class CSharpConditionalStatementsFragment_4 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that \"if\" statement starts with an \"if\" statement with a condition enclosed in parentheses. If the condition is true, the code block is executed, and the program moves to the next \"else if\" statement. If the condition is false, the code block is executed. The \"else\" block is optional.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {

@@ -79,7 +79,7 @@ public class CSharpOopFragment_5 extends Fragment {
 
     private void btnP_Oop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Can you achieve method overloading in C#?");
         alertDialogBuilder.setMessage("Yes, C# supports method overloading, which allows you to define multiple methods with the same name but different parameters in a class. The compiler determines which method to call based on the arguments provided.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -94,7 +94,7 @@ public class CSharpOopFragment_5 extends Fragment {
     }
     private void btnP_Oop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Can C# classes support multiple inheritance?");
         alertDialogBuilder.setMessage("No, C# does not support multiple inheritance for classes. However, you can achieve similar functionality using interfaces, which allow a class to implement multiple interfaces.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -109,7 +109,7 @@ public class CSharpOopFragment_5 extends Fragment {
     }
     private void btnP_Oop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Why is polymorphism beneficial in C#?");
         alertDialogBuilder.setMessage("Polymorphism in C# allows objects of different classes to be treated as objects of a common base class or interface. It promotes flexibility and extensibility in the code, enables method overriding, and facilitates writing generalized code that can work with objects of different types.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

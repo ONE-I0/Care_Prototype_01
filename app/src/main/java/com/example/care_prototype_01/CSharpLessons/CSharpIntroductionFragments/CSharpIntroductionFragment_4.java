@@ -54,7 +54,7 @@ public class CSharpIntroductionFragment_4 extends Fragment {
     }
     private void btnP_Intro_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("What is .NET Framework?");
         alertDialogBuilder.setMessage("The .NET Framework refers to a software development framework developed by Microsoft. It includes the Common Language Runtime (CLR) and a vast library called the Base Class Library (BCL) that provides a wide range of pre-built functions and APIs for developing Windows applications. The .NET Framework supports multiple programming languages such as C#, Visual Basic.NET, and F#, allowing developers to write code in their preferred language while leveraging the features and capabilities of the framework. It provides a managed execution environment, automatic memory management through garbage collection, and various other services such as security, exception handling, and thread management.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -69,7 +69,7 @@ public class CSharpIntroductionFragment_4 extends Fragment {
     }
     private void btnP_Intro_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("What is the relationship of C# and .NET?");
         alertDialogBuilder.setMessage("C# is one of the programming languages supported by the .NET framework. When you write code in C#, you are using the language to develop applications that run on the .NET framework. C# code is compiled into an intermediate language called Common Intermediate Language (CIL) or Microsoft Intermediate Language (MSIL), which can be executed by the CLR. In summary, C# is a programming language, while .NET is a development framework. C# is used to write code, while .NET provides the infrastructure and tools for running and executing that code. C# is tightly integrated with the .NET framework and is often the language of choice for developing applications that leverage the capabilities and libraries provided by .NET.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -84,7 +84,7 @@ public class CSharpIntroductionFragment_4 extends Fragment {
     }
     private void btnP_Intro_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("What makes C# so unique?");
         alertDialogBuilder.setMessage("What sets apart from C# is specifically designed to work seamlessly with the .NET ecosystem. It has a large community of developers so anyone even the beginners can work with ease and ask for help. Unique features and the combination of C#'s language design, integration with the .NET platform, and development tooling make it a popular and versatile choice for a wide range of application development scenarios.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

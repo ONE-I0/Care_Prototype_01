@@ -40,7 +40,7 @@ public class CSharpConditionalStatementsFragment_1 extends Fragment {
 
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that you can use these conditions to perform different actions for different decisions.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

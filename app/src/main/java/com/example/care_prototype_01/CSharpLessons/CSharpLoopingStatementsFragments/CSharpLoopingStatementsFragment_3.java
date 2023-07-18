@@ -66,7 +66,7 @@ public class CSharpLoopingStatementsFragment_3 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know");
         alertDialogBuilder.setMessage("did you know that condition evaluates at the beginning of each iteration, determining whether the code block inside the loop is executed. If true, the loop exits, and the program continues with the next statement. The code block executes repeatedly as long as the condition remains true.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
@@ -78,7 +78,7 @@ public class CSharpLoopingStatementsFragment_3 extends Fragment {
     }
     private void showDYK2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know");
         alertDialogBuilder.setMessage("did you know, The \"while\" loop is useful when you want to repeat a block of code an indeterminate number of times based on a condition. It allows you to perform repetitive tasks or iterate over data structures until a specific condition is met.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {

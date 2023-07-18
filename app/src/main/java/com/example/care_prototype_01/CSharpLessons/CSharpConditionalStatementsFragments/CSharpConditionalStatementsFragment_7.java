@@ -72,7 +72,7 @@ public class CSharpConditionalStatementsFragment_7 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Note!");
         alertDialogBuilder.setMessage("A break \"ignores\" the execution of the entire rest of the switch block's code, which can save a significant amount of time during execution.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
@@ -84,9 +84,9 @@ public class CSharpConditionalStatementsFragment_7 extends Fragment {
     }
     private void showNote() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("Note!");
-        alertDialogBuilder.setMessage("Take note C# exits the switch block when it comes to a break keyword. This will stop further code execution and case testing within the block. When a match is made and the work is over, a break is necessary. More testing is not necessary.");
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
+        alertDialogBuilder.setTitle("Take note!");
+        alertDialogBuilder.setMessage("C# exits the switch block when it comes to a break keyword. This will stop further code execution and case testing within the block. When a match is made and the work is over, a break is necessary. More testing is not necessary.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
             // You can add some action here when the user clicks "OK"
         });

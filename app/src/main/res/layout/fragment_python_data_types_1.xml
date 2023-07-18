@@ -15,7 +15,6 @@
             android:id="@+id/P_DataTypes_imageView1"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="28dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"

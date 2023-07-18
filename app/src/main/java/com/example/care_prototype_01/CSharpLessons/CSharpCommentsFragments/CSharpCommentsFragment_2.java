@@ -55,7 +55,7 @@ public class CSharpCommentsFragment_2 extends Fragment {
     }
     private void btnP_Comments_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("How do you write comments in C#?");
         alertDialogBuilder.setMessage("Always start with two forward slashes ( // ) to create a comment.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -70,7 +70,7 @@ public class CSharpCommentsFragment_2 extends Fragment {
     }
     private void btnP_Comments_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("How many types of comments are supported by C#?");
         alertDialogBuilder.setMessage("There are three types of comments being used in C#. These are: Single Line Comments ( // ); Multi Line Comments ( /* */ ); and XML Comments ( /// ).");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -85,7 +85,7 @@ public class CSharpCommentsFragment_2 extends Fragment {
     }
     private void btnP_Comments_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("What is the importance of having comments in C# codes?");
         alertDialogBuilder.setMessage("It is important for a developer to provide a comment every time a function is being developed in order to easily identify and locate errors. It is always a good practice to put comments for readability and consistency.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

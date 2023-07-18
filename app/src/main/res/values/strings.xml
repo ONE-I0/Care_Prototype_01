@@ -1808,5 +1808,103 @@ if (condition) {\n
 </string>
 
 
+    <string name="csharp_data_types_description"><b>1. Value Types:</b>
+    \n\t• Integral Types: byte, sbyte, short, ushort, int, uint, long, ulong
+    \n\t• Floating-Point Types: float, double
+    \n\t• Decimal Type: decimal
+    \n\t• Character Type: char
+    \n\t• Boolean Type: bool
+
+    <b>\n\n2. Reference Types:</b>
+    \n\t• Class Types: class
+    \n\t• Struct Types: struct
+    \n\t• Array Types: array
+    \n\t• Enum Types: enum
+    \n\t• Delegate Types: delegate
+    \n\t• Interface Types: interface
+
+    <b>\n\n3. Pointer Types:</b>
+    \n\t• Pointer Types: The pointer types are used to store the memory addresses of other types.
+
+    <b>\n\n4. Special Types:</b>
+    \n\t• String Type: string
+    \n\t• Object Type: object
+    \n\t• Dynamic Type: dynamic
+    \n\t• Void Type: void
+</string>
+
+    <string name="csharp_data_types_description_ex">1. <b>Primitive Data Types:</b>
+    \n\t\t\t\t<b>int:</b> Used to store whole numbers.
+      \n\t\t\t\tint myNumber = 42;
+
+    \n\n\t\t\t\t<b>double:</b> Used to store decimal numbers.
+      \n\t\t\t\tdouble myDecimalNumber = 3.14159;
+
+    \n\n\t\t\t\t<b>bool:</b> Used to store true/false values.
+      \n\t\t\t\tbool isTrue = true;
+
+    \n\n\t\t\t\t<b>char:</b> Used to store a single character.
+      \n\t\t\t\tchar myChar = \'A\';
+
+\n\n2. <b>String:</b> Used to store sequences of characters.
+    \n\t\t\t\tstring myName = "Hello World";
+
+\n\n3. <b>Array:</b> Used to store a collection of elements of the same type.
+    \n\t\t\t\tint[] numbers = { 1, 2, 3, 4, 5 };
+
+\n\n4. <b>Object:</b> Used to store instances of classes or as a base type for all other types in C#.
+    \n\t\t\t\tobject myObject = "Hello World";
+</string>
+    <string name="c_data_5_class">5. <b>Class:</b> Used to define a blueprint for creating objects.</string>
+
+    <string name="c_class_code_example">
+<![CDATA[
+<pre>
+<font color="#0000FF">public class</font> MyClass{
+    <font color="#008000">\n\t// class members and methods</font>
+\n}
+\nMyStruct myStructInstance;
+</pre>
+]]>
+</string>
+
+    <string name="c_struc_code_example">
+<![CDATA[
+<pre>
+<font color="#0000FF">\npublic struct</font> MyStruct{
+    <font color="#008000">\n\t// struct members</font>
+\n}
+\nMyStruct myStructInstance;
+</pre>
+]]>
+</string>
+    <string name="enum_c">7. <b>Enum:</b> Used to define a set of named values.</string>
+    <string name="c_struct">6. <b>Struct:</b> Used to define a lightweight structure that can contain data members.</string>
+
+    <string name="c_enum_code_example">
+<![CDATA[
+<pre>
+<font color="#0000FF">enum</font> DaysOfWeek{
+    \n\tMonday,
+    \n\tTuesday,
+    \n\tWednesday,
+    \n\tThursday,
+    \n\tFriday,
+    \n\tSaturday,
+    \n\tSunday
+\n}
+\nDaysOfWeek today = DaysOfWeek.Wednesday;
+</pre>
+]]>
+</string>
+
+    <string name="c_nullable">8. <b>Nullable Types:</b> Used to represent value types that can be assigned null.</string>
+    <string name="c_nullable_code_example">
+<![CDATA[
+<pre>
+<font color="#0000FF">int?</font> nullableNumber = <font color="#FF0000">null</font>;
+</pre>
+]]>
+</string>
 
 </resources>

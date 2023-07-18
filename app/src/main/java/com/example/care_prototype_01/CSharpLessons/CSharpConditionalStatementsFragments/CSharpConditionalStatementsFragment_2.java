@@ -66,7 +66,7 @@ public class CSharpConditionalStatementsFragment_2 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that the condition is an expression that evaluates to a Boolean value (true or false). It determines whether the code block inside the if statement should be executed. The code block enclosed within the curly braces { } is the body of the if statement. It contains the code to be executed if the condition is true.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
@@ -78,7 +78,7 @@ public class CSharpConditionalStatementsFragment_2 extends Fragment {
     }
     private void showDYK2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Did you know that “if statement” allows you to make decisions and execute specific code based on the outcome of a condition. It is a powerful construct for implementing branching logic in C# programs.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
