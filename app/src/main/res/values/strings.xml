@@ -1721,4 +1721,92 @@ if (condition) {\n
 </string>
 
 
+    <string name="csharp_description">Microsoft created the object-oriented programming language C#, which is pronounced "C sharp." It was first presented as a component of the .NET Framework in the early 2000s, and since then, it has grown to be one of the most popular programming languages within the Microsoft ecosystem.\n\nC# is frequently used to create a variety of applications, including desktop, web, mobile, and game development applications. Strong typing, automatic memory management via garbage collection, and comprehensive support for object-oriented programming concepts like classes, inheritance, and polymorphism are just a few of the many language features it offers.\n\nThe .NET Framework (and later .NET Core and .NET 5) provides a broad array of libraries and APIs for developing many types of applications, and one of C#\'s primary strengths is its interaction with this framework. The .NET runtime can then execute C# code that has been compiled into the intermediate language known as Common Intermediate Language (CIL).\n\nBecause C#\'s syntax is comparable to other C-style languages like C, C++, and Java, learning and using C# is very simple for those who are already familiar with other languages. Async/await for asynchronous programming, LINQ (Language-Integrated Query), and other new language features have also been added to C# throughout time.\n\n
+</string>
+
+    <string name="csharp_features_description">\<b>Type Safety:</b> C# is a strongly typed language, meaning that it enforces type checking during compile-time. This helps catch errors early and promotes code reliability.
+    \n\n<b>Garbage Collection:</b> C# utilizes automatic memory management through garbage collection. Developers do not need to manually allocate and deallocate memory, reducing the risk of memory leaks and improving productivity.
+    \n\n<b>Generics:</b> C# supports generics, allowing the creation of reusable code by writing classes and methods that work with different types. Generics improve type safety and performance.
+    \n\n<b>Delegates and Events:</b> C# supports delegates, which are type-safe function pointers that enable event-driven programming. Events allow objects to communicate and respond to actions or changes.
+    \n\n<b>Asynchronous Programming:</b> C# has built-in support for asynchronous programming using the async and await keywords. This simplifies writing code that performs asynchronous operations, such as network requests or file operations, in a more readable and maintainable manner.
+    \n\n<b>Reflection:</b> C# supports reflection, which allows developers to inspect and manipulate types, classes, methods, and other entities at runtime. This enables dynamic code generation and introspection.
+</string>
+
+    <string name="csharp_advantages_description"><b>Widely Used:</b> C# is among the most widely used programming languages worldwide.
+    \n\n<b>Easy to Use and Learn:</b> C# is simple to use and simple to learn.
+    \n\n<b>Strong Community Support:</b> Huge community support exists for C#.
+    \n\n<b>Object-Oriented:</b> C# is an object-oriented language that provides programs with a clear structure and enables code reuse, which lowers development costs.
+    \n\n<b>Easy Transition:</b> Because C# is so similar to C, C++, and Java, programmers can easily switch from one to the other.
+</string>
+
+    <string name="csharp_applications_description">
+    • \<b>Mobile applications</b>\n
+    • \<b>Desktop applications</b>\n
+    • \<b>Web applications</b>\n
+    • \<b>Web services</b>\n
+    • \<b>Web sites</b>\n
+    • \<b>Games</b>\n
+    • \<b>VR</b>\n
+    • \<b>Database applications</b>\n
+    • \<b>And much, much more!</b>\n
+</string>
+
+    <string name="c_the_types_of_comments">• Single line Comments
+        \n• Multiline Comments
+        \n• XML Comments</string>
+
+    <string name="c_comments_textview9">In the example, it can be seen that C# Comments are ignored by the interpreter during the execution of the program.</string>
+
+    <string name="code_with_output">
+<![CDATA[
+<pre>
+<font color="#0000FF">using</font> System;
+<font color="#0000FF">\n\tpublic class</font> CommentExample{
+    <font color="#0000FF">\n\t\tpublic static void</font> Main(string[] args){
+        <font color="#800000">\n\t\t\tint</font> x = 10;<font color="#008000">// Here, x is a variable.</font>
+        <font color="#800000">\n\t\t\tConsole.WriteLine</font>(x);
+    \n\t\t}
+\n\t}
+
+<font color="#008000">\n// Output:</font>
+<font color="#FF0000">\n10</font>
+</pre>
+]]>
+</string>
+
+    <string name="code_with_output_multi">
+<![CDATA[
+<pre>
+<font color="#0000FF">using</font> System;
+<font color="#0000FF">\n\tpublic class</font> CommentExample{
+    <font color="#0000FF">\n\t\tpublic static void</font> Main(string[] args){
+        <font color="#008000">\n\t\t\t/* Let\'s declare and
+          \n\t\t\tprint variable in C#. */</font>
+        <font color="#800000">\n\t\t\tint</font> x = 20;
+        <font color="#800000">\n\t\t\tConsole.WriteLine</font>(x);
+    \n\t\t}
+\n\t}
+
+<font color="#008000">\n// Output:</font>
+<font color="#FF0000">\n20</font>
+</pre>
+]]>
+</string>
+    <string name="code_with_comments">
+<![CDATA[
+<pre><font color="#008000">/// &lt;summary&gt;
+\n/// Adds two integers and returns the result.
+\n/// &lt;/summary&gt;
+\n/// <param name="a">The first integer.</param>
+\n/// <param name="b">The second integer.</param>
+\n/// <returns>The sum of <paramref name="a"/> and <paramref name="b"/>.</returns></font>
+<font color="#0000FF">\npublic int</font> Add(int a, int b){
+    <font color="#0000FF">\n\treturn</font> a + b;
+\n}
+</pre>
+]]>
+</string>
+
+
+
 </resources>

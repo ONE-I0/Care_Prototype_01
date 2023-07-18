@@ -21,11 +21,11 @@
                 android:id="@+id/P.Intro.ImageView1"
                 android:layout_width="54dp"
                 android:layout_height="74dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="48dp"
                 android:contentDescription="@string/codey_image"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
                 app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
-                app:srcCompat="@drawable/codey_java_dyk" />
+                app:srcCompat="@drawable/codey_python" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -40,10 +40,10 @@
                 app:layout_constraintTop_toTopOf="@+id/P.Intro.ImageView1" />
 
             <Button
-                android:id="@+id/P_Comments_btnQ1"
+                android:id="@+id/P_Intro_btnQ1"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="How do you write comments in C#?"
+                android:text="What is .NET Framework?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -55,37 +55,37 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_Comments_btnQ2"
+                android:id="@+id/P_Intro_btnQ2"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="How many types of comments are supported by C#?"
+                android:text="What is the relationship of C# and .NET?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/P_Comments_btnQ1"
+                app:layout_constraintEnd_toEndOf="@+id/P_Intro_btnQ1"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_Comments_btnQ1"
-                app:layout_constraintTop_toBottomOf="@+id/P_Comments_btnQ1"
+                app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ1"
+                app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ1"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_Comments_btnQ3"
+                android:id="@+id/P_Intro_btnQ3"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="68dp"
-                android:text="What is the importance of having comments in C# codes?"
+                android:text="What makes C# so unique?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/P_Comments_btnQ2"
+                app:layout_constraintEnd_toEndOf="@+id/P_Intro_btnQ2"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_Comments_btnQ2"
-                app:layout_constraintTop_toBottomOf="@+id/P_Comments_btnQ2"
+                app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ2"
+                app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ2"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 

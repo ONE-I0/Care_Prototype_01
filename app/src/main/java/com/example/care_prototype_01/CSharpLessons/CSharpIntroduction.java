@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.example.care_prototype_01.CSharpLessons.CSharpIntroductionFragments.CSharpIntroductionFragment_1;
 import com.example.care_prototype_01.CSharpLessons.CSharpIntroductionFragments.CSharpIntroductionFragment_2;
 import com.example.care_prototype_01.CSharpLessons.CSharpIntroductionFragments.CSharpIntroductionFragment_3;
+import com.example.care_prototype_01.CSharpLessons.CSharpIntroductionFragments.CSharpIntroductionFragment_4;
 import com.example.care_prototype_01.CSharpLessons.CSharpIntroductionFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpIntroductionFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -55,6 +56,7 @@ public class CSharpIntroduction extends AppCompatActivity {
         fragmentArrayList.add(new CSharpIntroductionFragment_1());
         fragmentArrayList.add(new CSharpIntroductionFragment_2());
         fragmentArrayList.add(new CSharpIntroductionFragment_3());
+        fragmentArrayList.add(new CSharpIntroductionFragment_4());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

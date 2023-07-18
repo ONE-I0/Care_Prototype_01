@@ -15,7 +15,7 @@
             android:id="@+id/P.Intro.Text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Why use C#?"
+            android:text="C# features and advantages over other programming languages:"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,8 +27,8 @@
             android:id="@+id/P.Intro.Text0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/csharp_advantages_description"
+            android:layout_marginTop="8dp"
+            android:text="@string/csharp_features_description"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -36,34 +36,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P.Intro.Text1"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/P.Intro.Text3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="C# is used for:"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P.Intro.Text0" />
-
-        <TextView
-            android:id="@+id/P.Intro.Text4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/csharp_applications_description"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P.Intro.Text3"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <androidx.constraintlayout.widget.Guideline
