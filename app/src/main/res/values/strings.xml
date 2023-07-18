@@ -1907,4 +1907,57 @@ if (condition) {\n
 ]]>
 </string>
 
+    <string name="c_operators_description"><b>Arithmetic operators</b> execute operations such addition (+), subtraction (-), multiplication (*), division (/), and modulus (%) in elementary mathematics. They can be applied to data types having numbers.
+    \n\n<b>Relational Operators</b>: A boolean result of true or false is returned when a relational operator compares two values. The operators greater than (>), less than (&lt;), greater than or equal to (>=), and less than or equal to (&lt;=) are among those mentioned. They are frequently employed in comparisons and circumstances.
+    \n\n<b>Boolean Operators</b>: In order to execute logical operations on boolean values and produce a boolean result, logical operators are used. The logical AND (&amp;&amp;), logical OR (||), and logical NOT (!) are examples of logical operators. They are frequently applied in boolean expressions and conditional statements.
+    \n\n<b>Operators for Assignment</b>: Operators for Assignment are used to assign values to variables. The equals symbol (=) is used as the most frequent assignment operator. The assignment operation can be combined with another operation using compound assignment operators like +=, -=, *=, /=, and %=.
+    \n\n<b>Bitwise operators</b>: These operators work with the individual bits of numeric operands. These include left shift (&lt;&lt;), right shift (>>), and unsigned right shift (>>>). They also include bitwise AND (&amp;), bitwise OR (|), bitwise XOR (^), bitwise complement (~), and left shift (&lt;&lt;). They are employed for low-level tasks and when dealing with binary representations.
+    \n\n<b>Ternary Operator</b>: The ternary operator (?:) returns a value in response to a condition and accepts three operands. Compact conditional expressions are utilized with it.
+</string>
+
+    <string name="c_operators_example">
+    <b>1. Arithmetic Operators:</b>\n
+    \t\t <b>+ : Addition operator.</b>\n
+    \t\t\t\t\t\tint sum = 5 + 3;  // sum = 8\n\n
+    \t\t <b>- : Subtraction operator.</b>\n
+    \t\t\t\t\t\tint difference = 7 - 2;  // difference = 5\n\n
+    \t\t <b>* : Multiplication operator.</b>\n
+    \t\t\t\t\t\tint product = 4 * 6;  // product = 24\n\n
+    \t\t <b>/ : Division operator.</b>\n
+    \t\t\t\t\t\tint quotient = 10 / 2;  // quotient = 5\n\n
+    \t\t <b>% : Modulus operator (remainder of division).</b>\n
+    \t\t\t\t\t\tint remainder = 15 % 4;  // remainder = 3\n\n
+
+    <b>2. Assignment Operators:</b>\n
+    \t\t <b>= : Simple assignment operator.</b>\n
+    \t\t\t\t\t\tint number = 10;\n\n
+    \t\t <b>+= : Add and assign operator.</b>\n
+    \t\t\t\t\t\tint value = 5;\n
+    \t\t\t\t\t\tvalue += 3;  // value = 8\n\n
+    \t\t <b>-= : Subtract and assign operator.</b>\n
+    \t\t\t\t\t\tint value = 7;\n
+    \t\t\t\t\t\tvalue -= 2;  // value = 5\n\n
+    \t\t <b>*= : Multiply and assign operator.</b>\n
+    \t\t\t\t\t\tint value = 4;\n
+    \t\t\t\t\t\tvalue *= 6;  // value = 24\n\n
+    \t\t <b>/= : Divide and assign operator.</b>\n
+    \t\t\t\t\t\tint value = 10;\n
+    \t\t\t\t\t\tvalue /= 2;  // value = 5\n\n
+
+    <b>3. Comparison Operators:</b>\n
+    \t\t <b>== : Equal to operator.</b>\n
+    \t\t\t\t\t\tbool isEqual = (5 == 3);  // isEqual = false\n\n
+    \t\t <b>!= : Not equal to operator.</b>\n
+    \t\t\t\t\t\tbool isNotEqual = (7 != 2);  // isNotEqual = true\n\n
+    \t\t <b>&gt; : Greater than operator.</b>\n
+    \t\t\t\t\t\tbool isGreaterThan = (10 &gt; 5);  // isGreaterThan = true\n\n
+    \t\t <b>&lt; : Less than operator.</b>\n
+    \t\t\t\t\t\tbool isLessThan = (4 &lt; 6);  // isLessThan = true\n\n
+    \t\t <b>&gt;= : Greater than or equal to operator.</b>\n
+    \t\t\t\t\t\tbool isGreaterThanOrEqual = (7 &gt;= 5);  // isGreaterThanOrEqual = true\n\n
+    \t\t <b>&lt;= : Less than or equal to operator.</b>\n
+    \t\t\t\t\t\tbool isLessThanOrEqual = (4 &lt;= 6);  // isLessThanOrEqual = true\n
+</string>
+
+
 </resources>
