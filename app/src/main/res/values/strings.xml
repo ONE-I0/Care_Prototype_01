@@ -1960,4 +1960,78 @@ if (condition) {\n
 </string>
 
 
+
+
+    <string name="c_array_1code_example">
+<![CDATA[
+<pre><font color="#008000">// Creating an array of integers with a size of 5</font>
+<font color="#0000FF">\nint</font>[] myArray = <font color="#0000FF">new int</font>[5];
+
+<font color="#008000">\n\n// Initializing an array with values</font>
+<font color="#0000FF">\nint</font>[] myNumbers = <font color="#0000FF">new int</font>[] { 1, 2, 3, 4, 5 };
+</pre>
+]]>
+</string>
+
+    <string name="c_array_2code_example">
+<![CDATA[
+<pre><font color="#0000FF">int[]</font> myNumbers = <font color="#0000FF">new int</font>[] { 10, 20, 30, 40, 50 };
+<font color="#0000FF">\n\nint</font> firstNumber = myNumbers[0]; <font color="#008000">// Accessing the first element (10)</font>
+<font color="#0000FF">\nint</font> thirdNumber = myNumbers[2]; <font color="#008000">// Accessing the third element (30)</font>
+</pre>
+]]>
+</string>
+
+    <string name="c_array_3code_example">
+<![CDATA[
+<pre><font color="#0000FF">int[]</font> myNumbers = <font color="#0000FF">new int</font>[] { 10, 20, 30, 40, 50 };
+
+\n\nmyNumbers[1] = 25; <font color="#008000">// Changing the second element to 25</font>
+</pre>
+]]>
+</string>
+
+
+    <string name="c_array_4code_example">
+<![CDATA[
+<pre><font color="#0000FF">int[]</font> myNumbers = <font color="#0000FF">new int</font>[] { 10, 20, 30, 40, 50 };
+
+<font color="#008000">\n// Using for loop</font>
+<font color="#0000FF">\nfor</font> (int i = 0; i &lt; myNumbers.Length; i++){
+    <font color="#800000">\n\tConsole.WriteLine</font>(myNumbers[i]);
+\n\n}
+
+<font color="#008000">\n// Using foreach loop (preferred when you don\'t need the index)</font>
+<font color="#0000FF">\nforeach</font> (int number <font color="#0000FF">in</font> myNumbers){
+    <font color="#800000">\n\tConsole.WriteLine</font>(number);
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_array_5code_example">
+<![CDATA[
+<pre><font color="#008000">// 2D array (matrix)</font>
+<font color="#0000FF">\nint</font>[,] matrix = <font color="#0000FF">new int</font>[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+<font color="#008000">\n\n// 3D array</font>
+<font color="#0000FF">\nint</font>[,,] cube = <font color="#0000FF">new int</font>[2, 2, 2] { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } } };
+</pre>
+]]>
+</string>
+
+    <string name="c_array_6code_example">
+<![CDATA[
+<pre><font color="#0000FF">int[]</font> myNumbers = <font color="#0000FF">new int</font>[] { 5, 2, 7, 1, 4 };
+<font color="#0000FF">\nint</font> arrayLength = myNumbers.Length; <font color="#008000">// 5</font>
+
+<font color="#0000FF">\n\nint[]</font> copyArray = <font color="#0000FF">new int</font>[5];
+\nmyNumbers.CopyTo(copyArray, 0);
+
+<font color="#0000FF">\n\nArray.Sort</font>(myNumbers); <font color="#008000">// Sorts the array in ascending order</font>
+</pre>
+]]>
+</string>
+
+
 </resources>
