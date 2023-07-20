@@ -1960,8 +1960,6 @@ if (condition) {\n
 </string>
 
 
-
-
     <string name="c_array_1code_example">
 <![CDATA[
 <pre><font color="#008000">// Creating an array of integers with a size of 5</font>
@@ -2033,5 +2031,104 @@ if (condition) {\n
 ]]>
 </string>
 
+
+    <string name="c_syntax_intro_codey">Let’s begin the Syntax of C#. I’m so excited to learn this, come and join with me!</string>
+
+
+    <string name="c_syntax_code_example">
+<![CDATA[
+<pre><font color="#008000">using</font> System;
+
+<font color="#008000">\n\tnamespace</font> RectangleApplication {
+    <font color="#008000">\n\t\tclass</font> Rectangle {
+        <font color="#008000">\n\t\t\t// member variables</font>
+        <font color="#0000FF">\n\t\t\tdouble</font> length;
+        <font color="#0000FF">\n\t\t\tdouble</font> width;
+
+        <font color="#008000">\n\t\t\tpublic void</font> Acceptdetails() {
+            \n\t\t\t\tlength = 4.5;
+            \n\t\t\t\twidth = 3.5;
+        \n\t\t\t}
+        <font color="#008000">\n\t\t\tpublic double</font> GetArea() {
+            <font color="#008000">\n\t\t\t\treturn</font> length * width;
+        \n\t\t\t}
+        <font color="#008000">\n\t\t\tpublic void</font> Display() {
+            <font color="#800000">\n\t\t\t\tConsole.WriteLine</font>("Length: {0}", length);
+            <font color="#800000">\n\t\t\t\tConsole.WriteLine</font>("Width: {0}", width);
+            <font color="#800000">\n\t\t\t\tConsole.WriteLine</font>("Area: {0}", GetArea());
+        \n\t\t\t}
+    \n\t\t}
+
+    <font color="#008000">\n\t\t\tclass</font> ExecuteRectangle {
+        <font color="#008000">\n\t\t\t\tstatic void</font> Main(string[] args) {
+            \n\t\t\t\t\tRectangle r = <font color="#0000FF">new</font> Rectangle();
+            \n\t\t\t\t\tr.Acceptdetails();
+            \n\t\t\t\t\tr.Display();
+            <font color="#800000">\n\t\t\t\t\tConsole.ReadLine</font>();
+        \n\t\t\t\t}
+    \n\t\t\t}
+\n\t\t}
+</pre>
+]]>
+</string>
+
+    <string name="c_using_code_example">
+<![CDATA[
+<pre><font color="#008000">using</font> System;
+</pre>
+]]>
+</string>
+
+    <string name="c_class_code_example1">
+<![CDATA[<pre><font color="#008000">class</font> Rectangle {
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_variable_code_example">
+<![CDATA[
+<pre><font color="#008000">// member variables</font>
+<font color="#0000FF">\ndouble</font> length;
+<font color="#0000FF">\ndouble</font> width;
+</pre>
+]]>
+</string>
+
+
+    <string name="c_var_func_code_example">
+<![CDATA[
+<pre><font color="#0000FF">public void</font> Acceptdetails() {
+    \n\tlength = 4.5;
+    \n\twidth = 3.5;
+\n}
+<font color="#0000FF">\npublic double</font> GetArea() {
+    <font color="#0000FF">\n\treturn</font> length * width;
+\n}
+<font color="#0000FF">\npublic void</font> Display() {
+    <font color="#800000">\n\tConsole.WriteLine</font>("Length: {0}", length);
+    <font color="#800000">\n\tConsole.WriteLine</font>("Width: {0}", width);
+    <font color="#800000">\n\tConsole.WriteLine</font>("Area: {0}", GetArea());
+\n}
+</pre>
+]]>
+</string>
+
+    <string name="c_class_2_code_example">
+<![CDATA[
+<pre><font color="#008000">class</font> ExecuteRectangle {
+    <font color="#008000">\n\tstatic void</font> Main(string[] args) {
+        \n\t\tRectangle r = <font color="#0000FF">new</font> Rectangle();
+        \n\t\tr.Acceptdetails();
+        \n\t\tr.Display();
+        <font color="#800000">\n\t\tConsole.ReadLine</font>();
+    \n\t}
+\n}
+</pre>
+]]>
+</string>
+    <string name="c_syn"><![CDATA[• A name must begin with a letter that could be followed by a sequence of letters, digits (0 – 9) or underscore. The first character in an identifier cannot be a digit.
+     \n\n• It must not contain any embedded space or symbol such as? - + ! @ # % ^ & * ( ) [ ] { } . ; : “ ‘ / and . However, an underscore ( _ ) can be used.
+     \n\n• It should not be a C# keyword.]]></string>
 
 </resources>
