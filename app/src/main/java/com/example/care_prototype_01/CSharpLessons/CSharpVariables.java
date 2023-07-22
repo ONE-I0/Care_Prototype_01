@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.care_prototype_01.CSharpLessons.CSharpVariablesFragments.CSharpVariablesFragment_1;
 import com.example.care_prototype_01.CSharpLessons.CSharpVariablesFragments.CSharpVariablesFragment_2;
+import com.example.care_prototype_01.CSharpLessons.CSharpVariablesFragments.CSharpVariablesFragment_3;
 import com.example.care_prototype_01.CSharpLessons.CSharpVariablesFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.CSharpLessons.CSharpVariablesFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -53,6 +54,7 @@ public class CSharpVariables extends AppCompatActivity {
 
         fragmentArrayList.add(new CSharpVariablesFragment_1());
         fragmentArrayList.add(new CSharpVariablesFragment_2());
+        fragmentArrayList.add(new CSharpVariablesFragment_3());
 
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

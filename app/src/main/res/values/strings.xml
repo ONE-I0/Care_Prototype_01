@@ -888,8 +888,31 @@ if (condition) {\n
     ]]>
 </string>
 
-    <!--______________________Inputs STRINGS PYTHON______________________-->>
+    <!--______________________Inputs STRINGS PYTHON______________________-->
     <string name="inputs_intro_codey">Let’s begin the Inputs of Python. I’m so excited to learn this, come and join with me!</string>
+
+    <string name="python_input_example"><![CDATA[<pre><font color="#BA2121">print</font>(\'Enter your name:\')
+<font color="#1A1AA6">\nx</font> = <font color="#BA2121">input</font>()
+<font color="#BA2121">\nprint</font>(\'Hello, \' + <font color="#1A1AA6">x</font>)
+<font color="#795E26">\n\nOutput:</font>
+<font color="#1A1AA6">\nEnter your name:</font> <i>(User enters their name)</i>
+<font color="#1A1AA6">\nHello, [user\'s input]</font></pre>
+]]></string>
+
+    <string name="python_input_prompt_example"><![CDATA[<pre><font color="#BA2121">input</font>(<font color="#1A1AA6">prompt</font>)</pre>
+]]></string>
+
+    <string name="python_input_with_output_example">
+    <![CDATA[
+    <pre><tt><font color="#007F00">//Use the prompt parameter to write a message before the input:</font>
+<font color="#1A1AA6">\nx = input(\'Enter your name:\')</font>
+<font color="#BA2121">\nprint</font>(<font color="#1A1AA6">\'Hello, \'</font> + <font color="#1A1AA6">x</font>)</tt>
+
+<font color="#795E26">\n\nOutput:</font>
+<tt><font color="#1A1AA6">\nEnter your name:</font> <font color="#1A1AA6">John</font></tt>
+<font color="#795E26">\nHello, John</font></pre>
+]]>
+</string>
 
 
     <!--______________________CONDITIONAL STATEMENT STRINGS PYTHON______________________-->>
@@ -2146,6 +2169,44 @@ if (condition) {\n
 </pre>
 ]]>
 </string>
+    <string name="c_var_string_code_example"><![CDATA[<pre><font color="#0000FF">string</font> name = "John";
+<font color="#800000">\nConsole.WriteLine</font>(name);
+\n\nOutput:
+<font color="#800000">\nJohn</font></pre>
+]]>
+</string>
+    <string name="c_var_int_code_example"><![CDATA[<pre><font color="#0000FF">int</font> myNum = 15;
+<font color="#800000">\nConsole.WriteLine</font>(myNum);
+\n\nOutput:
+<font color="#800000">\n15</font></pre>
+]]>
+</string>
+    <string name="var_c">int myNum = 5;
+        \ndouble myDoubleNum = 5.99D;
+        \nchar myLetter = \'D\';
+        \nbool myBool = true;
+        \nstring myText = \"Hello\";</string>
 
+    <string name="c_inputs_intro_codey">Let’s begin the Inputs of C#. I’m so excited to learn this, come and join with me!</string>
+
+    <string name="c_input_code_example"><![CDATA[
+<pre>
+<font color="#008000">// Type your username and press enter</font>
+<font color="#800000">\nConsole.WriteLine</font>("Enter username:");
+</pre>]]></string>
+
+    <string name="c_input_code_example1"><![CDATA[
+<pre>
+<font color="#008000">// Create a string variable and get user input from the keyboard and store it in the variable</font>
+<font color="#0000FF">\nstring</font> userName = <font color="#800000">Console.ReadLine</font>();
+</pre>]]>
+</string>
+
+    <string name="c_input_code_example2"><![CDATA[
+<pre>
+<font color="#008000">// Print the value of the variable (userName), which will display the input value</font>
+<font color="#800000">\nConsole.WriteLine</font>("Username is: " + userName);
+</pre>]]>
+</string>
 
 </resources>

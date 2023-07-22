@@ -128,6 +128,7 @@
             android:id="@+id/hv2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
@@ -157,23 +158,6 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/hv2"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <HorizontalScrollView
-            android:id="@+id/hv3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_variables_Text7">
-
-            <WebView
-                android:id="@+id/p_variable_naming"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
-        </HorizontalScrollView>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_vertical1"
