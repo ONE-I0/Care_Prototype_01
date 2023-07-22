@@ -2131,4 +2131,21 @@ if (condition) {\n
      \n\n• It must not contain any embedded space or symbol such as? - + ! @ # % ^ & * ( ) [ ] { } . ; : “ ‘ / and . However, an underscore ( _ ) can be used.
      \n\n• It should not be a C# keyword.]]></string>
 
+
+    <string name="c_Variables_intro_codey">Let’s begin the Variables of C#. I’m so excited to learn this, come and join with me!</string>
+
+    <string name="c_variables"><b>int</b> - stores integers (whole numbers), without decimals, such as 123 or -123
+    \n<b>double</b> - stores floating point numbers, with decimals, such as 19.99 or -19.99
+    \n<b>char</b> - stores single characters, such as \'a\' or \'B\'. Char values are surrounded by single quotes
+    \n<b>string</b> - stores text, such as "Hello World". String values are surrounded by double quotes
+    \n<b>bool</b> - stores values with two states: true or false</string>
+
+    <string name="c_syn_code_example">
+<![CDATA[
+<pre><font color="#0000FF">type</font> variableName = value;
+</pre>
+]]>
+</string>
+
+
 </resources>
