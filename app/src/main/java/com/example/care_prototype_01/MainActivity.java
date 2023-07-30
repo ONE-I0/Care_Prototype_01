@@ -2,14 +2,14 @@ package com.example.care_prototype_01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 
 import care_fragments.HomeFragment;
-import care_fragments.QuizFragment;
+import care_fragments.quiz.QuizFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
     final QuizFragment quizFragment = new QuizFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -31,5 +31,30 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+    }
+    @Override
+    public void onBackPressed() {
+        // Create a confirmation dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Close App");
+        builder.setMessage("Are you sure you want to close the app?");
+        builder.setPositiveButton("Close App", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Close the app
+                finishAffinity();
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Dismiss the dialog and do nothing (app remains open)
+                dialog.dismiss();
+            }
+        });
+
+        // Show the dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
