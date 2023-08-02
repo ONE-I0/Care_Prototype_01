@@ -31,11 +31,10 @@ import java.util.ArrayList;
 
 public class CSharpArrays extends AppCompatActivity {
     private ViewPager2 viewPager;
-    private TextView swipeMessage;
     private LinearLayout pager_dots;
     private FragmentStateAdapter pagerAdapter;
     private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
-    private Handler handler;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,7 @@ public class CSharpArrays extends AppCompatActivity {
         setContentView(R.layout.activity_csharp_arrays);
 
 
-        Toast.makeText(getApplicationContext(), "Swipe right to left", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
         //this is the back button
         Button btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {

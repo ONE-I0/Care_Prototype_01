@@ -1,7 +1,10 @@
 package care_fragments.quiz;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Bundle;
 import android.view.View;
@@ -198,11 +201,37 @@ public class QuizActivity extends AppCompatActivity {
         if (answerNr == currentQuestion.getAnswerNr()) {
             score++;
             textViewScore.setText("Score: " + score);
+            playSound(R.raw.question);
+        }else{
+            playSound(R.raw.incorrect);
         }
-
         showSolution();
+        // Create and show the AlertDialog
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setMessage(answerNr == currentQuestion.getAnswerNr() ? "Correct! Nice Job" : "Incorrect! That's too bad.");
+        alertDialogBuilder.setIcon(R.drawable.codey_main_cut);
+        alertDialogBuilder.setCancelable(false);
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can add any action you want here, or leave it empty to just dismiss the dialog
+            }
+        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 
+    private void playSound(int soundResource) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, soundResource);
+        mediaPlayer.start();
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.release(); // Release the MediaPlayer resource once the sound has finished playing.
+            }
+        });
+    }
     private void showSolution() {
         rb1.setTextColor(Color.RED);
         rb2.setTextColor(Color.RED);

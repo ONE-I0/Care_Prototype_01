@@ -17,6 +17,7 @@ import com.example.care_prototype_01.CSharpLessons.CSharpOop;
 import com.example.care_prototype_01.CSharpLessons.CSharpOperator;
 import com.example.care_prototype_01.CSharpLessons.CSharpSyntax;
 import com.example.care_prototype_01.CSharpLessons.CSharpVariables;
+import com.example.care_prototype_01.MainActivity;
 import com.example.care_prototype_01.PythonLessons.PythonArrays;
 import com.example.care_prototype_01.PythonLessons.PythonComments;
 import com.example.care_prototype_01.PythonLessons.PythonConditionalStatement;
@@ -93,5 +94,15 @@ public class CSharpLanguageActivity extends AppCompatActivity {
             Intent OpenCOop = new Intent(CSharpLanguageActivity.this, CSharpOop.class);
             startActivity(OpenCOop);
         });
+    }
+    @Override
+    public void onBackPressed() {
+        // Create an intent to navigate to MainActivity
+        Intent intent = new Intent(this, MainActivity.class);
+        // Clear the back stack so that the user cannot navigate back to JavaLanguageActivity
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        // Finish the current activity so that it's removed from the back stack
+        finish();
     }
 }

@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         // Create a confirmation dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.care_bg);
         builder.setTitle("Close App");
         builder.setMessage("Are you sure you want to close the app?");
         builder.setPositiveButton("Close App", new DialogInterface.OnClickListener() {

@@ -3,14 +3,19 @@ package care_fragments.quiz;
 import static android.app.Activity.RESULT_OK;
 import static android.content.Context.MODE_PRIVATE;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -38,9 +43,8 @@ public class QuizFragment extends Fragment {
     private TextView textViewHighscore;
     private Spinner spinnerCategory;
     private Spinner spinnerDifficulty;
-
+    private MediaPlayer question_sounds;
     private int highscore;
-
     private final ActivityResultLauncher<Intent> startQuizLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -61,13 +65,22 @@ public class QuizFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_quiz, container, false);
 
+        //declare for the sounds
+        question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
         textViewHighscore = view.findViewById(R.id.text_view_highscore);
         spinnerCategory = view.findViewById(R.id.spinner_category);
         spinnerDifficulty = view.findViewById(R.id.spinner_difficulty);
 
+        ImageButton btnShowAlertDialog = view.findViewById(R.id.btn_info);
+        btnShowAlertDialog.setOnClickListener(v -> showInfo());
+        //declare for the sounds
+        question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
+
         loadCategories();
         loadDifficultyLevels();
         loadHighscore();
+
+
 
         Button buttonStartQuiz = view.findViewById(R.id.button_start_quiz);
         buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +91,32 @@ public class QuizFragment extends Fragment {
         });
 
         return view;
+    }
+    private void showInfo() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        builder.setTitle("Quiz Information");
+
+        // Use HTML formatting for the message
+        String message = "In this quiz, you'll encounter multiple choices. If you select the easy mode, you'll be granted 2 free questions, while in the medium mode, you'll only receive 1 free question, and, naturally, the hard mode offers no free questions at all.<br><br><b>Easy:</b> Two Free<br><b>Medium:</b> One Free<br><b>Hard:</b> No free";
+        builder.setMessage(Html.fromHtml(message));
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can add any code here that should run when the "OK" button is clicked.
+                // For example, you can proceed to start the quiz activity or any other action.
+                dialog.dismiss();
+            }
+        });
+        // Create and show the alert dialog
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        question_sounds.start();
+        // Make the words bold in the dialog message
+        TextView messageTextView = alertDialog.findViewById(android.R.id.message);
+        if (messageTextView != null) {
+            messageTextView.setText(Html.fromHtml(message));
+        }
     }
 
     private void startQuiz() {

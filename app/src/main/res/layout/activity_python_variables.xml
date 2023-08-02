@@ -61,16 +61,4 @@
 
   </LinearLayout>
 
-  <TextView
-      android:id="@+id/swipe_message"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:background="@drawable/callout_background"
-      android:text="swipe to right"
-      android:textSize="20sp"
-      android:visibility="invisible"
-      app:layout_constraintBottom_toBottomOf="@+id/viewpager"
-      app:layout_constraintEnd_toEndOf="@+id/pager_dots"
-      app:layout_constraintStart_toStartOf="@+id/pager_dots" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

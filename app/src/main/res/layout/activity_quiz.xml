@@ -94,43 +94,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView41" />
 
-    <RadioGroup
-        android:id="@+id/radio_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_question"
-        tools:layout_editor_absoluteX="11dp">
-
-        <RadioButton
-            android:id="@+id/radio_button1"
+        <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 1" />
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_question">
 
-        <RadioButton
-            android:id="@+id/radio_button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 2" />
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:text="Option 1" />
 
-        <RadioButton
-            android:id="@+id/radio_button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 3" />
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:text="Option 2" />
 
-        <RadioButton
-            android:id="@+id/radio_button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:freezesText="true"
-            android:text="Option 4" />
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:text="Option 3" />
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radio_button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:text="Option 4" />
+
+        </RadioGroup>
 
     <Button
         android:id="@+id/button_confirm_next"
@@ -157,7 +158,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_score"
         app:srcCompat="@drawable/codey_main_cut" />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="textView47,textView63,textView61,textView52" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="2."
+            app:layout_constraintEnd_toEndOf="@+id/textView52"
+            app:layout_constraintStart_toStartOf="@+id/textView52"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="4."
+            app:layout_constraintEnd_toEndOf="@+id/textView61"
+            app:layout_constraintStart_toStartOf="@+id/textView61"
+            app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="3."
+            app:layout_constraintEnd_toEndOf="@+id/textView47"
+            app:layout_constraintStart_toStartOf="@+id/textView47"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:text="1."
+            app:layout_constraintEnd_toStartOf="@+id/radio_group"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_question" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

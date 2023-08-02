@@ -13,6 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="117dp"
         android:layout_marginEnd="135dp"
+        android:fontFamily="@font/font"
         android:text="Quiz Time!"
         android:textColor="@android:color/black"
         android:textSize="35sp"
@@ -40,11 +41,12 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
         android:text="Start Quiz"
         android:theme="@style/lionelButton"
         app:layout_constraintEnd_toEndOf="@+id/spinner_difficulty"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="@+id/spinner_difficulty"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/spinner_difficulty" />
 
     <Spinner
@@ -54,10 +56,10 @@
         android:layout_below="@+id/spinner_category"
         android:layout_alignStart="@+id/button_start_quiz"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/spinner_category"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/spinner_category"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_category" />
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <Spinner
         android:id="@+id/spinner_category"
@@ -65,12 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_start_quiz"
         android:layout_alignStart="@+id/button_start_quiz"
-        android:layout_marginTop="32dp"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView28"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageView
         android:id="@+id/imageView43"
@@ -94,5 +95,44 @@
         app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="@+id/imageView43"
         app:layout_constraintTop_toBottomOf="@+id/imageView43" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="Language:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Difficulty:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_category"
+        app:layout_constraintStart_toStartOf="@+id/spinner_category"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_category" />
+
+    <ImageButton
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/baseline_info_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

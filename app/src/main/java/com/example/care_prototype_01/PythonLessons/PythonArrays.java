@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.care_prototype_01.PythonLessons.PythonArraysFragments.PythonArraysFragment_1;
 import com.example.care_prototype_01.PythonLessons.PythonArraysFragments.PythonArraysFragment_2;
@@ -28,21 +29,16 @@ import java.util.ArrayList;
 
 public class PythonArrays extends AppCompatActivity {
     private ViewPager2 viewPager;
-    private TextView swipeMessage;
+
     private LinearLayout pager_dots;
     private FragmentStateAdapter pagerAdapter;
     private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
-    private Handler handler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python_arrays);
-        swipeMessage = findViewById(R.id.swipe_message);
-
-        // Show the swipe message and start the timer
-        showSwipeMessage();
-        startTimer();
-
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
         //this is the back button
         Button btn_back =findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
@@ -62,45 +58,5 @@ public class PythonArrays extends AppCompatActivity {
         viewPager.setAdapter(pagerAdapter);
         ViewPagerUtil.getInstance().setupIndicator(this,viewPager,pager_dots, fragmentArrayList.size());
     }
-    private void showSwipeMessage() {
-        swipeMessage.setVisibility(View.VISIBLE);
 
-        // Opacity animation when the message appears
-        ObjectAnimator fadeIn = ObjectAnimator.ofFloat(swipeMessage, "alpha", 0f, 1f);
-        fadeIn.setDuration(1000); // 1 second
-        fadeIn.start();
-    }
-
-    private void hideSwipeMessage() {
-        // Opacity animation when the message disappears
-        ObjectAnimator fadeOut = ObjectAnimator.ofFloat(swipeMessage, "alpha", 1f, 0f);
-        fadeOut.setDuration(1000); // 1 second
-        fadeOut.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                float alpha = (float) animation.getAnimatedValue();
-                swipeMessage.setAlpha(alpha);
-            }
-        });
-        fadeOut.start();
-    }
-
-    private void startTimer() {
-        handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                hideSwipeMessage();
-            }
-        }, 3000); // 3 seconds
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        // Remove the handler callbacks to avoid memory leaks
-        if (handler != null) {
-            handler.removeCallbacksAndMessages(null);
-        }
-    }
 }
