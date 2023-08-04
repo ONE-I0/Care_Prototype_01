@@ -1138,6 +1138,803 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 Question.DIFFICULTY_HARD, Category.PYTHON);
         insertQuestion(python_hard_q20);
 
+
+        //-------------------CSHARP EASY-----------------------
+        // C# Easy Questions
+        Question csharp_easy_q1 = new Question(
+                "C# is a statically-typed language.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q2 = new Question(
+                "C# is an interpreted language.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                2,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q3 = new Question(
+                "C# supports multiple inheritance.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                2,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q4 = new Question(
+                "C# is platform-independent.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                2,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q5 = new Question(
+                "C# is case-sensitive.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q6 = new Question(
+                "C# supports operator overloading.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q7 = new Question(
+                "C# allows you to define custom exceptions.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q8 = new Question(
+                "C# is primarily used for web development.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                2,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q9 = new Question(
+                "C# has a garbage collector to manage memory.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q10 = new Question(
+                "C# supports pass-by-reference for method parameters.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q11 = new Question(
+                "C# supports pass-by-value for method parameters.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q12 = new Question(
+                "C# supports dynamic typing using the \"var\" keyword.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q13 = new Question(
+                "C# has a built-in \"foreach\" loop for iterating over collections.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q14 = new Question(
+                "C# supports multiple catch blocks in exception handling.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q15 = new Question(
+                "C# supports implicit conversion between data types.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q16 = new Question(
+                "C# supports explicit conversion between data types.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q17 = new Question(
+                "C# allows you to create abstract classes.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q18 = new Question(
+                "C# allows you to create abstract methods.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q19 = new Question(
+                "C# supports \"checked\" and \"unchecked\" contexts for arithmetic operations.",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        Question csharp_easy_q20 = new Question(
+                "C# allows you to create user-defined value types using \"struct.\"",
+                "True",
+                "False",
+                "Free",
+                "Free",
+                1,
+                Question.DIFFICULTY_EASY,
+                Category.Csharp
+        );
+
+        // Inserting all questions
+        insertQuestion(csharp_easy_q1);
+        insertQuestion(csharp_easy_q2);
+        insertQuestion(csharp_easy_q3);
+        insertQuestion(csharp_easy_q4);
+        insertQuestion(csharp_easy_q5);
+        insertQuestion(csharp_easy_q6);
+        insertQuestion(csharp_easy_q7);
+        insertQuestion(csharp_easy_q8);
+        insertQuestion(csharp_easy_q9);
+        insertQuestion(csharp_easy_q10);
+        insertQuestion(csharp_easy_q11);
+        insertQuestion(csharp_easy_q12);
+        insertQuestion(csharp_easy_q13);
+        insertQuestion(csharp_easy_q14);
+        insertQuestion(csharp_easy_q15);
+        insertQuestion(csharp_easy_q16);
+        insertQuestion(csharp_easy_q17);
+        insertQuestion(csharp_easy_q18);
+        insertQuestion(csharp_easy_q19);
+        insertQuestion(csharp_easy_q20);
+
+//----------------------------- C# Medium Questions--------------------------------------
+        Question csharp_medium_q1 = new Question(
+                "What is C#?",
+                "A scripting language",
+                "An object-oriented programming language",
+                "A markup language",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q2 = new Question(
+                "C# is developed by which company?",
+                "Microsoft",
+                "Apple",
+                "Google",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q3 = new Question(
+                "Which development environment is commonly used for C# development?",
+                "Visual Studio",
+                "Eclipse",
+                "Sublime Text",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q4 = new Question(
+                "C# is designed to be used for which platform(s)?",
+                "Windows only",
+                "Mac only",
+                "Cross-platform (Windows, Mac, Linux)",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q5 = new Question(
+                "Which of the following is a valid C# variable name?",
+                "123variable",
+                "my-variable",
+                "my_variable",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q6 = new Question(
+                "Which data type is used to store whole numbers in C#?",
+                "double",
+                "char",
+                "int",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q7 = new Question(
+                "Which of the following is the correct syntax for a single-line comment in C#?",
+                "// This is a comment",
+                "/* This is a comment */",
+                "# This is a comment",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q8 = new Question(
+                "Which keyword is used to define a new class in C#?",
+                "new",
+                "class",
+                "create",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q9 = new Question(
+                "What is the default access modifier for class members in C# if no access modifier is specified?",
+                "public",
+                "private",
+                "protected",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q10 = new Question(
+                "What is the purpose of the 'using' statement in C#?",
+                "To define namespaces",
+                "To import libraries",
+                "To declare variables",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q11 = new Question(
+                "Which keyword is used to define a method that does not return any value in C#?",
+                "return",
+                "void",
+                "none",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q12 = new Question(
+                "Which keyword is used to define a variable that can hold a reference to an object of any type in C#?",
+                "var",
+                "object",
+                "any",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q13 = new Question(
+                "Which of the following is NOT a valid access modifier in C#?",
+                "public",
+                "global",
+                "internal",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q14 = new Question(
+                "Which keyword is used to explicitly indicate that a method does not return a value?",
+                "void",
+                "null",
+                "none",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q15 = new Question(
+                "In C#, which access modifier makes a class member accessible only within its own class and any derived classes?",
+                "public",
+                "private",
+                "protected",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q16 = new Question(
+                "What is the correct way to handle exceptions in C#?",
+                "try-catch-finally",
+                "try-except",
+                "catch-throw",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q17 = new Question(
+                "Which of the following is NOT a valid data type in C#?",
+                "float-point",
+                "boolean",
+                "decimal",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q18 = new Question(
+                "What is the access level of a class member that is accessible only within the same assembly?",
+                "private",
+                "internal",
+                "protected",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q19 = new Question(
+                "In C#, which access modifier allows a member to be accessible within the same assembly and derived classes?",
+                "private",
+                "internal",
+                "protected internal",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+        Question csharp_medium_q20 = new Question(
+                "What does the term \"boxing\" refer to in C#?",
+                "Converting a value type to a reference type.",
+                "Converting a reference type to a value type.",
+                "Removing an object from the heap memory.",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.Csharp
+        );
+
+// Inserting all questions
+        insertQuestion(csharp_medium_q1);
+        insertQuestion(csharp_medium_q2);
+        insertQuestion(csharp_medium_q3);
+        insertQuestion(csharp_medium_q4);
+        insertQuestion(csharp_medium_q5);
+        insertQuestion(csharp_medium_q6);
+        insertQuestion(csharp_medium_q7);
+        insertQuestion(csharp_medium_q8);
+        insertQuestion(csharp_medium_q9);
+        insertQuestion(csharp_medium_q10);
+        insertQuestion(csharp_medium_q11);
+        insertQuestion(csharp_medium_q12);
+        insertQuestion(csharp_medium_q13);
+        insertQuestion(csharp_medium_q14);
+        insertQuestion(csharp_medium_q15);
+        insertQuestion(csharp_medium_q16);
+        insertQuestion(csharp_medium_q17);
+        insertQuestion(csharp_medium_q18);
+        insertQuestion(csharp_medium_q19);
+        insertQuestion(csharp_medium_q20);
+
+        Question csharp_hard_q1 = new Question(
+                "To create a new instance of a 'Car' class using the default constructor:\n" +
+                        "\n" +
+                        "Car myCar = new ______();\n",
+                "myCar",
+                "Car",
+                "class",
+                "‘Car’",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q2 = new Question(
+                "What is the correct syntax for a single-line comment in C#?\n" +
+                        "\n" +
+                        "// This is a _____ comment.\n",
+                "Single-line",
+                "Multiline",
+                "Comment",
+                "Quick",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q3 = new Question(
+                "Which access modifier allows a method to be accessible within the same assembly or derived classes?\n" +
+                        "\n" +
+                        "_____ void ProtectedMethod() { }\n",
+                "public",
+                "private",
+                "protected",
+                "internal",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q4 = new Question(
+                "How do you declare a two-dimensional array in C#?\n" +
+                        "\n" +
+                        "int[,] matrix = new int[3, _____];\n",
+                "2",
+                "4",
+                "5",
+                "6l",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q5 = new Question(
+                "How do you check if two strings are equal in C#?\n" +
+                        "\n" +
+                        "if (string1 _____ string2) {\n" +
+                        "    Console.WriteLine(\"Strings are equal.\");\n" +
+                        "}\n",
+                "==",
+                "=",
+                "!=",
+                "<>",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q6 = new Question(
+                "To define a class \"Logger\" that implements the IDisposable interface:\n" +
+                        "\n" +
+                        "public class Logger : ______{\n" +
+                        "    // Implementation here\n" +
+                        "}\n",
+                "Logger",
+                "public class",
+                "IDisposable;",
+                "IDisposable",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q7 = new Question(
+                "In C#, what is used to free up resources and perform other cleanup operations before an object is garbage collected?\n" +
+                        "\n" +
+                        "public void _____() {\n" +
+                        "    // Cleanup code here\n" +
+                        "}\n",
+                "CleanUp",
+                "Dispose",
+                "Clean",
+                "Destroy",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q8 = new Question(
+                "What is the base class in C# from which all other classes are derived?\n" +
+                        "\n" +
+                        "public class _____ {\n" +
+                        "    // Class members here\n" +
+                        "}\n",
+                "Object",
+                "Base",
+                "Main",
+                "Parent",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q9 = new Question(
+                "How do you read input from the console in C#?\n" +
+                        "\n" +
+                        "Console.Write(\"Enter your name: \");\n" +
+                        "string name = Console._____();\n",
+                "Read()",
+                "ReadInput()",
+                "ReadLine()",
+                "ReadString()",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q10 = new Question(
+                "What is the correct way to handle exceptions in C#?\n" +
+                        "\n" +
+                        "try {\n" +
+                        "    // Code that may throw an exception\n" +
+                        "}\n" +
+                        "catch (Exception ex) {\n" +
+                        "    Console.WriteLine(\"Error: \" + ex._____());\n" +
+                        "}\n",
+                "Message",
+                "Description",
+                "Reason",
+                "ToString()",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q11 = new Question(
+                "How do you define a read-only property in C#?\n" +
+                        "\n" +
+                        "public ____ MyProperty{\n" +
+                        "    get { return myField; }\n" +
+                        "}\n",
+                "int",
+                "readonly",
+                "property",
+                "get",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q12 = new Question(
+                "try{\n" +
+                        "    // Code that may throw an exception\n" +
+                        "}\n" +
+                        "catch (Exception ex){\n" +
+                        "    _____________(ex.Message);\n" +
+                        "}\n",
+                "Log(ex.Message);",
+                "Print(ex.Message);",
+                "WriteLine(ex.Message);",
+                "Console.Log(ex.Message);",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q13 = new Question(
+                "Complete the following code to print \"Hello World\" to the console.\n" +
+                        "\n" +
+                        "static void Main(string[] args){\n" +
+                        "    _____________(\"Hello World\");\n" +
+                        "}\n",
+                "Console.Write",
+                "print",
+                "Console.WriteLine",
+                "writeLine",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q14 = new Question(
+                "To declare a two-dimensional array of integers with 3 rows and 4 columns.\n" +
+                        "\n" +
+                        "int[,] myArray = new ___________;\n",
+                "int[3][4];",
+                "int[3, 4];",
+                "int[3, 4]{};",
+                "int[3][4]{};",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q15 = new Question(
+                "To create a new instance of the \"Person\" class with the name \"John\":\n" +
+                        "\n" +
+                        "Person person = new ______(\"John\");\n",
+                "new",
+                "John",
+                "class",
+                "Person",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q16 = new Question(
+                "To add a \"using\" directive to the code to import the \"System\" namespace:\n" +
+                        "\n" +
+                        "______ System;\n",
+                "using",
+                "system",
+                "“System”",
+                "“using”",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q17 = new Question(
+                "To define a property named \"Name\" of type string in the \"Person\" class:\n" +
+                        "\n" +
+                        "public string ______ { get; set; }\n",
+                "name",
+                "Name",
+                "Person",
+                "person",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q18 = new Question(
+                "To implement a method named \"CalculateArea\" that calculates the area of a circle with the given radius:\n" +
+                        "\n" +
+                        "public double CalculateArea(double radius){\n" +
+                        "    return Math.PI * radius * ______;\n" +
+                        "}\n",
+                "double",
+                "float",
+                "radius",
+                "char",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q19 = new Question(
+                "To implement a method named \"Factorial\" that calculates the factorial of a given integer:\n" +
+                        "\n" +
+                        "public int Factorial(int n){\n" +
+                        "    if (n == 0)\n" +
+                        "        return ______;\n" +
+                        "    else\n" +
+                        "        return n * Factorial(n - 1);\n" +
+                        "}\n",
+                "0",
+                "-1",
+                "1",
+                "*1",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        Question csharp_hard_q20 = new Question(
+                "What keyword is used to define a constant variable in C#?\n" +
+                        "\n" +
+                        "const int MaxValue = _____;\n",
+                "10",
+                "\"Hello\"",
+                "3.14",
+                "100",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.Csharp
+        );
+
+        // Inserting all questions
+        insertQuestion(csharp_hard_q1);
+        insertQuestion(csharp_hard_q2);
+        insertQuestion(csharp_hard_q3);
+        insertQuestion(csharp_hard_q4);
+        insertQuestion(csharp_hard_q5);
+        insertQuestion(csharp_hard_q6);
+        insertQuestion(csharp_hard_q7);
+        insertQuestion(csharp_hard_q8);
+        insertQuestion(csharp_hard_q9);
+        insertQuestion(csharp_hard_q10);
+        insertQuestion(csharp_hard_q11);
+        insertQuestion(csharp_hard_q12);
+        insertQuestion(csharp_hard_q13);
+        insertQuestion(csharp_hard_q14);
+        insertQuestion(csharp_hard_q15);
+        insertQuestion(csharp_hard_q16);
+        insertQuestion(csharp_hard_q17);
+        insertQuestion(csharp_hard_q18);
+        insertQuestion(csharp_hard_q19);
+        insertQuestion(csharp_hard_q20);
     }
 
     public void addQuestion(Question question) {

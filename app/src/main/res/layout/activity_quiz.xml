@@ -169,8 +169,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
+            android:layout_marginEnd="9dp"
             android:text="2."
             app:layout_constraintEnd_toEndOf="@+id/textView52"
+            app:layout_constraintEnd_toStartOf="@+id/radio_group"
             app:layout_constraintStart_toStartOf="@+id/textView52"
             app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
@@ -179,8 +181,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:layout_marginEnd="9dp"
             android:text="4."
             app:layout_constraintEnd_toEndOf="@+id/textView61"
+            app:layout_constraintEnd_toStartOf="@+id/radio_group"
             app:layout_constraintStart_toStartOf="@+id/textView61"
             app:layout_constraintTop_toBottomOf="@+id/textView61" />
 
@@ -189,8 +193,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
+            android:layout_marginEnd="9dp"
             android:text="3."
             app:layout_constraintEnd_toEndOf="@+id/textView47"
+            app:layout_constraintEnd_toStartOf="@+id/radio_group"
             app:layout_constraintStart_toStartOf="@+id/textView47"
             app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
