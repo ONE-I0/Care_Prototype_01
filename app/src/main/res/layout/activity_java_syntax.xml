@@ -1,429 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true">
+    android:layout_height="match_parent"
+    tools:context=".PythonLessons.PythonIntroduction">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".JavaLessonsActivity.JavaSyntax">
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/light_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="SYNTAX"
+        app:titleMarginStart="70dp"
+        app:titleTextColor="@color/white" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Syntax"
-            android:textAllCaps="true"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.006"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/back_button"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="12dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:srcCompat="@drawable/codey_java" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pager_dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0" >
 
+    </androidx.viewpager2.widget.ViewPager2>
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="@string/SetGuideline"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck" />
+    <LinearLayout
+        android:id="@+id/pager_dots"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/syntaxtIntro"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/identifier"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/identifierDefinition"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/P_Operators_textView10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/TypesOfIdentifier"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView03"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/TypesOFIdentifier"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/P_Operators_textView10"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/imageView03"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.003"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <Button
-            android:id="@+id/python_introduction_DYK1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:theme="@style/lionelButton"
-            android:text="@string/dyk"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView03"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView03"
-            app:layout_constraintTop_toTopOf="@+id/imageView03"
-            app:layout_constraintVertical_bias="0.615"
-            app:strokeColor="#AAAAAA"
-            app:strokeWidth="0.1dp" />
-
-
-        <TextView
-	        android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:fontFamily="@font/lionel"
-            android:text="@string/now_why_don_t_we_create_our_first_java_program_shall_we_i_ll_explain_further_the_meaning_of_each_code"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toTopOf="@+id/imageView9"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:srcCompat="@drawable/codey_java" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="15dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_end="15dp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/firstjavaprogram"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/SynExplainMethods"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView29"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView30"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <TextView
-	        android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="@string/guess_right"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/imageView10"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btnAnswer01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:theme="@style/lionelButton"
-            android:text="@string/answer"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView10"
-            app:strokeColor="#AAAAAA" />
-
-        <ImageView
-            android:id="@+id/AnswerCodeyImage"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnAnswer01"
-            app:srcCompat="@drawable/codey_java"
-            tools:visibility="visible" />
-
-        <TextView
-            android:id="@+id/AnswerCodeyTextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:fontFamily="@font/lionel"
-            android:text="@string/great_you_guessed_it_right_the_output_to_the_code_is_hello_world_it_s_fun_learning_java_isn_t_it_let_s_keep_learning"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="@+id/AnswerCodeyImage"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/AnswerCodeyImage"
-            app:layout_constraintTop_toTopOf="@+id/AnswerCodeyImage"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck"
-            tools:visibility="visible" />
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/AnswerCodeyImage"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="@string/always_remember_that_the_curly_braces_marks_the_beginning_and_the_end_of_a_block_of_code"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView12"
-            app:layout_constraintTop_toTopOf="@+id/imageView12"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/SyntaxSystem"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView32"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.003"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView33"
-            app:layout_constraintVertical_bias="0.066"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <TextView
-	        android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/questions_you_might_asked"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toTopOf="@+id/imageView13"
-            app:layout_constraintVertical_bias="0.4" />
-
-        <Button
-            android:id="@+id/btnquestion1"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:theme="@style/lionelButton"
-            android:text="@string/what_will_happen_if_i_declare_two_variables_with_same_spelling_but_different_values"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
-
-        <Button
-            android:id="@+id/btnquestion2"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:theme="@style/lionelButton"
-            android:text="@string/can_i_make_a_program_without_using_an_identifier"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnquestion1"
-            tools:ignore="TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btnquestion3"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:theme="@style/lionelButton"
-            android:text="@string/what_is_the_difference_of_identifier_to_keyword"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnquestion2" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

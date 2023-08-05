@@ -8,6 +8,15 @@
     <string name="python_button">python_button</string>
     <!-- Strings used for fragments for navigation -->
 
+    <string name="javaintro">Let’s begin the introduction of Java. I’m so excited to learn this, come and join with me!</string>
+
+
+    <string name="java_advantages">• Java works on different operating platforms.(Windows, Mac, Linux, Raspberry Pi, etc.)
+    \n\n• Java is one of the most popular programming languages in the world.
+    \n\n• Java is open-source, free, simple, and easy to learn and use, allowing everyone to enjoy developing their own software.
+    \n\n• Java has a large demand for jobs in the current market.
+</string>
+
 
     <string name="_1_introduction">1.Introduction</string>
     <string name="_2_syntax">2.Syntax</string>
@@ -2207,6 +2216,83 @@ if (condition) {\n
 <font color="#008000">// Print the value of the variable (userName), which will display the input value</font>
 <font color="#800000">\nConsole.WriteLine</font>("Username is: " + userName);
 </pre>]]>
+</string>
+
+
+    <string name="java_code_syn1">
+    <![CDATA[
+    <pre><tt><font color="#795E26">public</font> <font color="#BA2121">void</font> <font color="#007F00">calculateTotal</font><font color="#007F00">();</font></tt>
+<tt><font color="#795E26">\nprivate</font> <font color="#795E26">int</font> <font color="#007F00">findMax</font><font color="#007F00">(</font><font color="#795E26">int</font><font color="#007F00">[] numbers)</font><font color="#007F00">;</font></tt>
+</pre>
+    ]]>
+</string>
+    <string name="java_code_syn2">
+    <![CDATA[
+    <pre><tt><font color="#007F00">class</font> <font color="#BA2121">Car</font> <font color="#007F00">{</font>
+<font color="#007F00">\n\t// class body</font>
+<font color="#007F00">\n}</font></tt>
+</pre>
+    ]]>
+</string>
+
+    <string name="java_code_syn3">
+    <![CDATA[
+    <pre><tt><font color="#007F00">final</font> <font color="#007F00">int</font> <font color="#BA2121">MAX_VALUE</font> <font color="#007F00">=</font> <font color="#1A1AA6">100</font><font color="#007F00">;</font>
+<font color="#007F00">\nfinal</font> <font color="#007F00">double</font> <font color="#BA2121">PI</font> <font color="#007F00">=</font> <font color="#1A1AA6">3.14159</font><font color="#007F00">;</font></tt>
+</pre>
+    ]]>
+</string>
+
+    <string name="java_code_syn4">
+    <![CDATA[
+    <pre><tt><font color="#007F00">Car</font> <font color="#BA2121">myCar</font> <font color="#007F00">=</font> <font color="#007F00">new</font> <font color="#007F00">Car</font><font color="#007F00">();</font></tt>
+</pre>
+    ]]>
+</string>
+    <string name="java_code_syn5">
+    <![CDATA[
+    <pre><tt><font color="#007F00">public void</font> <font color="#BA2121">printName</font>(<font color="#001080">String</font> <font color="#BA2121">name</font>) <font color="#007F00">{</font>
+        <font color="#008080">\n\t// method body</font>
+    <font color="#007F00"\n}</font></tt>
+</pre>
+    ]]>
+</string>
+
+    <string name="java_code_syn6">
+    <![CDATA[
+    <pre><tt><font color="#0000C0">package</font> <font color="#BA2121">com.example.mypackage;</font></tt>
+</pre>
+    ]]>
+</string>
+
+    <string name="java_code_syn7">
+    <![CDATA[
+    <pre><tt><font color="#0000C0">enum</font> <font color="#BA2121">DayOfWeek</font> {
+        \n<font color="#1A1AA6">MONDAY</font>, <font color="#1A1AA6">TUESDAY</font>, <font color="#1A1AA6">WEDNESDAY</font>,
+        <font color="#1A1AA6">THURSDAY</font>, <font color="#1A1AA6">FRIDAY</font>, <font color="#1A1AA6">SATURDAY</font>,
+        <font color="#1A1AA6">SUNDAY</font>
+    \n}</tt>
+</pre>
+    ]]>
+</string>
+    <string name="java_code_syn_1_1">
+    <![CDATA[
+    <pre><tt><font color="#0000C0">public class</font> <font color="#BA2121">Main</font> {
+    <font color="#0000C0">\n\tpublic static void</font> <font color="#BA2121">main</font>(<font color="#0000C0">String</font>[] args) {
+        <font color="#007F00">\n\t\tSystem.out.println</font>(<font color="#1A1AA6">"Hello World"</font>);
+    \n\t}
+\n}</tt>
+</pre>
+    ]]>
+</string>
+
+    <string name="java_terms"><b>class method -</b> A class is a blueprint for creating objects. It defines the properties and behaviors that an object of that class will possess. Each program must have a class name and should always start with an uppercase first letter and must match the file name of the program.
+    \n\n<b>main method -</b> Each program processing starts from the main() method, which is a mandatory part of every Java program. All method names should start with a lowercase letter. If several words are used to form the name of the method, then each inner word’s first letter should be in uppercase.
+    \n\n<b>System.out.println -</b> It is used to print and display an output to the user.
+</string>
+
+    <string name="java_system_println"><b>System</b> is a built-in Java class that contains useful members, such as <b>out</b>, which is short for "output". The <b>println()</b> method, short for "print line", is used to print a value to the screen (or a file).
+    \n\nLastly, each code statement must end with a semicolon (<b>;</b>).
 </string>
 
 </resources>

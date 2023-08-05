@@ -1,352 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fillViewport="true"
-    tools:ignore="SpeakableTextPresentCheck,TextSizeCheck"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PythonLessons.PythonIntroduction">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".JavaLessonsActivity.JavaIntroduction">
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/light_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="INTRODUCTION"
+        app:titleMarginStart="70dp"
+        app:titleTextColor="@color/white" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="@string/introductions"
-            android:textAllCaps="true"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.006"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/back_button"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="12dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:srcCompat="@drawable/codey_java_dyk" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pager_dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0" >
 
-        <Button
-            android:id="@+id/btnTrivia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="76dp"
-            android:theme="@style/lionelButton"
-            android:text="@string/codey_s_trivia_sentence"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.047"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.576"
-            app:strokeColor="#AAAAAA"
-            app:strokeWidth="0.1dp" />
+    </androidx.viewpager2.widget.ViewPager2>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.002"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/codey_java" />
+    <LinearLayout
+        android:id="@+id/pager_dots"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="@string/let_s_start_the_introduction_of_java_lesson_feel_free_to_ask_questions_or_request_clarification_at_the_end_of_the_discussion"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/java"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Java is an object-oriented, class-based high-level tool with a focus on minimizing the need for various implementation dependencies. Its intention is for programmers to be able to write once and run anywhere (WORA), thus the compiled Java code can run on any platform that supports Java without the requirement of recompiling. Java bytecode, which is the end product of compiling Java applications, can run on any Java virtual machine (JVM), regardless of the underlying computer architecture. While the syntax of Java does have similarities to C and C++, it has fewer low-level features than either of them. Dynamic capabilities, like runtime code modification and reflection, are provided by the Java runtime - something that sets it apart from traditional compiled languages. Originally, Sun Microsystems developed this language and it was available for use in May 1995. "
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/javaintrodullets"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:layout_width="224dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="Why use Java over other programming language?"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-            app:layout_constraintStart_toEndOf="@+id/imageView11"
-            app:layout_constraintTop_toTopOf="@+id/imageView11"
-            app:layout_constraintVertical_bias="0.689"
-            tools:ignore="TextSizeCheck" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.002"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:srcCompat="@drawable/codey_java" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/here_s_a_quick_overview_of_some_key_concepts_in_java"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-        <TextView
-            android:id="@+id/introduction_bullet"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text='@string/IntroBullet_1'
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.36"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView18"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/introduction_bullet2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text='@string/IntroBullet_2'
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/introduction_bullet3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text='@string/IntroBullet_3'
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet2"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/introduction_bullet4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/IntroBullet_4"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet3"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/introduction_bullet5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/IntroBullet_5"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet4"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/introduction_bullet6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/IntroBullet_6"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet5"
-            tools:ignore="TextSizeCheck" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="15dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_end="15dp" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.003"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/introduction_bullet6"
-            app:layout_constraintVertical_bias="0.066"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/questions_you_might_asked"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="0.4" />
-
-        <Button
-            android:id="@+id/btnquestion1"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/is_java_a_programming_or_scripting_language"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:theme="@style/lionelButton"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-        <Button
-            android:id="@+id/btnquestion2"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:text="@string/what_makes_java_different_to_other_languages"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:theme="@style/lionelButton"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnquestion1"
-            tools:ignore="TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btnquestion3"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:text="@string/what_makes_java_so_unique"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:theme="@style/lionelButton"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnquestion2" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
