@@ -1,77 +1,54 @@
 package com.example.care_prototype_01.JavaLessonsActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.care_prototype_01.JavaLessonsActivity.JavaCommentFragments.JavaCommentsFragment_1;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaCommentFragments.JavaCommentsFragment_2;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaCommentFragments.JavaCommentsFragment_3;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaCommentFragments.ViewPagerAdapter;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaCommentFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
+
+import java.util.ArrayList;
 
 public class JavaComments extends AppCompatActivity {
-    Button btn_question1, btn_question2, btn_question3;
-    private MediaPlayer question_sounds;
+    private ViewPager2 viewPager;
+    private LinearLayout pager_dots;
+    private FragmentStateAdapter pagerAdapter;
+    private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_comments);
 
-        //declare for the sounds
-        question_sounds = MediaPlayer.create(JavaComments.this, R.raw.question);
+        //this is the back button
+        Button btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent OpenPythonIntroduction = new Intent(this, JavaLanguageActivity.class);
+            startActivity(OpenPythonIntroduction);
+        });
 
-        //this will open the three questions
-        btn_question1 = findViewById(R.id.btnquestion1);
-        btn_question1.setOnClickListener(view ->
-                openQuestion1()
-        );
+        viewPager = findViewById(R.id.viewpager);
+        pager_dots = findViewById(R.id.pager_dots);
 
-        btn_question2 = findViewById(R.id.btnquestion2);
-        btn_question2.setOnClickListener(view ->
-                openQuestion2()
-        );
+        fragmentArrayList.add(new JavaCommentsFragment_1());
+        fragmentArrayList.add(new JavaCommentsFragment_2());
+        fragmentArrayList.add(new JavaCommentsFragment_3());
 
-        btn_question3 = findViewById(R.id.btnquestion3);
-        btn_question3.setOnClickListener(view ->
-                openQuestion3()
-        );
-    }
 
-    private void openQuestion1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaComments.this);
-        builder.setTitle("What is the purpose of comments in Java?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The Comments in Java is not just a decorative text written in the code, rather, it serves its own purpose by adding explanatory or descriptive text that helps everyone who will read the code easily understand the meaning of its function.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-
-    private void openQuestion2() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaComments.this);
-        builder.setTitle("What is the difference of a single-line vs multi-line comment?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("Single-line comments (‘//’) are suitable for short explanations that usually takes up on a single line only and these are used to clarify variable declarations, providing context, or briefly describing the code. Multi-line comments (‘/* … */’), on the other hand, are useful for long explanations, disabling blocks of code temporarily, or putting out a large section of comment into the code.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-
-    }
-
-    private void openQuestion3() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaComments.this);
-        builder.setTitle("Can comments slow down a program’s execution?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The answer is No. Comments have no impact on the performance of the program and it does not slow execution speed of compiled bytecodes because it is not included when being interpreted by the compiler.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-
+        pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
+        viewPager.setAdapter(pagerAdapter);
+        ViewPagerUtil.getInstance().setupIndicator(this, viewPager, pager_dots, fragmentArrayList.size());
     }
 }

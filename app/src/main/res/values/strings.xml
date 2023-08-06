@@ -619,6 +619,7 @@ if (condition) {\n
     <string name="p_the_types_of_comments">• Single line Comments
         \n• Multiline Comments
         \n• Docstring Comments</string>
+
     <string name="p_single_line_comments"><b>Single-Line Comments in Python</b></string>
     <string name="python_single_line_comments">Python single-line comment starts with the hashtag symbol (#) with no white spaces and lasts till the end of the line. If the comment exceeds one line then put a hashtag on the next line and continue the Python Comments. Python’s single-line comments are proved useful for supplying short explanations for variables, function declarations, and expressions. See the following code snippet demonstrating single line comment:</string>
     <string name="P_comments_textview9">In the example, it can be seen that Python Comments are ignored by the interpreter during the execution of the program.</string>
@@ -1786,6 +1787,9 @@ if (condition) {\n
     <string name="c_the_types_of_comments">• Single line Comments
         \n• Multiline Comments
         \n• XML Comments</string>
+    <string name="j_the_types_of_comments">• Single line Comments
+        \n• Multiline Comments
+        \n• Javadoc Comments</string>
 
     <string name="c_comments_textview9">In the example, it can be seen that C# Comments are ignored by the interpreter during the execution of the program.</string>
 
@@ -2294,5 +2298,74 @@ if (condition) {\n
     <string name="java_system_println"><b>System</b> is a built-in Java class that contains useful members, such as <b>out</b>, which is short for "output". The <b>println()</b> method, short for "print line", is used to print a value to the screen (or a file).
     \n\nLastly, each code statement must end with a semicolon (<b>;</b>).
 </string>
+
+
+    <string name="java_code_single_line_comment">
+    <![CDATA[Example
+    <pre><tt><font color="#008000">\n//This comment just has one line.</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="java_code_multi_line_comment">
+    <![CDATA[
+    <pre><tt>Example:
+<font color="#000000">\n/*</font>
+<font color="#008000">\nThis comment consists of several lines.</font>
+<font color="#008000">\nIt may vary according to the preference of the developer.</font>
+<font color="#000000">\n*/</font></tt></pre>
+    ]]>
+</string>
+
+    <string name="java_code_square_function">
+    <![CDATA[
+    <pre><tt>Example:
+<font color="#008000">\n/**
+ \n* Calculates and returns the square of a given number.
+ \n*
+ \n* @param number the input number
+ \n* @return the square of the number
+ \n* @throws IllegalArgumentException if the number is negative
+ \n*/</font>
+\npublic int calculateNum(int number) {
+    \n\tif (number != 0) {
+        \n\t\t<font color="#FF0000">throw new IllegalArgumentException("Error! Number must be equal to 0");</font>
+    \n\t}
+    \n\treturn number * number;
+\n}</tt></pre>
+    ]]>
+</string>
+
+    <string name="java_variable_example">
+    <![CDATA[
+    <pre><tt><font color="#000000">Example</font>.
+<font color="#267F99">\ntype</font> <font color="#BA2121">variableName</font> = <font color="#1A1AA6">value</font>;</tt></pre>
+    ]]></string>
+
+    <string name="java_code_example1">
+    <![CDATA[
+    <pre><tt><font color="#000000">Example</font>
+<font color="#267F99">\nint</font> <font color="#BA2121">myNum</font> = <font color="#1A1AA6">15</font>;
+<font color="#267F99">\nSystem</font>.<font color="#267F99">out</font>.<font color="#267F99">println</font>(<font color="#BA2121">myNum</font>);</tt></pre>
+    ]]></string>
+
+    <string name="java_variable_example1">
+    <![CDATA[
+    <pre><tt><font color="#000000">Example</font>
+<font color="#267F99">\nint</font> <font color="#BA2121">myNum</font>;
+<font color="#BA2121">\nmyNum</font> = <font color="#1A1AA6">15</font>;
+<font color="#267F99">\nSystem</font>.<font color="#267F99">out</font>.<font color="#267F99">println</font>(<font color="#BA2121">myNum</font>);</tt></pre>
+     ]]></string>
+
+    <string name="java_variable_example2">
+    <![CDATA[
+    <pre><tt><font color="#000000">Example</font>
+<font color="#267F99">\nint</font> <font color="#BA2121">myNum</font> = <font color="#1A1AA6">5</font>;
+<font color="#267F99">\nfloat</font> <font color="#BA2121">myFloatNum</font> = <font color="#1A1AA6">5.99f</font>;
+<font color="#267F99">\nchar</font> <font color="#BA2121">myLetter</font> = \'<font color="#1A1AA6">D</font>\';
+<font color="#267F99">\nboolean</font> <font color="#BA2121">myBool</font> = <font color="#007400">true</font>;
+<font color="#267F99">\nString</font> <font color="#BA2121">myText</font> = "<font color="#1A1AA6">Hello</font>";</tt></pre>
+    ]]></string>
+
+
 
 </resources>
