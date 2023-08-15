@@ -1,138 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="117dp"
-        android:layout_marginEnd="135dp"
-        android:fontFamily="@font/font"
-        android:text="Quiz Time!"
-        android:textColor="@android:color/black"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/text_view_highscore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/button_start_quiz"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Highscore: 0"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView26"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginEnd="135dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font"
+            android:text="Quiz Time!"
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_start_quiz"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="8dp"
-        android:text="Start Quiz"
-        android:theme="@style/lionelButton"
-        app:layout_constraintEnd_toEndOf="@+id/spinner_difficulty"
-        app:layout_constraintHorizontal_bias="0.598"
-        app:layout_constraintStart_toStartOf="@+id/textView34"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_difficulty" />
+        <TextView
+            android:id="@+id/text_view_highscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_start_quiz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:autoSizeTextType="uniform"
+            android:text="Highscore: 0"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView26"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
-    <Spinner
-        android:id="@+id/spinner_difficulty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner_category"
-        android:layout_alignStart="@+id/button_start_quiz"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView34"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="@+id/textView34"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        <Button
+            android:id="@+id/button_start_quiz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:text="Start Quiz"
+            android:theme="@style/lionelButton"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_difficulty"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="@+id/textView34"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_difficulty" />
 
-    <Spinner
-        android:id="@+id/spinner_category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_start_quiz"
-        android:layout_alignStart="@+id/button_start_quiz"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView25"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_category"
+            android:layout_alignStart="@+id/button_start_quiz"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView34"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="@+id/textView34"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
-    <ImageView
-        android:id="@+id/imageView43"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/text_view_highscore"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/text_view_highscore"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/text_view_highscore"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_highscore"
-        app:srcCompat="@drawable/codey_main_cut" />
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_start_quiz"
+            android:layout_alignStart="@+id/button_start_quiz"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView25"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Choose what programming language you wish to take a quiz and its difficulty."
-        app:layout_constraintEnd_toEndOf="@+id/imageView43"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="@+id/imageView43"
-        app:layout_constraintTop_toBottomOf="@+id/imageView43" />
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/text_view_highscore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_highscore"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/text_view_highscore"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_highscore"
+            app:srcCompat="@drawable/codey_main_cut" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:text="Language:"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView28"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Choose what programming language you wish to take a quiz and its difficulty."
+            app:layout_constraintEnd_toEndOf="@+id/imageView43"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toStartOf="@+id/imageView43"
+            app:layout_constraintTop_toBottomOf="@+id/imageView43" />
 
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Difficulty:"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spinner_category"
-        app:layout_constraintStart_toStartOf="@+id/spinner_category"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_category" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Language:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView28"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-    <ImageButton
-        android:id="@+id/btn_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="#00FFFFFF"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:src="@drawable/baseline_info_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Difficulty:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_category"
+            app:layout_constraintStart_toStartOf="@+id/spinner_category"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_category" />
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#00FFFFFF"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/baseline_info_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

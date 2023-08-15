@@ -1,1 +1,13 @@
-<resources></resources>
+<resources>
+    <dimen name="image_view_width">89dp</dimen>
+    <dimen name="image_view_height">92dp</dimen>
+    <dimen name="image_view_margin_top">36dp</dimen>
+
+    <!-- Dimension values for text view -->
+    <dimen name="text_view_padding">16dp</dimen>
+
+    <!-- Dimension values for image buttons -->
+    <dimen name="image_button_width">318dp</dimen>
+    <dimen name="image_button_height">110dp</dimen>
+    <dimen name="image_button_margin_top">8dp</dimen>
+</resources>

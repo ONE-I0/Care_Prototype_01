@@ -2366,6 +2366,19 @@ if (condition) {\n
 <font color="#267F99">\nString</font> <font color="#BA2121">myText</font> = "<font color="#1A1AA6">Hello</font>";</tt></pre>
     ]]></string>
 
+    <string name="java_example8">
+    <![CDATA[
+    <pre><tt><font color="#267F99">import</font> <font color="#267F99">java.util.Scanner;</font>  <font color="#60A48F">// Import the Scanner class</font>
+<font color="#267F99">class</font> <font color="#BA2121">Main</font> {
+  <font color="#267F99">\n\tpublic static void</font> <font color="#BA2121">main</font>(<font color="#267F99">String</font>[] <font color="#BA2121">args</font>) {
+    <font color="#267F99">\n\tScanner</font> <font color="#BA2121">myObj</font> = <font color="#267F99">new</font> <font color="#267F99">Scanner</font>(<font color="#267F99">System.in</font>);  <font color="#60A48F">// Create a Scanner object</font>
+    <font color="#267F99">\n\tSystem.out.println</font>("Enter username");
+
+    <font color="#267F99">\n\tString</font> <font color="#BA2121">userName</font> = <font color="#BA2121">myObj</font>.<font color="#267F99">nextLine</font>();  <font color="#60A48F">// Read user input</font>
+    <font color="#267F99">\n\tSystem.out.println</font>("Username is: " + <font color="#BA2121">userName</font>);  <font color="#60A48F">// Output user input</font>
+  \n\t}
+\n}</tt></pre>
+    ]]></string>
 
 
 </resources>

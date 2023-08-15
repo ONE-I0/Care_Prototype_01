@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import care_fragments.quiz.QuizContract.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -81,7 +82,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         insertCategory(c1);
         Category c2 = new Category("PYTHON");
         insertCategory(c2);
-        Category c3 = new Category("Csharp");
+        Category c3 = new Category("C#");
         insertCategory(c3);
     }
 
@@ -2044,6 +2045,13 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         }
 
         c.close();
+
+        Collections.shuffle(questionList);
+
+        // Limit the list to 10 questions
+        if (questionList.size() > 10) {
+            questionList.subList(10, questionList.size()).clear();
+        }
         return questionList;
     }
 }
