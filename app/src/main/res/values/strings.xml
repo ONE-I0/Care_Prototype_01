@@ -2380,5 +2380,40 @@ if (condition) {\n
 \n}</tt></pre>
     ]]></string>
 
+    <string name="method_description"><b>Method and its description</b>
+    \n<b>nextBoolean():</b> Reads a boolean value from the user.
+    \n\n<b>nextByte():</b> Reads a byte value from the user.
+    \n\n<b>nextDouble():</b> Reads a double value from the user.
+    \n\n<b>nextFloat():</b> Reads a float value from the user.
+    \n\n<b>nextInt():</b> Reads an int value from the user.
+    \n\n<b>nextLine():</b> Reads a String value from the user.
+    \n\n<b>nextLong():</b> Reads a long value from the user.
+    \n\n<b>nextShort():</b> Reads a short value from the user.
+</string>
+
+    <string name="java_example9">
+    <![CDATA[
+    <pre><tt><font color="#267F99">import</font> <font color="#267F99">java.util.Scanner;</font>
+<font color="#267F99">\nclass</font> <font color="#BA2121">Main</font> {
+  <font color="#267F99">\n\tpublic static void</font> <font color="#BA2121">main</font>(<font color="#267F99">String</font>[] <font color="#BA2121">args</font>) {
+    <font color="#267F99">\n\t\tScanner</font> <font color="#BA2121">myObj</font> = <font color="#267F99">new</font> <font color="#267F99">Scanner</font>(<font color="#267F99">System.in</font>);
+
+    <font color="#267F99">\n\t\tSystem.out.println</font>("Enter name, age and salary:");
+
+    <font color="#60A48F">\n\t\t// String input</font>
+    <font color="#267F99">\n\t\tString</font> <font color="#BA2121">name</font> = <font color="#BA2121">myObj</font>.<font color="#267F99">nextLine</font>();
+
+    <font color="#60A48F">\n\t\t// Numerical input</font>
+    <font color="#267F99">\n\t\tint</font> <font color="#BA2121">age</font> = <font color="#BA2121">myObj</font>.<font color="#267F99">nextInt</font>();
+    <font color="#267F99">\n\t\tdouble</font> <font color="#BA2121">salary</font> = <font color="#BA2121">myObj</font>.<font color="#267F99">nextDouble</font>();
+
+    <font color="#60A48F">\n\t\t// Output input by user</font>
+    <font color="#267F99">\n\t\tSystem.out.println</font>("Name: " + <font color="#BA2121">name</font>);
+    <font color="#267F99">\n\t\tSystem.out.println</font>("Age: " + <font color="#BA2121">age</font>);
+    <font color="#267F99">\n\t\tSystem.out.println</font>("Salary: " + <font color="#BA2121">salary</font>);
+  \n\t}
+\n}</tt></pre>
+    ]]></string>
+
 
 </resources>

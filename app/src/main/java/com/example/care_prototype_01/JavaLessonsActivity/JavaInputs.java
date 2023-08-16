@@ -14,6 +14,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments.JavaInputsFragment_1;
 
 import com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments.JavaInputsFragment_2;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments.JavaInputsFragment_3;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -47,6 +48,7 @@ public class JavaInputs extends AppCompatActivity {
 
         fragmentArrayList.add(new JavaInputsFragment_1());
         fragmentArrayList.add(new JavaInputsFragment_2());
+        fragmentArrayList.add(new JavaInputsFragment_3());
 
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);

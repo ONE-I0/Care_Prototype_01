@@ -1,14 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JavaLessonsActivity.JavaInputsFragments.JavaInputsFragment_2">
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+
+        <TextView
+            android:id="@+id/p_Syntax_Text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Input Types"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/j_input_Text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In the example above, we used the nextLine() method, which is used to read Strings. To read other types, look at the table below:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Syntax_Text3"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/p_Syntax_Text4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What are the input types in java?"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/j_input_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/j_input_Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In Java, the Scanner class is commonly used to read input from various sources, such as the console or files. The Scanner class provides methods to read different data types. Here are some commonly used methods of the Scanner class for different input types:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Syntax_Text4"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/p_Syntax_Text5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What are the input types in java?"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/j_input_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/j_input_Text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In Java, the Scanner class is commonly used to read input from various sources, such as the console or files. The Scanner class provides methods to read different data types. Here are some commonly used methods of the Scanner class for different input types:"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Syntax_Text4"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <TextView
+            android:id="@+id/method_description_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/method_description"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/j_input_Text"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="15dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

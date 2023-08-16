@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:logo="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
         android:label="CARE"
         android:roundIcon="@mipmap/ic_launcher_round"

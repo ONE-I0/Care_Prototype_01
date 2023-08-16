@@ -10,21 +10,20 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.example.care_prototype_01.JavaLessonsActivity.JavaSyntaxFragments.JavaSyntaxFragment_2;
 import com.example.care_prototype_01.R;
 
-public class JavaInputsFragment_1 extends Fragment {
+public class JavaInputsFragment_3 extends Fragment {
 
 
     private static final int TEXT_SIZE_IN_DP = 25;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_java_inputs_1, container, false);
+        View view = inflater.inflate(R.layout.fragment_java_inputs_3, container, false);
 
         // Example syntax print
-        WebView codeWebView_J_Syntax_1_1= view.findViewById(R.id.java_example8);
-        String formattedCode_J_Syntax_1_1 = getString(R.string.java_example8);
+        WebView codeWebView_J_Syntax_1_1= view.findViewById(R.id.java_example9);
+        String formattedCode_J_Syntax_1_1 = getString(R.string.java_example9);
         String htmlContent_J_Syntax_1_1 = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", dpToPx(), formattedCode_J_Syntax_1_1);
         configureWebView(codeWebView_J_Syntax_1_1, htmlContent_J_Syntax_1_1);
 
@@ -43,6 +42,6 @@ public class JavaInputsFragment_1 extends Fragment {
 
     private int dpToPx() {
         float density = getResources().getDisplayMetrics().density;
-        return Math.round(JavaInputsFragment_1.TEXT_SIZE_IN_DP * density);
+        return Math.round(JavaInputsFragment_3.TEXT_SIZE_IN_DP * density);
     }
 }

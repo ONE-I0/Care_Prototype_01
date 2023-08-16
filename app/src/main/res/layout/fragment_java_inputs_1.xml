@@ -87,7 +87,6 @@
             android:id="@+id/P_Syntax_Text7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="The Scanner class is used to get user input, and it is found in the java.util package."
             android:textColor="#000000"
             android:textIsSelectable="false"
@@ -102,7 +101,6 @@
             android:id="@+id/p_Syntax_Text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="To use the Scanner class, create an object of the class and use any of the available methods found in the Scanner class documentation. In our example, we will use the nextLine() method, which is used to read Strings."
             android:textColor="#000000"
             android:textIsSelectable="false"
@@ -125,83 +123,6 @@
 
             <WebView
                 android:id="@+id/java_example8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/p_Syntax_Text3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Input Types"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv1"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/j_input_Text1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="In the example above, we used the nextLine() method, which is used to read Strings. To read other types, look at the table below:"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_Syntax_Text3"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/p_Syntax_Text4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="What are the input types in java?"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/j_input_Text1"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/j_input_Text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="In Java, the Scanner class is commonly used to read input from various sources, such as the console or files. The Scanner class provides methods to read different data types. Here are some commonly used methods of the Scanner class for different input types:"
-            android:textColor="#000000"
-            android:textIsSelectable="false"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_Syntax_Text4"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <HorizontalScrollView
-            android:id="@+id/hv2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/j_input_Text">
-
-            <WebView
-                android:id="@+id/c_input_code_example1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/font"
