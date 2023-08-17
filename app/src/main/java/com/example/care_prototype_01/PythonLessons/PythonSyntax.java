@@ -43,8 +43,7 @@ public class PythonSyntax extends AppCompatActivity {
         //this is the back button
         Button btn_back =findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            Intent OpenPythonSyntax = new Intent(this, PythonLanguageActivity.class);
-            startActivity(OpenPythonSyntax);
+            onBackPressed();
         });
 
         //for view pager and dots

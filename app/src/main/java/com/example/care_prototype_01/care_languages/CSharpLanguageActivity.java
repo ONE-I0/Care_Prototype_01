@@ -95,14 +95,4 @@ public class CSharpLanguageActivity extends AppCompatActivity {
             startActivity(OpenCOop);
         });
     }
-    @Override
-    public void onBackPressed() {
-        // Create an intent to navigate to MainActivity
-        Intent intent = new Intent(this, MainActivity.class);
-        // Clear the back stack so that the user cannot navigate back to JavaLanguageActivity
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-        // Finish the current activity so that it's removed from the back stack
-        finish();
-    }
 }

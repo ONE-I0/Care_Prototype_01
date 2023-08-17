@@ -1,86 +1,57 @@
 package com.example.care_prototype_01.JavaLessonsActivity;
 
-import android.media.MediaPlayer;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
-import androidx.appcompat.app.AlertDialog;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOperatorsFragments.JavaOperatorsFragment_1;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOperatorsFragments.JavaOperatorsFragment_2;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOperatorsFragments.JavaOperatorsFragment_3;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOperatorsFragments.JavaOperatorsFragment_4;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOperatorsFragments.ViewPagerAdapter;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaOperatorsFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
+
+import java.util.ArrayList;
 
 public class JavaOperators extends AppCompatActivity {
-    Button btn_DYK_1,btn_DYK_2,btn_question1, btn_question2, btn_question3;
-    private MediaPlayer question_sounds;
+
+    private ViewPager2 viewPager;
+    private LinearLayout pager_dots;
+    private FragmentStateAdapter pagerAdapter;
+    private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_operators);
 
+        //this is the back button
+        Button btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent OpenPythonIntroduction = new Intent(this, JavaLanguageActivity.class);
+            startActivity(OpenPythonIntroduction);
+        });
 
-        //declare for the sounds
-        question_sounds = MediaPlayer.create(JavaOperators.this, R.raw.question);
+        viewPager = findViewById(R.id.viewpager);
+        pager_dots = findViewById(R.id.pager_dots);
 
-        //this will open the did you know in syntax
-        btn_DYK_1 = findViewById(R.id.btndyk1);
-        btn_DYK_1.setOnClickListener(view ->
-                openDYK1()
-        );
-        btn_question1 = findViewById(R.id.btnquestion1);
-        btn_question1.setOnClickListener(view ->
-                OpenQuestion1()
-        );
-        btn_question2 = findViewById(R.id.btnquestion2);
-        btn_question2.setOnClickListener(view ->
-                OpenQuestion2()
-        );
-        btn_question3 = findViewById(R.id.btnquestion3);
-        btn_question3.setOnClickListener(view ->
-                OpenQuestion3()
-        );
-    }
-    private void openDYK1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaOperators.this);
-        builder.setTitle("Did you know?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("ava has a variety of operators you may use to perform different operations on variables and values? Here are a few illustrations of Java operators:  ")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void OpenQuestion1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaOperators.this);
-        builder.setTitle("What is the arithmetic operator used for addition in Java?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The arithmetic operator used for addition in Java is the plus operator (+).")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void OpenQuestion2() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaOperators.this);
-        builder.setTitle("What is the assignment operator used to assign a value to a variable in Java?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The assignment operator used to assign a value to a variable in Java is the equals operator (=).")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void OpenQuestion3() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaOperators.this);
-        builder.setTitle("What is the comparison operator used to check if two values are equal in Java?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The comparison operator used to check if two values are equal in Java is the double equals operator (==).")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
+        fragmentArrayList.add(new JavaOperatorsFragment_1());
+        fragmentArrayList.add(new JavaOperatorsFragment_2());
+        fragmentArrayList.add(new JavaOperatorsFragment_3());
+        fragmentArrayList.add(new JavaOperatorsFragment_4());
+
+
+
+        pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
+        viewPager.setAdapter(pagerAdapter);
+        ViewPagerUtil.getInstance().setupIndicator(this, viewPager, pager_dots, fragmentArrayList.size());
     }
 }

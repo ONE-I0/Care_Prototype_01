@@ -18,14 +18,14 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
-            app:srcCompat="@drawable/codey_c_cut" />
+            app:srcCompat="@drawable/codey_python_cut" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="@string/c_syntax_intro_codey"
+            android:text="@string/J_Operator_syntax"
             app:layout_constraintBottom_toBottomOf="@+id/P_Operators_imageView1"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
@@ -38,19 +38,33 @@
             android:id="@+id/P_Operators_Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/syntax"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/operators_1"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Operators_imageView1" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/p_Operators_Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/P_types_of_operator"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_imageView7" />
 
         <TextView
             android:id="@+id/P_Operators_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="When referring to a programming language, the syntax is a set of rules for grammar and spelling. In other words, it means using character structures that a computer can interpret. For example, if a user tries to execute a command without proper syntax, the compiler finds this error and generates a syntax error, usually causing the program to fail."
+            android:text="Operators in Java are special symbols or characters that carry out predefined operations on one or more operands (variables, constants, or expressions) to produce a result. You may manipulate and calculate on data, compare values, assign values, and do many other things with operators. "
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
@@ -60,111 +74,43 @@
             app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
+        <ImageView
+            android:id="@+id/P_Operators_imageView7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/codey_python_cut"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text2"
+            app:srcCompat="@drawable/codey_python_cut" />
+
+        <TextView
+            android:id="@+id/P_Operators_textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/callout_background"
+            android:text="Java provides a variety of operators that are divided into distinct groups according to how they function:"
+            app:layout_constraintBottom_toBottomOf="@+id/P_Operators_imageView7"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/P_Operators_imageView7"
+            app:layout_constraintTop_toTopOf="@+id/P_Operators_imageView7"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
         <TextView
             android:id="@+id/P_Operators_Text03"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="For example, let us consider a Rectangle object. It has attributes such as length and width. Depending upon the design, it may need ways for accepting the values of these attributes, calculating the area, and displaying details."
+            android:text="@string/java_arithmetic_logical_operators"
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text2"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/P_Syntax_imageView4"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_python_cut"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
-            app:srcCompat="@drawable/codey_c_cut" />
-
-        <TextView
-            android:id="@+id/P_Operators_Text8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="Let us look at implementation of a Rectangle class and discuss C# basic syntax"
-            app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView4"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/P_Syntax_imageView4"
-            app:layout_constraintTop_toTopOf="@+id/P_Syntax_imageView4"
-            app:layout_constraintVertical_bias="0.04"
-            tools:ignore="TextSizeCheck" />
-
-        <HorizontalScrollView
-            android:id="@+id/hv1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView4">
-
-            <WebView
-                android:id="@+id/c_syntax_code_example"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
-        </HorizontalScrollView>
-
-        <ImageView
-            android:id="@+id/P_Syntax_imageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_python_cut"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv1"
-            app:srcCompat="@drawable/codey_c_cut" />
-
-        <TextView
-            android:id="@+id/P_Syntax_Text3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="When the above code is compiled and executed, it produces the following result"
-            app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/P_Syntax_imageView"
-            app:layout_constraintTop_toTopOf="@+id/P_Syntax_imageView"
-            app:layout_constraintVertical_bias="0.04"
-            tools:ignore="TextSizeCheck" />
-
-
-        <ImageView
-            android:id="@+id/c_Syntax_imageView1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_python_cut"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_imageView"
-            app:srcCompat="@drawable/codey_c_cut" />
-
-        <TextView
-            android:id="@+id/c_Syntax_Text3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="Output:\nLength: 4.5\nWidth: 3.5\nArea: 15.75"
-            app:layout_constraintBottom_toBottomOf="@+id/c_Syntax_imageView1"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/c_Syntax_imageView1"
-            app:layout_constraintTop_toTopOf="@+id/c_Syntax_imageView1"
-            app:layout_constraintVertical_bias="0.04"
-            tools:ignore="TextSizeCheck" />
-
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_vertical1"

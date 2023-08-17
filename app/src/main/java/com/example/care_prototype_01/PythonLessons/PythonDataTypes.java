@@ -42,8 +42,7 @@ public class PythonDataTypes extends AppCompatActivity {
         //this is the back button
         Button btn_back =findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            Intent OpenPythonDataTypes = new Intent(this, PythonLanguageActivity.class);
-            startActivity(OpenPythonDataTypes);
+            onBackPressed();
         });
 
         viewPager = findViewById(R.id.viewpager);

@@ -46,8 +46,7 @@ public class PythonConditionalStatement extends AppCompatActivity {
         //this is the back button
         Button btn_back =findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            Intent OpenPythonIntroduction = new Intent(this, PythonLanguageActivity.class);
-            startActivity(OpenPythonIntroduction);
+            onBackPressed();
         });
 
         viewPager = findViewById(R.id.viewpager);

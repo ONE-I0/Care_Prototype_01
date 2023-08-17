@@ -134,10 +134,10 @@
 			android:text="Additionally, the example showcase the syntax and conventions specific to each programming language while adhering to the core principles of OOP."
 			app:layout_constraintBottom_toBottomOf="@+id/p_condition_imageView3"
 			app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-			app:layout_constraintHorizontal_bias="0.842"
+			app:layout_constraintHorizontal_bias="0.0"
 			app:layout_constraintStart_toEndOf="@+id/p_condition_imageView3"
 			app:layout_constraintTop_toTopOf="@+id/p_condition_imageView3"
-			app:layout_constraintVertical_bias="1.0"
+			app:layout_constraintVertical_bias="0.0"
 			tools:ignore="TextSizeCheck" />
 
 		<ImageView

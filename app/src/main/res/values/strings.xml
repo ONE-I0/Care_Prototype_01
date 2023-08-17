@@ -707,6 +707,7 @@ if (condition) {\n
 
     <!--______________________OPERATORS STRINGS PYTHON______________________-->>
     <string name="P_Operator_syntax">Let’s start another lesson in Python which are Operators!</string>
+    <string name="J_Operator_syntax">Let’s start another lesson in Java which are Operators!</string>
     <string name="operators_1">Operators</string>
     <string name="Operator_meaning">Symbols or special characters known as “operators” in Python programming language carry out specified operations on operands (variables, constants, or expressions) to create results. You may manipulate and calculate on data, compare values, assign values, and do many other things with operators.</string>
     <string name="P_Operators_codey1">Python has a broad variety of operators, which can be divided into various classes according to how they operate.</string>
@@ -2415,5 +2416,59 @@ if (condition) {\n
 \n}</tt></pre>
     ]]></string>
 
+    <string name="java_primitive_data_types">
+    <b>1. Primitive Data Types:</b>
+    \n\t\t\t\t<b>int:</b> Used to store whole numbers.
+    \n\t\t\t\t\t\tint myNumber = 42;
+
+    \n\n\t\t\t\t<b>double:</b> Used to store decimal numbers.
+    \n\t\t\t\t\t\tdouble myDecimalNumber = 3.14159;
+
+    \n\n\t\t\t\t<b>boolean:</b> Used to store true/false values.
+    \n\t\t\t\t\t\tboolean isTrue = true;
+
+    \n\n\t\t\t\t<b>char:</b> Used to store a single character.
+    \n\t\t\t\t\t\tchar myChar = \'A\';
+</string>
+
+    <string name="java_example10">
+    <![CDATA[
+    <pre><tt><font color="#267F99">interface</font> <font color="#BA2121">MyInterface</font> {
+         <font color="#267F99">\n\tvoid</font> <font color="#BA2121">myMethod</font>();
+     \n}</tt></pre>
+    ]]></string>
+    <string name="class_myclass_myclass_class"><![CDATA[Class<?> myClass = MyClass.class;]]></string>
+    <string name="dt_a"><b>A. int:</b> Used to store whole numbers.</string>
+    <string name="dt_b"><b>B. double:</b> Used to store decimal numbers.</string>
+    <string name="dt_c"><b>C. boolean:</b> Used to store true/false values.</string>
+    <string name="dt_d"><b>D. char:</b> Used to store a single character.</string>
+    <string name="dt1_a"><b>A. String:</b> Used to store sequences of characters.</string>
+    <string name="dt1_b"><b>B. Array:</b> Used to store a collection of elements of the same type.</string>
+    <string name="dt1_c"><b>C. Object:</b> Used to store instances of user-defined classes.</string>
+    <string name="dt1_d"><b>D. Class:</b> Used to store the definition of a class.</string>
+    <string name="dt1_e"><b>E. Interface:</b> Used to store the definition of an interface.</string>
+
+    <string name="java_arithmetic_logical_operators"><b>Arithmetic operators: </b>Arithmetic operators, such as addition (+), subtraction (-), multiplication (*), division (/), modulus (%), and unary operators like increment (++), decrement (--), and negation (-), are used to do mathematical computations.\n\n<b>Logical operators:</b> The employment of logical operators allows for the logical manipulation of boolean values and the generation of boolean results. Java supports the following logical operators: logical AND (&amp;&amp;), logical OR (||), and logical NOT (!).</string>
+
+    <string name="java_assignment_bitwise_operators"><b>Operators for Assignment:</b> Operators for Assignment are used to assign values to variables. The equals symbol (<b>=</b>) is used as the most frequent assignment operator. The assignment operation can be combined with another operation using compound assignment operators like <b>+=</b>, <b>-=</b>, <b>*=</b>, <b>/=</b>, and <b>%=</b>.
+    \n\n<b>Bitwise operators:</b> These operators work with the individual bits of numeric operands. These include left shift (<b>&lt;&lt;</b>), right shift (<b>&gt;&gt;</b>), and unsigned right shift (<b>&gt;&gt;&gt;</b>). They also include bitwise AND (<b>&amp;</b>), bitwise OR (<b>|</b>), bitwise XOR (<b>^</b>), bitwise complement (<b>~</b>), and left shift (<b>&lt;&lt;</b>).
+    \n\n<b>The ternary operator (?:):</b> is a conditional operator that accepts three operands and returns a value in response to a condition. It is applied to conditional phrases that are concise.
+</string>
+    <string name="op1"><b>A. ==:</b> Equal to operator.</string>
+    <string name="op2"><b>B. !=:</b> Not equal to operator.</string>
+    <string name="op3"><b>C. >:</b> Greater than operator.</string>
+    <string name="op4"><b>D. \u003c:</b> Less than operator.</string>
+    <string name="op5"><b>E. >=:</b> Greater than or equal to operator.</string>
+    <string name="op6"><b>F. \u003c=:</b> Less than or equal to operator.</string>
+    <string name="ope1"><b>A. +:</b> Addition operator.</string>
+    <string name="ope2"><b>B. -:</b> Subtraction operator.</string>
+    <string name="ope3"><b>C. *:</b> Multiplication operator.</string>
+    <string name="ope4"><b>D. /:</b> Division operator.</string>
+    <string name="ope6"><b>E. %:</b> Modulus operator (remainder of division).</string>
+    <string name="ope7"><b>A. =:</b> Simple assignment operator.</string>
+    <string name="ope8"><b>B. +=:</b> Add and assign operator.</string>
+    <string name="ope9"><b>C. -=:</b> Subtract and assign operator.</string>
+    <string name="ope10"><b>D. *=:</b> Multiply and assign operator.</string>
+    <string name="ope11"><b>E. /=:</b> Divide and assign operator.</string>
 
 </resources>

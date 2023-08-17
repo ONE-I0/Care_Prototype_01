@@ -90,6 +90,7 @@ public class QuizActivity extends AppCompatActivity {
         textViewCategory.setText("Category: " + categoryName);
         textViewDifficulty.setText("Difficulty: " + difficulty);
 
+
         if (savedInstanceState == null) {
             QuizDbHelper dbHelper = QuizDbHelper.getInstance(this);
             questionList = dbHelper.getQuestions(categoryID, difficulty);
@@ -137,8 +138,29 @@ public class QuizActivity extends AppCompatActivity {
         rb4.setTextColor(textColorDefaultRb);
         rbGroup.clearCheck();
 
+
         if (questionCounter < questionCountTotal) {
             currentQuestion = questionList.get(questionCounter);
+
+
+            if (currentQuestion.getOption3().equalsIgnoreCase("Free")) {
+                rb3.setEnabled(false);
+            } else {
+                rb3.setEnabled(true);
+            }
+
+            // Check if option 4 is "Free" and disable radio button 4
+            if (currentQuestion.getOption4().equalsIgnoreCase("Free")) {
+                rb4.setEnabled(false);
+            } else {
+                rb4.setEnabled(true);
+            }
+
+            // If both option 3 and option 4 are "Free," disable both radio buttons
+            if (currentQuestion.getOption3().equalsIgnoreCase("Free") && currentQuestion.getOption4().equalsIgnoreCase("Free")) {
+                rb3.setEnabled(false);
+                rb4.setEnabled(false);
+            }
 
             textViewQuestion.setText(currentQuestion.getQuestion());
             rb1.setText(currentQuestion.getOption1());
@@ -202,24 +224,35 @@ public class QuizActivity extends AppCompatActivity {
             score++;
             textViewScore.setText("Score: " + score);
             playSound(R.raw.question);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setIcon(R.drawable.codey_main_cut);
+            builder.setTitle("Correct");
+            builder.setMessage("Great job! You got it right");
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
         }else{
             playSound(R.raw.incorrect);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setIcon(R.drawable.codey_main_cut);
+            builder.setTitle("Incorrect");
+            builder.setMessage("Nice try, Better luck next time.");
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
         showSolution();
-        // Create and show the AlertDialog
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage(answerNr == currentQuestion.getAnswerNr() ? "Correct! Nice Job" : "Incorrect! That's too bad.");
-        alertDialogBuilder.setIcon(R.drawable.codey_main_cut);
-        alertDialogBuilder.setCancelable(false);
-        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // You can add any action you want here, or leave it empty to just dismiss the dialog
-            }
-        });
-
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
     }
 
     private void playSound(int soundResource) {
@@ -260,6 +293,22 @@ public class QuizActivity extends AppCompatActivity {
         if (questionCounter < questionCountTotal) {
             buttonConfirmNext.setText("Next");
         } else {
+
+            //---------------------------Added
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Quiz Finished")
+                    .setMessage("Your score: " + score)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent resultIntent = new Intent();
+                            resultIntent.putExtra(EXTRA_SCORE, score);
+                            setResult(RESULT_OK, resultIntent);
+                            finish();
+                        }
+                    })
+                    .setCancelable(false) // Prevents the user from dismissing the dialog by tapping outside
+                    .show();
             buttonConfirmNext.setText("Finish");
         }
     }

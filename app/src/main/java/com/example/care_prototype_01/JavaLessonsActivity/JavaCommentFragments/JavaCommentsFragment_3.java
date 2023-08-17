@@ -16,8 +16,6 @@ import com.example.care_prototype_01.R;
 
 public class JavaCommentsFragment_3 extends Fragment {
     private MediaPlayer question_sounds;
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -53,7 +51,7 @@ public class JavaCommentsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What is the purpose of comments in Java?");
         alertDialogBuilder.setMessage("The Comments in Java is not just a decorative text written in the code, rather, it serves its own purpose by adding explanatory or descriptive text that helps everyone who will read the code easily understand the meaning of its function.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -68,7 +66,7 @@ public class JavaCommentsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What is the difference of a single-line vs multi-line comment?");
         alertDialogBuilder.setMessage("Single-line comments (‘//’) are suitable for short explanations that usually takes up on a single line only and these are used to clarify variable declarations, providing context, or briefly describing the code. Multi-line comments (‘/* … */’), on the other hand, are useful for long explanations, disabling blocks of code temporarily, or putting out a large section of comment into the code.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -83,7 +81,7 @@ public class JavaCommentsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Can comments slow down a program’s execution?");
         alertDialogBuilder.setMessage("The answer is No. Comments have no impact on the performance of the program and it does not slow execution speed of compiled bytecodes because it is not included when being interpreted by the compiler.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

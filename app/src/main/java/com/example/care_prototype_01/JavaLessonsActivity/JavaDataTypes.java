@@ -1,86 +1,60 @@
 package com.example.care_prototype_01.JavaLessonsActivity;
 
-import android.media.MediaPlayer;
+import android.content.Intent;
+
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
+
+import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments.JavaDataTypesFragment_1;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments.JavaDataTypesFragment_2;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments.JavaDataTypesFragment_3;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments.JavaDataTypesFragment_4;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments.ViewPagerAdapter;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
+
+
+import java.util.ArrayList;
 
 public class JavaDataTypes extends AppCompatActivity {
-    Button btn_DYK_1,btn_DYK_2,btn_question1, btn_question2, btn_question3;
-    private MediaPlayer question_sounds;
+    private ViewPager2 viewPager;
+    private LinearLayout pager_dots;
+    private FragmentStateAdapter pagerAdapter;
+    private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_data_types);
 
-        //declare for the sounds
-        question_sounds = MediaPlayer.create(JavaDataTypes.this, R.raw.question);
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
 
-        //this will open the did you know in syntax
-        btn_DYK_1 = findViewById(R.id.btndyk1);
-        btn_DYK_1.setOnClickListener(view ->
-                openDYK1()
-        );
-        btn_question1 = findViewById(R.id.btnquestion1);
-        btn_question1.setOnClickListener(view ->
-                OpenQuestion1()
-        );
-        btn_question2 = findViewById(R.id.btnquestion2);
-        btn_question2.setOnClickListener(view ->
-                OpenQuestion2()
-        );
-        btn_question3 = findViewById(R.id.btnquestion3);
-        btn_question3.setOnClickListener(view ->
-                OpenQuestion3()
-        );
-    }
+        //this is the back button
+        Button btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent OpenPythonIntroduction = new Intent(this, JavaLanguageActivity.class);
+            startActivity(OpenPythonIntroduction);
+        });
 
-    private void openDYK1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
-        builder.setTitle("Did you know?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("Did you know that in Java, there are several built-in data types that you can use to store different kinds of values. ")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void OpenQuestion1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
-        builder.setTitle("What is the data type used to store whole numbers in Java?\n")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The data type used to store whole numbers in Java is the \"int\" data type.\n")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void OpenQuestion2() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
-        builder.setTitle("What is the data type used to store decimal numbers with single precision in Java?\n")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The data type used to store decimal numbers with single precision in Java is the \"float\" data type.\n")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void OpenQuestion3() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaDataTypes.this);
-        builder.setTitle("What is the data type used to store a single character in Java?\n")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The data type used to store a single character in Java is the \"char\" data type.\n")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
+        viewPager = findViewById(R.id.viewpager);
+        pager_dots = findViewById(R.id.pager_dots);
+
+        fragmentArrayList.add(new JavaDataTypesFragment_1());
+        fragmentArrayList.add(new JavaDataTypesFragment_2());
+        fragmentArrayList.add(new JavaDataTypesFragment_3());
+        fragmentArrayList.add(new JavaDataTypesFragment_4());
+
+        pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
+        viewPager.setAdapter(pagerAdapter);
+        ViewPagerUtil.getInstance().setupIndicator(this, viewPager, pager_dots, fragmentArrayList.size());
     }
 }

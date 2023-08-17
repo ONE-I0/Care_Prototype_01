@@ -1,4 +1,4 @@
-package com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments;
+package com.example.care_prototype_01.JavaLessonsActivity.JavaDataTypesFragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,27 +10,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.Button;
 
 import com.example.care_prototype_01.R;
 
-public class JavaInputsFragment_3 extends Fragment {
+public class JavaDataTypesFragment_4 extends Fragment {
+
 
     private MediaPlayer question_sounds;
-
-    private static final int TEXT_SIZE_IN_DP = 25;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_java_inputs_3, container, false);
-
-        // Example syntax print
-        WebView codeWebView_J_Syntax_1_1= view.findViewById(R.id.java_example9);
-        String formattedCode_J_Syntax_1_1 = getString(R.string.java_example9);
-        String htmlContent_J_Syntax_1_1 = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", dpToPx(), formattedCode_J_Syntax_1_1);
-        configureWebView(codeWebView_J_Syntax_1_1, htmlContent_J_Syntax_1_1);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_java_data_types_4, container, false);
 
         //declare for the sounds
         question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
@@ -57,29 +49,13 @@ public class JavaInputsFragment_3 extends Fragment {
                 btnP_Intro_Q3();
             }
         });
-
-
         return view;
     }
-    private void configureWebView(WebView webView, String htmlContent) {
-        webView.loadDataWithBaseURL(null, htmlContent, "text/html", "UTF-8", null);
-        webView.setBackgroundColor(0xd3d3d3); // Set the background color
-        webView.setBackgroundResource(R.drawable.callout_background); // Set rounded corners
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setLoadWithOverviewMode(true);
-        webSettings.setUseWideViewPort(true);
-    }
-
-    private int dpToPx() {
-        float density = getResources().getDisplayMetrics().density;
-        return Math.round(JavaInputsFragment_3.TEXT_SIZE_IN_DP * density);
-    }
-
     private void btnP_Intro_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("add here");
-        alertDialogBuilder.setMessage("add here");
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
+        alertDialogBuilder.setTitle("What is the data type used to store whole numbers in Java?");
+        alertDialogBuilder.setMessage("The data type used to store whole numbers in Java is the \"int\" data type.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -92,9 +68,9 @@ public class JavaInputsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("add here");
-        alertDialogBuilder.setMessage("add here");
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
+        alertDialogBuilder.setTitle("What is the data type used to store decimal numbers with single precision in Java?");
+        alertDialogBuilder.setMessage("The data type used to store decimal numbers with single precision in Java is the \"float\" data type.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -107,9 +83,9 @@ public class JavaInputsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("add here");
-        alertDialogBuilder.setMessage("add here");
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
+        alertDialogBuilder.setTitle("What is the data type used to store a single character in Java?");
+        alertDialogBuilder.setMessage("The data type used to store a single character in Java is the \"char\" data type.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
