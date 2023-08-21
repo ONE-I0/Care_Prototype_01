@@ -16,9 +16,8 @@ import com.example.care_prototype_01.R;
 
 
 public class PythonIntroductionFragment_3 extends Fragment {
+
     private MediaPlayer question_sounds;
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -107,1835 +107,1362 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
     private void fillQuestionsTable() {
         //---------------------------JAVA EASY---------------------------
-        Question java_easy_q1 = new Question("In Java, every application must contain a main method as the entry point.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q1 = new Question(
+                "Java is short for “JavaScript”.",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q1);
 
-        Question java_easy_q2 = new Question("Java supports multiple inheritance, allowing a class to extend multiple classes.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q2 = new Question(
+                "The coffee produced on the island of Java gained a reputation for its quality and became widely known as \"Java\" coffee, eventually leading to the association of the term with coffee in general.",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q2);
 
-        Question java_easy_q3 = new Question("The break statement is used to exit from a loop prematurely.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q3 = new Question(
+                "Java is an object -oriented, class-based high-level tool with a focus on minimizing the need for various implementation dependencies.",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q3);
 
-        Question java_easy_q4 = new Question("In Java, the String class is mutable, meaning its value can be changed after creation.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q4 = new Question(
+                "Coffee is still produced on the Indonesian island of Java today, although its significance in the global coffee market has evolved over time.",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q4);
 
-        Question java_easy_q5 = new Question("The NullPointerException is a checked exception in Java.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q5 = new Question(
+                "Java is an interpreted programming language, which means that the code is executed line by line as it's written",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q5);
 
-        Question java_easy_q6 = new Question("The && operator in Java is a logical OR operator.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q6 = new Question(
+                "Java was released n May 1995 as a core component of Sun Microsystems’ Java platform.",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q6);
 
-        Question java_easy_q7 = new Question("An interface in Java can have method implementations.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q7 = new Question(
+                "Java applications can only be run on Windows operating systems.",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q7);
 
-        Question java_easy_q8 = new Question("The ArrayList class in Java is a resizable array implementation.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q8 = new Question(
+                "Java is a purely functional programming language, meaning that it doesn't allow for mutable variables or state changes.",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q8);
 
-        Question java_easy_q9 = new Question("The final keyword in Java is used to declare constant variables that cannot be modified.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q9 = new Question(
+                "the JVM acts as an interpreter, allowing the java code to be executed on different operating systems.",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q9);
-
-        Question java_easy_q10 = new Question("The equals() method in Java compares the memory addresses of two objects.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q10 = new Question(
+                "java is fast, reliable and secure.",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q10);
-
-        Question java_easy_q11 = new Question("The do-while loop in Java always executes its code block at least once.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q11 = new Question(
+                "a syntax is a collection of values and the operations that can be performed on those values?",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q11);
-
-        Question java_easy_q12 = new Question("Java allows direct memory manipulation through pointers.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q12 = new Question(
+                "single line comments (‘//’) are suitable for short explanations?",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q12);
-
-        Question java_easy_q13= new Question("The Math.random() method in Java returns a random number between 0 (inclusive) and 1 (exclusive).",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q13 = new Question(
+                "multi line comment (‘/*...*/’), on th other hand, are useful for  long explanations?",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q13);
-
-        Question java_easy_q14 = new Question("The StringBuilder class in Java is mutable and used for creating modifiable strings.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q14 = new Question(
+                "can comments slow down a programs execution?",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q14);
-
-        Question java_easy_q15 = new Question("The super keyword in Java is used to call the superclass's constructor.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q15 = new Question(
+                "in, java there are no several built- in data types that you can use to store different kinds of values?",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q15);
-
-        Question java_easy_q16 = new Question("The instance of operator in Java is used to check if an object is an instance of a specific class or its subclasses.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q16 = new Question(
+                "the if statement is the simplest form of a conditional statement?",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q16);
-
-        Question java_easy_q17 = new Question("A try block in Java must always be followed by a catch block.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q17 = new Question(
+                "the if is in lowercase letters. Uppercase letters (If or IF) will generate an error?",
+                "True", "False", "Free", "Free", 2,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q17);
-
-        Question java_easy_q18 = new Question("The switch statement in Java can only be used with int and char data types.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q18 = new Question(
+                "the array is stored at the oth index, 2nd element is stored at 1st index, and so on?",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q18);
-
-        Question java_easy_q19 = new Question("Java has a built-in pair class to store two values together.",
-                "True", "False", "Free","Free", 2,
+        Question java_easy_q19 = new Question(
+                "a variable is a named storage location that holds a value of a particular type?",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q19);
-
-        Question java_easy_q20 = new Question("The NullPointerException occurs when a program attempts to access a member of a null object.",
-                "True", "False", "Free","Free", 1,
+        Question java_easy_q20 = new Question(
+                "the arithmetic operator used for addition in java is the plus operator (+)?",
+                "True", "False", "Free", "Free", 1,
                 Question.DIFFICULTY_EASY, Category.JAVA);
         insertQuestion(java_easy_q20);
+        Question java_easy_q21 = new Question(
+                "In Java, the switch statement can only be used with integer data types and cannot be used with strings or characters. Is this statement true or false?",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q21);
+        Question java_easy_q22 = new Question(
+                "In Java, the if statement can only have a single condition.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q22);
+        Question java_easy_q23 = new Question(
+                "The switch statement in Java can be used with floating-point numbers (e.g., float or double).",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q23);
+        Question java_easy_q24 = new Question(
+                "A single if statement can have multiple corresponding else blocks.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q24);
+        Question java_easy_q25 = new Question(
+                "The == operator in Java compares the content of two objects.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q25);
+        Question java_easy_q26 = new Question(
+                "The syntax for an if statement in Java includes parentheses for enclosing the condition.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q26);
+        Question java_easy_q27 = new Question(
+                "A ternary operator in Java returns a boolean value.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q27);
+        Question java_easy_q28 = new Question(
+                "In Java, a conditional statement is used to execute a block of code only if a certain condition",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q28);
+        Question java_easy_q29 = new Question(
+                "The if statement in Java is used for creating loops.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q29);
+        Question java_easy_q30 = new Question(
+                "The condition in a do-while loop is checked before executing the loop body.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q30);
+        Question java_easy_q31 = new Question(
+                "can I make a program without using an identifier?",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q31);
+        Question java_easy_q32 = new Question(
+                "they are essential for code documentation, readability, and collaboration.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q32);
+        Question java_easy_q33 = new Question(
+                "can comments slow down a program’s execution?",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q33);
+        Question java_easy_q34 = new Question(
+                "it allow you to store and manipulate data within a program. Before using a variable, you need to declare it, specifying its type and name.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q34);
+        Question java_easy_q35 = new Question(
+                "the do- while loop is similar to the while loop, but it guarantees that the loop body is executed at least once.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q35);
+        Question java_easy_q36 = new Question(
+                "the foreach loop is commonly used when you know the number of iterations in advance",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q36);
+        Question java_easy_q37 = new Question(
+                "in oop an object represents an instance of a method, which acts as a blueprint or template for constructing objects.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q37);
+        Question java_easy_q38 = new Question(
+                "a class is like anobject constructor, or a blueprint for creating objects",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q38);
+        Question java_easy_q39 = new Question(
+                "encapsulation encourages the use of public methods, known as getters and setters, to interact with the attributes rather than directly accessing them.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q39);
+        Question java_easy_q40 = new Question(
+                "constructors are crucial in the construction and initialization of objects in both the superclass and the subclass in the context of inheritance.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q40);
+        Question java_easy_q41 = new Question(
+                "Java applications can only run on Windows operating systems.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q41);
+        Question java_easy_q42 = new Question(
+                "Java supports multiple inheritance through classes.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q42);
+        Question java_easy_q43 = new Question(
+                "Java is platform-independent due to its \"Write Once, Run Anywhere\" (WORA) principle.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q43);
+        Question java_easy_q44 = new Question(
+                "Java programs are compiled into machine code for a specific computer architecture.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q44);
+        Question java_easy_q45 = new Question(
+                "All variables in Java must be explicitly declared with a type before they can be used.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q45);
+        Question java_easy_q46 = new Question(
+                "Java code is compiled into machine code.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q46);
+        Question java_easy_q47 = new Question(
+                "Java is platform-dependent, meaning code written on one platform may not run on another.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q47);
+        Question java_easy_q48 = new Question(
+                "Java is not suitable for web development.",
+                "True", "False", "Free", "Free", 2,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q48);
+        Question java_easy_q49 = new Question(
+                "Java is free and open-source software.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q49);
+        Question java_easy_q50 = new Question(
+                "All variables in Java must be explicitly declared with a data type.",
+                "True", "False", "Free", "Free", 1,
+                Question.DIFFICULTY_EASY, Category.JAVA);
+        insertQuestion(java_easy_q50);
 
-        //--------------------------JAVA MEDIUM------------------------------
-        Question java_medium_q1 = new Question("What is Java?",
-                "A web browser", "An operating system", "A programming language","Free", 3,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
+        Question java_medium_q1 = new Question(
+                "The language was initially developed by?",
+                "James Gostling",
+                "Guido van Rossum",
+                "Anders Hejlsberg",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );
         insertQuestion(java_medium_q1);
 
-        Question java_medium_q2 = new Question("Which of the following is not a Java primitive data type?",
-                "int", "double", "String","Free", 3,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
+        Question java_medium_q2 = new Question(
+                "The original name of the Java programming language was?",
+                "Coffee",
+                "JavaScript",
+                "Oak",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );
         insertQuestion(java_medium_q2);
 
-        Question java_medium_q3 = new Question("Which keyword is used to define a class in Java?",
-                "class", "public", "void","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
+        Question java_medium_q3 = new Question(
+                "In which year was the Java programming language first released to the public?",
+                "1990",
+                "1993",
+                "1995",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );
         insertQuestion(java_medium_q3);
 
-        Question java_medium_q4 = new Question("What is the purpose of the ‘main’ method in a Java program?",
-                "It is the entry point of the program.", "It is used to declare variables.", "It is used to define constructors.","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
+        Question java_medium_q4 = new Question(
+                "Who founded Sun Microsystems, the company responsible for creating the Java programming language?",
+                "Bill Gates",
+                "Steve Jobs",
+                "Larry Ellison",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );
         insertQuestion(java_medium_q4);
 
-        Question java_medium_q5 = new Question("Which operator is used for logical AND in Java?",
-                "&&", "||", "&","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q5);
-
-        Question java_medium_q6 = new Question("What is the purpose of the ‘import’ statement in Java?",
-                "To import external libraries", "To enable multi-threading", "To access the internet","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q6);
-
-        Question java_medium_q7 = new Question("Which access modifier makes a method or variable accessible only within its own class?",
-                "public", "private", "protected","Free", 2,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q7);
-
-        Question java_medium_q8 = new Question("What is the correct syntax to write a single-line comment in Java?",
-                "// This is a comment", "/* This is a comment */", "' This is a comment’","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q8);
-
-        Question java_medium_q9 = new Question("What is the purpose of the break statement in Java?",
-                "To exit a loop or switch statement prematurely.", "To end the program execution.", "To throw an exception.","-------", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q9);
-
-        Question java_medium_q10 = new Question("Which of the following is NOT a core principle of Object-Oriented Programming (OOP)?",
-                "Inheritance", "Modularity", "Polymorphism","Free", 2,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q10);
-
-        Question java_medium_q11 = new Question("Which loop is guaranteed to execute at least once in Java?",
-                "for loop", "while loop", "do-while loop","Free", 3,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q11);
-
-        Question java_medium_q12 = new Question("Which Java keyword is used to inherit a class?",
-                "extend", "implements", "extends","Free", 3,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q12);
-
-        Question java_medium_q13 = new Question("Which keyword is used to create an object of a class in Java?",
-                "create", "build", "new","Free", 3,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q13);
-
-        Question java_medium_q14 = new Question("In Java, arrays are indexed starting from:",
-                "0", "1", "-1","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q14);
-
-        Question java_medium_q15 = new Question("Which operator is used for inequality comparison in Java?",
-                "!=", "<>", "==","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q15);
-
-        Question java_medium_q16 = new Question("What is the range of the char data type in Java?",
-                "-128 to 127", "'\\u0000' to '\\uffff'", "-32768 to 32767","Free", 2,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q16);
-
-        Question java_medium_q17 = new Question("Which method is automatically called when an object is garbage collected in Java?",
-                "finalize()", "delete()", "remove()","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q17);
-
-        Question java_medium_q18 = new Question("Which keyword is used to handle exceptions in Java?",
-                "handle", "try", "catch","Free", 3,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q18);
-
-        Question java_medium_q19 = new Question("How many \"else\" statements can be used with a single \"if\" statement?",
-                "Only one", "As many as needed", "Two","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q19);
-
-        Question java_medium_q20 = new Question("Which operator is used to compare two values for equality in Java?",
-                "==", "=", "!=","Free", 1,
-                Question.DIFFICULTY_MEDIUM, Category.JAVA);
-        insertQuestion(java_medium_q20);
-
-        //--------------------------JAVA Hard------------------------------
-        Question java_hard_q1 = new Question("To declare a constant variable of type String with the name MESSAGE and assign it the value \"Hello\":\n" +
-                "\n" +
-                "_____ String MESSAGE = \"Hello\";¬\n",
-                "Inherit", "String", "Boolean","final ", 4,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q1);
-
-        Question java_hard_q2 = new Question("To define a method named calculateArea that takes two parameters of type double for length and width, and returns their product:\n" +
-                "\n" +
-                "double calculateArea(double length, ______) {\n" +
-                "    return length * width;\n" +
-                "}\n",
-                "Duration", "double", "Integer","Number", 2,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q2);
-
-        Question java_hard_q3 = new Question("To create a new instance of the ArrayList class that stores Integer objects:\n" +
-                "\n" +
-                "ArrayList<Integer> numbers = new ________<>();\n",
-                "Array List", "arrayList", "arraylist","ArrayList", 4,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q3);
-
-        Question java_hard_q4 = new Question("To declare a variable age and initialize it with the value 25:\n" +
-                "\n" +
-                "int ______ = 25;\n",
-                "age", "oldest", "young","eldest", 1,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q4);
-
-        Question java_hard_q5 = new Question("To define a method named getFullName that takes two parameters of type String for firstName and lastName, and returns their concatenation:\n" +
-                "\n" +
-                "String getFullName(String firstName, ________) {\n" +
-                "    return firstName + lastName;\n" +
-                "}\n",
-                "Operators", "Void", "String","Methods", 3,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q5);
-
-        Question java_hard_q6 = new Question("To import the Scanner class from the java.util package:\n" +
-                "\n" +
-                "import _________;\n",
-                "Scanner.util.java", "java.util.Scanner", "java.util.scanner","Java.Util.Scan", 2,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q6);
-
-        Question java_hard_q7 = new Question("To create a new instance of the Random class:\n" +
-                "\n" +
-                "Random random = new ________();\n",
-                "handling", "Objects", "Classes","Random", 4,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q7);
-
-        Question java_hard_q8 = new Question("To define a do-while loop that continues as long as the variable count is greater than 0:\n" +
-                "\n" +
-                "do {\n" +
-                "    // Loop body\n" +
-                "} while (______ > 0);\n",
-                "double", "random", "View","count", 4,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q8);
-
-        Question java_hard_q9 = new Question("To access the element at index 3 in the scores array:\n" +
-                "\n" +
-                "int value = scores[______];\n",
-                "4", "3", "1","2", 2,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q9);
-
-        Question java_hard_q10 = new Question("To declare a variable pi and assign it the value 3.14159 with a data type that represents floating-point numbers:\n" +
-                "\n" +
-                "______ = 3.14159;\n",
-                "boolean", "char", "double","int", 3,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q10);
-
-        Question java_hard_q11 = new Question("To define a method named calculateSum that takes a variable number of int arguments and returns their sum:\n" +
-                "\n" +
-                "int calculateSum(int... ________) {\n" +
-                "    // Implementation code here\n" +
-                "}\n",
-                "Scene", "model", "numbers","controller", 3,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q11);
-
-        Question java_hard_q12 = new Question("To create a new instance of the HashSet class that stores String objects:\n" +
-                "\n" +
-                "HashSet<String> names = new ________<>();\n",
-                "Hash_Set", "hashset", "HashSet","Hash.Set", 3,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q12);
-
-        Question java_hard_q13 = new Question("To define a switch statement that checks the value of the variable day:\n" +
-                "\n" +
-                "switch (______) {\n" +
-                "    // Cases and code here\n" +
-                "}\n",
-                "day", "tuesday", "time","days", 1,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q13);
-
-        Question java_hard_q14 = new Question("To create a new instance of the LinkedList class that stores String objects:\n" +
-                "\n" +
-                "LinkedList<String> items = new ________<>();\n",
-                "ArrayList", "ArrayElement", "ArrayLength","LinkedList", 4,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q14);
-
-        Question java_hard_q15 = new Question("To declare a variable isFound and initialize it with the value false:\n" +
-                "boolean ______ = false;\n",
-                "isfound", "IsFound", "isFound","Is Found", 3,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q15);
-
-        Question java_hard_q16 = new Question("To define a method named calculateAverage that takes an array of double as a parameter and returns their average:\n" +
-                "\n" +
-                "double calculateAverage(double[] ______) {\n" +
-                "    // Implementation code here\n" +
-                "}\n",
-                "char", "values", "boolean","average", 2,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q16);
-
-        Question java_hard_q17 = new Question("To import the Arrays class from the java.util package:\n" +
-                "import _________;\n",
-                "java.util.array", "java.util.Arrays", "Java.Util.Arrays","Array.Java.Util", 2,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q17);
-
-        Question java_hard_q18 = new Question("To Fill in the blank to create a new instance of the HashMap class that stores String keys and Integer values:\n" +
-                "\n" +
-                "HashMap<String, ________> data = new HashMap<>();\n",
-                "Integer", "float", "string","boolean", 1,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q18);
-
-        Question java_hard_q19 = new Question("To define a method named reverseString that takes a parameter of type String and returns its reverse:\n" +
-                "\n" +
-                "String reverseString(String ________) {\n" +
-                "    // Implementation code here\n" +
-                "}\n",
-                "text", "int", "float","string", 1,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q19);
-
-        Question java_hard_q20 = new Question("To create a new instance of the StringBuilder class:\n" +
-                "\n" +
-                "StringBuilder sb = new ________();\n",
-                "SB", "sb", "stringbuilder","StringBuilder", 4,
-                Question.DIFFICULTY_HARD, Category.JAVA);
-        insertQuestion(java_hard_q20);
-
-
-
-
-        //-----------------------------------------Python Easy--------------------------------------------------
-
-        Question python_easy_q1 = new Question(
-                "In Python, you can use the if statement to execute a block of code only if a certain condition is true.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-
-        insertQuestion(python_easy_q1);
-// Question 2
-        Question python_easy_q2 = new Question(
-                "Python is a compiled language.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q2);
-
-// Question 3
-        Question python_easy_q3 = new Question(
-                "A Python list can contain elements of different data types.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q3);
-
-// Question 4
-        Question python_easy_q4 = new Question(
-                "Python uses curly braces ({}) to define blocks of code.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q4);
-// Question 5
-        Question python_easy_q5 = new Question(
-                "The elif keyword is used in Python for exception handling.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q5);
-// Question 6
-        Question python_easy_q6 = new Question(
-                "The range() function in Python generates a list of numbers.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q6);
-// Question 7
-        Question python_easy_q7 = new Question(
-                "Python is an object-oriented programming (OOP) language.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q7);
-// Question 8
-        Question python_easy_q8 = new Question(
-                "The append() method can be used to add an element to a Python dictionary.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q8);
-// Question 9
-        Question python_easy_q9 = new Question(
-                "The len() function in Python can be used to find the length of a string.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q9);
-// Question 10
-        Question python_easy_q10 = new Question(
-                "Python supports method overloading.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q10);
-// Question 11
-        Question python_easy_q11 = new Question(
-                "A Python function can return multiple values.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q11);
-// Question 12
-        Question python_easy_q12 = new Question(
-                "Python has a built-in switch statement.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q12);
-// Question 13
-        Question python_easy_q13 = new Question(
-                "The pop() method in Python removes the first element from a list.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q13);
-// Question 14
-        Question python_easy_q14 = new Question(
-                "Python allows you to directly access elements in a private class attribute.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q14);
-// Question 15
-        Question python_easy_q15 = new Question(
-                "Python has built-in support for multi-threading.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q15);
-// Question 16
-        Question python_easy_q16 = new Question(
-                "Python is case-sensitive.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q16);
-// Question 17
-        Question python_easy_q17 = new Question(
-                "The remove() method in Python removes the element at a specific index from a list.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q17);
-// Question 18
-        Question python_easy_q18 = new Question(
-                "Python allows multiple inheritance.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q18);
-// Question 19
-        Question python_easy_q19 = new Question(
-                "The break statement can be used to terminate a loop prematurely in Python.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q19);
-// Question 20
-        Question python_easy_q20 = new Question(
-                "Python uses indentation to define blocks of code.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.PYTHON
-        );
-        insertQuestion(python_easy_q20);
-
-        //-----------------Python Medium---------------------------------
-        // Question 1
-        Question python_medium_q1 = new Question(
-                "What is Python?",
-                "high-level programming language",
-                "low-level programming language",
-                "A markup language",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 2
-        Question python_medium_q2 = new Question(
-                "Which keyword is used to define a function in Python?",
-                "def",
-                "function",
-                "define",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 3
-        Question python_medium_q3 = new Question(
-                "Which of the following is a valid variable name in Python?",
-                "123var",
-                "var123",
-                "my-var",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 4
-        Question python_medium_q4 = new Question(
-                "Which data type is used to store a sequence of characters in Python?",
-                "int",
-                "char",
-                "str",
+        Question java_medium_q5 = new Question(
+                "What prompted the creators of Java to settle on its name after brainstorming various alternatives?",
+                "It was inspired by an island they visited during their vacation.",
+                "It was a nod to the popular Indonesian coffee.",
+                "It represented a fusion of ideas from different programming languages.",
                 "Free",
                 3,
                 Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
+                Category.JAVA
+        );insertQuestion(java_medium_q5);
 
-// Question 5
-        Question python_medium_q5 = new Question(
-                "How do you write a single-line comment in Python?",
+        Question java_medium_q6 = new Question(
+                "Where does the coffee known as 'Java' come from?",
+                "The coffee known as 'Java' comes from the Indonesian island of Java.",
+                "The coffee known as 'Java' comes from the Paris c’tea of Java",
+                "The coffee known as 'Java' comes from the Jamaica Blue Mountain of Java",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q6);
+
+        Question java_medium_q7 = new Question(
+                "What is used to store whole numbers?",
+                "double",
+                "Boolean",
+                "int",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q7);
+
+        Question java_medium_q8 = new Question(
+                "What is a correct syntax to output 'Hello World' in Java?",
+                "Console.WriteLine(\"Hello World\");",
+                "print(\"Hello World\");",
+                "System.out.println(\"Hello World\");",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q8);
+
+        Question java_medium_q9 = new Question(
+                "How do you insert COMMENTS in Java code?",
                 "// This is a comment",
-                "/* This is a comment */",
+                "/* This is a comment",
                 "# This is a comment",
                 "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q9);
+
+        Question java_medium_q10 = new Question(
+                "What is used to store instances of user-defined classes?",
+                "array",
+                "object",
+                "class",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q10);
+        Question java_medium_q11 = new Question(
+                "Stores text, such as HelloWorld. Double quotes are used to enclose string values?",
+                "int",
+                "String",
+                "float",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q11);
+
+        Question java_medium_q12 = new Question(
+                "Stores integers or whole numbers, without decimals, such as 246 or -246?",
+                "int",
+                "String",
+                "float",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q12);
+
+        Question java_medium_q13 = new Question(
+                "Stores floating-point numbers, with decimals, such as 3.99 or -3.99?",
+                "int",
+                "String",
+                "float",
+                "Free",
                 3,
                 Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
+                Category.JAVA
+        );insertQuestion(java_medium_q13);
 
-// Question 6
-        Question python_medium_q6 = new Question(
-                "Which loop is used to iterate over a sequence in Python?",
+        Question java_medium_q14 = new Question(
+                "Used to specify a new condition to test if the first condition is false.",
+                "if",
+                "else",
+                "else if",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q14);
+
+        Question java_medium_q15 = new Question(
+                "Used to specify a block of code to be executed if the same condition is false.",
+                "if",
+                "else",
+                "else if",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q15);
+
+        Question java_medium_q16 = new Question(
+                "Used to specify multiple conditions and control the flow of your program.",
+                "nested if",
+                "else",
+                "else if",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q16);
+
+        Question java_medium_q17 = new Question(
+                "The loop commonly used when you know the number of iterations in advance.",
+                "foreach",
+                "do-while",
+                "for",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q17);
+
+        Question java_medium_q18 = new Question(
+                "The loop specifically designed for iterating over elements of an array or a collection.",
+                "foreach",
+                "do-while",
+                "for",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q18);
+
+        Question java_medium_q19 = new Question(
+                "Also known as a one-dimensional array, these are the simplest form of arrays that anyone can easily understand.",
+                "passing array",
+                "single dimensional array",
+                "multidimensional array",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q19);
+
+        Question java_medium_q20 = new Question(
+                "Arrays inside of arrays, where elements can be an array itself.",
+                "passing array",
+                "single dimensional array",
+                "multidimensional array",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q20);
+
+        Question java_medium_q21 = new Question(
+                "What was the original name of Java?",
+                "oak",
+                "javascript",
+                "coffee",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q21);
+
+        Question java_medium_q22 = new Question(
+                "The programming language we know today as Java was named after a type of?",
+                "oak",
+                "javascript",
+                "coffee =",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q22);
+
+        Question java_medium_q23 = new Question(
+                "Java has a built-in exception handling mechanism that allows you to catch and handle errors and exceptional situations in your code.",
+                "standard library",
+                "garbage collection",
+                "exception handling",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q23);
+
+        Question java_medium_q24 = new Question(
+                "Java provides a rich set of libraries and APIs (Application Programming Interfaces) that simplify common programming tasks.",
+                "standard library",
+                "garbage collection",
+                "exception handling",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q24);
+
+        Question java_medium_q25 = new Question(
+                "Java has automatic memory management through a process called?",
+                "standard library",
+                "garbage collection",
+                "exception handling",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q25);
+
+        Question java_medium_q26 = new Question(
+                "Java has a syntax similar to other programming languages like C and C++.",
+                "lists",
+                "array",
+                "syntax",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q26);
+
+        Question java_medium_q27 = new Question(
+                "Java is an object-oriented programming (OOP) language. This means that it revolves around the concept of objects, which are instances of classes.",
+                "Object-Oriented Programming",
+                "object-oriented programming",
+                "object oriented program",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q27);
+
+        Question java_medium_q28 = new Question(
+                "Java is a write once, run anywhere language. This means that once you write a Java program, you can run it on any platform.",
+                "standard library",
+                "garbage collection",
+                "platform independence",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q28);
+
+        Question java_medium_q29 = new Question(
+                "In Java, the source code is compiled into bytecode, which is then executed by?",
+                "java virtual machine",
+                "java virt machine",
+                "java virtual mach",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q29);
+
+        Question java_medium_q30 = new Question(
+                "This compilation step helps to optimize performance and allows the code to be run on any platform with a compatible",
+                "jvm",
+                "jcm",
+                "jhm",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q30);
+
+        Question java_medium_q31 = new Question(
+                "Originally, Sun Microsystems developed this language and it was available for use in May?",
+                "1993",
+                "1995",
+                "1996",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q31);
+
+        Question java_medium_q32 = new Question(
+                "A class is a blueprint for creating objects.",
+                "main method",
+                "class method",
+                "system.out.println",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q32);
+
+        Question java_medium_q33 = new Question(
+                "Each program processing starts from the main() method which is a mandatory part of every Java program.",
+                "main method",
+                "class method",
+                "system.out.println",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q33);
+
+        Question java_medium_q34 = new Question(
+                "It is used to print and display an output to the user.",
+                "main method",
+                "class method",
+                "system.out.println",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q34);
+
+        Question java_medium_q35 = new Question(
+                "It is a built-in Java class that contains useful members, such as out, which is short for “output”.",
+                "main method",
+                "class method",
+                "system",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q35);
+
+        Question java_medium_q36 = new Question(
+                "It is usually written in a specific format that can be used to document program elements such as classes, interfaces, methods, fields, etc.",
+                "single line comments",
+                "multi line comments",
+                "Javadoc comments",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q36);
+
+        Question java_medium_q37 = new Question(
+                "Refers to the process of accepting data or information from a user during the execution of a Java program.",
+                "java user input",
+                "java actor input",
+                "java admin input",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q37);
+
+        Question java_medium_q38 = new Question(
+                "Primitive data types include the following:",
+                "byte, short, int, float, double, Boolean, and char.",
+                "byte, short, int, long,  float, double, Boolean, and char.",
+                "strings, arrays, object, interface, and classes",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q38);
+
+        Question java_medium_q39 = new Question(
+                "Non-primitive data types include the following:",
+                "byte, short, int, float, double, Boolean, and char.",
+                "byte, short, int, long,  float, double, Boolean, and char.",
+                "strings, arrays, object, interface, and classes",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q39);
+
+        Question java_medium_q40 = new Question(
+                "Used to assign values to variables.",
+                "arithmetic operators",
+                "operators for assignment",
+                "logical operators",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q40);
+
+        Question java_medium_q41 = new Question(
+                "Class attributes are often declared as private in encapsulation, which means they may only be accessed within the class itself.",
+                "java class attributes",
+                "java class methods",
+                "java constructors",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q41);
+
+        Question java_medium_q42 = new Question(
+                "Class methods are critical for encapsulation, which is one of the key ideas of object-oriented programming (OOP).",
+                "java class attributes",
+                "java class methods",
+                "java constructors",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q42);
+
+        Question java_medium_q43 = new Question(
+                "Constructors serve an important part in encapsulation by providing a means for initializing an object's state.",
+                "java class attributes",
+                "java class methods",
+                "java constructors",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q43);
+
+        Question java_medium_q44 = new Question(
+                "Modifiers play an important role in encapsulation because they govern the access levels of class members (variables and methods) and determine their visibility and accessibility from other sections of the program.",
+                "java class attributes",
+                "java class methods",
+                "java modifiers",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q44);
+
+        Question java_medium_q45 = new Question(
+                "Polymorphism, one of the main ideas of object-oriented programming, is implemented through classes and objects.",
+                "java classes and objects",
+                "java class methods",
+                "java modifiers",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q45);
+
+        Question java_medium_q46 = new Question(
+                "Through method overriding, class methods play a part in polymorphism.",
+                "java classes and objects",
+                "java class methods",
+                "java modifiers",
+                "Free",
+                2,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q46);
+
+        Question java_medium_q47 = new Question(
+                "Constructors are essential for creating objects and initializing their state.",
+                "java class attributes",
+                "java class methods",
+                "java constructors",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q47);
+
+        Question java_medium_q48 = new Question(
+                "When dealing with polymorphism, access modifiers also play a role in setting the visibility and accessibility of methods and variables.",
+                "java classes and objects",
+                "java class methods",
+                "java modifiers",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q48);
+
+        Question java_medium_q49 = new Question(
+                "It is a variable declared within a class that represents an object's status or data.",
+                "java class attributes",
+                "java class methods",
+                "java constructors",
+                "Free",
+                1,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q49);
+
+        Question java_medium_q50 = new Question(
+                "Access modifiers play a role in setting the visibility of abstract classes, abstract methods, and interface methods when it comes to abstraction.",
+                "java classes and objects",
+                "java class methods",
+                "java modifiers",
+                "Free",
+                3,
+                Question.DIFFICULTY_MEDIUM,
+                Category.JAVA
+        );insertQuestion(java_medium_q50);
+
+        //------------------------------------Java Question Hard------------------------------
+
+
+
+
+        Question java_hard_q1 = new Question(
+                "What is the missing part of the code below to output \"Hello World\".\n\npublic class MyClass {\n  public static void main(String[] args) {\n    ____(\"Hello World\");\n  }\n}",
+                "Console.WriteLine",
+                "print",
+                "System.out.println",
+                "String.out",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q1);
+
+        Question java_hard_q2 = new Question(
+                "Comments in Java are written with special characters. What is the missing part?\n\n__ This is a single-line comment",
+                "//",
+                "/*",
+                "*/",
+                "\\",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q2);
+
+        Question java_hard_q3 = new Question(
+                "Comments in Java are written with special characters. What is the missing part?\n\n__ This is a multi-line comment __",
+                "// and //",
+                "/* and */",
+                "*/ and /*",
+                "\\ and \\",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q3);
+
+        Question java_hard_q4 = new Question(
+                "What is the correct data type for the variable?\n\n__ myNum = 9;",
+                "float",
+                "int",
+                "char",
+                "boolean",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q4);
+
+        Question java_hard_q5 = new Question(
+                "What is the correct data type for the variable?\n\n__ myFloatNum = 8.99f;",
+                "String",
+                "Boolean",
+                "char",
+                "float",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q5);
+
+        Question java_hard_q6 = new Question(
+                "What is the correct data type for the variable?\n\n__ myLetter = 'A';",
+                "char",
+                "int",
+                "String",
+                "Boolean",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q6);
+
+        Question java_hard_q7 = new Question(
+                "What is the correct data type for the variable?\n\n__ myBool = false;",
+                "String",
+                "float",
+                "char",
+                "Boolean",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q7);
+
+        Question java_hard_q8 = new Question(
+                "What is the correct data type for the variable?\n\n__ myText = \"Hello World\";",
+                "int",
+                "float",
+                "String",
+                "Boolean",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q8);
+
+        Question java_hard_q9 = new Question(
+                "byte, short, int, long, float, double, boolean, and char are called?",
+                "primitive",
+                "reference",
+                "non primitive",
+                "non reference",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q9);
+
+        Question java_hard_q10 = new Question(
+                "Type casting - Convert the following double type (myDouble) to an int type:\n\ndouble myDouble = 9.78d;\nint myInt = (__) myDouble;",
+                "float",
+                "double",
+                "int",
+                "short",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q10);
+
+        Question java_hard_q11 = new Question(
+                "Multiply 10 with 5, and print the result.\n\nSystem.out.println(10__5);",
+                "*",
+                "x",
+                "/",
+                "none",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q11);
+
+        Question java_hard_q12 = new Question(
+                "Divide 10 by 5, and print the result.\n\nSystem.out.println(10__5);",
+                "%",
+                "\\",
+                "/",
+                "&",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q12);
+
+        Question java_hard_q13 = new Question(
+                "Use the addition assignment operator to add the value 5 to the variable x.\n\nint x = 10;\nx__5;",
+                "- =",
+                "*=",
+                "+=",
+                "/=",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q13);
+
+        Question java_hard_q14 = new Question(
+                "Print the second item in the cars array.\n\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\"};\nSystem.out.println(__);",
+                "cars[1]",
+                "cars[2]",
+                "cars[3]",
+                "cars[0]",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q14);
+
+        Question java_hard_q15 = new Question(
+                "Find out how many elements the cars array has.\n\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\"};\nSystem.out.println(__);",
+                "cars.length",
+                "cars.Length",
+                "Cars.length",
+                "cars.length.",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q15);
+
+        Question java_hard_q16 = new Question(
+                "What is the missing part to create a two-dimensional array?\n\n__ myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };",
+                "char[][]",
+                "String[][]",
+                "double[][]",
+                "int[][]",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q16);
+
+        Question java_hard_q17 = new Question(
+                "Create a class called MyClass.\n\npublic class __",
+                "class",
+                "myObj",
+                "myMethod",
+                "MyClass",
+                4,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q17);
+
+        Question java_hard_q18 = new Question(
+                "The class below should not be inherited by other classes. Add the correct modifier:\n\n__class MyClass",
+                "final",
+                "Final",
+                "FINAL",
+                "none",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q18);
+
+        Question java_hard_q19 = new Question(
+                "Fill in the missing parts to import the java.util.Scanner class from the Java API:\n\nImport java.util.__;",
+                "Scan",
+                "Scanner",
+                "scanner",
+                "scan",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q19);
+
+        Question java_hard_q20 = new Question(
+                "The Car class should inherit the attributes and methods from the Vehicle class. Add the correct keyword to make this possible.\n\nclass Car ___ Vehicle",
+                "extend",
+                "extends",
+                "Extends",
+                "Extend",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q20);
+
+        Question java_hard_q21 = new Question(
+                "In Java, every statement must end with a __________.",
+                "semicolon (;)",
+                "comma (,)",
+                "colon (:)",
+                "period (.)",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q21);
+
+        Question java_hard_q22 = new Question(
+                "The entry point of a Java program is the _________ method.",
+                "main",
+                "start",
+                "execute",
+                "run",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q22);
+
+        Question java_hard_q23 = new Question(
+                "A class can be defined using the keyword __________.",
+                "category",
+                "style",
+                "class",
+                "type",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q23);
+
+        Question java_hard_q24 = new Question(
+                "The keyword used to create an object of a class is _________.",
+                "make",
+                "object",
+                "new",
+                "create",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q24);
+
+        Question java_hard_q25 = new Question(
+                "The data type used to store single characters in Java is _________.",
+                "char",
+                "character",
+                "string",
+                "letter",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q25);
+
+        Question java_hard_q26 = new Question(
+                "The default value of a boolean variable is _________.",
+                "false",
+                "true",
+                "0",
+                "1",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q26);
+
+        Question java_hard_q27 = new Question(
+                "The operator used for exponentiation in Java is _________.",
+                "^",
+                "**",
+                "^^",
+                "ex",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q27);
+
+        Question java_hard_q28 = new Question(
+                "The loop that executes a block of code at least once is _________ loop.",
                 "for",
                 "while",
-                "loop",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 7
-        Question python_medium_q7 = new Question(
-                "Which function is used to get the length of a list in Python?",
-                "size()",
-                "length()",
-                "len()",
-                "Free",
+                "do-while",
+                "until",
                 3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q28);
 
-// Question 8
-        Question python_medium_q8 = new Question(
-                "How do you remove an element from a set in Python?",
-                "remove()",
-                "delete()",
-                "discard()",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 9
-        Question python_medium_q9 = new Question(
-                "What is the result of the expression ‘bool(0)’ in Python?",
-                "True",
-                "False",
-                "0",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 10
-        Question python_medium_q10 = new Question(
-                "Which of the following is used to create a tuple in Python?",
-                "[1, 2, 3]",
-                "(1, 2, 3)",
-                "{1, 2, 3}",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 11
-        Question python_medium_q11 = new Question(
-                "Which method is used to convert a string to uppercase in Python?",
-                "toUpperCase()",
-                "upper()",
-                "uppercase()",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 12
-        Question python_medium_q12 = new Question(
-                "How do you check if a key is present in a dictionary in Python?",
-                "check()",
-                "contains()",
-                "in",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 13
-        Question python_medium_q13 = new Question(
-                "How do you define an empty dictionary in Python?",
-                "{}",
-                "{[]}",
-                "dict()",
-                "Free",
+        Question java_hard_q29 = new Question(
+                "The symbol used to access members of an object is _________.",
+                ".",
+                "->",
+                "::",
+                "::",
                 1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q29);
 
-// Question 14
-        Question python_medium_q14 = new Question(
-                "Which of the following loops is used to iterate over a sequence of elements in Python?",
-                "while loop",
-                "for loop",
-                "do-while loop",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 15
-        Question python_medium_q15 = new Question(
-                "What is the purpose of the ‘break’ statement in Python?",
-                "It terminates the program.",
-                "It stops the current iteration of the loop and resumes with the next iteration.",
-                "It exits from the current loop prematurely.",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 16
-        Question python_medium_q16 = new Question(
-                "In Python, which of the following represents the \"not equal\" comparison operator?",
-                "==",
-                "!=",
-                "<>",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 17
-        Question python_medium_q17 = new Question(
-                "How do you chain multiple conditions together in an if statement?",
-                "Using commas (,)",
-                "Using the and keyword",
-                "Using the or keyword",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 18
-        Question python_medium_q18 = new Question(
-                "The if-else statement is also known as a/an:",
-                "Ternary operator",
-                "Loop statement",
-                "Sequential statement",
-                "Free",
+        Question java_hard_q30 = new Question(
+                "The ternary operator in Java is represented as _________.",
+                "?",
+                "||",
+                ":",
+                "::",
                 1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q30);
 
-// Question 19
-        Question python_medium_q19 = new Question(
-                "In Python, which of the following is used to handle multiple conditions in a more concise way?",
-                "if-else statement",
-                "Nested if statements",
-                "Ternary operator",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Question 20
-        Question python_medium_q20 = new Question(
-                "What is the purpose of the elif statement in Python?",
-                "To create an alias for a variable",
-                "To catch and handle exceptions",
-                "To specify an alternative condition to check",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.PYTHON
-        );
-
-// Inserting all questions
-        insertQuestion(python_medium_q1);
-        insertQuestion(python_medium_q2);
-        insertQuestion(python_medium_q3);
-        insertQuestion(python_medium_q4);
-        insertQuestion(python_medium_q5);
-        insertQuestion(python_medium_q6);
-        insertQuestion(python_medium_q7);
-        insertQuestion(python_medium_q8);
-        insertQuestion(python_medium_q9);
-        insertQuestion(python_medium_q10);
-        insertQuestion(python_medium_q11);
-        insertQuestion(python_medium_q12);
-        insertQuestion(python_medium_q13);
-        insertQuestion(python_medium_q14);
-        insertQuestion(python_medium_q15);
-        insertQuestion(python_medium_q16);
-        insertQuestion(python_medium_q17);
-        insertQuestion(python_medium_q18);
-        insertQuestion(python_medium_q19);
-        insertQuestion(python_medium_q20);
-
-
-        //--------------------------Python Hard------------------------------
-        Question python_hard_q1 = new Question("To print \"Hello, World!\" to the console\n" +
-                "\n" +
-                "print(\"__________\")\n",
-                "Hello, World!", "Hello World!", "“Hello World!”","“Hello, World!”", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q1);
-
-        Question python_hard_q2 = new Question("To create a variable \"x\" and assign it the value 10\n" +
-                "\n" +
-                "_ = 10\n",
-                "“x”", "x", "“X”","X", 2,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q2);
-
-        Question python_hard_q3 = new Question("What is the correct syntax to define a function in Python?\n" +
-                "\n" +
-                "def my_function():\n" +
-                "    ________________\n",
-                "return", "print()", "pass","def", 3,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q3);
-
-        Question python_hard_q4 = new Question("How do you read input from the user in Python?\n" +
-                "\n" +
-                "name = ________________\n",
-                "input()", "read()", "get_input()","user_input()", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q4);
-
-        Question python_hard_q5 = new Question("How do you check if a variable x is of integer type in Python?\n" +
-                "\n" +
-                "if ________________:\n" +
-                "    print(\"x is an integer.\")\n",
-                "type(x) == int", "x.isint()", "isinstance(x, int)","x.type == int", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q5);
-
-        Question python_hard_q6 = new Question("To check if a number is even using an if statement:\n" +
-                "\n" +
-                "num = 10\n" +
-                "if ______ % 2 == 0:\n" +
-                "    print(\"Even\")\n" +
-                "else:\n" +
-                "    print(\"Odd\")\n",
-                "Num", "num", "number","Number", 2,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q6);
-
-        Question python_hard_q7 = new Question("How do you convert the string \"25\" to an integer in Python?\n" +
-                "\n" +
-                "x = \"25\"\n" +
-                "result = ________________\n",
-                "int(x)", "str(x)", "float(x)","x.to_int()", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q7);
-
-        Question python_hard_q8 = new Question("To import the \"math\" module:\n" +
-                "\n" +
-                "import ______\n",
-                "import", "importmath", "math","ImportMath", 3,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q8);
-
-        Question python_hard_q9 = new Question("THow do you add a new element '6' to the end of the list my_list in Python?\n" +
-                "\n" +
-                "my_list = [1, 2, 3, 4, 5]\n" +
-                "______________\n",
-                "my_list.append(6)", "my_list.add(6)", "my_list.insert(6)","my_list.extend(6)", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q9);
-
-        Question python_hard_q10 = new Question("What is the correct way to comment a single line in Python?\n" +
-                "\n" +
-                "# This is a ___________ comment.\n",
-                "Single-line", "Inline", "Multi-line","Double-line", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q10);
-
-        Question python_hard_q11 = new Question("To create a new list \"squared_numbers\" containing the squares of the numbers from the original list:\n" +
-                "\n" +
-                "numbers = [1, 2, 3, 4, 5]\n" +
-                "squared_numbers = [______ for num in numbers]\n",
-                "Num ++ 2", "num ** 2", "num ++ 2","Num ** 2", 2,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q11);
-
-        Question python_hard_q12 = new Question("To concatenate two strings \"str1\" and \"str2\" using the \"+\" operator:\n" +
-                "\n" +
-                "str1 = \"Hello, \"\n" +
-                "str2 = \"World!\"\n" +
-                "result = str1 + ______\n",
-                "str2", "result", "str1","World!", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q12);
-
-        Question python_hard_q13 = new Question("How do you check if a key 'my_key' exists in a dictionary 'my_dict' in Python?\n" +
-                "\n" +
-                "if ________________ in my_dict:\n" +
-                "    print(\"Key exists.\")\n",
-                "key 'my_key'", "my_key in dict", "my_key in my_dict","key_exists(my_dict, my_key)", 3,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q13);
-
-        Question python_hard_q14 = new Question("What does the len() function in Python return?\n" +
-                "\n" +
-                "my_string = \"Hello, World!\"\n" +
-                "result = len(__________)\n" +
-                "print(result)\n",
-                "my_string", "my_string()", "my_string.length","my_string.length()", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q14);
-
-        Question python_hard_q15 = new Question("To convert the string \"123\" to an integer:\n" +
-                "\n" +
-                "num_str = \"123\"\n" +
-                "num = int(______)\n",
-                "int", "123", "num","num_str", 4,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q15);
-
-        Question python_hard_q16 = new Question("How do you convert the floating-point number 3.14 to a string in Python?\n" +
-                "\n" +
-                "x = 3.14\n" +
-                "result = ________________\n",
-                "str(x)", "x.to_str()", "float(x)","x.str()", 1,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q16);
-
-        Question python_hard_q17 = new Question("How do you remove the last element from a list my_list in Python?\n" +
-                "\n" +
-                "my_list = [1, 2, 3, 4, 5]\n" +
-                "______________\n",
-                "my_list.remove(5)", "my_list.delete(-1)", "my_list.pop()","my_list.pop(0)", 3,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q17);
-
-        Question python_hard_q18 = new Question("To implement a function that takes a list of strings and returns a new list with the strings sorted by their length in ascending order:\n" +
-                "\n" +
-                "def sort_by_length(strings):\n" +
-                "    return sorted(strings, key=______)\n",
-                "boolean", "len", "length","return", 2,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q18);
-
-        Question python_hard_q19 = new Question("To implement a custom sorting function that sorts a list of strings based on the number of vowels in each string:\n" +
-                "\n" +
-                "def count_vowels(word):\n" +
-                "    return sum(1 for char in word if char.lower() in \"aeiou\")\n" +
-                "\n" +
-                "def custom_sort(words):\n" +
-                "    return sorted(words, key=______)\n",
-                "custom sort", "char.lower", "count_vowels","double", 3,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q19);
-
-        Question python_hard_q20 = new Question("To  implement a function that finds the intersection of two arrays:\n" +
-                "\n" +
-                "def array_intersection(nums1, nums2):\n" +
-                "    set_nums1 = set(nums1)\n" +
-                "    set_nums2 = set(nums2)\n" +
-                "    return [num for num in set_nums1 if num ______ set_nums2]\n",
-                "for", "is", "in","at", 3,
-                Question.DIFFICULTY_HARD, Category.PYTHON);
-        insertQuestion(python_hard_q20);
-
-
-        //-------------------CSHARP EASY-----------------------
-        // C# Easy Questions
-        Question csharp_easy_q1 = new Question(
-                "C# is a statically-typed language.",
-                "True",
-                "False",
-                "Free",
-                "Free",
+        Question java_hard_q31 = new Question(
+                "Java arrays have _________ indexing.",
+                "zero-based",
+                "one-based",
+                "negative",
+                "random",
                 1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q31);
 
-        Question csharp_easy_q2 = new Question(
-                "C# is an interpreted language.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q3 = new Question(
-                "C# supports multiple inheritance.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q4 = new Question(
-                "C# is platform-independent.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q5 = new Question(
-                "C# is case-sensitive.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q6 = new Question(
-                "C# supports operator overloading.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q7 = new Question(
-                "C# allows you to define custom exceptions.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q8 = new Question(
-                "C# is primarily used for web development.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                2,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q9 = new Question(
-                "C# has a garbage collector to manage memory.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q10 = new Question(
-                "C# supports pass-by-reference for method parameters.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q11 = new Question(
-                "C# supports pass-by-value for method parameters.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q12 = new Question(
-                "C# supports dynamic typing using the \"var\" keyword.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q13 = new Question(
-                "C# has a built-in \"foreach\" loop for iterating over collections.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q14 = new Question(
-                "C# supports multiple catch blocks in exception handling.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q15 = new Question(
-                "C# supports implicit conversion between data types.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q16 = new Question(
-                "C# supports explicit conversion between data types.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q17 = new Question(
-                "C# allows you to create abstract classes.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q18 = new Question(
-                "C# allows you to create abstract methods.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q19 = new Question(
-                "C# supports \"checked\" and \"unchecked\" contexts for arithmetic operations.",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        Question csharp_easy_q20 = new Question(
-                "C# allows you to create user-defined value types using \"struct.\"",
-                "True",
-                "False",
-                "Free",
-                "Free",
-                1,
-                Question.DIFFICULTY_EASY,
-                Category.Csharp
-        );
-
-        // Inserting all questions
-        insertQuestion(csharp_easy_q1);
-        insertQuestion(csharp_easy_q2);
-        insertQuestion(csharp_easy_q3);
-        insertQuestion(csharp_easy_q4);
-        insertQuestion(csharp_easy_q5);
-        insertQuestion(csharp_easy_q6);
-        insertQuestion(csharp_easy_q7);
-        insertQuestion(csharp_easy_q8);
-        insertQuestion(csharp_easy_q9);
-        insertQuestion(csharp_easy_q10);
-        insertQuestion(csharp_easy_q11);
-        insertQuestion(csharp_easy_q12);
-        insertQuestion(csharp_easy_q13);
-        insertQuestion(csharp_easy_q14);
-        insertQuestion(csharp_easy_q15);
-        insertQuestion(csharp_easy_q16);
-        insertQuestion(csharp_easy_q17);
-        insertQuestion(csharp_easy_q18);
-        insertQuestion(csharp_easy_q19);
-        insertQuestion(csharp_easy_q20);
-
-//----------------------------- C# Medium Questions--------------------------------------
-        Question csharp_medium_q1 = new Question(
-                "What is C#?",
-                "A scripting language",
-                "An object-oriented programming language",
-                "A markup language",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q2 = new Question(
-                "C# is developed by which company?",
-                "Microsoft",
-                "Apple",
-                "Google",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q3 = new Question(
-                "Which development environment is commonly used for C# development?",
-                "Visual Studio",
-                "Eclipse",
-                "Sublime Text",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q4 = new Question(
-                "C# is designed to be used for which platform(s)?",
-                "Windows only",
-                "Mac only",
-                "Cross-platform (Windows, Mac, Linux)",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q5 = new Question(
-                "Which of the following is a valid C# variable name?",
-                "123variable",
-                "my-variable",
-                "my_variable",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q6 = new Question(
-                "Which data type is used to store whole numbers in C#?",
-                "double",
-                "char",
-                "int",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q7 = new Question(
-                "Which of the following is the correct syntax for a single-line comment in C#?",
-                "// This is a comment",
-                "/* This is a comment */",
-                "# This is a comment",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q8 = new Question(
-                "Which keyword is used to define a new class in C#?",
-                "new",
-                "class",
-                "create",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q9 = new Question(
-                "What is the default access modifier for class members in C# if no access modifier is specified?",
+        Question java_hard_q32 = new Question(
+                "The keyword used to declare a method that can be called without creating an instance of the class is _________.",
                 "public",
-                "private",
-                "protected",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q10 = new Question(
-                "What is the purpose of the 'using' statement in C#?",
-                "To define namespaces",
-                "To import libraries",
-                "To declare variables",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q11 = new Question(
-                "Which keyword is used to define a method that does not return any value in C#?",
-                "return",
-                "void",
-                "none",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q12 = new Question(
-                "Which keyword is used to define a variable that can hold a reference to an object of any type in C#?",
-                "var",
-                "object",
-                "any",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q13 = new Question(
-                "Which of the following is NOT a valid access modifier in C#?",
-                "public",
-                "global",
-                "internal",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q14 = new Question(
-                "Which keyword is used to explicitly indicate that a method does not return a value?",
-                "void",
-                "null",
-                "none",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q15 = new Question(
-                "In C#, which access modifier makes a class member accessible only within its own class and any derived classes?",
-                "public",
-                "private",
-                "protected",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q16 = new Question(
-                "What is the correct way to handle exceptions in C#?",
-                "try-catch-finally",
-                "try-except",
-                "catch-throw",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q17 = new Question(
-                "Which of the following is NOT a valid data type in C#?",
-                "float-point",
-                "boolean",
-                "decimal",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q18 = new Question(
-                "What is the access level of a class member that is accessible only within the same assembly?",
-                "private",
-                "internal",
-                "protected",
-                "Free",
-                2,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q19 = new Question(
-                "In C#, which access modifier allows a member to be accessible within the same assembly and derived classes?",
-                "private",
-                "internal",
-                "protected internal",
-                "Free",
-                3,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-        Question csharp_medium_q20 = new Question(
-                "What does the term \"boxing\" refer to in C#?",
-                "Converting a value type to a reference type.",
-                "Converting a reference type to a value type.",
-                "Removing an object from the heap memory.",
-                "Free",
-                1,
-                Question.DIFFICULTY_MEDIUM,
-                Category.Csharp
-        );
-
-// Inserting all questions
-        insertQuestion(csharp_medium_q1);
-        insertQuestion(csharp_medium_q2);
-        insertQuestion(csharp_medium_q3);
-        insertQuestion(csharp_medium_q4);
-        insertQuestion(csharp_medium_q5);
-        insertQuestion(csharp_medium_q6);
-        insertQuestion(csharp_medium_q7);
-        insertQuestion(csharp_medium_q8);
-        insertQuestion(csharp_medium_q9);
-        insertQuestion(csharp_medium_q10);
-        insertQuestion(csharp_medium_q11);
-        insertQuestion(csharp_medium_q12);
-        insertQuestion(csharp_medium_q13);
-        insertQuestion(csharp_medium_q14);
-        insertQuestion(csharp_medium_q15);
-        insertQuestion(csharp_medium_q16);
-        insertQuestion(csharp_medium_q17);
-        insertQuestion(csharp_medium_q18);
-        insertQuestion(csharp_medium_q19);
-        insertQuestion(csharp_medium_q20);
-
-        Question csharp_hard_q1 = new Question(
-                "To create a new instance of a 'Car' class using the default constructor:\n" +
-                        "\n" +
-                        "Car myCar = new ______();\n",
-                "myCar",
-                "Car",
-                "class",
-                "‘Car’",
-                1,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q2 = new Question(
-                "What is the correct syntax for a single-line comment in C#?\n" +
-                        "\n" +
-                        "// This is a _____ comment.\n",
-                "Single-line",
-                "Multiline",
-                "Comment",
-                "Quick",
-                1,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q3 = new Question(
-                "Which access modifier allows a method to be accessible within the same assembly or derived classes?\n" +
-                        "\n" +
-                        "_____ void ProtectedMethod() { }\n",
-                "public",
-                "private",
-                "protected",
-                "internal",
-                3,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q4 = new Question(
-                "How do you declare a two-dimensional array in C#?\n" +
-                        "\n" +
-                        "int[,] matrix = new int[3, _____];\n",
-                "2",
-                "4",
-                "5",
-                "6l",
+                "static",
+                "shared",
+                "common",
                 2,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q32);
 
-        Question csharp_hard_q5 = new Question(
-                "How do you check if two strings are equal in C#?\n" +
-                        "\n" +
-                        "if (string1 _____ string2) {\n" +
-                        "    Console.WriteLine(\"Strings are equal.\");\n" +
-                        "}\n",
-                "==",
-                "=",
-                "!=",
-                "<>",
+        Question java_hard_q33 = new Question(
+                "The Java keyword used to exit from a loop prematurely is _________.",
+                "break",
+                "stop",
+                "exit",
+                "quit",
                 1,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q33);
 
-        Question csharp_hard_q6 = new Question(
-                "To define a class \"Logger\" that implements the IDisposable interface:\n" +
-                        "\n" +
-                        "public class Logger : ______{\n" +
-                        "    // Implementation here\n" +
-                        "}\n",
-                "Logger",
-                "public class",
-                "IDisposable;",
-                "IDisposable",
-                4,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q7 = new Question(
-                "In C#, what is used to free up resources and perform other cleanup operations before an object is garbage collected?\n" +
-                        "\n" +
-                        "public void _____() {\n" +
-                        "    // Cleanup code here\n" +
-                        "}\n",
-                "CleanUp",
-                "Dispose",
-                "Clean",
-                "Destroy",
-                2,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q8 = new Question(
-                "What is the base class in C# from which all other classes are derived?\n" +
-                        "\n" +
-                        "public class _____ {\n" +
-                        "    // Class members here\n" +
-                        "}\n",
+        Question java_hard_q34 = new Question(
+                "The keyword used to declare a variable that can hold different data types is _________.",
+                "mixed",
+                "dynamic",
+                "variant",
                 "Object",
-                "Base",
-                "Main",
-                "Parent",
-                1,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q9 = new Question(
-                "How do you read input from the console in C#?\n" +
-                        "\n" +
-                        "Console.Write(\"Enter your name: \");\n" +
-                        "string name = Console._____();\n",
-                "Read()",
-                "ReadInput()",
-                "ReadLine()",
-                "ReadString()",
-                3,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q10 = new Question(
-                "What is the correct way to handle exceptions in C#?\n" +
-                        "\n" +
-                        "try {\n" +
-                        "    // Code that may throw an exception\n" +
-                        "}\n" +
-                        "catch (Exception ex) {\n" +
-                        "    Console.WriteLine(\"Error: \" + ex._____());\n" +
-                        "}\n",
-                "Message",
-                "Description",
-                "Reason",
-                "ToString()",
                 4,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q34);
 
-        Question csharp_hard_q11 = new Question(
-                "How do you define a read-only property in C#?\n" +
-                        "\n" +
-                        "public ____ MyProperty{\n" +
-                        "    get { return myField; }\n" +
-                        "}\n",
-                "int",
-                "readonly",
-                "property",
-                "get",
+        Question java_hard_q35 = new Question(
+                "The Java keyword used to refer to the superclass is _________.",
+                "base",
+                "parent",
+                "super",
+                "upper",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q35);
+
+        Question java_hard_q36 = new Question(
+                "The method used to convert a number to a string is _________.",
+                "toString",
+                "convertToString",
+                "numberToString",
+                "stringify",
                 1,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q36);
 
-        Question csharp_hard_q12 = new Question(
-                "try{\n" +
-                        "    // Code that may throw an exception\n" +
-                        "}\n" +
-                        "catch (Exception ex){\n" +
-                        "    _____________(ex.Message);\n" +
-                        "}\n",
-                "Log(ex.Message);",
-                "Print(ex.Message);",
-                "WriteLine(ex.Message);",
-                "Console.Log(ex.Message);",
-                3,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q13 = new Question(
-                "Complete the following code to print \"Hello World\" to the console.\n" +
-                        "\n" +
-                        "static void Main(string[] args){\n" +
-                        "    _____________(\"Hello World\");\n" +
-                        "}\n",
-                "Console.Write",
-                "print",
-                "Console.WriteLine",
-                "writeLine",
-                3,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q14 = new Question(
-                "To declare a two-dimensional array of integers with 3 rows and 4 columns.\n" +
-                        "\n" +
-                        "int[,] myArray = new ___________;\n",
-                "int[3][4];",
-                "int[3, 4];",
-                "int[3, 4]{};",
-                "int[3][4]{};",
+        Question java_hard_q37 = new Question(
+                "The Java keyword used to implement multiple interfaces is _________.",
+                "use",
+                "implement",
+                "extends",
+                "extends and implements",
                 2,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q37);
 
-        Question csharp_hard_q15 = new Question(
-                "To create a new instance of the \"Person\" class with the name \"John\":\n" +
-                        "\n" +
-                        "Person person = new ______(\"John\");\n",
+        Question java_hard_q38 = new Question(
+                "The keyword used to create an instance of an abstract class is _________.",
                 "new",
-                "John",
-                "class",
-                "Person",
-                4,
+                "create",
+                "instantiate",
+                "construct",
+                3,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q38);
 
-        Question csharp_hard_q16 = new Question(
-                "To add a \"using\" directive to the code to import the \"System\" namespace:\n" +
-                        "\n" +
-                        "______ System;\n",
-                "using",
-                "system",
-                "“System”",
-                "“using”",
+        Question java_hard_q39 = new Question(
+                "The operator used for a bitwise left shift in Java is _________.",
+                "<<",
+                ">>",
+                "<<",
+                ">>",
                 1,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q39);
 
-        Question csharp_hard_q17 = new Question(
-                "To define a property named \"Name\" of type string in the \"Person\" class:\n" +
-                        "\n" +
-                        "public string ______ { get; set; }\n",
-                "name",
-                "Name",
-                "Person",
-                "person",
+        Question java_hard_q40 = new Question(
+                "Java is an ______________ programming language.",
+                "Object-oriented",
+                "Procedural",
+                "Functional",
+                "Scripting",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q40);
+
+        Question java_hard_q41 = new Question(
+                "Every Java program must have a ______________ method as the entry point.",
+                "main",
+                "start",
+                "execute",
+                "run",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q41);
+
+        Question java_hard_q42 = new Question(
+                "In Java, comments are ignored by the ______________.",
+                "Compiler",
+                "Interpreter",
+                "Debugger",
+                "Runtime environment",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q42);
+
+        Question java_hard_q43 = new Question(
+                "The Java keyword used to declare a variable is ______________.",
+                "variable",
+                "var",
+                "int",
+                "declare",
                 2,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q43);
 
-        Question csharp_hard_q18 = new Question(
-                "To implement a method named \"CalculateArea\" that calculates the area of a circle with the given radius:\n" +
-                        "\n" +
-                        "public double CalculateArea(double radius){\n" +
-                        "    return Math.PI * radius * ______;\n" +
-                        "}\n",
-                "double",
-                "float",
-                "radius",
-                "char",
-                3,
+        Question java_hard_q44 = new Question(
+                "In Java, the line terminator is represented by _______.",
+                "\\t",
+                "\\n",
+                "\\r",
+                "\\l",
+                2,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q44);
 
-        Question csharp_hard_q19 = new Question(
-                "To implement a method named \"Factorial\" that calculates the factorial of a given integer:\n" +
-                        "\n" +
-                        "public int Factorial(int n){\n" +
-                        "    if (n == 0)\n" +
-                        "        return ______;\n" +
-                        "    else\n" +
-                        "        return n * Factorial(n - 1);\n" +
-                        "}\n",
-                "0",
-                "-1",
-                "1",
-                "*1",
-                3,
-                Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
-
-        Question csharp_hard_q20 = new Question(
-                "What keyword is used to define a constant variable in C#?\n" +
-                        "\n" +
-                        "const int MaxValue = _____;\n",
-                "10",
-                "\"Hello\"",
-                "3.14",
-                "100",
+        Question java_hard_q45 = new Question(
+                "In Java, a variable must be declared before _______.",
+                "a. Using it",
+                "b. using",
+                "c. used",
+                "d. this",
                 1,
                 Question.DIFFICULTY_HARD,
-                Category.Csharp
-        );
+                Category.JAVA
+        );insertQuestion(java_hard_q45);
 
-        // Inserting all questions
-        insertQuestion(csharp_hard_q1);
-        insertQuestion(csharp_hard_q2);
-        insertQuestion(csharp_hard_q3);
-        insertQuestion(csharp_hard_q4);
-        insertQuestion(csharp_hard_q5);
-        insertQuestion(csharp_hard_q6);
-        insertQuestion(csharp_hard_q7);
-        insertQuestion(csharp_hard_q8);
-        insertQuestion(csharp_hard_q9);
-        insertQuestion(csharp_hard_q10);
-        insertQuestion(csharp_hard_q11);
-        insertQuestion(csharp_hard_q12);
-        insertQuestion(csharp_hard_q13);
-        insertQuestion(csharp_hard_q14);
-        insertQuestion(csharp_hard_q15);
-        insertQuestion(csharp_hard_q16);
-        insertQuestion(csharp_hard_q17);
-        insertQuestion(csharp_hard_q18);
-        insertQuestion(csharp_hard_q19);
-        insertQuestion(csharp_hard_q20);
+        Question java_hard_q46 = new Question(
+                "The entry point of a Java program is the ________ method.",
+                "start()",
+                "main()",
+                "entry()",
+                "execute()",
+                2,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q46);
+
+        Question java_hard_q47 = new Question(
+                "The \"if\" statement is used for ________.",
+                "declaring variables",
+                "looping",
+                "decision-making",
+                "printing output",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q47);
+
+        Question java_hard_q48 = new Question(
+                "The \"continue\" statement is used to ________.",
+                "end a loop",
+                "restart the loop",
+                "skip the current iteration and continue to the next",
+                "pause the loop temporarily",
+                3,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q48);
+
+        Question java_hard_q49 = new Question(
+                "In Java, a variable must be declared before it can be ________.",
+                "assigned a value",
+                "printed",
+                "used in a loop",
+                "defined as a method",
+                1,
+                Question.DIFFICULTY_HARD,
+                Category.JAVA
+        );insertQuestion(java_hard_q49);
+
     }
 
     public void addQuestion(Question question) {
@@ -2049,8 +1576,8 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         Collections.shuffle(questionList);
 
         // Limit the list to 10 questions
-        if (questionList.size() > 10) {
-            questionList.subList(10, questionList.size()).clear();
+        if (questionList.size() > 25) {
+            questionList.subList(25, questionList.size()).clear();
         }
         return questionList;
     }

@@ -1,4 +1,4 @@
-package com.example.care_prototype_01.JavaLessonsActivity.JavaInputsFragments;
+package com.example.care_prototype_01.PythonLessons.PythonVariablesFragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,27 +10,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.Button;
 
 import com.example.care_prototype_01.R;
 
-public class JavaInputsFragment_3 extends Fragment {
+public class PythonVariablesFragment_3 extends Fragment {
+
 
     private MediaPlayer question_sounds;
-
-    private static final int TEXT_SIZE_IN_DP = 25;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_java_inputs_3, container, false);
-
-        // Example syntax print
-        WebView codeWebView_J_Syntax_1_1= view.findViewById(R.id.java_example9);
-        String formattedCode_J_Syntax_1_1 = getString(R.string.java_example9);
-        String htmlContent_J_Syntax_1_1 = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", dpToPx(), formattedCode_J_Syntax_1_1);
-        configureWebView(codeWebView_J_Syntax_1_1, htmlContent_J_Syntax_1_1);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_python_variables_3, container, false);
 
         //declare for the sounds
         question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
@@ -57,29 +49,13 @@ public class JavaInputsFragment_3 extends Fragment {
                 btnP_Intro_Q3();
             }
         });
-
-
         return view;
     }
-    private void configureWebView(WebView webView, String htmlContent) {
-        webView.loadDataWithBaseURL(null, htmlContent, "text/html", "UTF-8", null);
-        webView.setBackgroundColor(0xd3d3d3); // Set the background color
-        webView.setBackgroundResource(R.drawable.callout_background); // Set rounded corners
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setLoadWithOverviewMode(true);
-        webSettings.setUseWideViewPort(true);
-    }
-
-    private int dpToPx() {
-        float density = getResources().getDisplayMetrics().density;
-        return Math.round(JavaInputsFragment_3.TEXT_SIZE_IN_DP * density);
-    }
-
     private void btnP_Intro_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
-        alertDialogBuilder.setTitle("What are the input types in java?");
-        alertDialogBuilder.setMessage("In Java, the Scanner class is commonly used to read input from various sources, such as the console or files. The Scanner class provides methods to read different data types.");
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("How do you check the type of a variable in Python?");
+        alertDialogBuilder.setMessage("You can use the type() function to check the type of a variable. For example, type(x) returns the type of the variable x.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -92,9 +68,9 @@ public class JavaInputsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
-        alertDialogBuilder.setTitle("How can I validate user input to ensure it matches expected formats?");
-        alertDialogBuilder.setMessage("You can use loops and conditional statements to repeatedly prompt the user until valid input is provided.");
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("What are the rules for naming variables in Python?");
+        alertDialogBuilder.setMessage("Variable names must start with a letter or an underscore (_),followed by letters, digits, or underscores. They are case-sensitive and cannot be a Python keyword.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -107,9 +83,9 @@ public class JavaInputsFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
-        alertDialogBuilder.setTitle("add here");
-        alertDialogBuilder.setMessage("add here");
+        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setTitle("How do you assign a value to a variable?");
+        alertDialogBuilder.setMessage("You can assign a value to a variable using the assignment operator (=). For example: x = 10.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

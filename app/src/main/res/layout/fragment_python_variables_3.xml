@@ -25,7 +25,7 @@
                 android:contentDescription="@string/codey_image"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
                 app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
-                app:srcCompat="@drawable/codey_python" />
+                app:srcCompat="@drawable/codey_python_cut" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -43,7 +43,7 @@
                 android:id="@+id/P_Intro_btnQ1"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="What is the purpose of the input() function in Python?"
+                android:text="How do you check the type of a variable in Python?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -58,7 +58,7 @@
                 android:id="@+id/P_Intro_btnQ2"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="How do you use the input() function to get user input?"
+                android:text="What are the rules for naming variables in Python?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -75,7 +75,7 @@
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="68dp"
-                android:text="Can the input() function take an optional prompt message?"
+                android:text="How do you assign a value to a variable?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"

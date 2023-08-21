@@ -1,73 +1,69 @@
 package com.example.care_prototype_01.JavaLessonsActivity;
 
-import android.media.MediaPlayer;
+import android.content.Intent;
+
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
+
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.JavaLoopingStatementFragment_1;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.JavaLoopingStatementFragment_2;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.JavaLoopingStatementFragment_3;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.JavaLoopingStatementFragment_4;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.JavaLoopingStatementFragment_5;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.JavaLoopingStatementFragment_6;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.ViewPagerAdapter;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement.ViewPagerUtil;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
+
+
+import java.util.ArrayList;
 
 public class JavaLoopingStatements extends AppCompatActivity {
-    Button btn_dyk1, btn_dyk2, btn_dyk3;
-    private MediaPlayer question_sounds;
+    private ViewPager2 viewPager;
+    private LinearLayout pager_dots;
+    private FragmentStateAdapter pagerAdapter;
+    private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_looping_statements);
 
-        //declare for the sounds
-        question_sounds = MediaPlayer.create(JavaLoopingStatements.this, R.raw.question);
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
 
-        btn_dyk1 = findViewById(R.id.javaloopdyk1);
-        btn_dyk1.setOnClickListener(view ->
-                openDYK1()
-        );
-        btn_dyk1 = findViewById(R.id.javaloopdyk2);
-        btn_dyk1.setOnClickListener(view ->
-                openDYK2()
-        );
-        btn_dyk3 = findViewById(R.id.javaloopdyk3);
-        btn_dyk3.setOnClickListener(view ->
-                openDYK3()
-        );
+        //this is the back button
+        Button btn_back =findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent OpenCLoop = new Intent(this, JavaLanguageActivity.class);
+            startActivity(OpenCLoop);
+        });
 
-    }
-    private void openDYK1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaLoopingStatements.this);
-        builder.setTitle("Did you know?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("did you know the loop body is executed repeatedly as long as the condition is true.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void openDYK2() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaLoopingStatements.this);
-        builder.setTitle("Did you know?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("did you know the condition is checked at the end of each iteration. If the condition is true, the loop continues.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void openDYK3() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaLoopingStatements.this);
-        builder.setTitle("Did you know?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("did you know the correct syntax for the foreach loop (also known as the enhanced for loop)")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
+        viewPager = findViewById(R.id.viewpager);
+        pager_dots = findViewById(R.id.pager_dots);
+
+        fragmentArrayList.add(new JavaLoopingStatementFragment_1());
+        fragmentArrayList.add(new JavaLoopingStatementFragment_2());
+        fragmentArrayList.add(new JavaLoopingStatementFragment_3());
+        fragmentArrayList.add(new JavaLoopingStatementFragment_4());
+        fragmentArrayList.add(new JavaLoopingStatementFragment_5());
+        fragmentArrayList.add(new JavaLoopingStatementFragment_6());
 
 
+
+
+
+        pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
+        viewPager.setAdapter(pagerAdapter);
+        ViewPagerUtil.getInstance().setupIndicator(this,viewPager,pager_dots, fragmentArrayList.size());
+    }
 
 }

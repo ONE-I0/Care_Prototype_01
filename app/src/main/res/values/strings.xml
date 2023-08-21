@@ -2471,4 +2471,150 @@ if (condition) {\n
     <string name="ope10"><b>D. *=:</b> Multiply and assign operator.</string>
     <string name="ope11"><b>E. /=:</b> Divide and assign operator.</string>
 
+    <string name="j_operators_description"><![CDATA[\n• Less than:  &lt;
+    \n• Less than or equal to:  &lt;=
+    \n• Greater than: a &gt; b
+    \n• Greater than or equal to: &gt;=
+    \n• Equal to:  ==
+    \n• Not Equal to:  !=
+    ]]>
+</string>
+    <string name="j_operators_description1"><![CDATA[\n• logical AND: &amp;&amp;
+    \n• logical OR: ||
+    \n• logical NOT: !
+    ]]>
+</string>
+
+    <string name="j_loop_description">• The <b>for loop</b> is commonly used when you know the number of iterations in advance.
+    \n• The <b>while loop</b> is suitable when the number of iterations is not known in advance, and the loop continues until a specified condition becomes false.
+    \n• The <b>do-while loop</b> is similar to the while loop, but it guarantees that the loop body is executed at least once.
+    \n• The <b>foreach loop</b> is specifically designed for iterating over elements of an array or a collection.
+</string>
+    <string name="java_example11">
+    <![CDATA[
+    <pre><tt><font color="#267F99">for</font> (<font color="#BA2121">initialization</font>; <font color="#BA2121">condition</font>; <font color="#BA2121">iteration</font>) {
+        <font color="#008000">\n\t// code to be executed in each iteration</font>
+    \n}</tt></pre>
+    ]]></string>
+
+    <string name="java_example12">
+    <![CDATA[
+    <pre><tt><font color="#267F99">Example:</font>
+    <font color="#267F99">\nfor</font> (<font color="#0000C8">int</font> i = 1; i <= 5; i++) {
+        <font color="#267F99">\n\tSystem.out.println</font>("Iteration: " + i);
+    \n}
+    <font color="#267F99">\n\nOutput:</font>
+    \nIteration: 1
+    \nIteration: 2
+    \nIteration: 3
+    \nIteration: 4
+    \nIteration: 5</tt></pre>
+    ]]></string>
+    <string name="j_loop"><![CDATA[In this example, the for loop iterates from i = 1 to i <= 5, incrementing i by 1 after each iteration. The loop body consists of a single statement that prints the iteration number.]]></string>
+    <string name="java_example13">
+    <![CDATA[
+    <pre><tt><font color="#267F99">while</font> (condition) {
+        <font color="#7F0055">\n\t// code to be executed in each iteration</font>
+    \n}</tt></pre>
+    ]]></string>
+
+
+    <string name="java_example14">
+    <![CDATA[<pre><tt><font color="#267F99">int</font> count = 1;
+    <font color="#267F99">\nwhile</font> (count <= 5) {
+        \n\tSystem.out.println("Count: " + count);
+        \n\tcount++;
+    \n}</tt></pre>
+    ]]></string>
+
+    <string name="java_example_code"><![CDATA[<pre><code><font color="#267F99">int</font> count = 1;
+        \n<font color="#267F99">while</font> (count <= 5) {
+            \n\t<font color="#267F99">System.out.println</font>("Count: " + count);
+            \n\tcount++;
+        \n}
+
+        \n\n<font color="#267F99">Output:</font>
+        \nCount: 1
+        \nCount: 2
+        \nCount: 3
+        \nCount: 4
+        \nCount: 5
+    </code></pre>
+    ]]>
+</string>
+    <string name="do_while_example_code">
+    <![CDATA[
+    <pre><code><font color="#267F99">do</font> {
+            <font color="#A9A2A2">\n\t// code to be executed in each iteration</font>
+        \n} <font color="#267F99">while</font> (condition);
+    </code></pre>
+    ]]>
+</string>
+    <string name="while_j"><![CDATA[The while loop starts with the condition count <= 5. The loop body will execute as long as the condition is true. Inside the loop, the current value of count is printed using System.out.println(), and then count is incremented by 1 (count++). This ensures that the loop will eventually terminate when count becomes greater than 5.]]></string>
+    <string name="do_while_j1"><![CDATA[The while loop starts with the condition count <= 5. The loop body will execute as long as the condition is true. Inside the loop, the current value of count is printed using System.out.println(), and then count is incremented by 1 (count++). This ensures that the loop will eventually terminate when count becomes greater than 5.]]></string>
+
+
+    <string name="do_while_loop_example">
+    <![CDATA[
+    <pre><code><font color="#0000FF">import</font> java.util.Scanner;
+
+        <font color="#267F99">\n\npublic class</font> <font color="#FF5733">DoWhileLoopExample</font> {
+            <font color="#00A300">\n\tpublic static void</font> main(String[] args) {
+                \n\t\tScanner scanner = <font color="#0000FF">new</font> Scanner(System.in);
+                \n\t\tint number;
+
+                <font color="#267F99">\n\t\t\tdo</font> {
+                    \n\t\t\t\tSystem.out.print("<font color="#00A300">Enter a positive number (0 to exit):</font> ");
+                    \n\t\t\t\tnumber = scanner.nextInt();
+
+                    <font color="#00A300">\n\t\t\t\tif</font> (number > 0) {
+                        \n\t\t\t\t\tSystem.out.println("You entered: " + number);
+                    \n\t\t\t\t} <font color="#00A300">else</font> {
+                        \n\t\t\t\t\tSystem.out.println("Invalid number!");
+                    \n\t\t\t\t}
+                \n\t\t\t} <font color="#267F99">while</font> (number != 0);
+
+                \n\t\t\tSystem.out.println("<font color="#00A300">Loop exited. Goodbye!</font>");
+                \n\t\t\tscanner.close();
+            \n\t\t}
+        \n\t}
+
+        <font color="#267F99">\n\nOutput:</font>
+        <font color="#00A300">\nEnter a positive number (0 to exit):</font> 5
+        <font color="#267F99">\nYou entered:</font> 5
+        <font color="#00A300">\nEnter a positive number (0 to exit):</font> -2
+        <font color="#267F99">\nInvalid number!</font>
+        <font color="#00A300">\nEnter a positive number (0 to exit):</font> 10
+        <font color="#267F99">\nYou entered:</font> 10
+        <font color="#00A300">\nEnter a positive number (0 to exit):</font> 0
+        <font color="#267F99">\nLoop exited. Goodbye!</font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="for_each_loop_example"><![CDATA[
+    <pre><code><font color="#267F99">for</font> (<font color="#0000FF">elementDataType</font> element : <font color="#FF5733">collection</font>) {
+            <font color="#A9A2A2">\n\t// code to be executed in each iteration</font>
+        \n}
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="for_each_array_example">
+    <![CDATA[
+    <pre><code><font color="#0000FF">int</font>[] numbers = {<font color="#000000">1</font>, <font color="#000000">2</font>, <font color="#000000">3</font>, <font color="#000000">4</font>, <font color="#000000">5</font>};
+        <font color="#267F99">\nfor</font> (<font color="#0000FF">int</font> number : numbers) {
+            \n\tSystem.out.println(number);
+        \n}
+
+        <font color="#267F99">\n\nOutput:</font>
+        <font color="#000000">\n1</font>
+        <font color="#000000">\n2</font>
+        <font color="#000000">\n3</font>
+        <font color="#000000">\n4</font>
+        <font color="#000000">\n5</font>
+    </code></pre>
+    ]]>
+</string>
+
 </resources>

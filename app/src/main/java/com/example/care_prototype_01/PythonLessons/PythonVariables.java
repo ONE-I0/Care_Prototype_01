@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.PythonVariablesFragment_1;
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.PythonVariablesFragment_2;
+import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.PythonVariablesFragment_3;
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.PythonLessons.PythonVariablesFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -49,6 +50,7 @@ public class PythonVariables extends AppCompatActivity {
 
         fragmentArrayList.add(new PythonVariablesFragment_1());
         fragmentArrayList.add(new PythonVariablesFragment_2());
+        fragmentArrayList.add(new PythonVariablesFragment_3());
 
         pagerAdapter = new ViewPagerAdapter(this,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

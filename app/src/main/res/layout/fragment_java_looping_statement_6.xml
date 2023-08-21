@@ -21,11 +21,11 @@
                 android:id="@+id/P.Intro.ImageView1"
                 android:layout_width="54dp"
                 android:layout_height="74dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="24dp"
                 android:contentDescription="@string/codey_image"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
-                app:srcCompat="@drawable/codey_python" />
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                app:srcCompat="@drawable/codey_java_cut" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -40,10 +40,10 @@
                 app:layout_constraintTop_toTopOf="@+id/P.Intro.ImageView1" />
 
             <Button
-                android:id="@+id/P_Intro_btnQ1"
+                android:id="@+id/P_loop_btnQ1"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="What is the purpose of the input() function in Python?"
+                android:text="Can I create an infinite loop using a &quot;while&quot; loop in Java? How do I break out of it?"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
@@ -55,37 +55,37 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_Intro_btnQ2"
+                android:id="@+id/P_loop_btnQ2"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
-                android:text="How do you use the input() function to get user input?"
+                android:text="[add here]"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="@+id/P_Intro_btnQ1"
+                app:layout_constraintEnd_toEndOf="@+id/P_loop_btnQ1"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ1"
-                app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ1"
+                app:layout_constraintStart_toStartOf="@+id/P_loop_btnQ1"
+                app:layout_constraintTop_toBottomOf="@+id/P_loop_btnQ1"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
             <Button
-                android:id="@+id/P_Intro_btnQ3"
+                android:id="@+id/P_loop_btnQ3"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="68dp"
-                android:text="Can the input() function take an optional prompt message?"
+                android:text="[add here]"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:theme="@style/lionelButton"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/P_Intro_btnQ2"
+                app:layout_constraintEnd_toEndOf="@+id/P_loop_btnQ2"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/P_Intro_btnQ2"
-                app:layout_constraintTop_toBottomOf="@+id/P_Intro_btnQ2"
+                app:layout_constraintStart_toStartOf="@+id/P_loop_btnQ2"
+                app:layout_constraintTop_toBottomOf="@+id/P_loop_btnQ2"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="TextSizeCheck,TextContrastCheck" />
 
@@ -122,6 +122,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:constraint_referenced_ids="guideline_vertical1,guideline_vertical2,guideline_horizontal1,guideline_horizontal2" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Java programming offers control flow structures that facilitate iterative operations which can be essential for efficiently executing tedious or repetitive tasks, as well as looping through collections of data. Looping is not only a key feature of Java, but allows developers to make use of the language's full capabilities. However, the structure of the loop must be carefully chosen to ensure the right amount of repetition and termination conditions are set. To achieve a higher degree of perplexity and burstiness, the structure of the loop should be defined by more than one condition."
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
