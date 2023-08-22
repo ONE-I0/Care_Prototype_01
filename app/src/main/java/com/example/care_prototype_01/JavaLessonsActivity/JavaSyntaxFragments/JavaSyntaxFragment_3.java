@@ -59,7 +59,7 @@ public class JavaSyntaxFragment_3 extends Fragment {
     }
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Output");
         alertDialogBuilder.setMessage("Hello World");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

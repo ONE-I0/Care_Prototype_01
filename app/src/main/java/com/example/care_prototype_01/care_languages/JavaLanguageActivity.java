@@ -94,5 +94,15 @@ public class JavaLanguageActivity extends AppCompatActivity {
             startActivity(OpenJavaOop);
         });
     }
+    @Override
+    public void onBackPressed() {
+        // Create an intent to start the MainActivity
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
+        // Set custom animations for entering and exiting activities
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        // Finish the current activity (JavaLanguageActivity)
+        finish();
+    }
 }

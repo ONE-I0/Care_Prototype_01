@@ -19,7 +19,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text1"
-            app:srcCompat="@drawable/codey_c_cut" />
+            app:srcCompat="@drawable/codey_java_cut" />
 
         <TextView
             android:id="@+id/textView"
@@ -35,11 +35,12 @@
             app:layout_constraintVertical_bias="0.04"
             tools:ignore="TextSizeCheck" />
 
+
         <TextView
             android:id="@+id/P_Variables_Text1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
+            android:gravity="center"
             android:text="Input"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -48,7 +49,6 @@
             app:layout_constraintHorizontal_bias="0.017"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
-
 
         <TextView
             android:id="@+id/P_Syntax_Text6"

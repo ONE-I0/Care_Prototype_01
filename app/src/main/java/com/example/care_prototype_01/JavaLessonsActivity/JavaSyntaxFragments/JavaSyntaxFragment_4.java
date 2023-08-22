@@ -60,7 +60,7 @@ public class JavaSyntaxFragment_4 extends Fragment {
     }
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Always Remember!");
         alertDialogBuilder.setMessage("The curly braces {} marks the beginning and the end of a block of code.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -75,7 +75,7 @@ public class JavaSyntaxFragment_4 extends Fragment {
     }
     private void btnP_Intro_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What will happen if I declare two variables with same spelling but different values?");
         alertDialogBuilder.setMessage("The program will give an error to the output because it cannot determine which of the two is being called out to the execution of the code.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -90,7 +90,7 @@ public class JavaSyntaxFragment_4 extends Fragment {
     }
     private void btnP_Intro_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Can I make a program without using an identifier?");
         alertDialogBuilder.setMessage("The answer is No. Even at the start of making a program, the first thing that you will see in the code is the main method. Removing it will cause an error to the whole code.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

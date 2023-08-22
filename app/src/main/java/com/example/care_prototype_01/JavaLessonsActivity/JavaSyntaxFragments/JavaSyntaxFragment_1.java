@@ -36,7 +36,7 @@ public class JavaSyntaxFragment_1 extends Fragment {
     }
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Identifiers in Java are case-sensitive? It is because Java identifies any lowercase and uppercase letters as distinct characters. This means that even though there are two identical words written in the code, the program treats it as two separate identifiers in Java!");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

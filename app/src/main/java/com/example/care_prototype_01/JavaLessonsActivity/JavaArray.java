@@ -1,143 +1,67 @@
 package com.example.care_prototype_01.JavaLessonsActivity;
 
-import android.media.MediaPlayer;
+import android.content.Intent;
+
 import android.os.Bundle;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
+
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
+
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_1;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_2;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_3;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_4;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_5;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_6;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.ViewPagerAdapter;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
+
+
+import java.util.ArrayList;
 
 
 public class JavaArray extends AppCompatActivity {
-    Button btn_DYK_1,btn_DYK_2,btn_question1, btn_question2, btn_question3;;
-    private MediaPlayer question_sounds;
+    private ViewPager2 viewPager;
+    private LinearLayout pager_dots;
+    private FragmentStateAdapter pagerAdapter;
+    private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_array);
 
-        // Apply desired text size to the HTML content
-        int textSizeInSp = 50; // Adjust the text size as needed
 
-        //jagged array
-        WebView codeWebViewJagged = findViewById(R.id.java_jagged_text);
-        String formattedCodeJagged = getString(R.string.jagged_array_code);
-        //Exception array
-        WebView codeWebViewArrayException = findViewById(R.id.java_array_exception_text);
-        String formattedCodeArrayException = getString(R.string.java_array_exception_code);
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
+        //this is the back button
+        Button btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent OpenCArrays = new Intent(this, JavaLanguageActivity.class);
+            startActivity(OpenCArrays);
+        });
 
+        viewPager = findViewById(R.id.viewpager);
+        pager_dots = findViewById(R.id.pager_dots);
 
-        String htmlContentJagged = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", textSizeInSp, formattedCodeJagged, formattedCodeArrayException);
-        String htmlContentException = String.format("<html><body style=\"font-size: %dpx;\">%s</body></html>", textSizeInSp, formattedCodeArrayException);
+        fragmentArrayList.add(new JavaArraysFragment_1());
+        fragmentArrayList.add(new JavaArraysFragment_2());
+        fragmentArrayList.add(new JavaArraysFragment_3());
+        fragmentArrayList.add(new JavaArraysFragment_4());
+        fragmentArrayList.add(new JavaArraysFragment_5());
+        fragmentArrayList.add(new JavaArraysFragment_6());
 
-        // Load the HTML content into the WebView
-        codeWebViewJagged.loadDataWithBaseURL(null, htmlContentJagged, "text/html", "UTF-8", null);
-        codeWebViewArrayException.loadDataWithBaseURL(null, htmlContentException, "text/html", "UTF-8", null);
-
-        // Set the background color of the WebView
-        codeWebViewJagged.setBackgroundColor(0xd3d3d3); // Black color
-        codeWebViewArrayException.setBackgroundColor(0xd3d3d3); // Black color
-
-        // Set rounded corners to the WebView button
-        codeWebViewJagged.setBackgroundResource(R.drawable.callout_background);
-        codeWebViewArrayException.setBackgroundResource(R.drawable.callout_background);
-
-        // Enable horizontal scrolling for the WebView
-        WebSettings webSettings = codeWebViewJagged.getSettings();
-        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-        webSettings.setLoadWithOverviewMode(true);
-        webSettings.setUseWideViewPort(true);
-
-        //websettings for array execption
-        WebSettings webSettingsExecption = codeWebViewArrayException.getSettings();
-        webSettingsExecption.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-        webSettingsExecption.setLoadWithOverviewMode(true);
-        webSettingsExecption.setUseWideViewPort(true);
-
-
-
-
-
-
-        //declare for the sounds
-        question_sounds = MediaPlayer.create(JavaArray.this, R.raw.question);
-
-        //this will open the did you know in syntax
-        btn_DYK_1 = findViewById(R.id.btndyk1);
-        btn_DYK_1.setOnClickListener(view ->
-                openDYK1()
-        );
-        //this will open the three questions
-        btn_question1 = findViewById(R.id.btnquestion1);
-        btn_question1.setOnClickListener(view ->
-                openQuestion1()
-        );
-
-        btn_question2 = findViewById(R.id.btnquestion2);
-        btn_question2.setOnClickListener(view ->
-                openQuestion2()
-        );
-
-        btn_question3 = findViewById(R.id.btnquestion3);
-        btn_question3.setOnClickListener(view ->
-                openQuestion3()
-        );
+        pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
+        viewPager.setAdapter(pagerAdapter);
+        ViewPagerUtil.getInstance().setupIndicator(this, viewPager, pager_dots, fragmentArrayList.size());
     }
-    private void openDYK1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaArray.this);
-        builder.setTitle("Did you know?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("Did you know that arrays in Java is index-based? Meaning, the first element of the array is stored at the 0th index, 2nd element is stored at 1st index, and so on.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void openQuestion1() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaArray.this);
-        builder.setTitle("What is the class name of Java array?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("In Java, an array is an object. It is creating a proxy class whose name can be obtained by using getClass().getName() method in the object.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-
-    private void openQuestion2() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaArray.this);
-        builder.setTitle("Can we copy a Java Array?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The answer is Yes. Copying a Java array to another by using arraycopy() method of System class.\n" +
-                        "Syntax:\n" +
-                        "public static void arraycopy(  \n" +
-                        "Object src, int srcPos,Object dest, int destPos, int length  \n" +
-                        "):")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-
-    }
-
-    private void openQuestion3() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(JavaArray.this);
-        builder.setTitle("Can we clone an Array in Java?")
-                .setIcon(R.drawable.codey_java_dyk)
-                .setMessage("The answer is Yes. Since Java array implements cloneable interface, we can create the clone of the Java array.")
-                .setPositiveButton("Okay", (dialogInterface, i) -> {
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        question_sounds.start();
-
-    }
-
 }

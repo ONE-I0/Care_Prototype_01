@@ -1702,6 +1702,7 @@ if (condition) {\n
 ]]>
 </string>
 
+
     <string name="c_switch_break_example_code">
 <![CDATA[
 <pre>Example:
@@ -1734,6 +1735,38 @@ if (condition) {\n
 ]]>
 </string>
 
+    <string name="j_switch_break_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> day = 4;
+<font color="#0000FF">\nswitch</font> (day) {
+  <font color="#0000FF">\n\tcase</font> 1:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Monday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 2:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Tuesday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 3:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Wednesday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 4:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Thursday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 5:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Friday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 6:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Saturday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 7:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Sunday");
+    <font color="#0000FF">\n\t\tbreak;</font>
+\n}\nOutput:
+<font color="#800000">\nThursday</font>
+</pre>
+]]>
+</string>
+
     <string name="c_default_example_code">
 <![CDATA[
 <pre>Example:
@@ -1747,6 +1780,26 @@ if (condition) {\n
     <font color="#0000FF">\n\t\tbreak;</font>
   <font color="#0000FF">\n\tdefault:</font>
     <font color="#800000">\n\t\tConsole.WriteLine</font>("Welcome to Hello World");
+    <font color="#0000FF">\n\t\tbreak;</font>
+\n}\nOutput:
+<font color="#800000">\nWelcome to Hello World</font>
+</pre>
+]]>
+</string>
+
+    <string name="j_default_example_code">
+<![CDATA[
+<pre>Example:
+<font color="#008000">\nint</font> world = 4;
+<font color="#0000FF">\nswitch</font> (world) {
+  <font color="#0000FF">\n\tcase</font> 6:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Hello World");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tcase</font> 7:
+    <font color="#800000">\n\t\tSystem.out.println</font>("Hi! World");
+    <font color="#0000FF">\n\t\tbreak;</font>
+  <font color="#0000FF">\n\tdefault:</font>
+    <font color="#800000">\n\t\tSystem.out.println</font>("Welcome to Hello World");
     <font color="#0000FF">\n\t\tbreak;</font>
 \n}\nOutput:
 <font color="#800000">\nWelcome to Hello World</font>
@@ -2471,18 +2524,16 @@ if (condition) {\n
     <string name="ope10"><b>D. *=:</b> Multiply and assign operator.</string>
     <string name="ope11"><b>E. /=:</b> Divide and assign operator.</string>
 
-    <string name="j_operators_description"><![CDATA[\n• Less than:  &lt;
+    <string name="j_operators_description">• Less than:  &lt;
     \n• Less than or equal to:  &lt;=
     \n• Greater than: a &gt; b
     \n• Greater than or equal to: &gt;=
     \n• Equal to:  ==
     \n• Not Equal to:  !=
-    ]]>
 </string>
-    <string name="j_operators_description1"><![CDATA[\n• logical AND: &amp;&amp;
+    <string name="j_operators_description1">• logical AND: &amp;&amp;
     \n• logical OR: ||
     \n• logical NOT: !
-    ]]>
 </string>
 
     <string name="j_loop_description">• The <b>for loop</b> is commonly used when you know the number of iterations in advance.
@@ -2616,5 +2667,134 @@ if (condition) {\n
     </code></pre>
     ]]>
 </string>
+    <string name="control_flow_description">• Use <b>if</b> to specify a block of code to be executed, if a specified condition is true.
+    \n• Use <b>else</b> to specify a block of code to be executed, if the same condition is false.
+    \n• Use <b>else if</b> to specify a new condition to test, if the first condition is false.
+    \n• Use <b>Nested if statements</b> to specify multiple conditions and control the flow of your program.
+    \n• Use  <b>switch</b> to specify many alternative blocks of code to be executed
+
+</string>
+
+
+    <string name="if_statement_example">
+    <![CDATA[
+    <pre><code><font color="#267F99">if</font> (<font color="#FF5733">condition</font>) {
+            <font color="#A9A2A2">\n\t// block of code to be executed if the condition is true</font>
+        \n}
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="if_statement_example1"><![CDATA[
+    <pre><code><font color="#267F99">if</font> (<font color="#0000FF">20</font> > <font color="#0000FF">18</font>) {
+            \n\tSystem.out.println("20 is greater than 18");
+        \n}
+
+        <font color="#267F99">\n\nOutput:</font>
+        <font color="#000000">\n20 is greater than 18</font>
+
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="if_statement_example2"><![CDATA[
+    <pre><code><font color="#0000FF">int</font> x = <font color="#0000FF">20</font>;
+        \n<font color="#0000FF">int</font> y = <font color="#0000FF">18</font>;
+        \n<font color="#267F99">if</font> (x > y) {
+            \n\tSystem.out.println("x is greater than y");
+        \n}
+
+        <font color="#267F99">\n\nOutput:</font>
+        <font color="#000000">\nx is greater than y</font>
+    </code></pre>
+    ]]>
+</string>
+
+
+    <string name="if_else_statement_example"><![CDATA[<pre><code><font color="#267F99">if</font> (<font color="#FF5733">condition</font>) {
+            \n\t<font color="#A9A2A2">// block of code to be executed if the condition is true</font>
+        \n} <font color="#267F99">else</font> {
+            \n\t<font color="#A9A2A2">// block of code to be executed if the condition is false</font>
+        \n}
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="if_else_statement_example1"><![CDATA[<pre><code><font color="#0000FF">int</font> x = <font color="#0000FF">5</font>;
+        \n<font color="#267F99">if</font> (x > <font color="#000000">0</font>) {
+            \n\tSystem.out.println("x is positive");
+        \n} <font color="#267F99">else</font> {
+            \n\tSystem.out.println("x is not positive");
+        \n}
+
+        \n\n<font color="#267F99">Output:</font>
+        \nx is positive
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="if_else_if_else_statement_example"><![CDATA[<pre><code><font color="#267F99">if</font> (<font color="#FF5733">condition1</font>) {
+            \n\t<font color="#A9A2A2">// block of code to be executed if condition1 is true</font>
+        \n} <font color="#267F99">else if</font> (<font color="#FF5733">condition2</font>) {
+            \n\t<font color="#A9A2A2">// block of code to be executed if condition1 is false and condition2 is true</font>
+        \n} <font color="#267F99">else</font> {
+            \n\t<font color="#A9A2A2">// block of code to be executed if condition1 is false and condition2 is false</font>
+        \n}
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="if_else_if_else_statement_example1"><![CDATA[<pre><code><font color="#0000FF">int</font> x = <font color="#0000FF">5</font>;
+        \n<font color="#267F99">if</font> (x > <font color="#000000">0</font>) {
+            \n\tSystem.out.println("x is positive");
+        \n} <font color="#267F99">else if</font> (x < <font color="#000000">0</font>) {
+            \n\tSystem.out.println("x is negative");
+        \n} <font color="#267F99">else</font> {
+            \n\tSystem.out.println("x is zero");
+        \n}
+
+        <font color="#267F99">\n\nOutput:</font>
+        \nx is positive
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="nested_if_else_example"><![CDATA[<pre><code><font color="#267F99">if</font> (<font color="#FF5733">condition1</font>) {
+            \n\t<font color="#A9A2A2">// code to execute if condition1 is true</font>
+
+            \n\t<font color="#267F99">if</font> (<font color="#FF5733">condition2</font>) {
+                \n\t\t<font color="#A9A2A2">// code to execute if both condition1 and condition2 are true</font>
+            \n\t} <font color="#267F99">else</font> {
+                \n\t\t<font color="#A9A2A2">// code to execute if condition1 is true but condition2 is false</font>
+            \n\t}
+        \n} <font color="#267F99">else</font> {
+            \n\t<font color="#A9A2A2">// code to execute if condition1 is false</font>
+        \n}
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="nested_if_else_example1"><![CDATA[<pre><code><font color="#0000FF">int</font> age = <font color="#0000FF">20</font>;
+        \n<font color="#0000FF">boolean</font> hasLicense = <font color="#0000FF">true</font>;
+
+        \n<font color="#267F99">if</font> (age >= <font color="#000000">18</font>) {
+            \n\tSystem.out.println("You are eligible to apply for a driving license.");
+
+            \n\t<font color="#267F99">if</font> (hasLicense) {
+                \n\t\tSystem.out.println("You already have a driving license.");
+            \n\t} <font color="#267F99">else</font> {
+                \n\t\tSystem.out.println("You don't have a driving license yet.");
+            \n\t}
+        \n} <font color="#267F99">else</font> {
+            \n\tSystem.out.println("You are not eligible to apply for a driving license.");
+        \n}
+
+        <font color="#267F99">\n\nOutput:</font>
+        \nYou are eligible to apply for a driving license.
+        \nYou already have a driving license.
+    </code></pre>
+    ]]>
+</string>
+
 
 </resources>

@@ -1,582 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true">
+    android:layout_height="match_parent"
+    tools:context=".CSharpLessons.CSharpLoopingStatements">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".JavaLessonsActivity.JavaConditionalStatements">
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/light_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="CONDITIONAL STATEMENTS"
+        app:titleMarginStart="50dp"
+        app:titleTextColor="@color/white" />
 
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/back_button"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Control Statements"
-            android:textAllCaps="true"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.006"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pager_dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0" >
 
+    </androidx.viewpager2.widget.ViewPager2>
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="36dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:srcCompat="@drawable/codey_java" />
+    <LinearLayout
+        android:id="@+id/pager_dots"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="Hello, It's me Codey again! I'd be happy to help you understand control statements in programming. Let's explore how conditions and if statements work in Java."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.47"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="In Java, Conditional statements provide code's flow control through evaluation of certain conditions and execution of specific blocks of code depending on its results. This type of statement helps to create flexible and dynamic programs that are capable of adaptation to different scenarios. By making use of perplexity and burstiness, the program can truly reach its full potential - by having some sentences be longer than the average, while others are shorter. In this way, the same program can be adapted to diverse and varied environments."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Conditions"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Conditions are expressions that are evaluated as either true or false. They vary in complexity, ranging from simple comparison between variables to more intricate logical expressions. Common operators used in conditions include:"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.002"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:srcCompat="@drawable/codey_java" />
-
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="You already know that Java supports the usual logical conditions from mathematics:"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView14"
-            app:layout_constraintTop_toTopOf="@+id/imageView14"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="15dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_end="15dp" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/operators"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView14"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="You can use these conditions to perform different actions for different decisions."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView30"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Java has the following conditional statements:"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold|italic"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView35"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/followingcondition"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView36"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView46"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="IF Statement"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView33" />
-
-        <TextView
-            android:id="@+id/textView45"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Use the if statement to specify a block of Java code to be executed if a condition is true."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView46"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <Button
-            android:id="@+id/btndyk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:theme="@style/lionelButton"
-            android:text="@string/dyk"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView16"
-            app:layout_constraintTop_toTopOf="@+id/imageView16"
-            app:layout_constraintVertical_bias="0.615"
-            app:strokeColor="#AAAAAA"
-            app:strokeWidth="0.1dp" />
-
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView45"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <TextView
-            android:id="@+id/textView48"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/if_simple"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView16"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView49"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/ifexample1"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView17"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="ELSE Statement"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Use the else statement to specify a block of code to be executed if the condition is false."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView50"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/elseExample"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView51"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView54"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/lionel"
-            android:text="ELSE IF Statement"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView53" />
-
-        <TextView
-            android:id="@+id/textView55"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Use the else statement to specify a block of code to be executed if the condition is false."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView54"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView56"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/elseif"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView55"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-	        android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="ELSE IF Statement"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView53" />
-
-        <TextView
-	        android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Use the else statement to specify a block of code to be executed if the condition is false."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView54"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="NESTED IF Statement"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView56" />
-
-        <TextView
-            android:id="@+id/textView44"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="You can have if statements inside if statements, this is called a nested if."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView43"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView57"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/callout_background"
-            android:text="@string/nestedif"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView44"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-            android:id="@+id/textView58"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/callout_background"
-            android:text="Programming hinges on conditions and if statements, which form the basis of decision-making and control the dynamic nature of programs. These powerful statements enable developers to craft code that can respond to a myriad of different scenarios, propelling it into a realm of bespoke flexibility. They aid programmers in describing the rules that will define what a program does next, through a foundation of intelligibility."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView57"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <TextView
-	        android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/callout_background"
-            android:text="I'm so happy im able to provide you some examples about conditional statements."
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView19"
-            app:layout_constraintTop_toTopOf="@+id/imageView19"
-            tools:ignore="TextSizeCheck,VisualLintLongText" />
-
-        <ImageView
-            android:id="@+id/imageView19"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.002"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView58"
-            app:srcCompat="@drawable/codey_java" />
-
-        <Button
-            android:id="@+id/btndyk2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:theme="@style/lionelButton"
-            android:shadowColor="#575757"
-            android:text="@string/dyk"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView17"
-            app:layout_constraintTop_toTopOf="@+id/imageView17"
-            app:layout_constraintVertical_bias="0.384"
-            app:strokeColor="#AAAAAA"
-            app:strokeWidth="0.1dp" />
-
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/textView48"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="54dp"
-            android:layout_height="74dp"
-            android:layout_marginBottom="8dp"
-            android:contentDescription="@string/codey_image"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView19"
-            app:layout_constraintVertical_bias="0.046"
-            app:srcCompat="@drawable/codey_java_dyk" />
-
-        <TextView
-	        android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/questions_you_might_asked"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toTopOf="@+id/imageView13"
-            app:layout_constraintVertical_bias="0.4" />
-
-        <Button
-            android:id="@+id/btnquestion1"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:theme="@style/lionelButton"
-            android:text="What happens if a condition in the &quot;else if&quot; statement is true?"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
-
-        <Button
-            android:id="@+id/btnquestion2"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:theme="@style/lionelButton"
-            android:text="What is the difference between &quot;==&quot; and &quot;.equals()&quot; when comparing objects in Java's conditional statements?"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnquestion1"
-            tools:ignore="TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btnquestion3"
-            android:layout_width="271dp"
-            android:layout_height="wrap_content"
-            android:theme="@style/lionelButton"
-            android:text="How can I verify many conditions with a &quot;if&quot; statement in Java?"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toBottomOf="@+id/btnquestion2" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.care_prototype_01.JavaLessonsActivity.JavaLoopingStatement;
+package com.example.care_prototype_01.JavaLessonsActivity.JavaConditionalStatementFragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -15,15 +15,14 @@ import android.widget.Button;
 import com.example.care_prototype_01.R;
 
 
-public class JavaLoopingStatementFragment_6 extends Fragment {
-
+public class JavaConditionalStatementFragment_7 extends Fragment {
 
     private MediaPlayer question_sounds;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_java_looping_statement_6, container, false);
+        View view = inflater.inflate(R.layout.fragment_java_conditional_statement_7, container, false);
 
         //declare for the sounds
         question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
@@ -54,8 +53,9 @@ public class JavaLoopingStatementFragment_6 extends Fragment {
     }
     private void btnP_loop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
-        alertDialogBuilder.setTitle("Loop control variables (like i in a typical for loop) are used to track the progress of the loop and control its execution.");
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
+        alertDialogBuilder.setTitle("What happens if a condition in the \"else if\" statement is true?");
+        alertDialogBuilder.setMessage("If a condition in the \"else if\" statement is true, the corresponding code block associated with that condition will be executed. Once a condition is true, the remaining conditions in the \"else if\" statement are not checked.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -68,9 +68,10 @@ public class JavaLoopingStatementFragment_6 extends Fragment {
     }
     private void btnP_loop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
-        alertDialogBuilder.setTitle("What are the main types of looping statements in Java?");
-        alertDialogBuilder.setMessage("The main looping statements in Java are: for, while, and do-while loops.");
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
+        alertDialogBuilder.setTitle("What is the difference between \"==\" and \".equals()\" when comparing objects in Java's conditional statements?");
+        alertDialogBuilder.setMessage("The \"==\" operator determines if two objects' memory instances are identically identical.\n" +
+                "The .equals() method determines whether two objects are equal by comparing their values or properties.\n");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -83,9 +84,9 @@ public class JavaLoopingStatementFragment_6 extends Fragment {
     }
     private void btnP_loop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
-        alertDialogBuilder.setTitle("How do you exit or terminate a loop prematurely?");
-        alertDialogBuilder.setMessage("You can use the break statement to exit a loop prematurely. When the break statement is encountered inside a loop, the loop is immediately terminated.");
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
+        alertDialogBuilder.setTitle("How can I verify many conditions with a\"if\" statement in java?");
+        alertDialogBuilder.setMessage("You can do so by using logical operators like \"&&\" (AND) and \"||\" (OR). While the \"||\" operator determines whether each condition is true, the \"&&\" operator determines whether both criteria are true.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
