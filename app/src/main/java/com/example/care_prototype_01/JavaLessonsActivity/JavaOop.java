@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.care_prototype_01.JavaLessonsActivity.JavaOopFragments.JavaOopFragment_1;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaOopFragments.JavaOopFragment_2;
@@ -38,7 +39,7 @@ public class JavaOop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_oop);
 
-
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
         //this is the back button
         Button btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {

@@ -20,6 +20,9 @@ import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.Java
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_4;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_5;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_6;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_7;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_8;
+import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.JavaArraysFragment_9;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -59,6 +62,9 @@ public class JavaArray extends AppCompatActivity {
         fragmentArrayList.add(new JavaArraysFragment_4());
         fragmentArrayList.add(new JavaArraysFragment_5());
         fragmentArrayList.add(new JavaArraysFragment_6());
+        fragmentArrayList.add(new JavaArraysFragment_7());
+        fragmentArrayList.add(new JavaArraysFragment_8());
+        fragmentArrayList.add(new JavaArraysFragment_9());
 
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

@@ -413,7 +413,8 @@ if (condition) {\n
     <string name="singleArrayJava">It is also known as one-dimensional array, these are the simplest form of arrays that anyone can easily understand. It consists of a linear sequence of elements, all of the same type, and arranged in a single row. Commonly used to store and manipulate collection of values or objects, Single Dimensional Array is done using a single index. The declaration syntax is as follows:\n
         <b>dataType[] arrayName;</b></string>
     <string name="multiArrayJava">Multidimensional arrays are arrays inside of arrays, where elements can be an array itself. It is frequently used to represent multidimensional tabular or matrix-like data structures. Rows and columns in a 2D array and rows, columns, and layers in a 3D array are examples of this. To access elements, positions must be specified in multiple indices in each dimension. The declaration syntax is as follows:\n<b>dataType[][] arrayName;</b></string>
-    <string name="twotypesofarray"><b>2 types of Array in Java:</b>\n • Single Dimensional Array \n • Multidimensional Array</string>
+    <string name="twotypesofarray">• Single Dimensional Array
+        \n• Multidimensional Array</string>
     <string name="Arraydifference">// Single-dimensional array\nint[] numbers = { 1, 2, 3, 4, 5 };\n\n
     // Accessing a single-dimensional array element\nint value = numbers[2];  // Retrieves the value 3\n\n
     // Multidimensional array (2D)\nint[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 } };\n\n
@@ -2727,7 +2728,8 @@ if (condition) {\n
             \n\tSystem.out.println("x is not positive");
         \n}
 
-        \n\n<font color="#267F99">Output:</font>
+        \n\n<font color="#
+        ">Output:</font>
         \nx is positive
     </code></pre>
     ]]>
@@ -2796,5 +2798,301 @@ if (condition) {\n
     ]]>
 </string>
 
+    <string name="array_description">• <b>Fixed Size:</b> When an array is created, the allocation of size is fixed and cannot be changed, so before declaring, specify the size that needs to be created.
+    \n• <b>Indexed Elements:</b> All elements that are declared in an array have a unique index starting from 0, which indicates their position within the array. They can be accessed through their index.
+    \n• <b>Contiguous Memory Allocation:</b> All elements of the array are stored in contiguous memory locations, allowing for more efficient access when referencing element values.
+</string>
 
+    <string name="string_array_declaration">
+    <![CDATA[
+    <pre><code><font color="#0000FF">String</font>[] variable;
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="string_array_initialization">
+    <![CDATA[
+    <pre><code><font color="#0000FF">String</font>[] variable = {&quot;Object&quot;, &quot;Values&quot;, &quot;List&quot;, &quot;Variables&quot;, &quot;Characters&quot;};
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="integer_array_initialization">
+    <![CDATA[
+    <pre><code><font color="#0000FF">int</font>[] varNum = {1, 2, 3, 4, 5};
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="integer_array_declaration">
+    <![CDATA[
+    <pre><code>numbers = <font color="#0000FF">new</font> int[5];
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="integer_array_initialization1">
+    <![CDATA[
+    <pre><code><font color="#0000FF">int</font>[] numbers = <font color="#0000FF">new</font> int[] { 1, 2, 3, 4, 5 };
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="string_array_and_output"><![CDATA[<pre><code><font color="#0000FF">String</font>[] variable = {<font color="#000000">&quot;Object&quot;</font>, <font color="#000000">&quot;Values&quot;</font>, <font color="#000000">&quot;List&quot;</font>, <font color="#000000">&quot;Variables&quot;</font>, <font color="#000000">&quot;Characters&quot;</font>};
+        \n<font color="#267F99">System.out.println</font>(variable[<font color="#000000">0</font>]);
+
+        \n\n<font color="#267F99">Output:</font>
+        \n<font color="#000000">Object</font>
+    </code></pre>
+    ]]>
+</string>
+    <string name="string_array_update">
+    <![CDATA[
+    <pre><code>variable[<font color="#000000">0</font>] = <font color="#000000">&quot;subject&quot;</font>;
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="string_array_example_and_output">
+    <![CDATA[
+    <pre><code><font color="#0000FF">String</font>[] variable = {<font color="#000000">&quot;Object&quot;</font>, <font color="#000000">&quot;Values&quot;</font>, <font color="#000000">&quot;List&quot;</font>, <font color="#000000">&quot;Variables&quot;</font>, <font color="#000000">&quot;Characters&quot;</font>};
+        \nvariable[<font color="#000000">0</font>] = <font color="#FF0000">&quot;Subject&quot;</font>;
+        \n<font color="#267F99">System.out.println</font>(variable[<font color="#000000">0</font>]);
+
+        \n\n<font color="#267F99">Output:</font>
+        \n<font color="#000000">Subject</font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="integer_array_example">
+    <![CDATA[
+    <pre><code>
+        <font color="#0000FF">int</font>[] numbers = { <font color="#000000">1</font>, <font color="#000000">2</font>, <font color="#000000">3</font>, <font color="#000000">4</font>, <font color="#000000">5</font> };
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="integer_array_access">
+    <![CDATA[
+    <pre><code>
+        <font color="#0000FF">int</font> value = numbers[<font color="#FF5733">2</font>];  <font color="#A9A2A2">// Retrieves the value <font color="#267F99">3</font></font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="two_dimensional_array_example">
+    <![CDATA[
+    <pre><code>
+        <font color="#0000FF">int</font>[][] matrix = {
+            { <font color="#000000">1</font>, <font color="#000000">2</font>, <font color="#000000">3</font> },
+            { <font color="#000000">4</font>, <font color="#000000">5</font>, <font color="#000000">6</font> }
+        };
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="two_dimensional_array_access">
+    <![CDATA[
+    <pre><code>
+        <font color="#0000FF">int</font> element = matrix[<font color="#FF5733">1</font>][<font color="#FF5733">2</font>];  <font color="#A9A2A2">// Retrieves the value <font color="#267F99">6</font></font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="java_program_output">
+    <![CDATA[
+    <pre><code>
+        <font color="#008000">// Java Program to print the array elements using for-each loop</font>
+        <font color="#0000FF">\nclass</font> Testarray1 {
+            <font color="#0000FF">\n\tpublic static void main</font>(<font color="#0000FF">String</font> args[]) {
+                <font color="#0000FF">\n\t\tint</font> arr[] = { <font color="#000000">33</font>, <font color="#000000">3</font>, <font color="#000000">4</font>, <font color="#000000">5</font> };
+
+                <font color="#008000">\n\t\t// printing array using for-each loop</font>
+                <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> i : arr) {
+                    <font color="#267F99">\n\t\t\tSystem.out.println</font>(i);
+                \n\t\t}
+                \n\t}
+            \n}
+
+
+        <font color="#267F99">\n\nOutput:</font>
+        <font color="#000000">\n33</font>
+        <font color="#000000">\n3</font>
+        <font color="#000000">\n4</font>
+        <font color="#000000">\n5</font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="java_program_output1">
+    <![CDATA[
+    <pre><code><font color="#008000">// Java Program to demonstrate the way of passing an array</font>
+<font color="#0000FF">\nclass</font> Testarray2 {
+    <font color="#008000">\n\t// creating a method which receives an array as a parameter</font>
+    <font color="#0000FF">\n\tstatic void</font> min(int arr[]) {
+        <font color="#0000FF">\n\t\tint</font> min = arr[<font color="#000000">0</font>];
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> i = <font color="#000000">1</font>; i < <font color="#0000FF">arr.length</font>; i++)
+            <font color="#267F99">\n\t\t\tif</font> (min > arr[i])
+                \n\t\t\t\tmin = arr[i];
+
+        <font color="#267F99">\n\t\tSystem.out.println</font>(min);
+    \n\t}
+
+    <font color="#0000FF">\npublic static void</font> main(<font color="#0000FF">String</font> args[]) {
+        <font color="#0000FF">\n\tint</font> a[] = { <font color="#000000">33</font>, <font color="#000000">3</font>, <font color="#000000">4</font>, <font color="#000000">5</font> }; <font color="#008000">// declaring and initializing an array</font>
+        <font color="#267F99">\n\tmin</font>(a); <font color="#008000">// passing array to method</font>
+    \n\t}
+\n}
+
+<font color="#267F99">\n\nOutput:</font>
+<font color="#000000">\n3</font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="java_program_output2">
+    <![CDATA[
+    <pre><code>
+<font color="#008000">// Java Program to demonstrate the way of passing an anonymous array</font>
+<font color="#0000FF">\npublic class</font> TestAnonymousArray {
+    <font color="#008000">\n\t// creating a method which receives an array as a parameter</font>
+    <font color="#0000FF">\n\tstatic void</font> printArray(int arr[]) {
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> i = <font color="#000000">0</font>; i < <font color="#0000FF">arr.length</font>; i++)
+            <font color="#267F99">\n\t\t\tSystem.out.println</font>(arr[i]);
+    \n\t\t}
+    \n\t}
+
+    <font color="#0000FF">\n\tpublic static void</font> main(<font color="#0000FF">String</font> args[]) {
+        <font color="#267F99">\n\t\tprintArray</font>(<font color="#008000">new int[]{10,22,44,66}</font>); <font color="#008000">// passing anonymous array to method</font>
+    \n\t}
+\n}
+
+<font color="#267F99">\n\nOutput:</font>
+<font color="#000000">\n10</font>
+<font color="#000000">\n22</font>
+<font color="#000000">\n44</font>
+<font color="#000000">\n66</font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="java_program_output3">
+    <![CDATA[
+    <pre><code>
+<font color="#008000">// Java Program to demonstrate the way of passing an anonymous array</font>
+<font color="#0000FF">\npublic class</font> TestAnonymousArray {
+    <font color="#008000">\n\t// creating a method which receives an array as a parameter</font>
+    <font color="#0000FF">\n\tstatic void</font> printArray(int arr[]) {
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> i = <font color="#000000">0</font>; i < <font color="#0000FF">arr.length</font>; i++)
+            <font color="#267F99">System.out.println</font>(arr[i]);
+    }
+
+    <font color="#0000FF">public static void</font> main(<font color="#0000FF">String</font> args[]) {
+        <font color="#267F99">printArray</font>(<font color="#0000FF">new int</font>[] { <font color="#000000">10</font>, <font color="#000000">22</font>, <font color="#000000">44</font>, <font color="#000000">66</font> }); <font color="#008000">// passing anonymous array to method</font>
+    }
+}
+
+<font color="#267F99">Output:</font>
+<font color="#000000">10</font>
+<font color="#000000">22</font>
+<font color="#000000">44</font>
+<font color="#000000">66</font>
+    </code></pre>
+    ]]>
+</string>
+
+    <string name="java_program_output4">
+    <![CDATA[
+    <pre><code>
+<font color="#008000">// Java Program to return an array from the method</font>
+<font color="#0000FF">\nclass</font> TestReturnArray {
+    <font color="#008000">\n\t// creating method which returns an array</font>
+    <font color="#0000FF">\n\tstatic int</font>[] get() {
+        <font color="#267F99">\n\t\treturn new int</font>[] { <font color="#000000">10</font>, <font color="#000000">30</font>, <font color="#000000">50</font>, <font color="#000000">90</font>, <font color="#000000">60</font> };
+    \n\t}
+
+    <font color="#0000FF">\n\n\tpublic static void</font> main(<font color="#0000FF">String</font> args[]) {
+        <font color="#008000">\n\t\t// calling method which returns an array</font>
+        <font color="#0000FF">\n\t\tint</font>[] arr = <font color="#267F99">get</font>();
+        <font color="#008000">\n\t\t// printing the values of an array</font>
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> i = <font color="#000000">0</font>; i < <font color="#0000FF">arr.length</font>; i++)
+            <font color="#267F99">\n\t\t\tSystem.out.println</font>(arr[i]);
+    \n\t}
+\n}
+
+<font color="#267F99">\n\nOutput:</font>
+<font color="#000000">\n10</font>
+<font color="#000000">\n30</font>
+<font color="#000000">\n50</font>
+<font color="#000000">\n90</font>
+<font color="#000000">\n60</font>
+    </code></pre>
+    ]]>
+</string>
+
+
+    <string name="java_program_output5">
+    <![CDATA[
+    <pre><code>
+<font color="#008000">// Java Program to demonstrate the case of</font>
+<font color="#267F99">\n// ArrayIndexOutOfBoundsException in a Java Array.</font>
+<font color="#0000FF">\npublic class</font> TestArrayException {
+    <font color="#0000FF">\n\tpublic static void</font> main(<font color="#0000FF">String</font> args[]) {
+        <font color="#0000FF">\n\t\tint</font> arr[] = { <font color="#000000">50</font>, <font color="#000000">60</font>, <font color="#000000">70</font>, <font color="#000000">80</font> };
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> i = <font color="#000000">0</font>; i <= <font color="#0000FF">arr.length</font>; i++) {
+            <font color="#267F99">\n\t\t\tSystem.out.println</font>(arr[i]);
+        \n\t\t}
+    \n\t}
+\n}
+
+<font color="#267F99">\n\nOutput:</font>
+<font color="#000000">\n50</font>
+<font color="#000000">\n60</font>
+<font color="#000000">\n70</font>
+<font color="#000000">\n80</font>
+<font color="#000000">\nException in thread "main"</font>
+<font color="#000000">\njava.lang.ArrayIndexOutOfBoundsException: 4</font>
+<font color="#000000">\nat TestArrayException.main(TestArrayException.java:</font> <font color="#000000">5)</font>
+    </code></pre>
+    ]]>
+</string>
+
+
+    <string name="java_program_output6">
+    <![CDATA[
+    <pre><code>
+<font color="#008000">// <span style="color: #008000;">Java Program to illustrate the jagged array</span></font>
+<font color="#0000FF">\nclass</font> <font color="#800080">TestJaggedArray</font> {
+    <font color="#0000FF">\n\tpublic static void</font> <font color="#800080">main</font>(<font color="#0000FF">String</font>[] <font color="#800080">args</font>) {
+        <font color="#008000">\n\t\t// declaring a 2D array with odd columns</font>
+        <font color="#0000FF">\n\t\tint</font> <font color="#800080">arr</font>[][] = <font color="#000000">new int</font>[<font color="#000000">3</font>][];
+
+        <font color="#800080">\n\t\tarr</font>[<font color="#000000">0</font>] = <font color="#000000">new int</font>[<font color="#000000">3</font>];
+        <font color="#800080">\n\t\tarr</font>[<font color="#000000">1</font>] = <font color="#000000">new int</font>[<font color="#000000">4</font>];
+        <font color="#800080">\n\t\tarr</font>[<font color="#000000">2</font>] = <font color="#000000">new int</font>[<font color="#000000">2</font>];
+
+        <font color="#008000">\n\t\t// initializing a jagged array</font>
+        <font color="#0000FF">\n\t\tint</font> <font color="#800080">count</font> = <font color="#000000">0</font>;
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> <font color="#800080">i</font> = <font color="#000000">0</font>; <font color="#800080">i</font> < <font color="#0000FF">arr.length</font>; <font color="#800080">i</font>++)
+            <font color="#267F99">\n\t\t\tfor</font> (<font color="#0000FF">int</font> <font color="#800080">j</font> = <font color="#000000">0</font>; <font color="#800080">j</font> < <font color="#0000FF">arr[i].length</font>; <font color="#800080">j</font>++)
+                <font color="#800080">\n\t\t\t\tarr</font>[<font color="#800080">i</font>][<font color="#800080">j</font>] = <font color="#800080">count</font>++;
+
+        <font color="#008000">\n\t\t// printing the data of a jagged array</font>
+        <font color="#267F99">\n\t\tfor</font> (<font color="#0000FF">int</font> <font color="#800080">i</font> = <font color="#000000">0</font>; <font color="#800080">i</font> < <font color="#0000FF">arr.length</font>; <font color="#800080">i</font>++) {
+            <font color="#267F99">\n\t\t\tfor</font> (<font color="#0000FF">int</font> <font color="#800080">j</font> = <font color="#000000">0</font>; <font color="#800080">j</font> < <font color="#0000FF">arr[i].length</font>; <font color="#800080">j</font>++) {
+                <font color="#267F99">\n\t\t\t\tSystem.out.print</font>(<font color="#800080">arr</font>[<font color="#800080">i</font>][<font color="#800080">j</font>] + " ");
+            \n\t\t\t}
+            <font color="#267F99">\n\t\t\tSystem.out.println</font>(); <font color="#008000">// new line</font>
+        \n\t\t}
+    \n\t}
+\n}
+
+<font color="#267F99">\n\nOutput:</font>
+<font color="#000000">\n0 1 2</font>
+<font color="#000000">\n3 4 5 6</font>
+<font color="#000000">\n7 8</font>
+    </code></pre>
+    ]]>
+</string>
 </resources>
