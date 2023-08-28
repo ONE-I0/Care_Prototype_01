@@ -1,10 +1,13 @@
 package com.example.care_prototype_01.care_languages;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.care_prototype_01.CSharpLessons.CSharpArrays;
 import com.example.care_prototype_01.CSharpLessons.CSharpComments;
@@ -37,6 +40,20 @@ public class CSharpLanguageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_csharp_language);
+
+
+        Toolbar toolbar = findViewById(R.id.custom_toolbar);
+        setSupportActionBar(toolbar);
+
+
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
         Button btnCIntroduction =findViewById(R.id.btnIntroduction);
         Button btnCComments =findViewById(R.id.btnComments);

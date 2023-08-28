@@ -12,89 +12,83 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="137dp"
-        android:layout_height="135dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/circlebg"
-        android:contentDescription="@string/codey_image"
-        android:src="@drawable/codey_main_cut"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="239dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/circlebg"
+            android:contentDescription="@string/codey_image"
+            android:src="@drawable/codeee"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/btnC" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView21"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView5"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-
-            android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/to_continue_kindly_choose_your_desired_programming_language_that_you_want_to_learn_and_let_s_get_started"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            tools:ignore="TextSizeCheck" />
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/btnJava"
+            android:layout_width="305dp"
+            android:layout_height="88dp"
+
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/btn1"
+            android:contentDescription="@string/java_button"
+            android:cropToPadding="false"
+            android:elevation="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+
+            android:paddingEnd="100dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+            app:srcCompat="@drawable/jav_icon" />
 
         <ImageButton
             android:id="@+id/btnPython"
-            android:layout_width="275dp"
-            android:layout_height="96dp"
+            android:layout_width="305dp"
+            android:layout_height="88dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/ww"
+            android:background="@drawable/btn3"
             android:contentDescription="@string/python_button"
             android:elevation="10dp"
             android:paddingTop="10dp"
             android:paddingEnd="100dp"
-            android:scaleType="fitEnd"
+            android:paddingLeft="20dp"
+            android:scaleType="fitStart"
             app:layout_constraintEnd_toEndOf="@+id/btnJava"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/btnJava"
             app:layout_constraintTop_toBottomOf="@+id/btnJava"
             app:srcCompat="@drawable/python_icon" />
 
-
-    <ImageButton
-
-
-        android:id="@+id/btnJava"
-        android:layout_width="272dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="false"
-        android:background="@drawable/ww"
-        android:contentDescription="@string/java_button"
-        android:cropToPadding="false"
-        android:elevation="10dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="100dp"
-        android:paddingBottom="15dp"
-        android:scaleType="fitEnd"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/jav_icon" />
-
         <ImageButton
             android:id="@+id/btnC"
-            android:layout_width="275dp"
-            android:layout_height="96dp"
+            android:layout_width="305dp"
+            android:layout_height="88dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/ww"
+            android:background="@drawable/btn2"
             android:contentDescription="@string/c_button"
             android:elevation="10dp"
-            android:scaleType="fitCenter"
+            android:paddingLeft="10dp"
+            android:scaleType="fitStart"
             app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
             app:layout_constraintEnd_toEndOf="@+id/btnPython"
             app:layout_constraintHorizontal_bias="0.0"
@@ -104,32 +98,34 @@
             app:srcCompat="@drawable/csharp_icon" />
 
         <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_vertical1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="15dp" />
+            android:id="@+id/guideline_vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="15dp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_vertical2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="15dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="15dp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_horizontal1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="0dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="16dp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_horizontal2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="15dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="16dp" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

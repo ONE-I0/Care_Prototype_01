@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import care_fragments.AboutFragment;
 import care_fragments.HomeFragment;
 import care_fragments.quiz.QuizFragment;
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     final HomeFragment homeFragment = new HomeFragment();
     final QuizFragment quizFragment = new QuizFragment();
+    final AboutFragment aboutFragment = new AboutFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
             } else if (item.getItemId()==R.id.Quiz) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,quizFragment).commit();
+            } else if (item.getItemId()==R.id.About) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, aboutFragment).commit();
+            }else if (item.getItemId()==R.id.Exit) {
+                onBackPressed();
             }
             return true;
         });

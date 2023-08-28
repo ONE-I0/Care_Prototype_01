@@ -3,12 +3,23 @@
 
     <item
         android:id="@+id/Home"
-        android:title="Home"
-        android:icon="@drawable/home"
+        android:title="Courses"
+        android:icon="@drawable/courses"
         />
     <item
         android:id="@+id/Quiz"
         android:title="Quiz"
-        android:icon="@drawable/quiz"
+        android:icon="@drawable/settings_gears"
+        />
+    <item
+        android:id="@+id/About"
+        android:title="About"
+        android:icon="@drawable/user"
+        />
+    <item
+        android:id="@+id/Exit"
+        android:title="Exit"
+        android:icon="@drawable/exit"
+
         />
 </menu>
