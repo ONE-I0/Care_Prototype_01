@@ -21,7 +21,7 @@
 
     <style name="lionelButton" parent="android:Widget.Button">
         <item name="android:fontFamily">@font/font</item>
-        <item name="android:backgroundTint">@color/light_blue</item>
+        <item name="android:backgroundTint">@color/codey_button</item>
     </style>
 
 

@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
@@ -26,6 +28,7 @@ import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.Java
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.JavaLessonsActivity.JavaArrayFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
+import com.example.care_prototype_01.care_languages.CSharpLanguageActivity;
 import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
 
 
@@ -45,12 +48,16 @@ public class JavaArray extends AppCompatActivity {
         setContentView(R.layout.activity_java_array);
 
 
+        Toolbar toolbar = findViewById(R.id.custom_toolbar);
+        setSupportActionBar(toolbar);
+
         Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
         //this is the back button
-        Button btn_back = findViewById(R.id.btn_back);
+        ImageButton btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            Intent OpenCArrays = new Intent(this, JavaLanguageActivity.class);
-            startActivity(OpenCArrays);
+            Intent back = new Intent(this, JavaLanguageActivity.class);
+            startActivity(back);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         viewPager = findViewById(R.id.viewpager);
@@ -69,5 +76,11 @@ public class JavaArray extends AppCompatActivity {
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);
         ViewPagerUtil.getInstance().setupIndicator(this, viewPager, pager_dots, fragmentArrayList.size());
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish(); // Finish the current activity
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out); // Apply cross-fade animation
     }
 }

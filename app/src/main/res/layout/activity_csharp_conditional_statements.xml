@@ -4,35 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CSharpLessons.CSharpConditionalStatements">
+    tools:context=".CSharpLessons.CSharpArrays">
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/custom_actionbar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/light_blue"
-        android:backgroundTint="@color/light_blue"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="CONDITIONAL STATEMENTS"
-        app:titleMarginStart="50dp"
-        app:titleTextColor="@color/white" />
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:icon="@drawable/back_button"
-        app:iconSize="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/lesson_conditional"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"

@@ -16,6 +16,7 @@
     <color name="orange">#FFA500</color>
     <color name="purple">#800080</color>
     <color name="pink">#FFC0CB</color>
+    <color name="codey_button">#8B1F1F</color>
 
     <!-- Light Colors -->
     <color name="lightGray">#F5F5F5</color>

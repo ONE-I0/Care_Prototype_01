@@ -5,7 +5,7 @@
     android:id="@+id/custom_toolbar"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="#CC2A2A"
+    android:background="@drawable/tcolor"
     app:contentInsetStartWithNavigation="0dp">
 
     <RelativeLayout

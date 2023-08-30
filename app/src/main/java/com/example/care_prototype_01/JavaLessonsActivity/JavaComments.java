@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
@@ -33,12 +35,16 @@ public class JavaComments extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_comments);
 
+        Toolbar toolbar = findViewById(R.id.custom_toolbar);
+        setSupportActionBar(toolbar);
+
         Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
         //this is the back button
-        Button btn_back = findViewById(R.id.btn_back);
+        ImageButton btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            Intent OpenPythonIntroduction = new Intent(this, JavaLanguageActivity.class);
-            startActivity(OpenPythonIntroduction);
+            Intent back = new Intent(this, JavaLanguageActivity.class);
+            startActivity(back);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         viewPager = findViewById(R.id.viewpager);
@@ -52,5 +58,11 @@ public class JavaComments extends AppCompatActivity {
         pagerAdapter = new ViewPagerAdapter(this, fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);
         ViewPagerUtil.getInstance().setupIndicator(this, viewPager, pager_dots, fragmentArrayList.size());
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish(); // Finish the current activity
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out); // Apply cross-fade animation
     }
 }

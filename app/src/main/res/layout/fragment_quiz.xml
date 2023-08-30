@@ -92,6 +92,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="200dp"
             app:layout_constraintEnd_toEndOf="parent"
+
             app:layout_constraintTop_toBottomOf="@+id/button_start_quiz"
             app:srcCompat="@drawable/codey_main_cut" />
 

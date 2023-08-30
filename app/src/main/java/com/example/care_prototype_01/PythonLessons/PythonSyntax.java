@@ -1,6 +1,7 @@
 package com.example.care_prototype_01.PythonLessons;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,12 +40,16 @@ public class PythonSyntax extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python_syntax);
 
-        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
+        Toolbar toolbar = findViewById(R.id.custom_toolbar);
+        setSupportActionBar(toolbar);
 
+        Toast.makeText(getApplicationContext(), "Swipe right and left", Toast.LENGTH_SHORT).show();
         //this is the back button
-        Button btn_back =findViewById(R.id.btn_back);
+        ImageButton btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(view -> {
-            onBackPressed();
+            Intent back = new Intent(this, PythonLanguageActivity.class);
+            startActivity(back);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         //for view pager and dots
@@ -59,5 +65,10 @@ public class PythonSyntax extends AppCompatActivity {
         ViewPagerUtil.getInstance().onBackPressed(viewPager,getSupportFragmentManager());
 
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish(); // Finish the current activity
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out); // Apply cross-fade animation
+    }
 }
