@@ -173,59 +173,56 @@
                 app:layout_constraintTop_toBottomOf="@+id/text_view_score"
                 app:srcCompat="@drawable/codeee" />
 
-            <androidx.constraintlayout.widget.Group
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:constraint_referenced_ids="textView47,textView63,textView61,textView52" />
-
             <TextView
-                android:id="@+id/textView47"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="9dp"
-                android:text="B."
-                app:layout_constraintEnd_toEndOf="@+id/textView52"
-                app:layout_constraintEnd_toStartOf="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@+id/textView52"
-                app:layout_constraintTop_toBottomOf="@+id/textView52" />
-
-            <TextView
-                android:id="@+id/textView63"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_marginEnd="9dp"
-                android:text="D."
-                app:layout_constraintEnd_toEndOf="@+id/textView61"
-                app:layout_constraintEnd_toStartOf="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@+id/textView61"
-                app:layout_constraintTop_toBottomOf="@+id/textView61" />
-
-            <TextView
-                android:id="@+id/textView61"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="9dp"
-                android:text="C."
-                app:layout_constraintEnd_toEndOf="@+id/textView47"
-                app:layout_constraintEnd_toStartOf="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@+id/textView47"
-                app:layout_constraintTop_toBottomOf="@+id/textView47" />
-
-            <TextView
-                android:id="@+id/textView52"
+                android:id="@+id/option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="19dp"
                 android:text="A."
+                android:visibility="visible"
                 app:layout_constraintEnd_toStartOf="@+id/radio_group"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_question" />
+
+            <TextView
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="9dp"
+                android:text="B."
+                app:layout_constraintEnd_toEndOf="@+id/option1"
+                app:layout_constraintEnd_toStartOf="@+id/radio_group"
+                app:layout_constraintStart_toStartOf="@+id/option1"
+                app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+            <TextView
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="9dp"
+                android:text="C."
+                app:layout_constraintEnd_toEndOf="@+id/option2"
+                app:layout_constraintEnd_toStartOf="@+id/radio_group"
+                app:layout_constraintStart_toStartOf="@+id/option2"
+                app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+            <TextView
+                android:id="@+id/option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="9dp"
+                android:text="D."
+                app:layout_constraintEnd_toEndOf="@+id/option3"
+                app:layout_constraintEnd_toStartOf="@+id/radio_group"
+                app:layout_constraintStart_toStartOf="@+id/option3"
+                app:layout_constraintTop_toBottomOf="@+id/option3" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>

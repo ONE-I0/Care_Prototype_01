@@ -43,6 +43,10 @@ public class QuizActivity extends AppCompatActivity {
     private RadioButton rb2;
     private RadioButton rb3;
     private RadioButton rb4;
+
+    private TextView op3;
+    private TextView op4;
+
     private Button buttonConfirmNext;
 
     private ColorStateList textColorDefaultRb;
@@ -77,6 +81,9 @@ public class QuizActivity extends AppCompatActivity {
         rb2 = findViewById(R.id.radio_button2);
         rb3 = findViewById(R.id.radio_button3);
         rb4 = findViewById(R.id.radio_button4);
+
+        op3 = findViewById(R.id.option3);
+        op4 = findViewById(R.id.option4);
         buttonConfirmNext = findViewById(R.id.button_confirm_next);
 
         textColorDefaultRb = rb1.getTextColors();
@@ -132,6 +139,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void showNextQuestion() {
+
         rb1.setTextColor(textColorDefaultRb);
         rb2.setTextColor(textColorDefaultRb);
         rb3.setTextColor(textColorDefaultRb);
@@ -139,27 +147,39 @@ public class QuizActivity extends AppCompatActivity {
         rbGroup.clearCheck();
 
 
+        rb1.setEnabled(true);
+        rb2.setEnabled(true);
+        rb3.setEnabled(true);
+        rb4.setEnabled(true);
+
+
         if (questionCounter < questionCountTotal) {
             currentQuestion = questionList.get(questionCounter);
 
 
             if (currentQuestion.getOption3().equalsIgnoreCase("Free")) {
-                rb3.setEnabled(false);
+                rb3.setVisibility(View.GONE);
+                op3.setVisibility(View.GONE);
             } else {
-                rb3.setEnabled(true);
+                rb3.setVisibility(View.VISIBLE);
+                op3.setVisibility(View.VISIBLE);
             }
 
             // Check if option 4 is "Free" and disable radio button 4
             if (currentQuestion.getOption4().equalsIgnoreCase("Free")) {
-                rb4.setEnabled(false);
+                rb4.setVisibility(View.GONE);
+                op4.setVisibility(View.GONE);
             } else {
-                rb4.setEnabled(true);
+                rb4.setVisibility(View.VISIBLE);
+                op4.setVisibility(View.VISIBLE);
             }
 
             // If both option 3 and option 4 are "Free," disable both radio buttons
             if (currentQuestion.getOption3().equalsIgnoreCase("Free") && currentQuestion.getOption4().equalsIgnoreCase("Free")) {
-                rb3.setEnabled(false);
-                rb4.setEnabled(false);
+                rb3.setVisibility(View.GONE);
+                rb4.setVisibility(View.GONE);
+                op3.setVisibility(View.GONE);
+                op4.setVisibility(View.GONE);
             }
 
             textViewQuestion.setText(currentQuestion.getQuestion());
@@ -214,6 +234,11 @@ public class QuizActivity extends AppCompatActivity {
 
     private void checkAnswer() {
         answered = true;
+
+        rb1.setEnabled(false);
+        rb2.setEnabled(false);
+        rb3.setEnabled(false);
+        rb4.setEnabled(false);
 
         countDownTimer.cancel();
 

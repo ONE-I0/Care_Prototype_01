@@ -97,7 +97,7 @@ public class QuizFragment extends Fragment {
         builder.setTitle("Quiz Information");
 
         // Use HTML formatting for the message
-        String message = "In this quiz, you'll encounter multiple choices. If you select the easy mode, you'll be granted 2 free questions, while in the medium mode, you'll only receive 1 free question, and, naturally, the hard mode offers no free questions at all.<br><br><b>Easy:</b> Two Free<br><b>Medium:</b> One Free<br><b>Hard:</b> No free";
+        String message = "In this quiz, you'll encounter multiple choices. If you select the easy mode, you'll be granted 2 option true and false, while in the medium mode, you'll be granted 3 options and naturally, the hard mode offers 4 options.<br><br><b>Easy:</b> Two Options<br><b>Medium:</b> Three Options<br><b>Hard:</b>Four Options";
         builder.setMessage(Html.fromHtml(message));
 
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
