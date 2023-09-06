@@ -70,46 +70,57 @@ public class CSharpLanguageActivity extends AppCompatActivity {
         btnCIntroduction.setOnClickListener(view -> {
             Intent OpenCIntroduction = new Intent(CSharpLanguageActivity.this, CSharpIntroduction.class);
             startActivity(OpenCIntroduction);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCComments.setOnClickListener(view -> {
             Intent OpenCComments = new Intent(CSharpLanguageActivity.this, CSharpComments.class);
             startActivity(OpenCComments);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCSyntax.setOnClickListener(view -> {
             Intent OpenCSyntax = new Intent(CSharpLanguageActivity.this, CSharpSyntax.class);
             startActivity(OpenCSyntax);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCVariables.setOnClickListener(view -> {
             Intent OpenCVariables = new Intent(CSharpLanguageActivity.this, CSharpVariables.class);
             startActivity(OpenCVariables);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCInputs.setOnClickListener(view -> {
             Intent OpenCInputs = new Intent(CSharpLanguageActivity.this, CSharpInputs.class);
             startActivity(OpenCInputs);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCDataTypes.setOnClickListener(view -> {
             Intent OpenCDataTypes = new Intent(CSharpLanguageActivity.this, CSharpDataTypes.class);
             startActivity(OpenCDataTypes);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCOperators.setOnClickListener(view -> {
             Intent OpenCOperators = new Intent(CSharpLanguageActivity.this, CSharpOperator.class);
             startActivity(OpenCOperators);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCConditionalStatements.setOnClickListener(view -> {
             Intent OpenCConditionalStatements = new Intent(CSharpLanguageActivity.this, CSharpConditionalStatements.class);
             startActivity(OpenCConditionalStatements);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCLoopingStatements.setOnClickListener(view -> {
             Intent OpenCLoopingStatements = new Intent(CSharpLanguageActivity.this, CSharpLoopingStatements.class);
             startActivity(OpenCLoopingStatements);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCArrays.setOnClickListener(view -> {
             Intent OpenCArrays = new Intent(CSharpLanguageActivity.this, CSharpArrays.class);
             startActivity(OpenCArrays);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnCOop.setOnClickListener(view -> {
             Intent OpenCOop = new Intent(CSharpLanguageActivity.this, CSharpOop.class);
             startActivity(OpenCOop);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
     }
     @Override

@@ -59,55 +59,66 @@ public class JavaLanguageActivity extends AppCompatActivity {
         btnJavaIntroduction.setOnClickListener(view -> {
             Intent OpenJavaIntroduction = new Intent(JavaLanguageActivity.this, JavaIntroduction.class);
             startActivity(OpenJavaIntroduction);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaSyntax.setOnClickListener(view -> {
             Intent OpenJavaSyntax = new Intent(JavaLanguageActivity.this, JavaSyntax.class);
             startActivity(OpenJavaSyntax);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaComments.setOnClickListener(view -> {
             Intent OpenJavaComments = new Intent(JavaLanguageActivity.this, JavaComments.class);
             startActivity(OpenJavaComments);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaVariables.setOnClickListener(view -> {
             Intent OpenJavaVariables = new Intent(JavaLanguageActivity.this, JavaVariables.class);
             startActivity(OpenJavaVariables);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaInputs.setOnClickListener(view -> {
             Intent OpenJavaInputs = new Intent(JavaLanguageActivity.this, JavaInputs.class);
             startActivity(OpenJavaInputs);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaDataTypes.setOnClickListener(view -> {
             Intent OpenJavaDataTypes = new Intent(JavaLanguageActivity.this, JavaDataTypes.class);
             startActivity(OpenJavaDataTypes);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaOperators.setOnClickListener(view -> {
             Intent OpenJavaOperators = new Intent(JavaLanguageActivity.this, JavaOperators.class);
             startActivity(OpenJavaOperators);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaConditionalStatements.setOnClickListener(view -> {
             Intent OpenJavaConditionalStatements = new Intent(JavaLanguageActivity.this, JavaConditionalStatements.class);
             startActivity(OpenJavaConditionalStatements);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaLoopingStatements.setOnClickListener(view -> {
             Intent OpenJavaLoopingStatements = new Intent(JavaLanguageActivity.this, JavaLoopingStatements.class);
             startActivity(OpenJavaLoopingStatements);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
 
         btnJavaArrays.setOnClickListener(view -> {
             Intent OpenJavaArrays = new Intent(JavaLanguageActivity.this, JavaArray.class);
             startActivity(OpenJavaArrays);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnJavaOop.setOnClickListener(view -> {
             Intent OpenJavaOop = new Intent(JavaLanguageActivity.this, JavaOop.class);
             startActivity(OpenJavaOop);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
     }
     @Override

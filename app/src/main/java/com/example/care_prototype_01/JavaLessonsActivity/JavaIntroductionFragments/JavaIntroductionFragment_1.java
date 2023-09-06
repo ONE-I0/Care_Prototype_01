@@ -37,7 +37,7 @@ public class JavaIntroductionFragment_1 extends Fragment {
     }
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Java’s original name was “Oak”? However, the team developers of this programming language found out that the word was already used and trademarked so they had to come up with a new brand name. Since the team loves coffee, they eventually settled with “Java” that refers to coffee that comes from the Indonesian island of Java. Therefore, one of the most popular programming languages that is being used by today’s generation was named after a type of coffee!");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

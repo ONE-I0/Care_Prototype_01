@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             layout="@layout/custom_actionbar_layout"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/bottom_navigation_height"
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Include your custom languages toolbar layout -->
@@ -23,7 +23,7 @@
             android:id="@+id/toolbar1"
             layout="@layout/languages_tool_bar_c"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/bottom_navigation_height"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -240,23 +240,25 @@
                     android:id="@+id/btnConditionalStatements"
                     android:layout_width="130dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
                     android:backgroundTint="#8B1F1F"
                     android:fontFamily="@font/baloo"
                     android:padding="0dp"
                     android:shadowColor="#000000"
-                    android:text="@string/_8_conditional_statements"
+                    android:text="8.Conditional Statement"
                     android:textColor="#D7DBDD"
                     app:cornerRadius="100dp"
-                    app:layout_constraintStart_toStartOf="@+id/btnDataTypes"
-                    app:layout_constraintTop_toBottomOf="@+id/btnDataTypes"
+                    app:layout_constraintEnd_toEndOf="@+id/btnOperators"
+                    app:layout_constraintTop_toBottomOf="@+id/btnOperators"
                     app:strokeColor="#AAAAAA"
-                    app:strokeWidth="0.1dp"
-                    android:layout_marginTop="0dp"/>
+                    app:strokeWidth="0.1dp" />
 
                 <Button
                     android:id="@+id/btnLoopingStatements"
                     android:layout_width="130dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
                     android:backgroundTint="#8B1F1F"
                     android:fontFamily="@font/baloo"
                     android:padding="0dp"
@@ -264,12 +266,10 @@
                     android:text="@string/_9_looping_statements"
                     android:textColor="#D7DBDD"
                     app:cornerRadius="100dp"
-
                     app:layout_constraintEnd_toEndOf="@+id/btnOperators"
                     app:layout_constraintTop_toBottomOf="@+id/btnOperators"
                     app:strokeColor="#AAAAAA"
-                    app:strokeWidth="0.1dp"
-                    android:layout_marginTop="0dp"/>
+                    app:strokeWidth="0.1dp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"

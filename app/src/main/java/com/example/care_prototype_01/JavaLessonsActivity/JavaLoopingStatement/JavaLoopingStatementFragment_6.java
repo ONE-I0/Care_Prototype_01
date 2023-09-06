@@ -54,7 +54,7 @@ public class JavaLoopingStatementFragment_6 extends Fragment {
     }
     private void btnP_loop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Loop control variables (like i in a typical for loop) are used to track the progress of the loop and control its execution.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -68,7 +68,7 @@ public class JavaLoopingStatementFragment_6 extends Fragment {
     }
     private void btnP_loop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What are the main types of looping statements in Java?");
         alertDialogBuilder.setMessage("The main looping statements in Java are: for, while, and do-while loops.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -83,7 +83,7 @@ public class JavaLoopingStatementFragment_6 extends Fragment {
     }
     private void btnP_loop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("How do you exit or terminate a loop prematurely?");
         alertDialogBuilder.setMessage("You can use the break statement to exit a loop prematurely. When the break statement is encountered inside a loop, the loop is immediately terminated.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/custom_toolbar"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="@dimen/bottom_navigation_height"
     android:background="@drawable/tcolor"
     app:contentInsetStartWithNavigation="0dp">
 
@@ -16,18 +16,17 @@
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="-14dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/exit"
             android:minWidth="48dp"
             android:minHeight="48dp"
-            android:padding="4dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
             android:src="@drawable/back_button"
-            app:tint="#FFFFFF"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,VisualLintBounds" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,17 +34,19 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
             android:layout_toEndOf="@id/backButton"
-            android:text="Courses"
+            android:text="PYTHON"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="25sp"
+            tools:ignore="RelativeOverlap,TextContrastCheck" />
 
         <ImageView
             android:id="@+id/iconImage"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="16dp"
-            app:srcCompat="@drawable/python_icon" />
+            app:srcCompat="@drawable/python_icon"
+            android:contentDescription="@string/back_button" />
     </RelativeLayout>
 </androidx.appcompat.widget.Toolbar>

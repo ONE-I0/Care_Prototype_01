@@ -41,7 +41,7 @@ public class JavaDataTypesFragment_1 extends Fragment {
 
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("Data Types is an important concept and the ones that handle different kinds of data.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

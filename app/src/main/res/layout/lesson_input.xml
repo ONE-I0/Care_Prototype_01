@@ -1,15 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/custom_toolbar"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="@dimen/bottom_navigation_height"
     android:background="@drawable/tcolor"
-    android:layout_margin="0dp"
-    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    app:contentInsetStartWithNavigation="0dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -17,49 +16,37 @@
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-16dp"
+            android:layout_marginStart="-14dp"
+            android:layout_marginTop="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Exit"
+            android:contentDescription="@string/exit"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:src="@drawable/back_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <ImageView
-            android:id="@+id/bookIconLeft"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/book"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toEndOf="@id/btn_back"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,VisualLintBounds" />
 
         <TextView
-            android:id="@+id/lessonTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inputs"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/btn_back"
+            android:text="INPUTS"
             android:textColor="#FFFFFF"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/bookIconRight"
-            app:layout_constraintStart_toEndOf="@id/bookIconLeft"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="25sp"
+            tools:ignore="RelativeOverlap,TextContrastCheck" />
 
         <ImageView
-            android:id="@+id/bookIconRight"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginEnd="32dp"
-            android:src="@drawable/book"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+            android:id="@+id/iconImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/python_icon"
+            android:contentDescription="@string/back_button" />
+    </RelativeLayout>
 </androidx.appcompat.widget.Toolbar>

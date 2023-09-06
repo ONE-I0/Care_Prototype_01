@@ -33,7 +33,7 @@
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text2"
-            app:srcCompat="@drawable/codey_python_cut" />
+            app:srcCompat="@drawable/codey_java_cut" />
 
         <TextView
             android:id="@+id/P_Operators_Text9"

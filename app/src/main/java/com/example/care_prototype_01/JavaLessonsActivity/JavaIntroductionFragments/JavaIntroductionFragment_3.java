@@ -52,7 +52,7 @@ public class JavaIntroductionFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Is Java a programming or scripting language?");
         alertDialogBuilder.setMessage("Java has often been acknowledged primarily as a programming language rather than a scripting. The process of translating source code into bytecode occurs within this application and serves an essential function in permitting said codes execution by a compatible version of its virtual machine (JVM). Although optimizing runtime execution considerably, this method also ensures accessibility across any platform housing on JVM for seamless usability.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -67,7 +67,7 @@ public class JavaIntroductionFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What is the difference of Java compare to other programming languages?");
         alertDialogBuilder.setMessage("Compared to other programming languages, Java is fast, reliable and secure. From desktop to web applications, scientific supercomputers to gaming consoles, cell phones to the Internet, Java is used in every nook and corner.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -82,7 +82,7 @@ public class JavaIntroductionFragment_3 extends Fragment {
     }
     private void btnP_Intro_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What makes Java so unique?");
         alertDialogBuilder.setMessage("Because it is one of the main programming languages, Java has a vast and thriving developer community worldwide. The community contributes to the continuous growth and improvement of Java by sharing knowledge, developing frameworks, tools, and libraries, and providing support to fellow developers. The active community ensures that Java remains relevant and up-to-date with emerging trends and technologies. Thus, it is easy to learn Java and there are so many resources available that can be searched online.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

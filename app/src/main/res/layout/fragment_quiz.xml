@@ -105,10 +105,10 @@
             android:background="@drawable/txtbox2"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
-
             android:paddingRight="20dp"
             android:paddingBottom="0dp"
             android:text="Let's test what you have learned thoughout the lesson. Choose what programming language you wish to take a quiz and its difficulty."
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/imageView43"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

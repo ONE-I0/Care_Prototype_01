@@ -22,15 +22,15 @@
                 android:id="@+id/text_view_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:freezesText="true"
-                android:text="Score: 0"
                 android:fontFamily="@font/baloo"
+                android:freezesText="true"
+                android:text="@string/score_0"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="@+id/text_view_countdown"
                 app:layout_constraintHorizontal_bias="0.519"
                 app:layout_constraintStart_toStartOf="@+id/text_view_countdown"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
+                app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:id="@+id/text_view_difficulty"
@@ -41,11 +41,12 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/baloo"
                 android:freezesText="true"
-                android:text="Difficulty: "
+                android:text="@string/difficulty"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="@+id/text_view_category"
                 app:layout_constraintStart_toStartOf="@+id/text_view_category"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_category" />
+                app:layout_constraintTop_toBottomOf="@+id/text_view_category"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:id="@+id/text_view_question_count"
@@ -56,12 +57,13 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/baloo"
                 android:freezesText="true"
-                android:text="Question: 1/x"
+                android:text="@string/question_1_x"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="@+id/text_view_difficulty"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_difficulty" />
+                app:layout_constraintTop_toBottomOf="@+id/text_view_difficulty"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:id="@+id/text_view_category"
@@ -72,10 +74,11 @@
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/baloo"
                 android:freezesText="true"
-                android:text="Category: "
+                android:text="@string/category"
                 android:textColor="@android:color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:id="@+id/text_view_countdown"
@@ -86,11 +89,12 @@
                 android:layout_marginEnd="4dp"
                 android:fontFamily="@font/baloo"
                 android:freezesText="true"
-                android:text="00:30"
+                android:text="@string/_00_30"
                 android:textColor="@android:color/black"
                 android:textSize="40sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:id="@+id/text_view_question"
@@ -99,7 +103,7 @@
                 android:layout_above="@id/radio_group"
                 android:layout_below="@+id/imageView41"
                 android:freezesText="true"
-                android:text="QUESTIONS HERE\nQUESTIONS HERE\nQUESTIONS HERE"
+                android:text="@string/questions_here_nquestions_here_nquestions_here"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -120,28 +124,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:freezesText="true"
-                    android:text="Option 1" />
+                    android:text="@string/option_1"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <RadioButton
                     android:id="@+id/radio_button2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:freezesText="true"
-                    android:text="Option 2" />
+                    android:text="@string/option_2"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <RadioButton
                     android:id="@+id/radio_button3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:freezesText="true"
-                    android:text="Option 3" />
+                    android:text="@string/option_3"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <RadioButton
                     android:id="@+id/radio_button4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:freezesText="true"
-                    android:text="Option 4" />
+                    android:text="@string/option_4"
+                    tools:ignore="VisualLintButtonSize" />
 
             </RadioGroup>
 
@@ -153,13 +161,14 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
                 android:freezesText="true"
-                android:text="Confirm"
+                android:text="@string/confirm"
                 android:backgroundTint="#8B1F1F"
                 android:theme="@style/lionelButton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+                app:layout_constraintTop_toBottomOf="@+id/radio_group"
+                tools:ignore="VisualLintButtonSize" />
 
             <ImageView
                 android:id="@+id/imageView41"
@@ -171,57 +180,59 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_score"
-                app:srcCompat="@drawable/codeee" />
+                app:srcCompat="@drawable/codeee"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
 
-            <TextView
-                android:id="@+id/option1"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="19dp"
-                android:text="A."
-                android:visibility="visible"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/radio_group"
                 app:layout_constraintEnd_toStartOf="@+id/radio_group"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_question" />
+                app:layout_constraintTop_toBottomOf="@+id/text_view_question"
+                app:layout_constraintVertical_bias="0.0">
 
-            <TextView
-                android:id="@+id/option2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="9dp"
-                android:text="B."
-                app:layout_constraintEnd_toEndOf="@+id/option1"
-                app:layout_constraintEnd_toStartOf="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@+id/option1"
-                app:layout_constraintTop_toBottomOf="@+id/option1" />
+                <TextView
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="19dp"
+                    android:text="@string/a"
+                    tools:ignore="TextSizeCheck" />
 
-            <TextView
-                android:id="@+id/option3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="9dp"
-                android:text="C."
-                app:layout_constraintEnd_toEndOf="@+id/option2"
-                app:layout_constraintEnd_toStartOf="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@+id/option2"
-                app:layout_constraintTop_toBottomOf="@+id/option2" />
+                <TextView
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="19dp"
+                    android:text="@string/b"
+                    tools:ignore="TextSizeCheck" />
 
-            <TextView
-                android:id="@+id/option4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_marginEnd="9dp"
-                android:text="D."
-                app:layout_constraintEnd_toEndOf="@+id/option3"
-                app:layout_constraintEnd_toStartOf="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@+id/option3"
-                app:layout_constraintTop_toBottomOf="@+id/option3" />
+                <TextView
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="19dp"
+                    android:text="@string/cc"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="19dp"
+                    android:text="@string/d"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

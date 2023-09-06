@@ -63,7 +63,7 @@ public class JavaOopFragment_1 extends Fragment {
 
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Did you know!");
         alertDialogBuilder.setMessage("did you know that Object-oriented programming has several advantages over procedural programming: \n" +
                 "• OOP is faster and easier to execute.\n" +
@@ -82,7 +82,7 @@ public class JavaOopFragment_1 extends Fragment {
 
     private void showNOTE1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Take Note!");
         alertDialogBuilder.setMessage("Take note OOP makes it possible to create full reusable applications with less code and shorter development time.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -98,7 +98,7 @@ public class JavaOopFragment_1 extends Fragment {
 
     private void showTIP1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Tip!");
         alertDialogBuilder.setMessage("The \"Don't Repeat Yourself\" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -114,7 +114,7 @@ public class JavaOopFragment_1 extends Fragment {
 
     private void showNote2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Take Note!");
         alertDialogBuilder.setMessage("Take note: To create a class, use the keyword class.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

@@ -1,7 +1,6 @@
 package care_fragments;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.care_prototype_01.MainActivity;
+
 import com.example.care_prototype_01.R;
 import com.example.care_prototype_01.care_languages.CSharpLanguageActivity;
 import com.example.care_prototype_01.care_languages.JavaLanguageActivity;
@@ -27,37 +26,24 @@ public class HomeFragment extends Fragment {
 
 
         ImageButton btnJava = view.findViewById(R.id.btnJava);
-        MainActivity mainActivity1 = (MainActivity) getActivity();
-
         ImageButton btnPython = view.findViewById(R.id.btnPython);
-        MainActivity mainActivity2 = (MainActivity) getActivity();
-
         ImageButton btnC = view.findViewById(R.id.btnC);
-        MainActivity mainActivity3 = (MainActivity) getActivity();
-        btnC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent OpenPythonLessons = new Intent(getActivity(), CSharpLanguageActivity.class);
-                startActivity(OpenPythonLessons);
-            }
-        });
-        btnPython.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent OpenPythonLessons = new Intent(getActivity(), PythonLanguageActivity.class);
-                startActivity(OpenPythonLessons);
-            }
-        });
-        btnJava.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Intent OpenJavaLessons = new Intent(getActivity(), JavaLanguageActivity.class);
-                startActivity(OpenJavaLessons);
-            }
+        btnC.setOnClickListener(view1 -> {
+            Intent OpenCLessons = new Intent(getActivity(), CSharpLanguageActivity.class);
+            startActivity(OpenCLessons);
+            getActivity().overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        });
+        btnPython.setOnClickListener(view12 -> {
+            Intent OpenPythonLessons = new Intent(getActivity(), PythonLanguageActivity.class);
+            startActivity(OpenPythonLessons);
+            getActivity().overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        });
+        btnJava.setOnClickListener(view13 -> {
+            Intent OpenJavaLessons = new Intent(getActivity(), JavaLanguageActivity.class);
+            startActivity(OpenJavaLessons);
+            getActivity().overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         return view;
     }
-
-
 }

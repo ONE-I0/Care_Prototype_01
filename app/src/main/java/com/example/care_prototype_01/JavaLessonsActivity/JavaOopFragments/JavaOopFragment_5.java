@@ -79,7 +79,7 @@ public class JavaOopFragment_5 extends Fragment {
 
     private void btnP_Oop_Q1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Why are classes and objects fundamental in Java?");
         alertDialogBuilder.setMessage("Classes and objects are fundamental in Java as they form the basis of OOP. Classes define the attributes and behaviors that objects of that class will have. Objects are instances of classes and represent real-world entities, allowing manipulation of data and execution of methods.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -94,7 +94,7 @@ public class JavaOopFragment_5 extends Fragment {
     }
     private void btnP_Oop_Q2() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("How does Java support the concept of \"has-a\" relationship in OOP?");
         alertDialogBuilder.setMessage("In Java, the \"has-a\" relationship can be represented using composition or aggregation. Composition involves creating an instance of one class within another class, indicating a strong ownership relationship where the child object cannot exist without the parent object. Aggregation represents a looser relationship where an object can exist independently but is associated with another object.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -109,7 +109,7 @@ public class JavaOopFragment_5 extends Fragment {
     }
     private void btnP_Oop_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Can multiple inheritance be achieved in Java?");
         alertDialogBuilder.setMessage("No, Java does not support multiple inheritance of classes. However, it supports multiple inheritance of interfaces. This means that a class can implement multiple interfaces, allowing it to define and provide the implementation for multiple sets of behaviors.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

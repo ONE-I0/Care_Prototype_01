@@ -105,7 +105,7 @@ public class JavaSyntaxFragment_4 extends Fragment {
     }
     private void btnP_Intro_Q3() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("What is the difference of identifier to keyword?");
         alertDialogBuilder.setMessage("Keywords are reserved words that have a special meaning in the programming language. Therefore, using a keyword as an identifier is prohibited because it has a distinct meaning that can be interpreted by the compiler.");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

@@ -64,46 +64,57 @@ public class PythonLanguageActivity extends AppCompatActivity {
         btnPythonIntroduction.setOnClickListener(view -> {
             Intent OpenPythonIntroduction = new Intent(PythonLanguageActivity.this, PythonIntroduction.class);
             startActivity(OpenPythonIntroduction);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonComments.setOnClickListener(view -> {
             Intent OpenPythonComments = new Intent(PythonLanguageActivity.this, PythonComments.class);
             startActivity(OpenPythonComments);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonSyntax.setOnClickListener(view -> {
             Intent OpenPythonSyntax = new Intent(PythonLanguageActivity.this, PythonSyntax.class);
             startActivity(OpenPythonSyntax);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonVariables.setOnClickListener(view -> {
             Intent OpenPythonVariables = new Intent(PythonLanguageActivity.this, PythonVariables.class);
             startActivity(OpenPythonVariables);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonInputs.setOnClickListener(view -> {
             Intent OpenPythonInputs = new Intent(PythonLanguageActivity.this, PythonInputs.class);
             startActivity(OpenPythonInputs);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonDataTypes.setOnClickListener(view -> {
             Intent OpenPythonDataTypes = new Intent(PythonLanguageActivity.this, PythonDataTypes.class);
             startActivity(OpenPythonDataTypes);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonOperators.setOnClickListener(view -> {
             Intent OpenPythonOperators = new Intent(PythonLanguageActivity.this, PythonOperators.class);
             startActivity(OpenPythonOperators);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonConditionalStatements.setOnClickListener(view -> {
             Intent OpenPythonConditionalStatements = new Intent(PythonLanguageActivity.this, PythonConditionalStatement.class);
             startActivity(OpenPythonConditionalStatements);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonLoopingStatements.setOnClickListener(view -> {
             Intent OpenPythonLoopingStatements = new Intent(PythonLanguageActivity.this, PythonLoopingStatements.class);
             startActivity(OpenPythonLoopingStatements);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonArrays.setOnClickListener(view -> {
             Intent OpenPythonArrays = new Intent(PythonLanguageActivity.this, PythonArrays.class);
             startActivity(OpenPythonArrays);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
         btnPythonOop.setOnClickListener(view -> {
             Intent OpenPythonOop = new Intent(PythonLanguageActivity.this, PythonOOP.class);
             startActivity(OpenPythonOop);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         });
     }
     @Override

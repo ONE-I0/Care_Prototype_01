@@ -73,7 +73,7 @@ public class JavaConditionalStatementFragment_6 extends Fragment {
     //-----------------------DID YOU KNOW AND QUESTIONS BUTTONS-------------------------//
     private void showDYK1() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Note!");
         alertDialogBuilder.setMessage("A break \"ignores\" the execution of the entire rest of the switch block's code, which can save a significant amount of time during execution.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
@@ -85,7 +85,7 @@ public class JavaConditionalStatementFragment_6 extends Fragment {
     }
     private void showNote() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_c_cut);
+        alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Take note!");
         alertDialogBuilder.setMessage("It is important to note that the default statement does not require a break if it is used as the final statement in a switch block.");
         alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> {
