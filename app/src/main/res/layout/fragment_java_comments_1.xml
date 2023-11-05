@@ -37,9 +37,10 @@
 
         <TextView
             android:id="@+id/P_Operators_Text1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/comments"
             android:textColor="#000000"
             android:textSize="20sp"

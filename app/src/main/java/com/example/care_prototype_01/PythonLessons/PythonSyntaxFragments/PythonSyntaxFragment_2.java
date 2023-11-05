@@ -17,7 +17,7 @@ import android.widget.Button;
 import com.example.care_prototype_01.R;
 
 public class PythonSyntaxFragment_2 extends Fragment {
-    private static final int TEXT_SIZE_IN_DP = 25;
+    private static final int TEXT_SIZE_IN_DP = 20;
     private MediaPlayer question_sounds;
 
     @Override
@@ -45,32 +45,6 @@ public class PythonSyntaxFragment_2 extends Fragment {
         configureWebView(codeWebView_P_Syntax_3, htmlContentP_Syntax_3);
 
 
-
-        //declare for the sounds
-        question_sounds = MediaPlayer.create(requireActivity(), R.raw.question);
-
-        //button for the questions
-        Button btnP_Syntax_Q1 = view.findViewById(R.id.P_Syntax_btnQ1);
-        Button btnP_Syntax_Q2 = view.findViewById(R.id.P_Syntax_btnQ2);
-        Button btnP_Syntax_Q3 = view.findViewById(R.id.P_Syntax_btnQ3);
-        btnP_Syntax_Q1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                P_Syntax_btnQ1();
-            }
-        });
-        btnP_Syntax_Q2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                P_Syntax_btnQ2();
-            }
-        });
-        btnP_Syntax_Q3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                P_Syntax_btnQ3();
-            }
-        });
         return view;
     }
 
@@ -89,49 +63,5 @@ public class PythonSyntaxFragment_2 extends Fragment {
         return Math.round(PythonSyntaxFragment_2.TEXT_SIZE_IN_DP * density);
     }
 
-    private void P_Syntax_btnQ1() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("How do Python recognize the code and execute it?");
-        alertDialogBuilder.setMessage("Python uses indentations to recognize where does a specific line of code will be executed. Without using it, the compiler may be confused and interpret a wrong line of code.");
-        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // You can add some action here when the user clicks "OK"
-            }
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void P_Syntax_btnQ2() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("What will happen if you use a single line of quote in multiple lines?");
-        alertDialogBuilder.setMessage("It will generate an error as the quotation only applies to a single word only.");
-        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // You can add some action here when the user clicks "OK"
-            }
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
-    private void P_Syntax_btnQ3() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
-        alertDialogBuilder.setIcon(R.drawable.codey_python_cut);
-        alertDialogBuilder.setTitle("When does an invalid identifier usually occur?");
-        alertDialogBuilder.setMessage("There are three ways to identify a wrong identifier: it starts with a digit word; a reserved keyword used for functions; or usually when a word contains a hyphen.");
-        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // You can add some action here when the user clicks "OK"
-            }
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-        question_sounds.start();
-    }
+
 }

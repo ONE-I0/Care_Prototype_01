@@ -50,7 +50,7 @@
             <WebView
                 android:id="@+id/java_code_syn1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -82,7 +82,7 @@
             <WebView
                 android:id="@+id/java_code_syn2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -114,7 +114,7 @@
             <WebView
                 android:id="@+id/java_code_syn3"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -146,7 +146,7 @@
             <WebView
                 android:id="@+id/java_code_syn4"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -178,7 +178,7 @@
             <WebView
                 android:id="@+id/java_code_syn5"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -210,7 +210,7 @@
             <WebView
                 android:id="@+id/java_code_syn6"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -243,7 +243,7 @@
             <WebView
                 android:id="@+id/java_code_syn7"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>

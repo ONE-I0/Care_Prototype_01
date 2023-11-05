@@ -20,7 +20,7 @@ public class JavaInputsFragment_3 extends Fragment {
 
     private MediaPlayer question_sounds;
 
-    private static final int TEXT_SIZE_IN_DP = 25;
+    private static final int TEXT_SIZE_IN_DP = 20;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -16,7 +16,7 @@ import android.widget.Button;
 import com.example.care_prototype_01.R;
 
 public class PythonCommentsFragment_1 extends Fragment {
-    private static final int TEXT_SIZE_IN_DP = 30;
+    private static final int TEXT_SIZE_IN_DP = 20;
     private MediaPlayer question_sounds;
 
     @Override

@@ -36,13 +36,15 @@
 
         <TextView
             android:id="@+id/P_Operators_Text1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/syntax"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P_Operators_imageView1" />
 
@@ -86,6 +88,22 @@
             app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
+        <TextView
+            android:id="@+id/p_Operators_Text23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/identifier_rules"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
         <ImageView
             android:id="@+id/condition_btn"
             android:layout_width="60dp"
@@ -93,7 +111,7 @@
             android:layout_marginTop="16dp"
             android:contentDescription="@string/codey_python_cut"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text03"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text23"
             app:srcCompat="@drawable/codey_java_cut" />
 
         <Button

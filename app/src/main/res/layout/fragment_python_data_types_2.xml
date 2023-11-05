@@ -25,7 +25,7 @@
                 android:contentDescription="@string/codey_image"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
                 app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
-                app:srcCompat="@drawable/codey_java_dyk" />
+                app:srcCompat="@drawable/codey_python_cut" />
 
             <TextView
                 android:id="@+id/textView5"

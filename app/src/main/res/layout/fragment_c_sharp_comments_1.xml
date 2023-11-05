@@ -68,13 +68,15 @@
 
         <TextView
             android:id="@+id/P_Operators_Text1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
+            android:gravity="center"
             android:text="@string/comments"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -166,7 +168,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/callout_background"
-            android:text="@string/P_comments_textview9"
+            android:text="@string/c_comments_textview9"
             app:layout_constraintBottom_toBottomOf="@+id/P_Syntax_imageView"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"

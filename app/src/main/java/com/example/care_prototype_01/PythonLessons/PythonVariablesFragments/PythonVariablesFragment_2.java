@@ -15,7 +15,7 @@ import com.example.care_prototype_01.R;
 
 public class PythonVariablesFragment_2 extends Fragment {
 
-    private static final int TEXT_SIZE_IN_DP = 30;
+    private static final int TEXT_SIZE_IN_DP = 20;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

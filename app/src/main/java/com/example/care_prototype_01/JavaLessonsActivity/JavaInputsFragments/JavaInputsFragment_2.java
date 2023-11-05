@@ -17,7 +17,7 @@ import com.example.care_prototype_01.R;
 public class JavaInputsFragment_2 extends Fragment {
 
 
-    private static final int TEXT_SIZE_IN_DP = 25;
+    private static final int TEXT_SIZE_IN_DP = 20;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

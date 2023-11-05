@@ -865,22 +865,25 @@ if (condition) {\n
     \n\n• A variable name cannot be any of the Python keywords.
 </string>
 
-    <string name="p_Variables_code">
-    <![CDATA[
-    <pre><tt><font color="#BA2121">x</font> = <font color="#1A1AA6">5</font>\n<font color="#BA2121">y</font> = <font color="#1A1AA6">"John"</font>\n<font color="#BA2121">print</font>(<font color="#1A1AA6">x</font>)\n<font color="#BA2121">print</font>(<font color="#1A1AA6">y</font>)</tt>\n<font color="#795E26">\nOutput: <font color="#1A1AA6">\n5\nJohn</font></font>
-    </pre>
-    ]]>
+    <string name="p_Variables_code"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">x</font> = 5
+        \n\t<font color="#0000FF">y</font> = John
+        \n\n<font color="#795E26">Output:</font>
+        \n\t<font color="#BA2121">print</font>(<font color="#0000FF">x</font>)
+        \n\t<font color="#BA2121">print</font>(<font color="#0000FF">y</font>)
+        </pre>
+]]>
 </string>
 
     <string name="p_variable_naming">
     <![CDATA[
-<pre><tt><font color="#007F00">#Example\n</font>
+<pre><font color="#007F00">#Example\n</font>
 \n<font color="#BA2121">myvar</font> = <font color="#1A1AA6">"John"</font>
 \n<font color="#BA2121">my_var</font> = <font color="#1A1AA6">"John"</font>
 \n<font color="#BA2121">_my_var</font> = <font color="#1A1AA6">"John"</font>
 \n<font color="#BA2121">myVar</font> = <font color="#1A1AA6">"John"</font>
 \n<font color="#BA2121">MYVAR</font> = <font color="#1A1AA6">"John"</font>
-\n<font color="#BA2121">myvar2</font> = <font color="#1A1AA6">"John"</font></tt></pre>
+\n<font color="#BA2121">myvar2</font> = <font color="#1A1AA6">"John"</font></pre>
     ]]>
 </string>
 
@@ -952,6 +955,7 @@ if (condition) {\n
 <pre><tt><font color="#007F00">if</font> condition:\n\t<font color="#BA2121"># code to execute if condition is true</font></tt></pre>
     ]]>
 </string>
+
 
     <string name="p_if_condition1">
     <![CDATA[
@@ -2338,7 +2342,35 @@ if (condition) {\n
     <![CDATA[
     <pre><tt><font color="#0000C0">public class</font> <font color="#BA2121">Main</font> {
     <font color="#0000C0">\n\tpublic static void</font> <font color="#BA2121">main</font>(<font color="#0000C0">String</font>[] args) {
-        <font color="#007F00">\n\t\tSystem.out.println</font>(<font color="#1A1AA6">"Hello World"</font>);
+        \n\t\t//using System.out.println
+        <font color="#007F00">\n\t\t\tSystem.out.println</font>(<font color="#1A1AA6">"Hi"</font>);
+        <font color="#007F00">\n\t\t\tSystem.out.println</font>(<font color="#1A1AA6">"Hello"</font>);
+        \n
+        \n\t\t//using System.out.printf
+        \n\t\t\t<font color="#007F00">double</font> pi = 3.14159;
+        <font color="#007F00">\n\t\t\tSystem.out.printf</font>(<font color="#1A1AA6">"The value of pi is %.2f%n", pi</font>);
+        \n
+        \n\t\t//using System.out.format()
+        \n\t\t\t<font color="#007F00">int</font> num = 42;
+        <font color="#007F00">\n\t\t\tSystem.out.printformat</font>(<font color="#1A1AA6">"The answer is %d%n", num</font>);
+        \n
+        \n\t\t//using System.out.println() with Escape Sequences
+        <font color="#007F00">\n\t\t\tSystem.out.println</font>(<font color="#1A1AA6">"First line&bsol;tSecond line"</font>);
+        <font color="#007F00">\n\t\t\tSystem.out.println</font>(<font color="#1A1AA6">"Line 1&bsol;nLine 2"</font>);
+        \n
+        \n\t\t//using System.out.print
+        <font color="#007F00">\n\t\t\tSystem.out.print</font>(<font color="#1A1AA6">"Hello,"</font>);
+        <font color="#007F00">\n\t\t\tSystem.out.print</font>(<font color="#1A1AA6">"World!"</font>);
+        <font color="#007F00">\n\t\t\tSystem.out.println</font>(<font color="#1A1AA6"></font>);
+        \n
+        <font color="#007F00">\n\t\t\tSystem.out.println</font>(<font color="#1A1AA6"></font>);
+        \n
+        \n\t\t//using System.out.write()
+        \n\t\t\t<font color="#007F00">char</font> ch = \'A\';
+        <font color="#007F00">\n\t\t\tSystem.out.write</font>(<font color="#1A1AA6">ch</font>);
+
+
+
     \n\t}
 \n}</tt>
 </pre>
@@ -2347,13 +2379,30 @@ if (condition) {\n
 
     <string name="java_terms"><b>class method -</b> A class is a blueprint for creating objects. It defines the properties and behaviors that an object of that class will possess. Each program must have a class name and should always start with an uppercase first letter and must match the file name of the program.
     \n\n<b>main method -</b> Each program processing starts from the main() method, which is a mandatory part of every Java program. All method names should start with a lowercase letter. If several words are used to form the name of the method, then each inner word’s first letter should be in uppercase.
-    \n\n<b>System.out.println -</b> It is used to print and display an output to the user.
+    \n\n<b>System.out.println() -</b> This method is used to print text or values followed by a newline character, effectively moving to the next line after printing.
+    \n\n<b>System.out.printf() -</b> This method is used to format and print text with specified format specifiers, similar to the printf function in C. It allows you to control the formatting of output, such as specifying decimal places for floating-point numbers.
+    \n\n<b>System.out.printformat() -</b> This method is similar to printf() and is used for formatted printing. It provides more control over the formatting of output.
+    \n\n<b>System.out.println() with Escape Sequences -</b> You can also use escape sequences to print special characters like tabs (\t) or newlines (\n) within your output.
+    \n\n<b>System.out.print() -</b> This method is used to print text or values without adding a newline character at the end. Multiple calls to this method will result in consecutive output on the same line.
+    \n\n<b>System.out.write() -</b> This method is used to write a single character to the output stream.
 </string>
 
     <string name="java_system_println"><b>System</b> is a built-in Java class that contains useful members, such as <b>out</b>, which is short for "output". The <b>println()</b> method, short for "print line", is used to print a value to the screen (or a file).
     \n\nLastly, each code statement must end with a semicolon (<b>;</b>).
 </string>
 
+    <string name="python_terms1"><b>Basic print() -</b> The print() function is used to output text or values to the console. By default, it adds a newline character at the end of the output.
+        </string>
+    <string name="python_terms2"><b>Print without newline -</b> You can use the end parameter to modify the ending character for the print statement, allowing you to suppress the newline character.
+        </string>
+    <string name="python_terms3"><b>Formatted print -</b> Python\'s str.format() method is used for string formatting, allowing you to insert values into a string at specified locations.
+        </string>
+    <string name="python_terms4"><b>Formatted print using f-strings (Python 3.6+) -</b>  F-strings provide a concise way to format strings with embedded expressions. They are enclosed in curly braces {} and prefixed with the letter \'f\'.
+        </string>
+    <string name="python_terms5"><b>Printing multiple values -</b> You can pass multiple arguments to the print() function, and they will be printed with spaces in between.
+        </string>
+    <string name="python_terms6"><b>Printing with sep parameter -</b> The sep parameter specifies the separator between values when printing multiple items.
+        </string>
 
     <string name="java_code_single_line_comment">
     <![CDATA[Example
@@ -3113,4 +3162,114 @@ if (condition) {\n
     <string name="b">B.</string>
     <string name="cc">C.</string>
     <string name="d">D.</string>
+
+    <string name="identifier_rules"><b>Valid Characters:</b> Identifiers can consist of letters (A-Z, a-z), digits (0-9), underscores (_), and dollar signs ($). They must start with a letter, an underscore, or a dollar sign.
+    \n\n<b>Length:</b> Identifiers can be of any length. However, it\'s good practice to keep them meaningful and not excessively long.
+    \n\n<b>Java Keywords:</b> You cannot use Java reserved keywords (e.g., if, else, for, class, etc.) as identifiers.
+    \n\n<b>Unicode Support:</b> Java allows the use of Unicode characters in identifiers, but it is generally recommended to use standard ASCII characters for code readability and compatibility.
+</string>
+
+    <string name="p_syn1"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#BA2121">print</font>("Hello, world!")
+        \n\n<font color="#795E26">Output:</font>
+        \nHello, world!
+        </pre>]]>
+</string>
+    <string name="p_syn2"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#BA2121">print</font>("Hello", end=\' \')
+        \n\t<font color="#BA2121">print</font>("World")
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">Hello World</font>
+        </pre>]]>
+</string>
+    <string name="p_syn3"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">name</font> = "Alice"
+		\n\t<font color="#0000FF">age</font> = 30
+        \n\t<font color="#BA2121">print</font>("My name is {} and I am {} years old.".format(name, age))
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">My name is Alice and I am 30 years old.</font>
+        </pre>]]>
+</string>
+    <string name="p_syn4"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">name</font> = "Bob"
+		\n\t<font color="#0000FF">age</font> = 25
+        \n\t<font color="#BA2121">print</font>(f"My name is {name} and I am {age} years old.")
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">My name is Bob and I am 25 years old.</font>
+        </pre>]]>
+</string>
+    <string name="p_syn5"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">x</font> = 10
+		\n\t<font color="#0000FF">y</font> = 20
+        \n\t<font color="#BA2121">print</font>("The values of x and y are:", x, y)
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">The values of x and y are: 10 20</font
+        </pre>]]>
+</string>
+    <string name="p_syn6"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">a</font> = 5
+		\n\t<font color="#0000FF">b</font> = 7
+		\n\t<font color="#0000FF">c</font> = 9
+        \n\t<font color="#BA2121">print</font>(a, b, c, sep=\':\')
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">5:7:9</font>
+        </pre>]]>
+</string>
+
+
+    <string name="c_terms1"><b>Console.WriteLine() -</b> This method is used to output text or values to the console, followed by a newline character.
+        </string>
+    <string name="c_terms2"><b>Console.Write() -</b> This method is similar to Console.WriteLine(), but it doesn\'t add a newline character at the end. Multiple calls to Console.Write() will result in consecutive output on the same line.
+        </string>
+    <string name="c_terms3"><b>String Interpolation -</b> C# supports string interpolation, which allows you to embed expressions directly within strings using the $ character.
+        </string>
+    <string name="c_terms4"><b>Formatting with Composite Formatting -</b>  Similar to string interpolation, you can format strings using placeholders and indexed arguments.
+        </string>
+    <string name="c_terms5"><b>Custom Formatting with String.Format() -</b> The string.Format() method allows you to create formatted strings before printing them using Console.WriteLine().
+        </string>
+    <string name="c_terms6"><b>Console.SetOut() -</b> You can redirect the standard output stream to a different TextWriter using Console.SetOut(). This can be useful for saving console output to a file or another destination.
+        </string>
+
+
+    <string name="c_syn1"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#BA2121">Console.WriteLine</font>("Hello, world!");
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">Hello, world!</font>
+        </pre>]]>
+</string>
+    <string name="c_syn2"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#BA2121">Console.Write</font>("Hello, ");
+        \n\t<font color="#BA2121">Console.Write</font>("world!");
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">Hello, world!</font>
+        </pre>]]>
+</string>
+
+    <string name="c_syn3"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">string</font> name = "Alice";
+		\n\t<font color="#0000FF">int</font> age = 30;
+        \n\t<font color="#BA2121">Console.WriteLine</font>($"My name is {name} and I am {age} years old.");
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">My name is Alice and I am 30 years old.</font>
+        </pre>]]>
+</string>
+
+    <string name="c_syn4"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">string</font> item = "apple";
+		\n\t<font color="#0000FF">double</font> price = 1.25;
+        \n\t<font color="#BA2121">Console.WriteLine</font>("The price of {0} is ${1:F2}", item, price);
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">The price of apple is $1.25</font>
+        </pre>]]>
+</string>
+    <string name="c_syn5"><![CDATA[<pre><font color="#008000">Example:</font>
+        \n\t<font color="#0000FF">string</font> formattedString  = string.Format("Today is {0:D}, the {1} day of the week.", DateTime.Now, 3);
+		\n\t<font color="#0000FF">double</font> price = 1.25;
+        \n\t<font color="#BA2121">Console.WriteLine</font>(formattedString);
+        \n\n<font color="#795E26">Output:</font>
+        \n<font color="#0000FF">Today is Monday, the 3 day of the week.</font>
+        </pre>]]>
+</string>
+
+
 </resources>

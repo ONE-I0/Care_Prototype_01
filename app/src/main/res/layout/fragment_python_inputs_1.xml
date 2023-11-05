@@ -36,13 +36,15 @@
 
         <TextView
             android:id="@+id/P_Variables_Text1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="Input"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toBottomOf="@+id/P_Variables_imageView1" />
 
@@ -72,7 +74,7 @@
             <WebView
                 android:id="@+id/python_input_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -144,7 +146,7 @@
             <WebView
                 android:id="@+id/python_input_prompt_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -186,7 +188,7 @@
             <WebView
                 android:id="@+id/python_input_with_output_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>

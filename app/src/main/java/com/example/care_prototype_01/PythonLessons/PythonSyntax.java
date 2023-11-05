@@ -20,6 +20,8 @@ import android.widget.Toast;
 
 import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.PythonSyntaxFragment_1;
 import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.PythonSyntaxFragment_2;
+import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.PythonSyntaxFragment_3;
+import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.PythonSyntaxFragment_4;
 import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.ViewPagerAdapter;
 import com.example.care_prototype_01.PythonLessons.PythonSyntaxFragments.ViewPagerUtil;
 import com.example.care_prototype_01.R;
@@ -58,6 +60,8 @@ public class PythonSyntax extends AppCompatActivity {
 
         fragmentArrayList.add(new PythonSyntaxFragment_1());
         fragmentArrayList.add(new PythonSyntaxFragment_2());
+        fragmentArrayList.add(new PythonSyntaxFragment_3());
+        fragmentArrayList.add(new PythonSyntaxFragment_4());
 
         pagerAdapter = new ViewPagerAdapter(this    ,fragmentArrayList);
         viewPager.setAdapter(pagerAdapter);

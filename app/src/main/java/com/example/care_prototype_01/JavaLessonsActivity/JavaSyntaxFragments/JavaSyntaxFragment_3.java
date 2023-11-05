@@ -61,7 +61,15 @@ public class JavaSyntaxFragment_3 extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(requireContext());
         alertDialogBuilder.setIcon(R.drawable.codey_java_cut);
         alertDialogBuilder.setTitle("Output");
-        alertDialogBuilder.setMessage("Hello World");
+        alertDialogBuilder.setMessage("Hi\n" +
+                                      "Hello\n" +
+                                      "The value of pi is 3.14\n" +
+                                      "The answer is 42\n" +
+                                      "First line\tSecond line\n" +
+                                      "Line 1\n" +
+                                      "Line 2\n" +
+                                      "Hello, world!\n" +
+                                      "A");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
