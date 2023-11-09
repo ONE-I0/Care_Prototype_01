@@ -84,36 +84,6 @@
             app:layout_constraintStart_toStartOf="@+id/textView25"
             app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
-        <ImageView
-            android:id="@+id/imageView43"
-            android:layout_width="137dp"
-            android:layout_height="154dp"
-            android:layout_below="@+id/text_view_highscore"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintTop_toBottomOf="@+id/button_start_quiz"
-            app:srcCompat="@drawable/codey_main_cut" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="0dp"
-            android:layout_height="148dp"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="32dp"
-            android:background="@drawable/txtbox2"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="0dp"
-            android:text="Let's test what you have learned thoughout the lesson. Choose what programming language you wish to take a quiz and its difficulty."
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/imageView43"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_start_quiz" />
-
         <TextView
             android:id="@+id/textView25"
             android:layout_width="wrap_content"
@@ -151,6 +121,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:contentDescription="@string/codey_image"
+            android:src="@drawable/codeee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_start_quiz"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-40dp"
+            android:background="@drawable/txtbox"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="15dp"
+            android:text="Let's test what you have learned thoughout the lesson. Choose what programming language you wish to take a quiz and its difficulty."
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 

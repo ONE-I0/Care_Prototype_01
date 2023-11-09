@@ -8,15 +8,6 @@ public class QuestionBlank {
     public static List<Question> getJavaEasyQuestions() {
         List<Question> questions = new ArrayList<>();
 
-        questions.add(new Question(
-                "Java is short for “JavaScript”.",
-                "True", "False", "Free", "Free", 2,
-                Question.DIFFICULTY_EASY, Category.JAVA));
-
-        questions.add(new Question(
-                "The coffee produced on the island of Java gained a reputation for its quality and became widely known as \"Java\" coffee, eventually leading to the association of the term with coffee in general.",
-                "True", "False", "Free", "Free", 1,
-                Question.DIFFICULTY_EASY, Category.JAVA));
 
             //---------------------------JAVA EASY---------------------------
             questions.add(new Question(
@@ -498,7 +489,7 @@ public class QuestionBlank {
                     "The programming language we know today as Java was named after a type of?",
                     "oak",
                     "javascript",
-                    "coffee =",
+                    "coffee",
                     "Free",
                     3,
                     Question.DIFFICULTY_MEDIUM,
@@ -943,7 +934,7 @@ public class QuestionBlank {
 
             questions.add(new Question(
                     "Use the addition assignment operator to add the value 5 to the variable x.\n\nint x = 10;\nx________5;",
-                    "- =",
+                    "-",
                     "*=",
                     "+=",
                     "/=",
@@ -2184,90 +2175,90 @@ public class QuestionBlank {
             ));
             questions.add(new Question(
                     "Comments in Python are written with a special character, which one?\n__ This is a comment",
-                    "A. /*",
-                    "B. //",
-                    "C. #",
-                    "D. /",
+                    "/*",
+                    "//",
+                    "#",
+                    "/",
                     3,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = 5\nPrint(type(x))",
-                    "A. Int",
-                    "B. Float",
-                    "C. Str",
-                    "D. Bool",
+                    "Int",
+                    "Float",
+                    "Str",
+                    "Bool",
                     1,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = \"Hello World\"\nPrint(type(x))",
-                    "A. Int",
-                    "B. Float",
-                    "C. Str",
-                    "D. Bool",
+                    "Int",
+                    "Float",
+                    "Str",
+                    "Bool",
                     3,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = 20.5\nPrint(type(x))",
-                    "A. Int",
-                    "B. Float",
-                    "C. Str",
-                    "D. Bool",
+                    "Int",
+                    "Float",
+                    "Str",
+                    "Bool",
                     2,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = [\"apple\", \"banana\", \"cherry\"]\nPrint(type(x))",
-                    "A. List",
-                    "B. Float",
-                    "C. Str",
-                    "D. Bool",
+                    "List",
+                    "Float",
+                    "Str",
+                    "Bool",
                     1,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = (\"apple\", \"banana\", \"cherry\")\nPrint(type(x))",
-                    "A. List",
-                    "B. Float",
-                    "C. Int",
-                    "D. tuple",
+                    "List",
+                    "Float",
+                    "Int",
+                    "tuple",
                     4,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = {\"name\" : \"John\", \"age\" : 36}\nPrint(type(x))",
-                    "A. Float",
-                    "B. Int",
-                    "C. Dict",
-                    "D. Float",
+                    "Float",
+                    "Int",
+                    "Dict",
+                    "Float",
                     3,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The following code example would print the data type of x, what data type would that be?\nX = True\nPrint(type(x))",
-                    "A. List",
-                    "B. Int",
-                    "C. Bool",
-                    "D. Boolean",
+                    "List",
+                    "Int",
+                    "Bool",
+                    "Boolean",
                     3,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
             ));
             questions.add(new Question(
                     "The statement below would print a Boolean value, which one?\nPrint(10 > 9)",
-                    "A. True",
-                    "B. False",
-                    "C. 10",
-                    "D. 9",
+                    "True",
+                    "False",
+                    "10",
+                    "9",
                     1,
                     Question.DIFFICULTY_MEDIUM,
                     Category.PYTHON
@@ -2337,7 +2328,7 @@ public class QuestionBlank {
                     "Continue",
                     "If",
                     "For",
-                    "Break =",
+                    "Break",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2350,7 +2341,7 @@ public class QuestionBlank {
                             "  i += 1\n" +
                             "  if i == 3:\n" +
                             "    __",
-                    "Continue =",
+                    "Continue",
                     "If",
                     "For",
                     "Break",
@@ -2368,7 +2359,7 @@ public class QuestionBlank {
                             "for x in fruits:\n" +
                             "  if x == \"banana\":\n" +
                             "   __",
-                    "Continue =",
+                    "Continue",
                     "If",
                     "For",
                     "Break",
@@ -2382,7 +2373,7 @@ public class QuestionBlank {
                             "for x in __:\n" +
                             "   print(x)",
                     "range(6):",
-                    "range(6) =",
+                    "range(6)",
                     "range (6)",
                     "range(6);",
                     2,
@@ -2399,7 +2390,7 @@ public class QuestionBlank {
                     "Continue",
                     "If",
                     "For",
-                    "Break =",
+                    "Break",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2419,7 +2410,7 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Use the len() method to return the length of an array or simply, the number of elements in an array.\n",
                     "Access the elements of an array",
-                    "The length of an array =",
+                    "The length of an array",
                     "Looping array elements",
                     "Adding array elements",
                     2,
@@ -2432,7 +2423,7 @@ public class QuestionBlank {
                     "Access the elements of an array",
                     "The length of an array",
                     "Looping array elements",
-                    "Adding array elements =",
+                    "Adding array elements",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2561,10 +2552,10 @@ public class QuestionBlank {
 
             questions.add(new Question(
                     "Sorts the list.",
-                    "A. Reverse()",
-                    "B. sort() =",
-                    "C. remove()",
-                    "D. Pop()",
+                    "Reverse()",
+                    "sort()",
+                    "remove()",
+                    "Pop()",
                     2,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2574,10 +2565,10 @@ public class QuestionBlank {
                     "Use the correct syntax to print the first item in the fruits tuple.\n" +
                             "Fruits = (\"apple\", \"banana\", \"cherry\")\n" +
                             "Print(________)",
-                    "A. Fruits[0] =",
-                    "B. Fruits[1]",
-                    "C. Apple",
-                    "D. Banana",
+                    "Fruits[0]",
+                    "Fruits[1]",
+                    "Apple",
+                    "Banana",
                     1,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2587,10 +2578,10 @@ public class QuestionBlank {
                     "Use the correct syntax to print the number of items in the fruits tuple.\n" +
                             "Fruits = (\"apple\", \"banana\", \"cherry\")\n" +
                             "Print(________)\n",
-                    "A. Len(fruit)",
-                    "B. Len(fruits)",
-                    "C. Len(Fruits) =",
-                    "D. Lengths(fruits)",
+                    "Len(fruit)",
+                    "Len(fruits)",
+                    "Len(Fruits)",
+                    "Lengths(fruits)",
                     3,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2600,10 +2591,10 @@ public class QuestionBlank {
                     "Use negative indexing to print the last item in the tuple.\n" +
                             "Fruits = (\"apple\", \"banana\", \"cherry\")\n" +
                             "Print(________)",
-                    "A. Fruits[2]",
-                    "B. Fruits[-2]",
-                    "C. Fruits[1]",
-                    "D. Fruits[-1] =",
+                    "Fruits[2]",
+                    "Fruits[-2]",
+                    "Fruits[1]",
+                    "Fruits[-1]",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2613,10 +2604,10 @@ public class QuestionBlank {
                     "Use a range of indexes to print the third, fourth, and fifth item in the tuple.\n" +
                             "Fruits = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\n" +
                             "Print(________)",
-                    "A. Fruits[2 , 5]",
-                    "B. Fruits[2 and 5]",
-                    "C. Fruits[2 &5]",
-                    "D. Fruits[2:5] =",
+                    "Fruits[2 , 5]",
+                    "Fruits[2 and 5]",
+                    "Fruits[2 &5]",
+                    "Fruits[2:5]",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2624,10 +2615,10 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Use the add method to add \"orange\" to the fruits set.\n" +
                             "Fruits = {\"apple\", \"banana\", \"cherry\"}\n",
-                    "A. Fruits.remove(\"orange\")",
-                    "B. Fruits.insert(\"orange\")",
-                    "C. Fruits.add(\"orange\")",
-                    "D. Fruits.pop(\"orange\")",
+                    "Fruits.remove(\"orange\")",
+                    "Fruits.insert(\"orange\")",
+                    "Fruits.add(\"orange\")",
+                    "Fruits.pop(\"orange\")",
                     3,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2637,10 +2628,10 @@ public class QuestionBlank {
                     "Use the correct method to add multiple items (more_fruits) to the fruits set.\n" +
                             "Fruits = {\"apple\", \"banana\", \"cherry\"}\n" +
                             "More_fruits = [\"orange\", \"mango\", \"grapes\"]\n",
-                    "A. Fruits.reverse(more_fruits)",
-                    "B. Fruits.index(more_fruits)",
-                    "C. Fruits.add(more_fruits)",
-                    "D. Fruits.update(more_fruits)",
+                    "Fruits.reverse(more_fruits)",
+                    "Fruits.index(more_fruits)",
+                    "Fruits.add(more_fruits)",
+                    "Fruits.update(more_fruits)",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2649,10 +2640,10 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Use the remove method to remove \"banana\" from the fruits set.\n" +
                             "Fruits = {\"apple\", \"banana\", \"cherry\"}\n",
-                    "A. fruits.insert(\"banana\")",
-                    "B. Fruits.pop(\"banana\")",
-                    "C. Fruits.sort(\"banana\")",
-                    "D. Fruits.remove(\"banana\")",
+                    "fruits.insert(\"banana\")",
+                    "Fruits.pop(\"banana\")",
+                    "Fruits.sort(\"banana\")",
+                    "Fruits.remove(\"banana\")",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2661,10 +2652,10 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Print the second item in the fruits list.\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\"]\n",
-                    "A. Fruits[1]",
-                    "B. Fruits[2]",
-                    "C. Fruits[-2]",
-                    "D. Fruits[-1]",
+                    "Fruits[1]",
+                    "Fruits[2]",
+                    "Fruits[-2]",
+                    "Fruits[-1]",
                     1,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2673,10 +2664,10 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Use the append method to add \"orange\" to the fruits list.\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\"]\n",
-                    "A. Fruits.sort(\"orange\")",
-                    "B. Fruits.remove(\"orange\")",
-                    "C. Fruits.append(\"orange\")",
-                    "D. Fruits.clear(\"orange\")",
+                    "Fruits.sort(\"orange\")",
+                    "Fruits.remove(\"orange\")",
+                    "Fruits.append(\"orange\")",
+                    "Fruits.clear(\"orange\")",
                     3,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2685,10 +2676,10 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Use the remove method to remove \"banana\" from the fruits list.\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\"]\n",
-                    "A. fruits.sort(\"banana\")",
-                    "B. Fruits.remove(\"banana\") =",
-                    "C. Fruits.clear(\"banana\")",
-                    "D. Fruits.pop(\"banana\")",
+                    "fruits.sort(\"banana\")",
+                    "Fruits.remove(\"banana\")",
+                    "Fruits.clear(\"banana\")",
+                    "Fruits.pop(\"banana\")",
                     2,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2697,10 +2688,10 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Use negative indexing to print the last item in the list.\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\"]\n",
-                    "A. Fruits[-0]",
-                    "B. Fruits[-1] =",
-                    "C. Fruits[-2]",
-                    "D. Fruits[1]",
+                    "Fruits[-0]",
+                    "Fruits[-1]",
+                    "Fruits[-2]",
+                    "Fruits[1]",
                     2,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2710,10 +2701,10 @@ public class QuestionBlank {
                     "Use a range of indexes to print the third, fourth, and fifth item in the list.\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]\n" +
                             "Print(__________)",
-                    "A. Fruits[2:5] =",
-                    "B. Fruits[2 & 5]",
-                    "C. Fruits[2 and 5]",
-                    "D. Fruits[2 / 5]",
+                    "Fruits[2:5]",
+                    "Fruits[2 & 5]",
+                    "Fruits[2 and 5]",
+                    "Fruits[2 / 5]",
                     1,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2723,10 +2714,10 @@ public class QuestionBlank {
                     "Use the correct syntax to print the number of items in the list.\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\"]\n" +
                             "Print(len(fruits)",
-                    "A. Lengths(fruits)",
-                    "B. Len(fruits) =",
-                    "C. LEN(fruits)",
-                    "D. Len(fruits) =",
+                    "Lengths(fruits)",
+                    "Len(fruits)",
+                    "LEN(fruits)",
+                    "Len(fruits)",
                     2,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -2736,10 +2727,10 @@ public class QuestionBlank {
                     "Use the insert method to add \"lemon\" as the second item in the fruits list\n" +
                             "Fruits = [\"apple\", \"banana\", \"cherry\"]\n"+
                             "__________ \"lemon\")",
-                    "A. Fruits.insert(1,",
-                    "B. Fruits.pop(1,",
-                    "C. Fruits.remove(1,",
-                    "D. Fruits.insert(1,",
+                    "Fruits.insert(1,",
+                    "Fruits.pop(1,",
+                    "Fruits.remove(1,",
+                    "Fruits.insert(1,",
                     1,
                     Question.DIFFICULTY_HARD,
                     Category.PYTHON
@@ -3567,7 +3558,7 @@ public class QuestionBlank {
                             "static void Main(string[] args){\n" +
                             "  Console.WriteLine(\"Hello World!\");\n" +
                             "}",
-                    "Console.WriteLine =",
+                    "Console.WriteLine",
                     "print",
                     "system.out.println",
                     "printf",
@@ -3582,7 +3573,7 @@ public class QuestionBlank {
                     "/*",
                     "/",
                     "///",
-                    "// =",
+                    "//",
                     4,
                     Question.DIFFICULTY_HARD,
                     Category.Csharp
@@ -3591,7 +3582,7 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Comments in C# are written with special characters. Insert the missing parts:\n" +
                             "__ This is a multi-line comment __",
-                    "/* and */ =",
+                    "/* and */",
                     "/ and /",
                     "/// and ///",
                     "//  and  //",
@@ -3675,7 +3666,7 @@ public class QuestionBlank {
             questions.add(new Question(
                     "Divide 10 by 5, and print the result.\n" +
                             "Console.WriteLine(10 _ 5);",
-                    "/ =",
+                    "/",
                     "%",
                     "()",
                     "*",

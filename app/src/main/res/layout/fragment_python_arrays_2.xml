@@ -52,12 +52,12 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/arrayView1">
+            app:layout_constraintTop_toBottomOf="@+id/P_array_imageView1">
 
             <WebView
                 android:id="@+id/p_array_indexing_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -110,7 +110,7 @@
             <WebView
                 android:id="@+id/p_array_length_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -194,7 +194,7 @@
             <WebView
                 android:id="@+id/p_for_loop_iteration_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -246,7 +246,7 @@
             <WebView
                 android:id="@+id/p_array_append_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
@@ -298,7 +298,7 @@
             <WebView
                 android:id="@+id/p_array_pop_remove_example"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>

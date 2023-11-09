@@ -115,6 +115,7 @@
                 android:fontFamily="@font/font"
                 tools:ignore="WebViewLayout" />
         </HorizontalScrollView>
+
         <TextView
             android:id="@+id/c_condition_Text"
             android:layout_width="0dp"
@@ -124,7 +125,7 @@
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="italic"
+            android:textStyle="normal"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"

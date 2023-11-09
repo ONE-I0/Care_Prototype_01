@@ -124,7 +124,7 @@
         <TextView
             android:id="@+id/p_Operators_Text13"
             android:layout_width="0dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:text="@string/op4"
@@ -158,7 +158,7 @@
         <TextView
             android:id="@+id/p_Operators_Text17"
             android:layout_width="0dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:text="@string/op5"
@@ -190,7 +190,7 @@
         <TextView
             android:id="@+id/p_Operators_Text19"
             android:layout_width="0dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:text="@string/op6"
