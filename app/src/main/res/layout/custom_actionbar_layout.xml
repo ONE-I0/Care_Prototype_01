@@ -4,18 +4,9 @@
     android:id="@+id/custom_toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="#8A1F1F"
-    android:backgroundTint="#8A1F1F"
+    android:background="@drawable/bg"
     app:contentInsetStartWithNavigation="0dp">
 
 
-    <ImageView
-        android:id="@+id/toolbarImage"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#8A1F1F"
-        android:backgroundTint="#8A1F1F"
-        android:src="@drawable/bg" />
 
 </androidx.appcompat.widget.Toolbar>

@@ -16,15 +16,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/P_Variables_Text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Loops are an integral part of programming, enabling the repetition of code multiple times. With loops, computational tasks can be automated and data collections can be efficiently navigated. Looping statements, or control flow structures, provide control over how many times a block of code will be iterated and when the process should cease. Ultimately, using the concepts of perplexity and burstiness, programmers can greatly increase the complexity and variation of their code."
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+                tools:ignore="TextSizeCheck,VisualLintLongText" />
 
             <ImageView
                 android:id="@+id/P.Intro.ImageView1"
                 android:layout_width="54dp"
                 android:layout_height="74dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="16dp"
                 android:contentDescription="@string/codey_image"
                 app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-                app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
+                app:layout_constraintTop_toBottomOf="@+id/P_Variables_Text2"
                 app:srcCompat="@drawable/codey_python" />
 
             <TextView

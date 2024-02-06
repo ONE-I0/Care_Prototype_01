@@ -13,7 +13,7 @@
 
 
         <TextView
-            android:id="@+id/p_Operators_Text5"
+            android:id="@+id/P_Operators_Text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="These are some of the identifiers in Java:"
@@ -24,228 +24,269 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1" />
 
+
         <TextView
-            android:id="@+id/p_Operators_Text6"
+            android:id="@+id/p_Operators_Text26"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Method Identifiers:"
+            android:text="@string/j_terms1"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text5" />
+            app:layout_constraintTop_toBottomOf="@+id/P_Operators_Text1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
 
         <HorizontalScrollView
             android:id="@+id/hv1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text6">
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text26">
 
             <WebView
-                android:id="@+id/java_code_syn1"
+                android:id="@+id/j_syn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/syn2"
+            android:id="@+id/p_Operators_Text40"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Class Identifiers:"
+            android:text="@string/j_terms2"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv1" />
+            app:layout_constraintTop_toBottomOf="@+id/hv1"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <HorizontalScrollView
             android:id="@+id/hv2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/syn2">
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text40">
 
             <WebView
-                android:id="@+id/java_code_syn2"
+                android:id="@+id/j_syn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/syn3"
+            android:id="@+id/p_Operators_Text41"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Constant Identifiers (final variables):"
+            android:text="@string/j_terms3"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv2" />
+            app:layout_constraintTop_toBottomOf="@+id/hv2"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <HorizontalScrollView
             android:id="@+id/hv3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/syn3">
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text41">
 
             <WebView
-                android:id="@+id/java_code_syn3"
+                android:id="@+id/j_syn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/syn4"
+            android:id="@+id/p_Operators_Text42"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Object Identifiers:"
+            android:text="@string/j_terms4"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv3" />
+            app:layout_constraintTop_toBottomOf="@+id/hv3"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <HorizontalScrollView
             android:id="@+id/hv4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/syn4">
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text42">
 
             <WebView
-                android:id="@+id/java_code_syn4"
+                android:id="@+id/j_syn4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/syn5"
+            android:id="@+id/p_Operators_Text43"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Parameter Identifiers:"
+            android:text="@string/j_terms5"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv4" />
+            app:layout_constraintTop_toBottomOf="@+id/hv4"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <HorizontalScrollView
             android:id="@+id/hv5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/syn5">
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text43">
 
             <WebView
-                android:id="@+id/java_code_syn5"
+                android:id="@+id/j_syn5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/syn6"
+            android:id="@+id/p_Operators_Text44"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Package Identifiers"
+            android:text="@string/j_terms6"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv5" />
+            app:layout_constraintTop_toBottomOf="@+id/hv5"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <HorizontalScrollView
             android:id="@+id/hv6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/syn6">
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text44">
 
             <WebView
-                android:id="@+id/java_code_syn6"
+                android:id="@+id/j_syn6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/syn7"
+            android:id="@+id/p_Operators_Text5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Enum Identifiers:"
+            android:text="@string/j_terms7"
             android:textColor="#000000"
+            android:textIsSelectable="false"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/hv6" />
+            app:layout_constraintTop_toBottomOf="@+id/hv6"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
         <HorizontalScrollView
             android:id="@+id/hv7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text5">
+
+            <WebView
+                android:id="@+id/j_syn7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font"
+                tools:ignore="WebViewLayout">
+
+            </WebView>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/p_Operators_Text6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/j_terms8"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-            app:layout_constraintTop_toBottomOf="@+id/syn7">
+            app:layout_constraintTop_toBottomOf="@+id/hv7"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
+
+        <HorizontalScrollView
+            android:id="@+id/hv8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/p_Operators_Text6">
 
             <WebView
-                android:id="@+id/java_code_syn7"
+                android:id="@+id/j_syn8"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/font"
-                tools:ignore="WebViewLayout" />
+                tools:ignore="WebViewLayout">
+
+            </WebView>
         </HorizontalScrollView>
 
         <androidx.constraintlayout.widget.Guideline

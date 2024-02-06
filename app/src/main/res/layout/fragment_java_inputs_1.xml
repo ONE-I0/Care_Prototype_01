@@ -88,7 +88,7 @@
             android:id="@+id/P_Syntax_Text7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="The Scanner class is used to get user input, and it is found in the java.util package."
+            android:text="Java User Input refers to the process of accepting data or information from a user during the execution of a Java program. It allows users to interact with a program."
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"

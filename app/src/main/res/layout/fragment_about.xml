@@ -24,48 +24,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/baloo"
-        android:text="CARE EXPLANATIONS"
-        android:textColor="#8B1F1F"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:fontFamily="@font/lionel"
-            android:text="CARE, short for Coding Assessments Reading Expressions, is an e-learning android application that offers basic programming learning experience. CARE provides access to three essential programming languages: Java, Python, and C#. Whether you're a beginner or looking to brush up on your skills, CARE is your go-to resource for mastering the basics of programming. With a comprehensive curriculum, interactive lessons, and quizzes to test your knowledge, CARE is the ideal companion for anyone looking to dive into the world of programming."
-            android:textColor="#000000"
-            android:textSize="19sp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="302dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             android:background="@drawable/rounded_background"
             android:orientation="horizontal"
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView24">
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
 
             <ImageView
                 android:id="@+id/userIconImageView"
@@ -94,6 +65,23 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text="Programmer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/userRoleTextView_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Dominican College of Tarlac"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/userRoleTextView__"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="College of Computer Studies"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
 
@@ -140,6 +128,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Project Manager"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/userRoleTextView_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dominican College of Tarlac"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/userRoleTextView__1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="College of Computer Studies"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
@@ -189,6 +193,23 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
+            <TextView
+                android:id="@+id/userRoleTextView_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dominican College of Tarlac"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/userRoleTextView__2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="College of Computer Studies"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
         </LinearLayout>
     </LinearLayout>
 
@@ -232,6 +253,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Proponent"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/userRoleTextView_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dominican College of Tarlac"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/userRoleTextView__3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="College of Computer Studies"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
@@ -281,6 +319,22 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
+            <TextView
+                android:id="@+id/userRoleTextView_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dominican College of Tarlac"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/userRoleTextView__4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="College of Computer Studies"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -327,6 +381,22 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
+            <TextView
+                android:id="@+id/userRoleTextView_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dominican College of Tarlac"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/userRoleTextView__5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="College of Computer Studies"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 

@@ -39,7 +39,7 @@
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="16dp"
-			android:gravity="center"
+			android:gravity="start"
 			android:text="OOP (Object-Oriented Programming)"
 			android:textColor="#000000"
 			android:textSize="20sp"

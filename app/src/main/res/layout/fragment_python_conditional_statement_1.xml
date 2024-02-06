@@ -52,7 +52,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="A condition is an expression that evaluates to either True or False."
+            android:text="In Python, Conditional statements provide code's flow control through evaluation of certain conditions and execution of specific blocks of code depending on its results. This type of statement helps to create flexible and dynamic programs that are capable of adaptation to different scenarios. By making use of perplexity and burstiness, the program can truly reach its full potential - by having some sentences be longer than the average, while others are shorter. In this way, the same program can be adapted to diverse and varied environments. Conditions: Conditions are expressions that are evaluated as either true or false. They vary in complexity, ranging from simple comparison between variables to more intricate logical expressions.  "
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"

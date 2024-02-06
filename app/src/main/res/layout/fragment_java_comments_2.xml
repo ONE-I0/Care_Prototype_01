@@ -26,20 +26,20 @@
             app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
             tools:ignore="TextSizeCheck,VisualLintLongText" />
 
-    <TextView
-        android:id="@+id/P_Syntax_Text7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="A multi-line comments can occupy at least 2 lines of code and more that depends to the preference of the programmer or developer. It can also disregard codes and transform into comments by clicking “ctrl” on the keyboard and “/” simultaneously."
-        android:textColor="#000000"
-        android:textIsSelectable="false"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
-        app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text6"
-        tools:ignore="TextSizeCheck,VisualLintLongText" />
+        <TextView
+            android:id="@+id/P_Syntax_Text7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="These comments start with /* and end with */. Anything between /* and */ is considered a comment. It can occupy at least 2 lines of code and more that depends to the preference of the programmer or developer. It can also disregard codes and transform into comments by clicking “ctrl” on the keyboard and “/” simultaneously."
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical1"
+            app:layout_constraintTop_toBottomOf="@+id/P_Syntax_Text6"
+            tools:ignore="TextSizeCheck,VisualLintLongText" />
 
     <HorizontalScrollView
         android:id="@+id/hv2"

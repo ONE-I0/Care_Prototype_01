@@ -1096,7 +1096,6 @@ if (condition) {\n
     \n• <b>while loop:</b> The while loop is used to repeatedly execute a block of code as long as a condition is true.
     \n• <b>break statement:</b> The break statement is used to exit the current loop prematurely, regardless of the loop condition.
     \n• <b>continue statement:</b> The continue statement is used to skip the current iteration of a loop and move to the next iteration.
-    \n• <b>else statement in loops:</b> Python allows an else block to be associated with a loop. The code inside the else block is executed when the loop completes normally, without any break statements.
 </string>
 
     <string name="p_for_loop">
@@ -2551,9 +2550,9 @@ if (condition) {\n
     <string name="dt1_d"><b>D. Class:</b> Used to store the definition of a class.</string>
     <string name="dt1_e"><b>E. Interface:</b> Used to store the definition of an interface.</string>
 
-    <string name="java_arithmetic_logical_operators"><b>Arithmetic operators: </b>Arithmetic operators, such as addition (+), subtraction (-), multiplication (*), division (/), modulus (%), and unary operators like increment (++), decrement (--), and negation (-), are used to do mathematical computations.\n\n<b>Logical operators:</b> The employment of logical operators allows for the logical manipulation of boolean values and the generation of boolean results. Java supports the following logical operators: logical AND (&amp;&amp;), logical OR (||), and logical NOT (!).</string>
+    <string name="java_arithmetic_logical_operators"><b>Arithmetic operators: </b>such as addition (+), subtraction (-), multiplication (*), division (/), modulus (%), and unary operators like increment (++), decrement (--), and negation (-), are used to do mathematical computations.\n\n<b>Logical operators:</b> The employment of logical operators allows for the logical manipulation of boolean values and the generation of boolean results. Java supports the following logical operators: logical AND (&amp;&amp;), logical OR (||), and logical NOT (!).</string>
 
-    <string name="java_assignment_bitwise_operators"><b>Operators for Assignment:</b> Operators for Assignment are used to assign values to variables. The equals symbol (<b>=</b>) is used as the most frequent assignment operator. The assignment operation can be combined with another operation using compound assignment operators like <b>+=</b>, <b>-=</b>, <b>*=</b>, <b>/=</b>, and <b>%=</b>.
+    <string name="java_assignment_bitwise_operators"><b>Assigment Operators:</b> Operators for Assignment are used to assign values to variables. The equals symbol (<b>=</b>) is used as the most frequent assignment operator. The assignment operation can be combined with another operation using compound assignment operators like <b>+=</b>, <b>-=</b>, <b>*=</b>, <b>/=</b>, and <b>%=</b>.
     \n\n<b>Bitwise operators:</b> These operators work with the individual bits of numeric operands. These include left shift (<b>&lt;&lt;</b>), right shift (<b>&gt;&gt;</b>), and unsigned right shift (<b>&gt;&gt;&gt;</b>). They also include bitwise AND (<b>&amp;</b>), bitwise OR (<b>|</b>), bitwise XOR (<b>^</b>), bitwise complement (<b>~</b>), and left shift (<b>&lt;&lt;</b>).
     \n\n<b>The ternary operator (?:):</b> is a conditional operator that accepts three operands and returns a value in response to a condition. It is applied to conditional phrases that are concise.
 </string>
@@ -3270,6 +3269,88 @@ if (condition) {\n
         \n<font color="#0000FF">Today is Monday, the 3 day of the week.</font>
         </pre>]]>
 </string>
+
+    <string name="j_terms1"><b>Class Names -</b> Identifiers used to name classes. They should follow the PascalCase convention, where the first letter of each word is capitalized.
+        </string>
+    <string name="j_terms2"><b>Method Names -</b> Identifiers used to name methods. They should follow the camelCase convention, where the first letter of the first word is lowercase, and the first letter of subsequent words is capitalized.
+        </string>
+    <string name="j_terms3"><b>Variable Names -</b> Identifiers used to name variables. Like method names, they should also follow the camelCase convention.
+        </string>
+    <string name="j_terms4"><b>Constant Names -</b>  Identifiers used to declare constants, which are variables with values that do not change during program execution. Constants are typically written in all uppercase letters, and words are separated by underscores.
+        </string>
+    <string name="j_terms5"><b>Package Names -</b> Identifiers used to name packages. Package names are written in lowercase, and they often follow the reverse domain name convention.
+        </string>
+    <string name="j_terms6"><b>Interface Names -</b> Identifiers used to name interfaces. They should also follow the PascalCase convention.
+        </string>
+    <string name="j_terms7"><b>Enum Names -</b> Identifiers used to name enumerations (enums). Enums are special data types that consist of a fixed set of constants. Enum names should follow the PascalCase convention.
+        </string>
+    <string name="j_terms8"><b>Type Parameter Names -</b> Identifiers used as type parameters in generic classes or methods. They usually have single-character names and follow the camelCase convention.
+        </string>
+
+
+    <string name="java_syn1"><![CDATA[
+<pre>Example
+<font color="#0000FF">\npublic class</font> <font color="#0000FF">MyClass</font> {
+    <font color="#008000">\n\t// Class implementation</font>
+\n}
+</pre>]]>
+</string>
+
+    <string name="java_syn2"><![CDATA[
+<pre>Example
+<font color="#0000FF">\npublic void</font> <font color="#0000FF">myMethod</font>() {
+    <font color="#008000">\n\t// Method implementation</font>
+\n}
+</pre>]]>
+</string>
+
+    <string name="java_syn3"><![CDATA[
+<pre>Example
+<font color="#0000FF">\nint</font> <font color="#0000FF">myVariable</font> = <font color="#FF0000">10</font>;
+</pre>]]>
+</string>
+
+    <string name="java_syn4"><![CDATA[
+<pre>Example
+<font color="#0000FF">\nfinal int</font> <font color="#0000FF">MAX_VALUE</font> = <font color="#FF0000">100</font>;
+</pre>]]>
+</string>
+
+    <string name="java_syn5"><![CDATA[
+<pre>Example
+<font color="#0000FF">\npackage</font> <font color="#0000FF">com.example.myapp</font>;
+</pre>]]>
+</string>
+
+    <string name="java_syn6"><![CDATA[
+<pre>Example
+<font color="#0000FF">\ninterface</font> <font color="#0000FF">MyInterface</font> {
+    <font color="#008000">\n\t// Interface definition</font>
+\n}
+</pre>]]>
+</string>
+
+    <string name="java_syn7"><![CDATA[
+<pre>Example
+<font color="#0000FF">\nenum</font> <font color="#0000FF">DayOfWeek</font> {
+    <font color="#0000FF">MONDAY</font>, <font color="#0000FF">TUESDAY</font>, <font color="#0000FF">WEDNESDAY</font>,
+    <font color="#0000FF">THURSDAY</font>, <font color="#0000FF">FRIDAY</font>, <font color="#0000FF">SATURDAY</font>, <font color="#0000FF">SUNDAY</font>
+\n}
+</pre>]]>
+</string>
+
+
+    <string name="java_syn8"><![CDATA[
+<pre>Example
+<font color="#0000FF">\nclass</font> <font color="#0000FF">MyClass</font><<font color="#0000FF">T</font>> {
+    <font color="#008000">\n\t// Class implementation with a generic type parameter \'T\'</font>
+\n}
+</pre>]]>
+</string>
+
+
+
+
 
 
 </resources>

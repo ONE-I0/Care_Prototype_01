@@ -52,7 +52,7 @@
             android:id="@+id/P_Variables_Text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="A looping statement in Python is a control structure that enables you to continually run a block of code depending on a condition or for a predetermined number of iterations. You can develop terse, effective code thanks to its assistance in automating repetitive activities."
+            android:text="Python programming language has a feature of looping that allows a single block of code to be executed multiple times as per the requirements. This control flow structure helps in automating tedious tasks and iterating over large collections of data. It is an important concept for programming as it helps to save time and energy while performing same action over multiple datasets. Looping statement offer immense flexibility as one can perform different operations within the same loop or decide the number of times it should run and much more. "
             android:textColor="#000000"
             android:textIsSelectable="false"
             android:textSize="18sp"
